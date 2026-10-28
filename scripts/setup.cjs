@@ -70,15 +70,17 @@ async function main() {
     run('git', ['config', '--local', 'filter.lfs.process', `${executable} filter-process`]);
     run('git', ['config', '--local', 'filter.lfs.clean', `${executable} clean -- %f`]);
     run('git', ['config', '--local', 'filter.lfs.smudge', `${executable} smudge -- %f`]);
-    const hook = spawnSync('git', ['rev-parse', '--git-path', 'hooks/pre-push'], { encoding: 'utf8' });
-    if (hook.status !== 0) throw new Error('Cannot find the local Git pre-push hook.');
-    const hookFile = hook.stdout.trim();
-    const existing = fs.existsSync(hookFile) ? fs.readFileSync(hookFile, 'utf8') : '';
-    if (existing && !existing.includes('# YYC local Git LFS') && !existing.includes('git lfs pre-push') && !existing.includes(`${executable} pre-push`)) {
-      throw new Error('Existing custom pre-push hook: install Git LFS globally and rerun setup to preserve your hook.');
+    for (const name of ['pre-push', 'post-checkout', 'post-commit', 'post-merge']) {
+      const hook = spawnSync('git', ['rev-parse', '--git-path', `hooks/${name}`], { encoding: 'utf8' });
+      if (hook.status !== 0) throw new Error(`Cannot find the local Git ${name} hook.`);
+      const hookFile = hook.stdout.trim();
+      const existing = fs.existsSync(hookFile) ? fs.readFileSync(hookFile, 'utf8') : '';
+      if (existing && !existing.includes('# YYC local Git LFS') && !existing.includes(`git lfs ${name}`) && !existing.includes(`${executable} ${name}`)) {
+        throw new Error(`Existing custom ${name} hook: install Git LFS globally and rerun setup to preserve your hook.`);
+      }
+      fs.mkdirSync(path.dirname(hookFile), { recursive: true });
+      fs.writeFileSync(hookFile, `#!/bin/sh\n# YYC local Git LFS\n${executable} ${name} "$@"\n`, { mode: 0o755 });
     }
-    fs.mkdirSync(path.dirname(hookFile), { recursive: true });
-    fs.writeFileSync(hookFile, `#!/bin/sh\n# YYC local Git LFS\n${executable} pre-push "$@"\n`, { mode: 0o755 });
   }
   run('git', ['lfs', 'pull']);
   run(process.execPath, [path.join(__dirname, 'verify-assets.cjs')]);
