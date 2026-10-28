@@ -62,7 +62,7 @@ async function main() {
   if (!works('git', ['--version'])) throw new Error('Install Git, clone the private repository, and run setup again.');
   if (!fs.existsSync(path.join(root, '.git'))) throw new Error('Use a Git clone of this private repository; GitHub ZIP downloads can omit the large model files.');
   const localLfs = await ensureLfs();
-  run('git', ['lfs', 'install', '--local']);
+  run('git', ['lfs', 'install', '--local', ...(localLfs ? ['--skip-repo'] : [])]);
   if (localLfs) {
     // Git invokes filters/hooks later, after this installer's PATH has gone away.
     const quote = value => "'" + value.replace(/\\/g, '/').replace(/'/g, "'\"'\"'") + "'";
@@ -72,7 +72,13 @@ async function main() {
     run('git', ['config', '--local', 'filter.lfs.smudge', `${executable} smudge -- %f`]);
     const hook = spawnSync('git', ['rev-parse', '--git-path', 'hooks/pre-push'], { encoding: 'utf8' });
     if (hook.status !== 0) throw new Error('Cannot find the local Git pre-push hook.');
-    fs.writeFileSync(hook.stdout.trim(), `#!/bin/sh\n${executable} pre-push "$@"\n`, { mode: 0o755 });
+    const hookFile = hook.stdout.trim();
+    const existing = fs.existsSync(hookFile) ? fs.readFileSync(hookFile, 'utf8') : '';
+    if (existing && !existing.includes('# YYC local Git LFS') && !existing.includes('git lfs pre-push') && !existing.includes(`${executable} pre-push`)) {
+      throw new Error('Existing custom pre-push hook: install Git LFS globally and rerun setup to preserve your hook.');
+    }
+    fs.mkdirSync(path.dirname(hookFile), { recursive: true });
+    fs.writeFileSync(hookFile, `#!/bin/sh\n# YYC local Git LFS\n${executable} pre-push "$@"\n`, { mode: 0o755 });
   }
   run('git', ['lfs', 'pull']);
   run(process.execPath, [path.join(__dirname, 'verify-assets.cjs')]);
