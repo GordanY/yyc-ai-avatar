@@ -1,0 +1,86 @@
+{
+  "created_date": "2026-10-28",
+  "format": "UTF-8 JSON, JSONL and plain text",
+  "includes_original_pdfs": false,
+  "source_page_count": 448,
+  "topic_count": 47,
+  "fact_count": 228,
+  "chunk_count": 888,
+  "files": [
+    {
+      "path": ".DS_Store",
+      "bytes": 6148,
+      "sha256": "8dcb227c28edb71ac505fdbd346b72acfe53f8c186d9550076606ad2f2dd2a58"
+    },
+    {
+      "path": "AI_USAGE.txt",
+      "bytes": 1958,
+      "sha256": "31140988dd2b7777ad6397f80aa84406b3cdedb179b754f5b439137fb5d2ea6b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5481,
+      "sha256": "60091599f6008d13beee90cf7eab9a0b5d9a9ef89ce7e27b70b69d0481d3c024"
+    },
+    {
+      "path": "quality_report.json",
+      "bytes": 9596,
+      "sha256": "e44296c87691fe3d88ded1a7df8720cfc54ec927dd99355703c305528a61b6a0"
+    },
+    {
+      "path": "retrieval_chunks.jsonl",
+      "bytes": 1918293,
+      "sha256": "9cefcaec5262f549c96b129f81cee7522e95aaa932e3a7881531d427d7f12a2e"
+    },
+    {
+      "path": "school_knowledge.json",
+      "bytes": 181351,
+      "sha256": "20c071300f3712e09e54100185ad510f1bb795194aeeef052043d3c5fe6c96fd"
+    },
+    {
+      "path": "school_knowledge.schema.json",
+      "bytes": 2384,
+      "sha256": "ac891671a2b108c79400fc6a397ece199cc22845c5d0a15a7d89823c2c97ca14"
+    },
+    {
+      "path": "school_summary.md",
+      "bytes": 57441,
+      "sha256": "89fec14d3007c363de17ccb301a67eae4c74a37b820304b4281dd617d7264cea"
+    },
+    {
+      "path": "section_map.json",
+      "bytes": 9762,
+      "sha256": "eea7cde4de491f8c342acccaa9f9663e1ebc8b3ca25a808fa67d7b938f6d5931"
+    },
+    {
+      "path": "source_pages.jsonl",
+      "bytes": 2512783,
+      "sha256": "87eee613d9b3e7c24422a013656fb111a6e9d13308db471d561f87e6fd94acb0"
+    },
+    {
+      "path": "source_text/1023-0925.txt",
+      "bytes": 173543,
+      "sha256": "9075ac86540385d3cd771bf8e0bc4a7484e78ad760d0261fb10aea2cea6dd110"
+    },
+    {
+      "path": "source_text/YY-0601.txt",
+      "bytes": 503479,
+      "sha256": "bdc1d6a782f197dba8d5a9668fb247a4479d28bae80804eecf45e3b7009a814b"
+    },
+    {
+      "path": "source_text/YY2-0604.txt",
+      "bytes": 250246,
+      "sha256": "bc85e7b7838c47125a4eb37a776bf71e295bfe86088c38147cd85a21c3fe198f"
+    },
+    {
+      "path": "tools/search_knowledge.py",
+      "bytes": 2611,
+      "sha256": "417d2788abd1da5bb0ab940e9ed57737935a1d68fc67b3517c6700186525d95e"
+    },
+    {
+      "path": "tools/validate_knowledge.py",
+      "bytes": 2128,
+      "sha256": "a6341b796602ffd755a2624fb0bc72b4f5b22cdb4377398d3fe30ea6b1e2fd0c"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "YYC school knowledge summary",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "created_date",
+    "scope",
+    "reading_contract",
+    "sources",
+    "topics",
+    "source_issues",
+    "not_established_or_not_sufficiently_specified",
+    "topic_count",
+    "fact_count"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "created_date": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "filename",
+          "expected_pages",
+          "sha256"
+        ]
+      }
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title_zh",
+          "title_en",
+          "summary_zh",
+          "keywords",
+          "facts"
+        ],
+        "properties": {
+          "facts": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "text_zh",
+                "temporal_scope",
+                "claim_type",
+                "evidence"
+              ],
+              "properties": {
+                "evidence": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "source_id",
+                      "pdf_pages"
+                    ],
+                    "properties": {
+                      "source_id": {
+                        "enum": [
+                          "P2026",
+                          "A1",
+                          "A2"
+                        ]
+                      },
+                      "pdf_pages": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 184
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

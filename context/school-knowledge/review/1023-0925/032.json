@@ -1,0 +1,397 @@
+{
+  "native_text" : "￼\n￼\n￼\n31\n順\n德\n聯\n誼\n總\n會\n翁\n祐\n中\n學",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.1709178555813004,
+        0.9111945732383645,
+        0.79837539868477059,
+        0.065986415871648219
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "人工智能教育"
+    },
+    {
+      "bbox" : [
+        0.061695365940554761,
+        0.84240309071015107,
+        0.35908349355061853,
+        0.047751958429409713
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "校本LAC：課程"
+    },
+    {
+      "bbox" : [
+        0.055670106507620817,
+        0.80523255806705407,
+        0.90721648778670871,
+        0.020388209254693201
+      ],
+      "confidence" : 0.5,
+      "text" : "本校積極將人工智能技術融入日常教與學，運用大型語言模型（LLM）推動跨"
+    },
+    {
+      "bbox" : [
+        0.057731980749608079,
+        0.78047404033416234,
+        0.90515459500826334,
+        0.020398052766683605
+      ],
+      "confidence" : 0.5,
+      "text" : "課程語文學習，並以個人、社會及人文教育學習領域（PSHE）為試點，促進學"
+    },
+    {
+      "bbox" : [
+        0.055670104106645711,
+        0.75726744198885709,
+        0.90721648778670871,
+        0.020384928442823691
+      ],
+      "confidence" : 1,
+      "text" : "生跨學科思維與語言應用能力。本校老師更獲邀到香港大學分享是次校本 LAC"
+    },
+    {
+      "bbox" : [
+        0.057295714971793893,
+        0.73160920684541408,
+        0.20696886991843202,
+        0.022608866809991301
+      ],
+      "confidence" : 1,
+      "text" : "課程經驗及成果。"
+    },
+    {
+      "bbox" : [
+        0.065088775876219251,
+        0.66647855474629514,
+        0.88757392687675263,
+        0.037810383747178267
+      ],
+      "confidence" : 0.5,
+      "text" : "獲邀到香港大學分享是次校本LAC 課程經驗及成果"
+    },
+    {
+      "bbox" : [
+        0.051546406976843338,
+        0.39672686230465004,
+        0.91134017553084934,
+        0.019187358916478603
+      ],
+      "confidence" : 1,
+      "text" : "本計劃著重提升學生的英語詞彙量及閱讀與寫作能力，以加強英語科及PSHE科"
+    },
+    {
+      "bbox" : [
+        0.053608232214792849,
+        0.37189616263249803,
+        0.90927838056515431,
+        0.020545697911867444
+      ],
+      "confidence" : 1,
+      "text" : "的學習成效，並延伸英語學習至課堂以外。策略包括課前預習活動，讓學生掌握"
+    },
+    {
+      "bbox" : [
+        0.053608232288188819,
+        0.34593023271099754,
+        0.90927838056515431,
+        0.022015590969111543
+      ],
+      "confidence" : 1,
+      "text" : "核心概念與關鍵詞彙；跨科協作，探索共同主題以深化理解；以及應用校本人工"
+    },
+    {
+      "bbox" : [
+        0.051546406977079184,
+        0.32267441853188294,
+        0.91134017553084945,
+        0.020440705473751319
+      ],
+      "confidence" : 1,
+      "text" : "智能電子平台，設計結合PSHE內容的遊戲化任務，提升學習動機與投入度。透"
+    },
+    {
+      "bbox" : [
+        0.051546388821652252,
+        0.29941860457966163,
+        0.67422680977063287,
+        0.020558822235727359
+      ],
+      "confidence" : 1,
+      "text" : "過這些措施，學生能同時提升語言能力與學科知識的掌握。"
+    },
+    {
+      "bbox" : [
+        0.1380325910848787,
+        0.22827675893059907,
+        0.16107304890950519,
+        0.010173621080798889
+      ],
+      "confidence" : 0.5,
+      "text" : "Why so people worship this spirit？"
+    },
+    {
+      "bbox" : [
+        0.13377589739543205,
+        0.18728643641615272,
+        0.07889876610193497,
+        0.009104088251531528
+      ],
+      "confidence" : 1,
+      "text" : "People worship"
+    },
+    {
+      "bbox" : [
+        0.2474226793050591,
+        0.18735891649763825,
+        0.12783505366398737,
+        0.0090293451033650607
+      ],
+      "confidence" : 0.5,
+      "text" : "because they believe he"
+    },
+    {
+      "bbox" : [
+        0.13402062394838438,
+        0.17877906982063851,
+        0.24123710241073215,
+        0.0074511785270399145
+      ],
+      "confidence" : 0.5,
+      "text" : "has the power to control winds and waters, which"
+    },
+    {
+      "bbox" : [
+        0.13402062394927311,
+        0.16986455984760507,
+        0.24123710241073215,
+        0.0074610215008393821
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "are essential for their livelihood, especially in"
+    },
+    {
+      "bbox" : [
+        0.13402061923045111,
+        0.15970654606590051,
+        0.28659793658134264,
+        0.0090293456415558859
+      ],
+      "confidence" : 0.5,
+      "text" : "fishing communities. They seek his protection for safety."
+    },
+    {
+      "bbox" : [
+        0.13402061920989239,
+        0.15116279076353734,
+        0.05154639024000901,
+        0.0074150874437112213
+      ],
+      "confidence" : 0.5,
+      "text" : "prosperity."
+    },
+    {
+      "bbox" : [
+        0.19793814468576371,
+        0.15406320539207108,
+        0.020618556401668431,
+        0.0045146728207779985
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "2n0"
+    },
+    {
+      "bbox" : [
+        0.22886597938766945,
+        0.15116279076227357,
+        0.057731958536001327,
+        0.0074150874437112213
+      ],
+      "confidence" : 1,
+      "text" : "well-being."
+    },
+    {
+      "bbox" : [
+        0.33195876289694776,
+        0.15116279076071626,
+        0.057731958536001382,
+        0.0074150874437112213
+      ],
+      "confidence" : 0.5,
+      "text" : "individually"
+    },
+    {
+      "bbox" : [
+        0.13402062269425577,
+        0.14221218952379644,
+        0.28865978045341301,
+        0.0090293453724604733
+      ],
+      "confidence" : 0.5,
+      "text" : "communally. Festivals dedicated to him also serve as"
+    },
+    {
+      "bbox" : [
+        0.13402061923510189,
+        0.13205417591270874,
+        0.28659793658134264,
+        0.0090293456415559969
+      ],
+      "confidence" : 0.5,
+      "text" : "opportunities for community bonding and shared rituals."
+    },
+    {
+      "bbox" : [
+        0.13608247471520932,
+        0.12354651204860945,
+        0.28247422438401437,
+        0.0087209296818511195
+      ],
+      "confidence" : 0.5,
+      "text" : "reinforcing social unity and providing psychological comfort."
+    },
+    {
+      "bbox" : [
+        0.59999999940324811,
+        0.23401162794048758,
+        0.094845362198658467,
+        0.0087209302200421668
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Yes, you-got it righti"
+    },
+    {
+      "bbox" : [
+        0.59999999949355576,
+        0.22516930015376979,
+        0.23917525853866184,
+        0.0073888393341822178
+      ],
+      "confidence" : 0.5,
+      "text" : "You are welcomed to try a new game or ask me"
+    },
+    {
+      "bbox" : [
+        0.60000000305049583,
+        0.21656976749841361,
+        0.14639174632537055,
+        0.0074708644746388497
+      ],
+      "confidence" : 0.5,
+      "text" : "more about the read material."
+    },
+    {
+      "bbox" : [
+        0.59793814683612156,
+        0.18895348834026093,
+        0.21030927315736425,
+        0.010256443820204186
+      ],
+      "confidence" : 0.5,
+      "text" : "The History and Fun Facts About Pak Tai"
+    },
+    {
+      "bbox" : [
+        0.59175258185765867,
+        0.17151162791693009,
+        0.24948452680538857,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Pak Tai（北帝）， also known as the *North Emperor“"
+    },
+    {
+      "bbox" : [
+        0.59793814457973671,
+        0.16252821663180683,
+        0.2907216487786709,
+        0.0075299228556268138
+      ],
+      "confidence" : 0.5,
+      "text" : "is a Taoist deity who has played a significant role in Chinese"
+    },
+    {
+      "bbox" : [
+        0.59793814413729685,
+        0.15237020340372864,
+        0.2907216487786709,
+        0.0090293451033650607
+      ],
+      "confidence" : 0.5,
+      "text" : "mythology. folk culture, and religious practices for centuries."
+    },
+    {
+      "bbox" : [
+        0.59587628258278746,
+        0.14221218938154001,
+        0.29278351710392869,
+        0.0090293456415559969
+      ],
+      "confidence" : 0.5,
+      "text" : "While his origins are shrouded in mystery and myth, Pak Tai"
+    },
+    {
+      "bbox" : [
+        0.59793814461713313,
+        0.13372093024309128,
+        0.2907216487786709,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.5,
+      "text" : "is widely regarded as one of the most powerful gods"
+    },
+    {
+      "bbox" : [
+        0.59793813825289055,
+        0.12500000005264134,
+        0.2927835171039288,
+        0.0072674417603365571
+      ],
+      "confidence" : 0.5,
+      "text" : "associated with water, weather, and natural forces. His cult"
+    },
+    {
+      "bbox" : [
+        0.59587628890657907,
+        0.11455981922858161,
+        0.2907216487786709,
+        0.0090293456415559969
+      ],
+      "confidence" : 0.5,
+      "text" : "has been_particularly strong in coastal regions of China"
+    },
+    {
+      "bbox" : [
+        0.59587628258205616,
+        0.10609480824161432,
+        0.29278351710392869,
+        0.0073363431151242109
+      ],
+      "confidence" : 0.5,
+      "text" : "Hong iKong. Macau,and other areas where his untluence"
+    },
+    {
+      "bbox" : [
+        0.29278351532490338,
+        0.045058139553292298,
+        0.4309278145814554,
+        0.017582943961528819
+      ],
+      "confidence" : 0.5,
+      "text" : "本校自主研發的 LAC 人工智能教學互動平台"
+    },
+    {
+      "bbox" : [
+        0.018556700341714832,
+        0.021802325660995492,
+        0.035051547563993014,
+        0.017701060185314033
+      ],
+      "confidence" : 1,
+      "text" : "31"
+    }
+  ],
+  "ocr_text" : "人工智能教育\n校本LAC：課程\n本校積極將人工智能技術融入日常教與學，運用大型語言模型（LLM）推動跨\n課程語文學習，並以個人、社會及人文教育學習領域（PSHE）為試點，促進學\n生跨學科思維與語言應用能力。本校老師更獲邀到香港大學分享是次校本 LAC\n課程經驗及成果。\n獲邀到香港大學分享是次校本LAC 課程經驗及成果\n本計劃著重提升學生的英語詞彙量及閱讀與寫作能力，以加強英語科及PSHE科\n的學習成效，並延伸英語學習至課堂以外。策略包括課前預習活動，讓學生掌握\n核心概念與關鍵詞彙；跨科協作，探索共同主題以深化理解；以及應用校本人工\n智能電子平台，設計結合PSHE內容的遊戲化任務，提升學習動機與投入度。透\n過這些措施，學生能同時提升語言能力與學科知識的掌握。\nWhy so people worship this spirit？\nPeople worship\nbecause they believe he\nhas the power to control winds and waters, which\nare essential for their livelihood, especially in\nfishing communities. They seek his protection for safety.\nprosperity.\n2n0\nwell-being.\nindividually\ncommunally. Festivals dedicated to him also serve as\nopportunities for community bonding and shared rituals.\nreinforcing social unity and providing psychological comfort.\nYes, you-got it righti\nYou are welcomed to try a new game or ask me\nmore about the read material.\nThe History and Fun Facts About Pak Tai\nPak Tai（北帝）， also known as the *North Emperor“\nis a Taoist deity who has played a significant role in Chinese\nmythology. folk culture, and religious practices for centuries.\nWhile his origins are shrouded in mystery and myth, Pak Tai\nis widely regarded as one of the most powerful gods\nassociated with water, weather, and natural forces. His cult\nhas been_particularly strong in coastal regions of China\nHong iKong. Macau,and other areas where his untluence\n本校自主研發的 LAC 人工智能教學互動平台\n31",
+  "pdf_page" : 32
+}

@@ -1,0 +1,296 @@
+{
+  "assetVersion": "0.4.3",
+  "runtimeSourcesUnchanged": true,
+  "profileMeasurementsBefore": [
+    {
+      "x": 0.0,
+      "maxUpperChestTangentStepDegrees": 2.792245806502539
+    },
+    {
+      "x": 0.05,
+      "maxUpperChestTangentStepDegrees": 2.9880091626714567
+    },
+    {
+      "x": 0.1,
+      "maxUpperChestTangentStepDegrees": 4.217792612737414
+    },
+    {
+      "x": 0.14,
+      "maxUpperChestTangentStepDegrees": 4.806147843737538
+    }
+  ],
+  "profileMeasurementsAfter": [
+    {
+      "x": 0.0,
+      "maxUpperChestTangentStepDegrees": 0.6611807919968359
+    },
+    {
+      "x": 0.05,
+      "maxUpperChestTangentStepDegrees": 0.780721186959671
+    },
+    {
+      "x": 0.1,
+      "maxUpperChestTangentStepDegrees": 1.1588801402142122
+    },
+    {
+      "x": 0.14,
+      "maxUpperChestTangentStepDegrees": 1.8093382173925492
+    }
+  ],
+  "textureMeasurements": {
+    "beforeUpperChestTexture": {
+      "redChannelRange": 11,
+      "relativeRange": 0.05368751168248562
+    },
+    "afterUpperChestTexture": {
+      "redChannelRange": 0,
+      "relativeRange": 0.0
+    },
+    "pantsTextureUnchanged": true,
+    "measurement": "Median red-channel range in central red fabric, u=.48-.52, v=.70-.93; no lighting or smoothing filters."
+  },
+  "skinNormalChecks": [
+    {
+      "pose": 55,
+      "mesh": "YYC_Uniform_Shirt_1",
+      "vertices": 117997,
+      "flippedNormalAreaFraction": 0,
+      "p95": 7.524496525119895,
+      "p99": 29.084886677432678,
+      "worst": {
+        "angle": 47.74689445043642,
+        "position": [
+          -0.21863536383478904,
+          1.3024167664680044,
+          -0.027933301424888764
+        ],
+        "weights": [
+          [
+            "J_Bip_L_UpperArm",
+            0.516536295413971
+          ],
+          [
+            "J_Bip_C_Chest",
+            0.4742194712162018
+          ],
+          [
+            "J_Bip_C_Spine",
+            0.009244234301149845
+          ]
+        ]
+      }
+    },
+    {
+      "pose": 55,
+      "mesh": "YYC_Uniform_Shirt_2",
+      "vertices": 7840,
+      "flippedNormalAreaFraction": 0,
+      "p95": 41.38167573085201,
+      "p99": 48.05736913038387,
+      "worst": {
+        "angle": 50.45768953470421,
+        "position": [
+          -0.2248242182604126,
+          1.301618648914025,
+          -0.02745832211963881
+        ],
+        "weights": [
+          [
+            "J_Bip_L_UpperArm",
+            0.6357176303863525
+          ],
+          [
+            "J_Bip_C_Chest",
+            0.34603872895240784
+          ],
+          [
+            "J_Bip_C_Spine",
+            0.01824367046356201
+          ]
+        ]
+      }
+    },
+    {
+      "pose": 60,
+      "mesh": "YYC_Uniform_Shirt_1",
+      "vertices": 117997,
+      "flippedNormalAreaFraction": 0,
+      "p95": 6.014666993640231,
+      "p99": 24.08194726474783,
+      "worst": {
+        "angle": 40.52486564056172,
+        "position": [
+          -0.21302661340339507,
+          1.2968113511231192,
+          -0.02951499649752075
+        ],
+        "weights": [
+          [
+            "J_Bip_L_UpperArm",
+            0.5122151374816895
+          ],
+          [
+            "J_Bip_C_Chest",
+            0.47230827808380127
+          ],
+          [
+            "J_Bip_C_Spine",
+            0.015476590022444725
+          ]
+        ]
+      }
+    },
+    {
+      "pose": 60,
+      "mesh": "YYC_Uniform_Shirt_2",
+      "vertices": 7840,
+      "flippedNormalAreaFraction": 0,
+      "p95": 33.35718645205037,
+      "p99": 39.2461157508572,
+      "worst": {
+        "angle": 41.511136815092385,
+        "position": [
+          -0.21585429640747728,
+          1.2939589742147957,
+          -0.03006095534456154
+        ],
+        "weights": [
+          [
+            "J_Bip_L_UpperArm",
+            0.5711683034896851
+          ],
+          [
+            "J_Bip_C_Chest",
+            0.40601134300231934
+          ],
+          [
+            "J_Bip_C_Spine",
+            0.022820385172963142
+          ]
+        ]
+      }
+    },
+    {
+      "pose": 75,
+      "mesh": "YYC_Uniform_Shirt_1",
+      "vertices": 117997,
+      "flippedNormalAreaFraction": 0,
+      "p95": 0.42069173478182254,
+      "p99": 1.6627792178882759,
+      "worst": {
+        "angle": 12.072549005795816,
+        "position": [
+          0.17594203510013862,
+          1.1860806322263922,
+          -0.05567069079881308
+        ],
+        "weights": [
+          [
+            "J_Bip_C_Spine",
+            0.39777490496635437
+          ],
+          [
+            "J_Bip_C_Chest",
+            0.37040382623672485
+          ],
+          [
+            "J_Bip_R_UpperArm",
+            0.23182128369808197
+          ]
+        ]
+      }
+    },
+    {
+      "pose": 75,
+      "mesh": "YYC_Uniform_Shirt_2",
+      "vertices": 7840,
+      "flippedNormalAreaFraction": 0,
+      "p95": 1.311048591458367,
+      "p99": 5.068546083248872,
+      "worst": {
+        "angle": 16.780931334651886,
+        "position": [
+          -0.20565012319299347,
+          1.1921111276930112,
+          0.0317353308326909
+        ],
+        "weights": [
+          [
+            "J_Bip_L_UpperArm",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "pose": 75.5,
+      "mesh": "YYC_Uniform_Shirt_1",
+      "vertices": 117997,
+      "flippedNormalAreaFraction": 0,
+      "p95": 0.6387398425311259,
+      "p99": 2.4056735218148053,
+      "worst": {
+        "angle": 11.980726367133338,
+        "position": [
+          0.17562160756158146,
+          1.1864049141261939,
+          -0.05567069079881308
+        ],
+        "weights": [
+          [
+            "J_Bip_C_Spine",
+            0.39777490496635437
+          ],
+          [
+            "J_Bip_C_Chest",
+            0.37040382623672485
+          ],
+          [
+            "J_Bip_R_UpperArm",
+            0.23182128369808197
+          ]
+        ]
+      }
+    },
+    {
+      "pose": 75.5,
+      "mesh": "YYC_Uniform_Shirt_2",
+      "vertices": 7840,
+      "flippedNormalAreaFraction": 0,
+      "p95": 2.1490061636595845,
+      "p99": 5.414512223746068,
+      "worst": {
+        "angle": 16.78093133464856,
+        "position": [
+          -0.20406841292309919,
+          1.1914195927044933,
+          0.0317353308326909
+        ],
+        "weights": [
+          [
+            "J_Bip_L_UpperArm",
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "amicaVerification": {
+    "footDrift": 0,
+    "normals": {
+      "sharedVertices": 373,
+      "maxAngleDegrees": 0.03292039479950294
+    },
+    "errors": [],
+    "fixture": "Real Amica viewer + Chat TTS queue, locally synthesized WAV responses served by a deterministic provider stub."
+  },
+  "automatedChecks": {
+    "runtimeJestTests": 50,
+    "typescript": "passed",
+    "clothProfileTests": 3
+  },
+  "visualAssessment": "Compared fixed-lighting front, side and three-quarter clay/textured/normal/wire renders and actual Amica greeting/explanation/agreement gestures. The former chest shelf and sleeve step are substantially softened; white inserts use colour only, without displacement. Natural bends remain at the armhole.",
+  "limits": "Pose diagnostics cover 55, 60, 75 and 75.5 degree upper-arm poses and the included restrained speech gestures, not every third-party animation. TTS audio in the review sequence uses local fixtures; speech alignment limitations remain unchanged.",
+  "skinningChange": "Fit reference changed from 60 to the actual 75 degree idle arm pose; height ramp made C1 continuous and kept full upper-arm influence at the sleeve cuff.",
+  "verificationScope": "Geometric tangent samples, normal comparisons (interior vertices), current rig/expressions/VRMA validation, fixed-lighting Blender renders and actual Amica speech gestures; subjective appearance remains available in the before/after images."
+}

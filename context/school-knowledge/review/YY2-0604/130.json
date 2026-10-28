@@ -1,0 +1,317 @@
+{
+  "native_text" : "English DepartmentEnglish Department\nThe English Department at comprises 18 dedicated members, including a Native-\nEnglish Teacher (NET). Our curriculum is designed to accommodate diverse learners,\noffering tailored materials that address the needs of both advanced and less able students.\nWe implement experiential learning in junior forms, with F1 students learning English\nthrough cooking classes, F2 students designing tote bags that are adorned with English\nwriting, and F3 students organizing game booths during lunchtime. With small class sizes\nof around 20, our English teachers can provide undivided attention, ensuring that each\nstudents՚ unique needs are met. Additionally, we offer supplementary classes on Saturdays\nand after school to further support our students՚ learning journeys. This commitment to\nindividualized education fosters a nurturing environment where every student can thrive.\n￼\n￼\n￼\n￼\n￼\n￼\n￼\nF1 Experiential activity— F1 Experiential activity—\nEnglish Cooking lesson English Cooking lesson\nF1 Experiential learning F1 Experiential learning\nF2 Experiential learning F2 Experiential learning\nF3 Experiential learning F3 Experiential learning\nF3 Experiential learning—F3 Experiential learning—\ndesigning a game boothdesigning a game booth\nHigh-achieving graduates impart invaluable exam tips and life lessons\nHigh-achieving graduates impart invaluable exam tips and life lessons\n￼\nStudents build Students build\nconfidence in confidence in\nspeaking English speaking English\nthrough different through different\nactivitiesactivities\n￼\nTeachers of the English DepartmentTeachers of the English Department\n￼\n￼\nS1 students learning S1 students learning\nEnglish through English through\ngames and activitiesgames and activities\n130",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.25979381848148858,
+        0.8820541761810452,
+        0.48041236094939405,
+        0.033860045146726803
+      ],
+      "confidence" : 0.5,
+      "text" : "English Department"
+    },
+    {
+      "bbox" : [
+        0.15046245349246062,
+        0.85611007239038994,
+        0.73825552524664473,
+        0.019337070714808502
+      ],
+      "confidence" : 0.5,
+      "text" : "The English Department at comprises 18 dedicated members, including a Native-"
+    },
+    {
+      "bbox" : [
+        0.11546392275061379,
+        0.84142212186279108,
+        0.7711340097280649,
+        0.014682529204047778
+      ],
+      "confidence" : 0.5,
+      "text" : "English Teacher （NET）. Our curriculum is designed to accommodate diverse learners，"
+    },
+    {
+      "bbox" : [
+        0.1113401988719956,
+        0.82267441870678726,
+        0.77525774637858069,
+        0.014797364615963482
+      ],
+      "confidence" : 0.5,
+      "text" : "offering tailored materials that address the needs of both advanced and less able students."
+    },
+    {
+      "bbox" : [
+        0.11134019893220198,
+        0.80232558141177568,
+        0.77525774637858058,
+        0.017651845316316361
+      ],
+      "confidence" : 0.5,
+      "text" : "We implement experiential learning in junior forms, with F1 students learning English"
+    },
+    {
+      "bbox" : [
+        0.11134019890864777,
+        0.78488372072079038,
+        0.77525774637858069,
+        0.015988372518569438
+      ],
+      "confidence" : 0.5,
+      "text" : "through cooking classes, F2 students designing tote bags that are adorned with English"
+    },
+    {
+      "bbox" : [
+        0.11128770368699556,
+        0.76584492001189841,
+        0.77536225930238389,
+        0.017835228491582922
+      ],
+      "confidence" : 0.5,
+      "text" : "writing, and F3 students organizing game booths during lunchtime. With small class sizes"
+    },
+    {
+      "bbox" : [
+        0.111340198874237,
+        0.74709302304520131,
+        0.77525774637858069,
+        0.01598837251856966
+      ],
+      "confidence" : 0.5,
+      "text" : "of around 20, our English teachers can provide undivided attention, ensuring that eacn"
+    },
+    {
+      "bbox" : [
+        0.11128959829705511,
+        0.72963757794704986,
+        0.7753597161708734,
+        0.017637087044812816
+      ],
+      "confidence" : 0.5,
+      "text" : "students' unique needs are met. Additionally, we offer supplementary classes on Saturdays"
+    },
+    {
+      "bbox" : [
+        0.11134022394430951,
+        0.71218961629844557,
+        0.77525769747220552,
+        0.01600805792797777
+      ],
+      "confidence" : 0.5,
+      "text" : "and after school to further support our students' learning journeys. This commitment to"
+    },
+    {
+      "bbox" : [
+        0.11134021409462982,
+        0.69331395327790268,
+        0.74639173654409563,
+        0.016053992523296756
+      ],
+      "confidence" : 0.5,
+      "text" : "individualized education fosters a nurturing environment where every student can thrive."
+    },
+    {
+      "bbox" : [
+        0.23280086008231243,
+        0.66432220884358906,
+        0.16945385321592671,
+        0.014591979119363274
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "頤德晔篚總會舀祐中葵"
+    },
+    {
+      "bbox" : [
+        0.18350515807893786,
+        0.65552325594597893,
+        0.26597937559470153,
+        0.010390965179718936
+      ],
+      "confidence" : 0.5,
+      "text" : "2025-2026年度英文科老師合照"
+    },
+    {
+      "bbox" : [
+        0.14620107182607966,
+        0.49866174350457315,
+        0.29935007828932542,
+        0.0157387864778058
+      ],
+      "confidence" : 0.5,
+      "text" : "Teachers of the English Department"
+    },
+    {
+      "bbox" : [
+        0.50927834787993131,
+        0.55523255825512607,
+        0.14226804635463619,
+        0.014744868396905364
+      ],
+      "confidence" : 0.5,
+      "text" : "Students build"
+    },
+    {
+      "bbox" : [
+        0.51113749213012816,
+        0.54044801091133066,
+        0.14261281184661079,
+        0.013153962034135103
+      ],
+      "confidence" : 0.5,
+      "text" : "confidence in"
+    },
+    {
+      "bbox" : [
+        0.50927834788887827,
+        0.52313769731076554,
+        0.14226804635463619,
+        0.014672686230248422
+      ],
+      "confidence" : 0.5,
+      "text" : "speaking English"
+    },
+    {
+      "bbox" : [
+        0.50692920457209489,
+        0.50774355844476726,
+        0.14902930381970525,
+        0.016455844616513171
+      ],
+      "confidence" : 0.5,
+      "text" : "through different"
+    },
+    {
+      "bbox" : [
+        0.50925797887155366,
+        0.49412536916548677,
+        0.078391258533184294,
+        0.013202750117730311
+      ],
+      "confidence" : 1,
+      "text" : "activities"
+    },
+    {
+      "bbox" : [
+        0.69046219338350845,
+        0.46355779256970486,
+        0.20052499037522531,
+        0.016493216056048809
+      ],
+      "confidence" : 0.5,
+      "text" : "F2 Experiential learning"
+    },
+    {
+      "bbox" : [
+        0.15025233772156746,
+        0.35306976718958405,
+        0.20053250973041239,
+        0.016543367915444085
+      ],
+      "confidence" : 0.5,
+      "text" : "F1 Experiential learning"
+    },
+    {
+      "bbox" : [
+        0.42044360723323554,
+        0.3659540582796551,
+        0.214816411336263,
+        0.013861228865371555
+      ],
+      "confidence" : 1,
+      "text" : "F1-Experiential-activity"
+    },
+    {
+      "bbox" : [
+        0.42268041043021792,
+        0.35029069755860165,
+        0.1938144365946452,
+        0.013140453441955691
+      ],
+      "confidence" : 0.5,
+      "text" : "English Cooking lesson"
+    },
+    {
+      "bbox" : [
+        0.71527914246588586,
+        0.27318128851079426,
+        0.17361556566678549,
+        0.014534407221705847
+      ],
+      "confidence" : 0.5,
+      "text" : "S1 students learning"
+    },
+    {
+      "bbox" : [
+        0.71546391754872785,
+        0.25726744174318472,
+        0.17525773170666814,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "English through"
+    },
+    {
+      "bbox" : [
+        0.71524236016648324,
+        0.24263819171075873,
+        0.17151628396449936,
+        0.013665978042051385
+      ],
+      "confidence" : 0.5,
+      "text" : "games and activities"
+    },
+    {
+      "bbox" : [
+        0.11532570331332209,
+        0.23242156069947761,
+        0.24775218963623047,
+        0.015081199512524734
+      ],
+      "confidence" : 0.5,
+      "text" : "F3-Experiential-learning"
+    },
+    {
+      "bbox" : [
+        0.11958762610220215,
+        0.21783295730523544,
+        0.20206186098930162,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "designing a game booth"
+    },
+    {
+      "bbox" : [
+        0.43476214619432757,
+        0.21646476914107415,
+        0.20058443607428139,
+        0.017925644566727517
+      ],
+      "confidence" : 0.5,
+      "text" : "F3 Experiential learning"
+    },
+    {
+      "bbox" : [
+        0.29272960843574763,
+        0.059182343975548335,
+        0.56093347989595843,
+        0.015204576014396065
+      ],
+      "confidence" : 0.5,
+      "text" : "High-achieving graduates impart invaluable exam tips and life lessons"
+    },
+    {
+      "bbox" : [
+        0.05979381373733339,
+        0.025959367899090702,
+        0.035051547563993007,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "130"
+    }
+  ],
+  "ocr_text" : "English Department\nThe English Department at comprises 18 dedicated members, including a Native-\nEnglish Teacher （NET）. Our curriculum is designed to accommodate diverse learners，\noffering tailored materials that address the needs of both advanced and less able students.\nWe implement experiential learning in junior forms, with F1 students learning English\nthrough cooking classes, F2 students designing tote bags that are adorned with English\nwriting, and F3 students organizing game booths during lunchtime. With small class sizes\nof around 20, our English teachers can provide undivided attention, ensuring that eacn\nstudents' unique needs are met. Additionally, we offer supplementary classes on Saturdays\nand after school to further support our students' learning journeys. This commitment to\nindividualized education fosters a nurturing environment where every student can thrive.\n頤德晔篚總會舀祐中葵\n2025-2026年度英文科老師合照\nTeachers of the English Department\nStudents build\nconfidence in\nspeaking English\nthrough different\nactivities\nF2 Experiential learning\nF1 Experiential learning\nF1-Experiential-activity\nEnglish Cooking lesson\nS1 students learning\nEnglish through\ngames and activities\nF3-Experiential-learning\ndesigning a game booth\nF3 Experiential learning\nHigh-achieving graduates impart invaluable exam tips and life lessons\n130",
+  "pdf_page" : 130
+}

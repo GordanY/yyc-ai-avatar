@@ -1,0 +1,78 @@
+{
+  "shirtHemMetres": 0.9311999678611755,
+  "sleeveDepthMetres": 0.09484782814979553,
+  "collarStyle": "continuous folded polo with open V",
+  "wrongFootVertices": 0,
+  "legProfile": [
+    {
+      "height": 0.15,
+      "centre": 0.09328112006187439,
+      "innerGap": 0.056700170040130615
+    },
+    {
+      "height": 0.4,
+      "centre": 0.08858358953148127,
+      "innerGap": 0.03341544046998024
+    },
+    {
+      "height": 0.6,
+      "centre": 0.08453397871926427,
+      "innerGap": 0.01967291720211506
+    },
+    {
+      "height": 0.8,
+      "centre": 0.08045278256759048,
+      "innerGap": 0.01587589643895626
+    }
+  ],
+  "skinColourSrgb": [
+    0.9313725490196079,
+    0.807843137254902,
+    0.7156862745098039
+  ],
+  "skinLinear": [
+    0.8509272707154808,
+    0.6172065624196511,
+    0.4706525279681792
+  ],
+  "maxTorsoPanelDriftMetres": 0.00022033434129561935,
+  "torsoSamples": 1023,
+  "crossLegVertices": 0,
+  "previousTriangles": 132574,
+  "triangleIncreaseFactor": 5.56,
+  "assetVersion": "0.4.3",
+  "loader": "@pixiv/three-vrm (same loader and geometry cleanup used by Amica)",
+  "vrmVersion": "0",
+  "meshes": 160,
+  "vertices": 374638,
+  "triangles": 737692,
+  "trouserGapMetres": 0.02947084978222847,
+  "expressions": {
+    "aa": 10,
+    "ih": 10,
+    "ou": 10,
+    "ee": 10,
+    "oh": 10,
+    "blink": 10,
+    "blinkLeft": 10,
+    "blinkRight": 10,
+    "happy": 10,
+    "neutral": 10
+  },
+  "animations": {
+    "idle": {
+      "duration": 4,
+      "tracks": 31
+    },
+    "nod": {
+      "duration": 2.4000000953674316,
+      "tracks": 31
+    },
+    "wave": {
+      "duration": 3.200000047683716,
+      "tracks": 31
+    }
+  },
+  "textureRendering": "Not tested by headless validator; inspect Blender preview",
+  "bodyMotion": "All three VRMA clips parsed, retargeted and played with Amica animation loader"
+}

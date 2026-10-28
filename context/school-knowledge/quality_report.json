@@ -1,0 +1,372 @@
+{
+  "created_date": "2026-10-28",
+  "source_documents": 3,
+  "expected_pages": 448,
+  "processed_pages": 448,
+  "all_pages_have_records": true,
+  "all_pages_have_primary_topic": true,
+  "all_summary_and_issue_references_resolve": true,
+  "summary_topics": 47,
+  "summary_facts": 228,
+  "retrieval_chunks": 888,
+  "preferred_extraction_methods": {
+    "vision_ocr": 178,
+    "pdf_native_layout": 270
+  },
+  "ocr_engine": "Apple Vision VNRecognizeTextRequest, accurate, zh-Hant + en-US, rendered at 2.5 PDF points",
+  "native_extractor": "pdftotext -layout",
+  "limited_text_pages": [
+    {
+      "source_id": "A1",
+      "pdf_page": 14,
+      "characters": 35
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 18,
+      "characters": 47
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 40,
+      "characters": 5
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 41,
+      "characters": 38
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 74,
+      "characters": 0
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 75,
+      "characters": 33
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 114,
+      "characters": 25
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 126,
+      "characters": 0
+    },
+    {
+      "source_id": "A1",
+      "pdf_page": 127,
+      "characters": 4
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 2,
+      "characters": 0
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 3,
+      "characters": 10
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 43,
+      "characters": 50
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 55,
+      "characters": 27
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 67,
+      "characters": 0
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 79,
+      "characters": 0
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 91,
+      "characters": 54
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 104,
+      "characters": 4
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 105,
+      "characters": 4
+    },
+    {
+      "source_id": "A2",
+      "pdf_page": 151,
+      "characters": 49
+    }
+  ],
+  "rendered_pages_visually_checked": [
+    {
+      "source_id": "P2026",
+      "pdf_pages": [
+        5,
+        6,
+        57,
+        60
+      ]
+    },
+    {
+      "source_id": "A2",
+      "pdf_pages": [
+        4,
+        88,
+        130,
+        175
+      ]
+    }
+  ],
+  "validation_scope": "All physical pages extracted with native text and OCR; thematic summary manually synthesized; selected pages visually compared. Every table cell, caption, photograph and chart value has NOT been individually verified.",
+  "source_issues": [
+    {
+      "id": "Q01",
+      "type": "conflicting_year",
+      "description_zh": "《Wing》及《Lazy Christmas》Infomatrix World Final總冠亞軍，A1第25頁寫2023；A2第88頁標題寫2024。",
+      "evidence": [
+        {
+          "source_id": "A1",
+          "pdf_pages": [
+            25
+          ]
+        },
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            88
+          ]
+        }
+      ],
+      "handling_zh": "獎項保留，年份標記未解決，不自行選定。"
+    },
+    {
+      "id": "Q02",
+      "type": "heading_body_mismatch",
+      "description_zh": "A2第175頁「台灣排球集訓營」標題下，正文寫2024年7月14-18日「中山排球集訓營」及中山市第一中學。",
+      "evidence": [
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            175
+          ]
+        }
+      ],
+      "handling_zh": "保留台灣及中山交流的原文，標記該段行程對應不明。"
+    },
+    {
+      "id": "Q03",
+      "type": "conflicting_biographical_date",
+      "description_zh": "A1第100頁卓嘉豪個人欄畢業年份寫2011，正文自述2012理科高考；P2026第9頁列2012畢業生。",
+      "evidence": [
+        {
+          "source_id": "A1",
+          "pdf_pages": [
+            100
+          ]
+        },
+        {
+          "source_id": "P2026",
+          "pdf_pages": [
+            9
+          ]
+        }
+      ],
+      "handling_zh": "摘要不指定單一畢業年份。"
+    },
+    {
+      "id": "Q04",
+      "type": "versioned_cumulative_information",
+      "description_zh": "周凱旋獎學金在六月周年卷為連續四年、累計575萬元；十月概覽已寫第五年，並述上一年165萬元予33人。",
+      "evidence": [
+        {
+          "source_id": "A1",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "P2026",
+          "pdf_pages": [
+            10
+          ]
+        }
+      ],
+      "handling_zh": "按出版時點分別保存；不視為同年度矛盾，不相加。"
+    },
+    {
+      "id": "Q05",
+      "type": "hidden_text_layer_artifact",
+      "description_zh": "P2026第57頁抽取文字層包含「Lorem ipsum」，但對照渲染版面沒有可見對應文字；該頁以圖像獎項表為主。",
+      "evidence": [
+        {
+          "source_id": "P2026",
+          "pdf_pages": [
+            57
+          ]
+        }
+      ],
+      "handling_zh": "不當作學校事實或可見排版缺陷；檢索使用OCR，保留原文字層供稽核。"
+    },
+    {
+      "id": "Q06",
+      "type": "source_scope",
+      "description_zh": "A2第42頁校友黃志華的珍珠養殖、NFC等教學例子屬其職涯分享。",
+      "evidence": [
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            42
+          ]
+        }
+      ],
+      "handling_zh": "不可自動視為翁祐中學當前計劃。"
+    },
+    {
+      "id": "Q07",
+      "type": "conflicting_year_or_caption",
+      "description_zh": "A2第87頁主題及正文寫Infomatrix Asia 2024，部分圖說寫2023；第89頁正文2025，部分圖說2024。",
+      "evidence": [
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            87,
+            89
+          ]
+        }
+      ],
+      "handling_zh": "保留來源不同年份並標記；精確賽事年度須另行確認。"
+    },
+    {
+      "id": "Q08",
+      "type": "date_text_photo_mismatch",
+      "description_zh": "A2第53頁第44屆北京比賽正文稱2025年5月，照片橫額日期為2025年3月30日。",
+      "evidence": [
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            53
+          ]
+        }
+      ],
+      "handling_zh": "不把月份定為已核實。"
+    },
+    {
+      "id": "Q09",
+      "type": "relative_date_ambiguity",
+      "description_zh": "A2第56頁東京遊學標題寫2024，但正文有「去年二月」；第57頁新加坡標題寫2026。",
+      "evidence": [
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            56,
+            57
+          ]
+        }
+      ],
+      "handling_zh": "保留明示年份及相對語句，不從PDF建立日期推算。"
+    },
+    {
+      "id": "Q10",
+      "type": "role_title_inconsistency",
+      "description_zh": "同一系列部分頁面對教育人員使用校長及副校長等不同職銜，亦可能跨年度。",
+      "evidence": [
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            30,
+            31,
+            37,
+            93
+          ]
+        }
+      ],
+      "handling_zh": "人事描述按具體頁面及時間，現任名單不作即時確認。"
+    },
+    {
+      "id": "Q11",
+      "type": "dated_total_or_framework",
+      "description_zh": "數學實驗室到訪團體有較早150及較後逾200；2018/19動畫教材七項價值觀與2026全校十二項屬不同範圍。",
+      "evidence": [
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            8,
+            102
+          ]
+        },
+        {
+          "source_id": "P2026",
+          "pdf_pages": [
+            23,
+            46
+          ]
+        }
+      ],
+      "handling_zh": "各自保留時段及框架，不混合或視為同時點統計。"
+    },
+    {
+      "id": "Q12",
+      "type": "conflicting_sport_table",
+      "description_zh": "P2026第60頁女子組成績表列2025/26亞軍；A2第146頁同標題表列2025/26冠軍。",
+      "evidence": [
+        {
+          "source_id": "P2026",
+          "pdf_pages": [
+            60
+          ]
+        },
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            146
+          ]
+        }
+      ],
+      "handling_zh": "不統一該表年度名次；亦不與不同項目的田徑、越野或全年總錦標混淆。"
+    },
+    {
+      "id": "Q13",
+      "type": "timeline_foundation_ambiguity",
+      "description_zh": "A1第44頁2005年段落寫成立法團校董會，第45頁2007年再寫正式成立；動畫中心年份亦有捐助、成立及開課等不同里程碑。",
+      "evidence": [
+        {
+          "source_id": "A1",
+          "pdf_pages": [
+            24,
+            44,
+            45
+          ]
+        },
+        {
+          "source_id": "A2",
+          "pdf_pages": [
+            80,
+            82
+          ]
+        }
+      ],
+      "handling_zh": "以原文里程碑與語境分開保存，不把捐款、中心落成、試教及正式課程合成單一日期。"
+    }
+  ],
+  "limitations_zh": [
+    "多欄、表格及圖片內微小文字可能有OCR錯字或順序問題。",
+    "照片、樂譜、QR碼、地圖及圖表不是結構化圖像資料；重要視覺資訊仍須查原PDF。",
+    "摘要概括各主要面向，不逐人逐獎重寫全部清單；細節保存在逐頁文字。",
+    "未瀏覽網頁或學校系統核實最新情況。"
+  ]
+}

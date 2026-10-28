@@ -1,0 +1,387 @@
+{
+  "native_text" : "Every Thursday, the YYEA (Yung Yau English Ambassadors) sets up interactive\ngame booths to encourage students to speak and write in English. These engaging\nactivities have attracted hundreds of participants during festive occasions such as\nHalloween, Christmas and Thanksgiving.\n￼\n￼\n￼\n￼\n￼\n￼\nWith the undeniable success of the recent musical and the study\ntour to Australia, the English Department is poised to organize\nmore activities, both local and international. These initiatives aim\nto foster a love for English, promote community-mindedness,\nempathy, creativity, a willingness to embrace new challenges, and\nthe readiness to become independent lifelong learners.\nTo encourage students to practise\nEnglish in an authentic setting, the\ndepartment organizes a trip to an\nindoor bouldering gym. During\nthis visit, students are offered the\nopportunity to learn the basics of\nbouldering and are motivated to\ninterview English-speaking climbers.\nStudy Tour - AustraliaStudy Tour - Australia MusicalMusical\nEnglish Meme competition - Turning language lessons into laugh-out-loud English Meme competition - Turning language lessons into laugh-out-loud\nvisual art.visual art.\nCoach and climberCoach and climber\nThanksgivingThanksgiving\nHalloweenglishHalloweenglish\n52\n學\n校\n概\n覽\n2\n0\n2\n6",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.10721649847021315,
+        0.90406320560750308,
+        0.78762885851737774,
+        0.01599493414230857
+      ],
+      "confidence" : 0.5,
+      "text" : "Every Thursday, the YYEA （Yung Yau English Ambassadors） sets up interactive"
+    },
+    {
+      "bbox" : [
+        0.10515464680527596,
+        0.88372093041949284,
+        0.78969070238944805,
+        0.017520604768671233
+      ],
+      "confidence" : 0.5,
+      "text" : "game booths to encourage students to speak and write in English. These engaging"
+    },
+    {
+      "bbox" : [
+        0.10515463015726786,
+        0.86455981927789072,
+        0.79175259516789365,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "activities have attracted hundreds of participants during festive occasions such as"
+    },
+    {
+      "bbox" : [
+        0.10515464035148898,
+        0.8442437921990894,
+        0.38556700486403245,
+        0.017674812613975965
+      ],
+      "confidence" : 0.5,
+      "text" : "Halloween, Christmas and Thanksgiving."
+    },
+    {
+      "bbox" : [
+        0.32090937798594243,
+        0.78563010569666292,
+        0.18726537166497648,
+        0.021675374653215562
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Shun Tak Fraternal Association"
+    },
+    {
+      "bbox" : [
+        0.088659794150596841,
+        0.62499999988695176,
+        0.11340206097333859,
+        0.013261851015801351
+      ],
+      "confidence" : 1,
+      "text" : "Halloweenglish"
+    },
+    {
+      "bbox" : [
+        0.30694651088721103,
+        0.62498864633196161,
+        0.099505748504247427,
+        0.013046056906740988
+      ],
+      "confidence" : 1,
+      "text" : "Thanksgiving"
+    },
+    {
+      "bbox" : [
+        0.10515463931712746,
+        0.58720930211783606,
+        0.35051546341333639,
+        0.016063835497096224
+      ],
+      "confidence" : 0.5,
+      "text" : "To encourage students to practise"
+    },
+    {
+      "bbox" : [
+        0.10721648909089176,
+        0.56659142218941105,
+        0.34845361954126608,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "English in an authentic setting, the"
+    },
+    {
+      "bbox" : [
+        0.10499246781732301,
+        0.54471245924830081,
+        0.35080410883976859,
+        0.019321591267467353
+      ],
+      "confidence" : 0.5,
+      "text" : "department organizes a trip to an"
+    },
+    {
+      "bbox" : [
+        0.10309278364693351,
+        0.52761627886208606,
+        0.35051546341333634,
+        0.015988372518569549
+      ],
+      "confidence" : 0.5,
+      "text" : "indoor bouldering gym. During"
+    },
+    {
+      "bbox" : [
+        0.10502092141618026,
+        0.5081819571690811,
+        0.35076588850754958,
+        0.017101385792545054
+      ],
+      "confidence" : 0.5,
+      "text" : "this visit, students are offered the"
+    },
+    {
+      "bbox" : [
+        0.10515464526068873,
+        0.48814898415502828,
+        0.35257730728540659,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "opportunity to learn the basics of"
+    },
+    {
+      "bbox" : [
+        0.10515463931415252,
+        0.46783295721596296,
+        0.35051546341333634,
+        0.016365688487584573
+      ],
+      "confidence" : 0.5,
+      "text" : "bouldering and are motivated to"
+    },
+    {
+      "bbox" : [
+        0.10515463973482032,
+        0.44751692997383574,
+        0.34639175121600813,
+        0.017599349097258354
+      ],
+      "confidence" : 1,
+      "text" : "interview English-speaking climbers."
+    },
+    {
+      "bbox" : [
+        0.45773196230023999,
+        0.43735891646240621,
+        0.1422680341280424,
+        0.013222479120603259
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Coach and climber"
+    },
+    {
+      "bbox" : [
+        0.088437764404306424,
+        0.38311669847325158,
+        0.093227563760219484,
+        0.018650324027102316
+      ],
+      "confidence" : 0.5,
+      "text" : "WHO DID"
+    },
+    {
+      "bbox" : [
+        0.12783505105680865,
+        0.36455981926047776,
+        0.061855670733329565,
+        0.019187358916478492
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "THISE"
+    },
+    {
+      "bbox" : [
+        0.10652947896391296,
+        0.3419821947842695,
+        0.034160913565219969,
+        0.010922190836267109
+      ],
+      "confidence" : 1,
+      "text" : "MEME"
+    },
+    {
+      "bbox" : [
+        0.096245924728953478,
+        0.32913026734629025,
+        0.059211535331530438,
+        0.013155178345622076
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "CONTEST"
+    },
+    {
+      "bbox" : [
+        0.16701030788617882,
+        0.34142212183277476,
+        0.070103095127986015,
+        0.0074150874437113323
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "School Life memes"
+    },
+    {
+      "bbox" : [
+        0.16907216409835585,
+        0.33575581405673627,
+        0.065979382930657804,
+        0.0058139533006310584
+      ],
+      "confidence" : 1,
+      "text" : "English language・"
+    },
+    {
+      "bbox" : [
+        0.17113402042226253,
+        0.32844243783032223,
+        0.059793814634665488,
+        0.0073363431151240999
+      ],
+      "confidence" : 1,
+      "text" : "related memes"
+    },
+    {
+      "bbox" : [
+        0.19306894702712646,
+        0.26520205778464367,
+        0.036711524694393843,
+        0.010150591891183169
+      ],
+      "confidence" : 0.5,
+      "text" : "DEADLINE："
+    },
+    {
+      "bbox" : [
+        0.18969072197756048,
+        0.25436046542029922,
+        0.039175256704672784,
+        0.011627906601262117
+      ],
+      "confidence" : 0.5,
+      "text" : "28/03"
+    },
+    {
+      "bbox" : [
+        0.28853387199825964,
+        0.36766398353263596,
+        0.60648199228140032,
+        0.020119505595945664
+      ],
+      "confidence" : 0.5,
+      "text" : "With the undeniable success of the recent musical and the stuay"
+    },
+    {
+      "bbox" : [
+        0.28857303641764676,
+        0.34822535127678123,
+        0.60634715740497303,
+        0.018803232679517778
+      ],
+      "confidence" : 0.5,
+      "text" : "tour to Australia, the English Department is poised to organize"
+    },
+    {
+      "bbox" : [
+        0.28855692368938779,
+        0.32783637105162788,
+        0.60637547419621396,
+        0.019034625714304254
+      ],
+      "confidence" : 0.5,
+      "text" : "more activities, both local and international. These initiatives aim"
+    },
+    {
+      "bbox" : [
+        0.28659794796974181,
+        0.3081264105757836,
+        0.6103092584854517,
+        0.017494356659142229
+      ],
+      "confidence" : 0.5,
+      "text" : "to foster a love for English, promote community-mindedness，"
+    },
+    {
+      "bbox" : [
+        0.28865979187477764,
+        0.28779069769075971,
+        0.60618557074131107,
+        0.017514042606741276
+      ],
+      "confidence" : 0.5,
+      "text" : "empathy, creativity, a wilingness to embrace new challenges, ana"
+    },
+    {
+      "bbox" : [
+        0.28848529161370751,
+        0.26816513442773093,
+        0.50347269498384917,
+        0.020938495480987362
+      ],
+      "confidence" : 0.5,
+      "text" : "the readiness to become independent lifelong learners."
+    },
+    {
+      "bbox" : [
+        0.27422679807077888,
+        0.24830699793325461,
+        0.52783506344526243,
+        0.014774397318303989
+      ],
+      "confidence" : 0.5,
+      "text" : "English Meme competition - Turing language lessons into laugh-out-loud"
+    },
+    {
+      "bbox" : [
+        0.27622769132857289,
+        0.23670639175788277,
+        0.070225030947954237,
+        0.010598844653058603
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Visual art."
+    },
+    {
+      "bbox" : [
+        0.20618556467724894,
+        0.069767441880789205,
+        0.13814433415730795,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Australe Srduer Summer Stdy Tour"
+    },
+    {
+      "bbox" : [
+        0.2185567012917968,
+        0.055232558265705167,
+        0.018556700303004353,
+        0.0058139533006310584
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "A用"
+    },
+    {
+      "bbox" : [
+        0.084536083798889591,
+        0.031976744396148837,
+        0.1608247390160194,
+        0.011627906601262228
+      ],
+      "confidence" : 0.5,
+      "text" : "Study Tour - Australia"
+    },
+    {
+      "bbox" : [
+        0.47010309279385498,
+        0.033295710951360524,
+        0.057731958536001327,
+        0.0090293453724604733
+      ],
+      "confidence" : 1,
+      "text" : "Musical"
+    },
+    {
+      "bbox" : [
+        0.94639175188810665,
+        0.020316026710132107,
+        0.03505154756399298,
+        0.019187358916478492
+      ],
+      "confidence" : 1,
+      "text" : "52"
+    }
+  ],
+  "ocr_text" : "Every Thursday, the YYEA （Yung Yau English Ambassadors） sets up interactive\ngame booths to encourage students to speak and write in English. These engaging\nactivities have attracted hundreds of participants during festive occasions such as\nHalloween, Christmas and Thanksgiving.\nShun Tak Fraternal Association\nHalloweenglish\nThanksgiving\nTo encourage students to practise\nEnglish in an authentic setting, the\ndepartment organizes a trip to an\nindoor bouldering gym. During\nthis visit, students are offered the\nopportunity to learn the basics of\nbouldering and are motivated to\ninterview English-speaking climbers.\nCoach and climber\nWHO DID\nTHISE\nMEME\nCONTEST\nSchool Life memes\nEnglish language・\nrelated memes\nDEADLINE：\n28/03\nWith the undeniable success of the recent musical and the stuay\ntour to Australia, the English Department is poised to organize\nmore activities, both local and international. These initiatives aim\nto foster a love for English, promote community-mindedness，\nempathy, creativity, a wilingness to embrace new challenges, ana\nthe readiness to become independent lifelong learners.\nEnglish Meme competition - Turing language lessons into laugh-out-loud\nVisual art.\nAustrale Srduer Summer Stdy Tour\nA用\nStudy Tour - Australia\nMusical\n52",
+  "pdf_page" : 53
+}

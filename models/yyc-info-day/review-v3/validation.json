@@ -1,0 +1,36 @@
+{
+  "loader": "@pixiv/three-vrm (same loader and geometry cleanup used by Amica)",
+  "vrmVersion": "0",
+  "meshes": 156,
+  "vertices": 71245,
+  "triangles": 132574,
+  "trouserGapMetres": 0.05524508282542229,
+  "expressions": {
+    "aa": 10,
+    "ih": 10,
+    "ou": 10,
+    "ee": 10,
+    "oh": 10,
+    "blink": 10,
+    "blinkLeft": 10,
+    "blinkRight": 10,
+    "happy": 10,
+    "neutral": 10
+  },
+  "animations": {
+    "idle": {
+      "duration": 4,
+      "tracks": 31
+    },
+    "nod": {
+      "duration": 2.4000000953674316,
+      "tracks": 31
+    },
+    "wave": {
+      "duration": 3.200000047683716,
+      "tracks": 31
+    }
+  },
+  "textureRendering": "Not tested by headless validator; inspect Blender preview",
+  "bodyMotion": "All three VRMA clips parsed, retargeted and played with Amica animation loader"
+}

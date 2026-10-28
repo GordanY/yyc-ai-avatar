@@ -1,0 +1,30 @@
+name: Cross-platform web checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  web:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Install and verify (macOS)
+        if: runner.os == 'macOS'
+        run: bash ./setup-macos.command --install-only
+      - name: Install and verify (Windows)
+        if: runner.os == 'Windows'
+        shell: powershell
+        run: ./setup-windows.ps1 -InstallOnly
+      - run: npm test -- --runInBand
+      - run: npm run generate:paths
+      - run: npm run typecheck
+      - run: npm run build:workers
+      - run: npm run smoke

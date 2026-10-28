@@ -1,0 +1,53 @@
+{
+  "version": "0.4.5",
+  "cuffs": [
+    {
+      "name": "YYC_Uniform_Shirt_Sleeve_L",
+      "shapeKeys": [
+        "Basis",
+        "YYC_ElbowFold_0",
+        "YYC_ElbowFold_1",
+        "YYC_ElbowFold_2",
+        "YYC_ElbowFold_3"
+      ],
+      "idleWeights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "YYC_Uniform_Shirt_Sleeve_R",
+      "shapeKeys": [
+        "Basis",
+        "YYC_ElbowFold_0",
+        "YYC_ElbowFold_1",
+        "YYC_ElbowFold_2",
+        "YYC_ElbowFold_3"
+      ],
+      "idleWeights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "waveWeights": {
+    "YYC_Uniform_Shirt_Sleeve_L": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "YYC_Uniform_Shirt_Sleeve_R": [
+      0.0,
+      0.42534947395324707,
+      0.5746505260467529,
+      0.0
+    ]
+  },
+  "driversSimple": true,
+  "driversValid": true
+}

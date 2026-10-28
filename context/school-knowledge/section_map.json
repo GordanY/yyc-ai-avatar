@@ -1,0 +1,461 @@
+{
+  "page_numbering": "physical_pdf_1_based",
+  "sources": {
+    "P2026": [
+      {
+        "start_pdf_page": 1,
+        "end_pdf_page": 1,
+        "topic_id": "identity"
+      },
+      {
+        "start_pdf_page": 2,
+        "end_pdf_page": 3,
+        "topic_id": "mission"
+      },
+      {
+        "start_pdf_page": 4,
+        "end_pdf_page": 4,
+        "topic_id": "teaching"
+      },
+      {
+        "start_pdf_page": 5,
+        "end_pdf_page": 5,
+        "topic_id": "curriculum"
+      },
+      {
+        "start_pdf_page": 6,
+        "end_pdf_page": 7,
+        "topic_id": "attainment"
+      },
+      {
+        "start_pdf_page": 8,
+        "end_pdf_page": 9,
+        "topic_id": "alumni"
+      },
+      {
+        "start_pdf_page": 10,
+        "end_pdf_page": 10,
+        "topic_id": "scholarships"
+      },
+      {
+        "start_pdf_page": 11,
+        "end_pdf_page": 11,
+        "topic_id": "career"
+      },
+      {
+        "start_pdf_page": 12,
+        "end_pdf_page": 13,
+        "topic_id": "values"
+      },
+      {
+        "start_pdf_page": 14,
+        "end_pdf_page": 15,
+        "topic_id": "awards"
+      },
+      {
+        "start_pdf_page": 16,
+        "end_pdf_page": 19,
+        "topic_id": "heritage"
+      },
+      {
+        "start_pdf_page": 20,
+        "end_pdf_page": 21,
+        "topic_id": "steam_strategy"
+      },
+      {
+        "start_pdf_page": 22,
+        "end_pdf_page": 23,
+        "topic_id": "qef"
+      },
+      {
+        "start_pdf_page": 24,
+        "end_pdf_page": 27,
+        "topic_id": "digital_partnerships"
+      },
+      {
+        "start_pdf_page": 28,
+        "end_pdf_page": 29,
+        "topic_id": "tencent"
+      },
+      {
+        "start_pdf_page": 30,
+        "end_pdf_page": 31,
+        "topic_id": "digital_partnerships"
+      },
+      {
+        "start_pdf_page": 32,
+        "end_pdf_page": 33,
+        "topic_id": "ai_education"
+      },
+      {
+        "start_pdf_page": 34,
+        "end_pdf_page": 35,
+        "topic_id": "steam_strategy"
+      },
+      {
+        "start_pdf_page": 36,
+        "end_pdf_page": 41,
+        "topic_id": "community"
+      },
+      {
+        "start_pdf_page": 42,
+        "end_pdf_page": 43,
+        "topic_id": "ready_to_fly"
+      },
+      {
+        "start_pdf_page": 44,
+        "end_pdf_page": 45,
+        "topic_id": "gifted"
+      },
+      {
+        "start_pdf_page": 46,
+        "end_pdf_page": 49,
+        "topic_id": "values"
+      },
+      {
+        "start_pdf_page": 50,
+        "end_pdf_page": 51,
+        "topic_id": "chinese"
+      },
+      {
+        "start_pdf_page": 52,
+        "end_pdf_page": 53,
+        "topic_id": "english"
+      },
+      {
+        "start_pdf_page": 54,
+        "end_pdf_page": 57,
+        "topic_id": "mathematics"
+      },
+      {
+        "start_pdf_page": 58,
+        "end_pdf_page": 61,
+        "topic_id": "sport"
+      },
+      {
+        "start_pdf_page": 62,
+        "end_pdf_page": 63,
+        "topic_id": "music"
+      },
+      {
+        "start_pdf_page": 64,
+        "end_pdf_page": 65,
+        "topic_id": "visual_arts"
+      },
+      {
+        "start_pdf_page": 66,
+        "end_pdf_page": 67,
+        "topic_id": "clubs"
+      },
+      {
+        "start_pdf_page": 68,
+        "end_pdf_page": 71,
+        "topic_id": "exchanges"
+      },
+      {
+        "start_pdf_page": 72,
+        "end_pdf_page": 73,
+        "topic_id": "parents"
+      },
+      {
+        "start_pdf_page": 74,
+        "end_pdf_page": 75,
+        "topic_id": "leadership"
+      },
+      {
+        "start_pdf_page": 76,
+        "end_pdf_page": 76,
+        "topic_id": "wellbeing"
+      },
+      {
+        "start_pdf_page": 77,
+        "end_pdf_page": 77,
+        "topic_id": "leadership"
+      },
+      {
+        "start_pdf_page": 78,
+        "end_pdf_page": 81,
+        "topic_id": "awards"
+      },
+      {
+        "start_pdf_page": 82,
+        "end_pdf_page": 83,
+        "topic_id": "facilities"
+      },
+      {
+        "start_pdf_page": 84,
+        "end_pdf_page": 84,
+        "topic_id": "contact"
+      }
+    ],
+    "A1": [
+      {
+        "start_pdf_page": 1,
+        "end_pdf_page": 3,
+        "topic_id": "mission"
+      },
+      {
+        "start_pdf_page": 4,
+        "end_pdf_page": 5,
+        "topic_id": "heritage"
+      },
+      {
+        "start_pdf_page": 6,
+        "end_pdf_page": 19,
+        "topic_id": "governance"
+      },
+      {
+        "start_pdf_page": 20,
+        "end_pdf_page": 22,
+        "topic_id": "mission"
+      },
+      {
+        "start_pdf_page": 23,
+        "end_pdf_page": 26,
+        "topic_id": "benefactors"
+      },
+      {
+        "start_pdf_page": 27,
+        "end_pdf_page": 33,
+        "topic_id": "heritage"
+      },
+      {
+        "start_pdf_page": 34,
+        "end_pdf_page": 35,
+        "topic_id": "scholarships"
+      },
+      {
+        "start_pdf_page": 36,
+        "end_pdf_page": 65,
+        "topic_id": "heritage"
+      },
+      {
+        "start_pdf_page": 66,
+        "end_pdf_page": 69,
+        "topic_id": "parents"
+      },
+      {
+        "start_pdf_page": 70,
+        "end_pdf_page": 71,
+        "topic_id": "facilities"
+      },
+      {
+        "start_pdf_page": 72,
+        "end_pdf_page": 73,
+        "topic_id": "attainment"
+      },
+      {
+        "start_pdf_page": 74,
+        "end_pdf_page": 113,
+        "topic_id": "alumni"
+      },
+      {
+        "start_pdf_page": 114,
+        "end_pdf_page": 125,
+        "topic_id": "student_voice"
+      },
+      {
+        "start_pdf_page": 126,
+        "end_pdf_page": 180,
+        "topic_id": "awards"
+      }
+    ],
+    "A2": [
+      {
+        "start_pdf_page": 1,
+        "end_pdf_page": 3,
+        "topic_id": "steam_strategy"
+      },
+      {
+        "start_pdf_page": 4,
+        "end_pdf_page": 5,
+        "topic_id": "steam_strategy"
+      },
+      {
+        "start_pdf_page": 6,
+        "end_pdf_page": 9,
+        "topic_id": "qef"
+      },
+      {
+        "start_pdf_page": 10,
+        "end_pdf_page": 11,
+        "topic_id": "digital_partnerships"
+      },
+      {
+        "start_pdf_page": 12,
+        "end_pdf_page": 15,
+        "topic_id": "tencent"
+      },
+      {
+        "start_pdf_page": 16,
+        "end_pdf_page": 17,
+        "topic_id": "digital_partnerships"
+      },
+      {
+        "start_pdf_page": 18,
+        "end_pdf_page": 21,
+        "topic_id": "ai_education"
+      },
+      {
+        "start_pdf_page": 22,
+        "end_pdf_page": 23,
+        "topic_id": "steam_strategy"
+      },
+      {
+        "start_pdf_page": 24,
+        "end_pdf_page": 29,
+        "topic_id": "community"
+      },
+      {
+        "start_pdf_page": 30,
+        "end_pdf_page": 37,
+        "topic_id": "qtn"
+      },
+      {
+        "start_pdf_page": 38,
+        "end_pdf_page": 39,
+        "topic_id": "exchanges"
+      },
+      {
+        "start_pdf_page": 40,
+        "end_pdf_page": 41,
+        "topic_id": "qtn"
+      },
+      {
+        "start_pdf_page": 42,
+        "end_pdf_page": 42,
+        "topic_id": "alumni"
+      },
+      {
+        "start_pdf_page": 43,
+        "end_pdf_page": 50,
+        "topic_id": "science"
+      },
+      {
+        "start_pdf_page": 51,
+        "end_pdf_page": 54,
+        "topic_id": "inventions"
+      },
+      {
+        "start_pdf_page": 55,
+        "end_pdf_page": 66,
+        "topic_id": "ict"
+      },
+      {
+        "start_pdf_page": 67,
+        "end_pdf_page": 78,
+        "topic_id": "engineering"
+      },
+      {
+        "start_pdf_page": 79,
+        "end_pdf_page": 83,
+        "topic_id": "animation"
+      },
+      {
+        "start_pdf_page": 84,
+        "end_pdf_page": 90,
+        "topic_id": "animation_awards"
+      },
+      {
+        "start_pdf_page": 91,
+        "end_pdf_page": 103,
+        "topic_id": "mathematics"
+      },
+      {
+        "start_pdf_page": 104,
+        "end_pdf_page": 105,
+        "topic_id": "clubs"
+      },
+      {
+        "start_pdf_page": 106,
+        "end_pdf_page": 109,
+        "topic_id": "reading"
+      },
+      {
+        "start_pdf_page": 110,
+        "end_pdf_page": 111,
+        "topic_id": "awards"
+      },
+      {
+        "start_pdf_page": 112,
+        "end_pdf_page": 115,
+        "topic_id": "values"
+      },
+      {
+        "start_pdf_page": 116,
+        "end_pdf_page": 117,
+        "topic_id": "learning_support"
+      },
+      {
+        "start_pdf_page": 118,
+        "end_pdf_page": 119,
+        "topic_id": "career"
+      },
+      {
+        "start_pdf_page": 120,
+        "end_pdf_page": 121,
+        "topic_id": "career"
+      },
+      {
+        "start_pdf_page": 122,
+        "end_pdf_page": 123,
+        "topic_id": "ready_to_fly"
+      },
+      {
+        "start_pdf_page": 124,
+        "end_pdf_page": 125,
+        "topic_id": "gifted"
+      },
+      {
+        "start_pdf_page": 126,
+        "end_pdf_page": 129,
+        "topic_id": "chinese"
+      },
+      {
+        "start_pdf_page": 130,
+        "end_pdf_page": 133,
+        "topic_id": "english"
+      },
+      {
+        "start_pdf_page": 134,
+        "end_pdf_page": 137,
+        "topic_id": "humanities"
+      },
+      {
+        "start_pdf_page": 138,
+        "end_pdf_page": 141,
+        "topic_id": "music"
+      },
+      {
+        "start_pdf_page": 142,
+        "end_pdf_page": 145,
+        "topic_id": "visual_arts"
+      },
+      {
+        "start_pdf_page": 146,
+        "end_pdf_page": 153,
+        "topic_id": "sport"
+      },
+      {
+        "start_pdf_page": 154,
+        "end_pdf_page": 157,
+        "topic_id": "values"
+      },
+      {
+        "start_pdf_page": 158,
+        "end_pdf_page": 161,
+        "topic_id": "leadership"
+      },
+      {
+        "start_pdf_page": 162,
+        "end_pdf_page": 172,
+        "topic_id": "clubs"
+      },
+      {
+        "start_pdf_page": 173,
+        "end_pdf_page": 184,
+        "topic_id": "exchanges"
+      }
+    ]
+  }
+}

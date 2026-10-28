@@ -1,0 +1,327 @@
+{
+  "native_text" : "Proud to celebrate the 25th anniversary of my beloved\nalma mater, my second home that shaped my character,\ndreams, and lifelong friendships. For a quarter of a century,\nour school has inspired minds, nurtured values, and\nempowered generations to serve the community with courage and compassion. As\ngrateful alumni, we carry its spirit into the world, honoring the dedication of our teachers\nand staff, who guided us with patience and wisdom. May our school continue to grow in\nexcellence and remain a beacon of hope for many years to come. As we celebrate this\nmilestone, I wish my school ever-rising achievements, united hearts, and generations of\nstudents who dare to dream and lead.\n￼\n￼\n姓 名：胡桂雲\n畢業年份：2024\n就讀大學：香港中文大學\n姓 名：蘇憬堂\n畢業年份：2024\n光陰荏苒，母校已走過二十五載，轉眼間我亦已畢業兩年。\n這六年的中學生涯如流水暫駐。老師們默默關懷與悉心指\n導，不僅教授我課本知識，更教會我人生道理，讓我懂得自律與\n堅持；亦有同窗如星辰相伴，於學海中並肩破浪。學業以外，點\n滴皆成篇章。最難忘的是在動畫學會把幻想化作真實，從無到有探索創作之趣；更記得遠赴異\n國比賽，當中的所有悸動與拼搏，如今回望，皆是青春歲月裡最真實的印記。\n我衷心感謝母校的栽培，讓我能在社會中逐步成長；亦希望師弟師妹們珍惜每一段學習與\n相處的時光，勇敢面對困難，培養屬於自己的信念與方向。當你們回首之時，必定會發現這段\n旅程充滿收穫與力量。\n祝賀母校二十五周年校慶，謹祝校務蒸蒸日上，薪火相傳，繼續作育英才，再創輝煌。\n86 順德聯誼總會翁祐中學順德聯誼總會翁祐中學",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.076288659970314532,
+        0.94186046504562426,
+        0.026804123169336558,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "86"
+    },
+    {
+      "bbox" : [
+        0.17113401892843874,
+        0.94186046522466604,
+        0.19175258049598107,
+        0.0146858100159174
+      ],
+      "confidence" : 1,
+      "text" : "順德聯誼總會翁祐中學"
+    },
+    {
+      "bbox" : [
+        0.13402061895034534,
+        0.81831395390261419,
+        0.024742267070672452,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.19381443397060522,
+        0.81828442437085491,
+        0.10721649267734623,
+        0.016017901439968174
+      ],
+      "confidence" : 0.5,
+      "text" : "名：胡桂雲"
+    },
+    {
+      "bbox" : [
+        0.13402062062231343,
+        0.79941860446123014,
+        0.15463917072002706,
+        0.016044149549497178
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2024"
+    },
+    {
+      "bbox" : [
+        0.13402061928439332,
+        0.78047404043485413,
+        0.22680412194667718,
+        0.017494356659142229
+      ],
+      "confidence" : 1,
+      "text" : "就讀大學：香港中文大學"
+    },
+    {
+      "bbox" : [
+        0.71279654031039019,
+        0.81062048924990959,
+        0.07944780129652762,
+        0.010936247306806535
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "顺德聯放総會翁祐中學"
+    },
+    {
+      "bbox" : [
+        0.73152443421711866,
+        0.80487625551331821,
+        0.042057633399963379,
+        0.0085229841365771497
+      ],
+      "confidence" : 1,
+      "text" : "2023-20042き"
+    },
+    {
+      "bbox" : [
+        0.72140703165417197,
+        0.79807392487138329,
+        0.058289851897802114,
+        0.0091850375483321089
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "中灭級邯巢具機"
+    },
+    {
+      "bbox" : [
+        0.18749900830708655,
+        0.73133384083450204,
+        0.46836779667780948,
+        0.019277389646921939
+      ],
+      "confidence" : 0.5,
+      "text" : "Proud to celebrate the 25' anniversary of my beloved"
+    },
+    {
+      "bbox" : [
+        0.15257732201849997,
+        0.71501128650979395,
+        0.50515463413336337,
+        0.013186388037274677
+      ],
+      "confidence" : 0.5,
+      "text" : "alma mater, my second home that shaped my character，"
+    },
+    {
+      "bbox" : [
+        0.15257732201543697,
+        0.6975169300526175,
+        0.50515463413336337,
+        0.014692372177847357
+      ],
+      "confidence" : 0.5,
+      "text" : "dreams, and lifelong friendships. For a quarter of a century，"
+    },
+    {
+      "bbox" : [
+        0.15257731611608891,
+        0.68168604639082764,
+        0.50309279026129305,
+        0.013081395599158663
+      ],
+      "confidence" : 0.5,
+      "text" : "our school has inspired minds, nurtured values, and"
+    },
+    {
+      "bbox" : [
+        0.15257735121961019,
+        0.66422121909122867,
+        0.73402057549892308,
+        0.014672686230248422
+      ],
+      "confidence" : 0.5,
+      "text" : "empowered generations to serve the community with courage and compassion. As"
+    },
+    {
+      "bbox" : [
+        0.15051546679106573,
+        0.64672686216705633,
+        0.73608246827736867,
+        0.0146726862302482
+      ],
+      "confidence" : 0.5,
+      "text" : "grateful alumni, we carry its spirit into the world, honoring the dedication of our teachers"
+    },
+    {
+      "bbox" : [
+        0.15257731656205664,
+        0.63081395336513513,
+        0.73402062440529847,
+        0.013091238572958019
+      ],
+      "confidence" : 0.5,
+      "text" : "and staff, who guided us with patience and wisdom. May our school continue to grow in"
+    },
+    {
+      "bbox" : [
+        0.15257731659074034,
+        0.61337209312610619,
+        0.73402062440529847,
+        0.014731744611236386
+      ],
+      "confidence" : 0.5,
+      "text" : "excellence and remain a beacon of hope for many years to come. As we celebrate this"
+    },
+    {
+      "bbox" : [
+        0.15257732247346203,
+        0.5959302326605973,
+        0.7360824682773689,
+        0.014679248392178379
+      ],
+      "confidence" : 0.5,
+      "text" : "milestone, I wish my school ever-rising achievements, united hearts, and generations of"
+    },
+    {
+      "bbox" : [
+        0.15051546116743844,
+        0.57994186034446638,
+        0.31958763415996849,
+        0.013173263713414762
+      ],
+      "confidence" : 0.5,
+      "text" : "students who dare to dream and lead."
+    },
+    {
+      "bbox" : [
+        0.52371134003849351,
+        0.4331395350208217,
+        0.022680412500332592,
+        0.017441860440084223
+      ],
+      "confidence" : 1,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.58346293129715943,
+        0.43301262680431929,
+        0.10523908566205931,
+        0.017695676661506399
+      ],
+      "confidence" : 1,
+      "text" : "名：蘇憬堂"
+    },
+    {
+      "bbox" : [
+        0.52371134121215157,
+        0.41422121873593365,
+        0.15463917072002697,
+        0.016011339278038217
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2024"
+    },
+    {
+      "bbox" : [
+        0.37938144410002922,
+        0.3575581396384242,
+        0.46185566828801078,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "光陰荏苒，母校已走過二十五載，尊眼間我亦已畢業兩年。"
+    },
+    {
+      "bbox" : [
+        0.37938144322634171,
+        0.33720930242961711,
+        0.47010309268266726,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "這六年的中學生涯如流水暫駐。老師們默默關懷與悉心指"
+    },
+    {
+      "bbox" : [
+        0.34432989932507096,
+        0.31976744196358442,
+        0.50515463413336337,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "導，不僅教授我課本知識，更教會我人生道理，讓我懂得自律與"
+    },
+    {
+      "bbox" : [
+        0.34432989932507096,
+        0.30232558149846811,
+        0.50515463413336337,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "堅持；亦有同如星辰相伴，於學海中並肩破浪。學業以外，點"
+    },
+    {
+      "bbox" : [
+        0.11340206472489046,
+        0.28488372071979007,
+        0.7360824682773689,
+        0.015988372518569549
+      ],
+      "confidence" : 1,
+      "text" : "滴皆成篇章。最難忘的是在動畫學會把幻想化作真實，從無到有探索創作之趣；更記得遠赴異"
+    },
+    {
+      "bbox" : [
+        0.11340205988450819,
+        0.26862302487083434,
+        0.60618557074131107,
+        0.01480720758976295
+      ],
+      "confidence" : 1,
+      "text" : "國比賽，當中的所有悸動與拼搏，如今回望，皆是青春歲月裡最真實的印記。"
+    },
+    {
+      "bbox" : [
+        0.1505154584005283,
+        0.24709302304588576,
+        0.69896908295460236,
+        0.015988372518569549
+      ],
+      "confidence" : 1,
+      "text" : "我衷心感謝母校的栽培，讓我能在社會中逐步成長；亦希望師弟師妹們珍惜每一段學習與"
+    },
+    {
+      "bbox" : [
+        0.11340206472758624,
+        0.23110465126497215,
+        0.73608246827736878,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "相處的時光，勇敢面對困難，培養屬於自己的信念與方向。當你們回首之時，必定會發現這段"
+    },
+    {
+      "bbox" : [
+        0.11546391733444726,
+        0.21501128651427714,
+        0.17731958780533225,
+        0.013186388037274788
+      ],
+      "confidence" : 0.5,
+      "text" : "旅程充滿收穫與力量。"
+    },
+    {
+      "bbox" : [
+        0.15051546688706152,
+        0.19331395359079329,
+        0.67628865364270319,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "祝賀母校二十五周年校慶，謹祝校務蒸蒸日上，薪火相傳，繼續作育英才，再創輝煌。"
+    }
+  ],
+  "ocr_text" : "86\n順德聯誼總會翁祐中學\n姓\n名：胡桂雲\n畢業年份：2024\n就讀大學：香港中文大學\n顺德聯放総會翁祐中學\n2023-20042き\n中灭級邯巢具機\nProud to celebrate the 25' anniversary of my beloved\nalma mater, my second home that shaped my character，\ndreams, and lifelong friendships. For a quarter of a century，\nour school has inspired minds, nurtured values, and\nempowered generations to serve the community with courage and compassion. As\ngrateful alumni, we carry its spirit into the world, honoring the dedication of our teachers\nand staff, who guided us with patience and wisdom. May our school continue to grow in\nexcellence and remain a beacon of hope for many years to come. As we celebrate this\nmilestone, I wish my school ever-rising achievements, united hearts, and generations of\nstudents who dare to dream and lead.\n姓\n名：蘇憬堂\n畢業年份：2024\n光陰荏苒，母校已走過二十五載，尊眼間我亦已畢業兩年。\n這六年的中學生涯如流水暫駐。老師們默默關懷與悉心指\n導，不僅教授我課本知識，更教會我人生道理，讓我懂得自律與\n堅持；亦有同如星辰相伴，於學海中並肩破浪。學業以外，點\n滴皆成篇章。最難忘的是在動畫學會把幻想化作真實，從無到有探索創作之趣；更記得遠赴異\n國比賽，當中的所有悸動與拼搏，如今回望，皆是青春歲月裡最真實的印記。\n我衷心感謝母校的栽培，讓我能在社會中逐步成長；亦希望師弟師妹們珍惜每一段學習與\n相處的時光，勇敢面對困難，培養屬於自己的信念與方向。當你們回首之時，必定會發現這段\n旅程充滿收穫與力量。\n祝賀母校二十五周年校慶，謹祝校務蒸蒸日上，薪火相傳，繼續作育英才，再創輝煌。",
+  "pdf_page" : 86
+}

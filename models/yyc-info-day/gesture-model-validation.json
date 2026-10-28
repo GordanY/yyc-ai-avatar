@@ -1,0 +1,23 @@
+{
+  "version": "0.4.4",
+  "sha256": "9084ad6a99114c0f21ef02177cd7feedee2373a49f97c5b0dc1a0ceebf92c410",
+  "trianglesBeforeCleanup": 901164,
+  "preservedOriginalBinaryPrefix": true,
+  "preserved": [
+    "skin and face geometry",
+    "hair",
+    "skeleton",
+    "skin weights of all other meshes",
+    "materials and textures",
+    "expressions",
+    "trousers and standing pose",
+    "shoes"
+  ],
+  "shirt": "Separate true armholes and spherical sleeve caps; standard VRM linear skinning, no custom rendering hook.",
+  "blenderSource": "YYC_InfoDay_v0.4.4.blend",
+  "blenderSha256": "e27e4f455a095a69339c21b9f67cb2965228f0c858924b9cf5f05c371c49b701",
+  "previewsVerified": 21,
+  "localPackMotionsVerified": 7,
+  "automatedTestsPassed": 68,
+  "runtimeReport": "../../output/playwright/gesture-panel/verified-final/runtime-validation.json"
+}

@@ -1,0 +1,47 @@
+{
+  "native_text" : "￼\n￼\n￼\n順德聯誼總會翁祐中學順德聯誼總會翁祐中學\nShun Tak Fraternal Association Yung Yau CollegeShun Tak Fraternal Association Yung Yau College\n學校概覽 2026",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.11134020646949601,
+        0.052325581513645969,
+        0.084536081705337926,
+        0.014534883520673114
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "KUNG YAU COLGS"
+    },
+    {
+      "bbox" : [
+        0.44329897569261972,
+        0.16252821583144683,
+        0.46391751216008109,
+        0.044018058690744932
+      ],
+      "confidence" : 0.5,
+      "text" : "學校概覽 2026"
+    },
+    {
+      "bbox" : [
+        0.24852071729018904,
+        0.066591421571635445,
+        0.66272187844300889,
+        0.050225733634311487
+      ],
+      "confidence" : 1,
+      "text" : "順德聯誼總會翁祐中學"
+    },
+    {
+      "bbox" : [
+        0.24948455703258324,
+        0.045058139423451493,
+        0.65567006820287455,
+        0.018895349437980546
+      ],
+      "confidence" : 0.5,
+      "text" : "Shun Tak Fraternal Association Yung Yau College"
+    }
+  ],
+  "ocr_text" : "KUNG YAU COLGS\n學校概覽 2026\n順德聯誼總會翁祐中學\nShun Tak Fraternal Association Yung Yau College",
+  "pdf_page" : 1
+}

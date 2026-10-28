@@ -1,0 +1,377 @@
+{
+  "native_text" : "姓 名：郭晉熙\n畢業年份：2022\n就讀大學：香港中文大學（保險、金融與精算學）\n在翁祐中學度過的六年時光，不僅豐富了我的知識，也讓我\n的心靈得到成長。在此，我衷心感謝所有熱心指導我的老師，也\n感謝那些與我攜手成長的同學。\n在這段寶貴的中學時光裡，我參加了學校的足球隊，結識了\n一群熱血澎湃的隊友。我們共同努力，刷新了學校在學界比賽中\n的紀錄。足球隊的經歷不僅增強了我的體魄，更培養了我的意志力與堅毅精神。這些品質在我\n往後的人生中也發揮了重要作用，讓我在面對挑戰時更加從容。\n此外，我還參加了學校的奧數隊，參與了許多大大小小、本地及海外的比賽。這些比賽磨\n練了我的思考能力，讓我在日後的學習中能更有效地解決難題，也減少了不少挫折。\n最後，值此翁祐中學 25 周年校慶之際，我衷心祝福學校所有老師和同學未來一切順利！\n姓 名：林美妍\n畢業年份：2023\n就讀大學：香港大學法律系\nI learned to become a mature and responsible person\nduring my school years. My teachers were kind and\nsupportive, always taking care of us whenever they could,\nwhich made me realise the importance of being caring and\nempathetic. This is why we were able to grow and shine in a positive environment,\nsurrounded by peers and mentors.\nOur school also encouraged us to participate in different extracurricular activities.\nI was once a member of the table tennis team and the debating team, and these\nexperiences offered me a variety of opportunities to connect with people from different\nbackgrounds and cultures. The Chinese debating team also helped me become a more\nconfident and presentable person who is not afraid to speak up, which has been very\nhelpful when collaborating with others.\nI truly treasure these beautiful memories, and I sincerely hope that our unfading\nspirit will continue to drive our school forward in every aspect for years to come.\n￼\n￼\n83\nShun Tak Fraternal Association Yung Yau College",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.40194952653327592,
+        0.93843145106829184,
+        0.44143495804224248,
+        0.016780157390620221
+      ],
+      "confidence" : 0.5,
+      "text" : "Shun Tak Fraternal Association Yung Yau College"
+    },
+    {
+      "bbox" : [
+        0.89278350533113926,
+        0.94186046504562426,
+        0.026804123169336558,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "83"
+    },
+    {
+      "bbox" : [
+        0.13195876328940603,
+        0.83866279088460916,
+        0.024742267070672452,
+        0.017441860440084112
+      ],
+      "confidence" : 1,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.19378369047295768,
+        0.83857058197566459,
+        0.10521612411890274,
+        0.017626278018305519
+      ],
+      "confidence" : 1,
+      "text" : "名：林美妍"
+    },
+    {
+      "bbox" : [
+        0.13402062083364841,
+        0.8197674416705325,
+        0.15257731462136292,
+        0.016011339278038106
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2023"
+    },
+    {
+      "bbox" : [
+        0.13402062345571883,
+        0.80079006791427387,
+        0.24536081460806039,
+        0.017523885580540743
+      ],
+      "confidence" : 1,
+      "text" : "就讀大學：香港大學法律系"
+    },
+    {
+      "bbox" : [
+        0.18762886590781627,
+        0.75000000019078494,
+        0.47010309268266726,
+        0.011851015801354503
+      ],
+      "confidence" : 0.5,
+      "text" : "I learned to become a mature and responsible person"
+    },
+    {
+      "bbox" : [
+        0.1525773219642462,
+        0.73250564332147894,
+        0.50515463413336337,
+        0.01313389181821667
+      ],
+      "confidence" : 0.5,
+      "text" : "during my school years. My teachers were kind and"
+    },
+    {
+      "bbox" : [
+        0.15257732796282844,
+        0.7136627908025841,
+        0.50721647800543368,
+        0.014534883520673225
+      ],
+      "confidence" : 0.5,
+      "text" : "supportive, always taking care of us whenever they could，"
+    },
+    {
+      "bbox" : [
+        0.15257732200851537,
+        0.69751692982506441,
+        0.50515463413336337,
+        0.013238884256332795
+      ],
+      "confidence" : 0.5,
+      "text" : "Which made me realise the importance of being caring and"
+    },
+    {
+      "bbox" : [
+        0.15253488238894364,
+        0.68021540821546989,
+        0.73618458478878701,
+        0.015786820017726244
+      ],
+      "confidence" : 0.5,
+      "text" : "empathetic. This is why we were able to grow and shine in a positive environment，"
+    },
+    {
+      "bbox" : [
+        0.15257732765989146,
+        0.66422121878720897,
+        0.28865978045341295,
+        0.013104362358627109
+      ],
+      "confidence" : 0.5,
+      "text" : "surrounded by peers and mentors."
+    },
+    {
+      "bbox" : [
+        0.18762886637701015,
+        0.64221218974363592,
+        0.70103092682667256,
+        0.014764554344504521
+      ],
+      "confidence" : 0.5,
+      "text" : "Our school also encouraged us to participate in different extracurricular activities."
+    },
+    {
+      "bbox" : [
+        0.15051547268203061,
+        0.62641083500362049,
+        0.7381443121494391,
+        0.013124048844417091
+      ],
+      "confidence" : 0.5,
+      "text" : "I was once a member of the table tennis team and the debating team, and these"
+    },
+    {
+      "bbox" : [
+        0.15257732246569708,
+        0.61046511646854107,
+        0.7360824682773689,
+        0.011627906601262117
+      ],
+      "confidence" : 0.5,
+      "text" : "experiences offered me a variety of opportunities to connect with people from different"
+    },
+    {
+      "bbox" : [
+        0.15257732239634964,
+        0.59302325569987879,
+        0.73608246827736878,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "backgrounds and cultures. The Chinese debating team also helped me become a more"
+    },
+    {
+      "bbox" : [
+        0.15257732244447469,
+        0.57558139522596352,
+        0.73608246827736878,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "confident and presentable person who is not afraid to speak up, which has been very"
+    },
+    {
+      "bbox" : [
+        0.15257732458059164,
+        0.55959302388686749,
+        0.32371132190410906,
+        0.013206073446682787
+      ],
+      "confidence" : 0.5,
+      "text" : "helpful when collaborating with others."
+    },
+    {
+      "bbox" : [
+        0.18556701660688463,
+        0.53779069755124598,
+        0.7030927706987431,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "I truly treasure these beautiful memories, and I sincerely hope that our unfading"
+    },
+    {
+      "bbox" : [
+        0.15250800384431221,
+        0.51956624135852625,
+        0.67025531866611576,
+        0.016638098667222323
+      ],
+      "confidence" : 0.5,
+      "text" : "spirit will continue to drive our school forward in every aspect for years to come."
+    },
+    {
+      "bbox" : [
+        0.24117373579547027,
+        0.41843951632293042,
+        0.068167992127247362,
+        0.013411665070406698
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "TY oflns"
+    },
+    {
+      "bbox" : [
+        0.24309600770406101,
+        0.40464998936593288,
+        0.072531565641745538,
+        0.01258597793751326
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "TherChinc："
+    },
+    {
+      "bbox" : [
+        0.25567010315650535,
+        0.38517441887544868,
+        0.041237112803336917,
+        0.011627906601262117
+      ],
+      "confidence" : 1,
+      "text" : "IFAA"
+    },
+    {
+      "bbox" : [
+        0.44742268058028017,
+        0.44040697715842803,
+        0.026804123169336558,
+        0.015988371442187788
+      ],
+      "confidence" : 1,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.50924699071191093,
+        0.43885276574557075,
+        0.10315550290621245,
+        0.016189817381228044
+      ],
+      "confidence" : 0.5,
+      "text" : "名：郭晉照"
+    },
+    {
+      "bbox" : [
+        0.44742268247916173,
+        0.41986455961358449,
+        0.15463917072002709,
+        0.016365688487584684
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2022"
+    },
+    {
+      "bbox" : [
+        0.44742267113401241,
+        0.40116279071434324,
+        0.44123713175455731,
+        0.017573100987729351
+      ],
+      "confidence" : 0.5,
+      "text" : "就讀大學：香港中文大學（保險、金融與精算學）"
+    },
+    {
+      "bbox" : [
+        0.37319587623598605,
+        0.35609480829233542,
+        0.47010309268266726,
+        0.0146726862302482
+      ],
+      "confidence" : 1,
+      "text" : "在翁祐中學度過的六年時光，不僅豐富了我的知識，也讓我"
+    },
+    {
+      "bbox" : [
+        0.336082482579113,
+        0.34011627917557363,
+        0.50721647800543368,
+        0.014534883520673225
+      ],
+      "confidence" : 1,
+      "text" : "的心靈得到成長。在此，我衷心感謝所有熱心指導我的老師，也"
+    },
+    {
+      "bbox" : [
+        0.33608247242805606,
+        0.32267441871144709,
+        0.25154639513064653,
+        0.014797364615963482
+      ],
+      "confidence" : 1,
+      "text" : "感謝那些與我攜手成長的同學。"
+    },
+    {
+      "bbox" : [
+        0.37319587621689465,
+        0.30232558149932254,
+        0.47010309268266726,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "在這段寶貴的中學時光裡，我參加了學校的足球隊，結識了"
+    },
+    {
+      "bbox" : [
+        0.34020618208894549,
+        0.28488372103348025,
+        0.50309279026129305,
+        0.014777678668364436
+      ],
+      "confidence" : 1,
+      "text" : "一群熱血澎湃的隊友。我們共同努力，刷新了學校在學界比賽中"
+    },
+    {
+      "bbox" : [
+        0.1092783533867976,
+        0.26862302464480636,
+        0.73608246827736878,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "的紀錄。足球隊的經歷不僅增強了我的體，更培養了我的意志力與堅毅精神。這些品質在我"
+    },
+    {
+      "bbox" : [
+        0.109278359685405,
+        0.25145348847539517,
+        0.49896905361077726,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "往後的人生中也發揮了重要作用，讓我在面對挑戰時更加從容。"
+    },
+    {
+      "bbox" : [
+        0.14432991506351528,
+        0.22965116331597024,
+        0.6989690340482273,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "此外，我還參加了學校的奧數隊，參與了許多大大小小、本地及海外的比賽。這些比賽磨"
+    },
+    {
+      "bbox" : [
+        0.10927834930280839,
+        0.21218961616789178,
+        0.65773196098132014,
+        0.016008058466168706
+      ],
+      "confidence" : 1,
+      "text" : "練了我的思考能力，讓我在日後的學習中能更有效地解決難題，也減少了不少挫折。"
+    },
+    {
+      "bbox" : [
+        0.1443299074246189,
+        0.1901805866680305,
+        0.68453607803735972,
+        0.019187358916478603
+      ],
+      "confidence" : 1,
+      "text" : "最後，值此翁祐中學25周年校慶之際，我衷心祝福學校所有老師和同學未來一切順利！"
+    }
+  ],
+  "ocr_text" : "Shun Tak Fraternal Association Yung Yau College\n83\n姓\n名：林美妍\n畢業年份：2023\n就讀大學：香港大學法律系\nI learned to become a mature and responsible person\nduring my school years. My teachers were kind and\nsupportive, always taking care of us whenever they could，\nWhich made me realise the importance of being caring and\nempathetic. This is why we were able to grow and shine in a positive environment，\nsurrounded by peers and mentors.\nOur school also encouraged us to participate in different extracurricular activities.\nI was once a member of the table tennis team and the debating team, and these\nexperiences offered me a variety of opportunities to connect with people from different\nbackgrounds and cultures. The Chinese debating team also helped me become a more\nconfident and presentable person who is not afraid to speak up, which has been very\nhelpful when collaborating with others.\nI truly treasure these beautiful memories, and I sincerely hope that our unfading\nspirit will continue to drive our school forward in every aspect for years to come.\nTY oflns\nTherChinc：\nIFAA\n姓\n名：郭晉照\n畢業年份：2022\n就讀大學：香港中文大學（保險、金融與精算學）\n在翁祐中學度過的六年時光，不僅豐富了我的知識，也讓我\n的心靈得到成長。在此，我衷心感謝所有熱心指導我的老師，也\n感謝那些與我攜手成長的同學。\n在這段寶貴的中學時光裡，我參加了學校的足球隊，結識了\n一群熱血澎湃的隊友。我們共同努力，刷新了學校在學界比賽中\n的紀錄。足球隊的經歷不僅增強了我的體，更培養了我的意志力與堅毅精神。這些品質在我\n往後的人生中也發揮了重要作用，讓我在面對挑戰時更加從容。\n此外，我還參加了學校的奧數隊，參與了許多大大小小、本地及海外的比賽。這些比賽磨\n練了我的思考能力，讓我在日後的學習中能更有效地解決難題，也減少了不少挫折。\n最後，值此翁祐中學25周年校慶之際，我衷心祝福學校所有老師和同學未來一切順利！",
+  "pdf_page" : 83
+}

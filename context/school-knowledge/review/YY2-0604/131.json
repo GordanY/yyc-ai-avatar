@@ -1,0 +1,647 @@
+{
+  "native_text" : "English Department - Activities and English Department - Activities and\nDevelopment Outside ClassroomDevelopment Outside Classroom\nYYC students have excelled not only\nacademically but also in extracurricular\nactivities. They actively plan and organize\nbooths and events during Mental Health\nWeek, Multicultural Week, Chinese\nCulture Week, and the English Week\nattracting large audiences, including both\njunior and senior students.\n￼\n￼\n￼\nChinese Culture WeekChinese Culture Week Mental Health Week Mental Health Week\nMulticultural WeekMulticultural Week\nIn addition to these initiatives, YYC students have demonstrated remarkable\nperformance in various competitions. Under the guidance of dedicated teachers, they have\nachieved impressive results in events such as the Speech Festival, Drama Festival, Animal\nPhotopoetry Competition, and the International Competitions and Assessments for Schools\n(ICAS), to name a few. Later this year, we will participate in the Speak to Peak Inter-school\nPublic Speaking Contest for the first time.\n￼\n￼\n￼\n￼\nWinners of the Animal Winners of the Animal\nPoetry Competition Poetry Competition\nEnglish Musical TeamEnglish Musical Team So Yuk Ting (2B) won the Excellent So Yuk Ting (2B) won the Excellent\nProjection Award in 17Projection Award in 17thth Daily Readers Daily Readers\nRead Out Loud Competition 2023Read Out Loud Competition 2023\nSpeech Festival winners 2025 Speech Festival winners 2025\n131",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.11125929418075578,
+        0.89170270728693979,
+        0.77546339768629813,
+        0.027811855548660613
+      ],
+      "confidence" : 0.5,
+      "text" : "English Oepartment - Activities and"
+    },
+    {
+      "bbox" : [
+        0.113209142093324,
+        0.86398420836475165,
+        0.52410155076247,
+        0.027519548988772846
+      ],
+      "confidence" : 0.5,
+      "text" : "Development Outside Classroom"
+    },
+    {
+      "bbox" : [
+        0.15029131823200059,
+        0.83273047588684035,
+        0.32007447267190003,
+        0.018222033842960839
+      ],
+      "confidence" : 0.5,
+      "text" : "YYC students have excelled not only"
+    },
+    {
+      "bbox" : [
+        0.11340206117209589,
+        0.81659142227831816,
+        0.35876288780799276,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "academically but also in extracurricular"
+    },
+    {
+      "bbox" : [
+        0.11134020548253787,
+        0.79627539502583011,
+        0.35876288780799281,
+        0.014771116506434367
+      ],
+      "confidence" : 0.5,
+      "text" : "activities. They actively plan and organize"
+    },
+    {
+      "bbox" : [
+        0.11134020547685097,
+        0.77761627917409681,
+        0.35876288780799281,
+        0.014708777313576893
+      ],
+      "confidence" : 0.5,
+      "text" : "booths and events during Mental Health"
+    },
+    {
+      "bbox" : [
+        0.11134020547744693,
+        0.75846501109107245,
+        0.35876288780799276,
+        0.016365688487584573
+      ],
+      "confidence" : 0.5,
+      "text" : "Week, Multicultural Week, Chinese"
+    },
+    {
+      "bbox" : [
+        0.1112536193823481,
+        0.74016521460358176,
+        0.35896978622827769,
+        0.017154394369362169
+      ],
+      "confidence" : 0.5,
+      "text" : "Culture Week, and the English Week"
+    },
+    {
+      "bbox" : [
+        0.11134020549336057,
+        0.72065462769554922,
+        0.35876288780799281,
+        0.017717465321043457
+      ],
+      "confidence" : 0.5,
+      "text" : "attracting large audiences, inciuding both"
+    },
+    {
+      "bbox" : [
+        0.10721648884440609,
+        0.70485327327093317,
+        0.23298970246926332,
+        0.0146726862302482
+      ],
+      "confidence" : 0.5,
+      "text" : "junior and senior students."
+    },
+    {
+      "bbox" : [
+        0.6123711357578171,
+        0.70348837197658343,
+        0.1587628829173553,
+        0.013215916958673302
+      ],
+      "confidence" : 0.5,
+      "text" : "Multicultural Week"
+    },
+    {
+      "bbox" : [
+        0.30927835007461946,
+        0.57558139537932007,
+        0.047422681099329234,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "T Group 31"
+    },
+    {
+      "bbox" : [
+        0.220618555437157,
+        0.55643340835824129,
+        0.18762886829865286,
+        0.010427056801238455
+      ],
+      "confidence" : 0.5,
+      "text" : "Chinese Culture Week"
+    },
+    {
+      "bbox" : [
+        0.63092783550306197,
+        0.55523255833428065,
+        0.17113401950933993,
+        0.011627906601262228
+      ],
+      "confidence" : 0.5,
+      "text" : "Mental Health Week"
+    },
+    {
+      "bbox" : [
+        0.1505154667235894,
+        0.53197674397695727,
+        0.73608246827736878,
+        0.01599165333043906
+      ],
+      "confidence" : 0.5,
+      "text" : "In addition to these initiatives, YYC students have demonstrated remarkable"
+    },
+    {
+      "bbox" : [
+        0.11134019886468358,
+        0.51297968405045302,
+        0.77525774637858069,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "performance in various competitions. Under the guidance of dedicated teachers, they have"
+    },
+    {
+      "bbox" : [
+        0.11134019906922131,
+        0.49418604653147247,
+        0.77525774637858069,
+        0.01766496910198545
+      ],
+      "confidence" : 0.5,
+      "text" : "achieved impressive results in events such as the Speech Festival, Drama Festival, Animal"
+    },
+    {
+      "bbox" : [
+        0.11134019887172705,
+        0.47674418583590494,
+        0.77525774637858069,
+        0.01598837251856966
+      ],
+      "confidence" : 0.5,
+      "text" : "Photopoetry Competition, and the International Competitions and Assessments for Schools"
+    },
+    {
+      "bbox" : [
+        0.11134019886885273,
+        0.45767494374403084,
+        0.7752577463785808,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "（ICAS）， to name a few. Later this year, we will participate in the Speak to Peak Inter-school"
+    },
+    {
+      "bbox" : [
+        0.11134020590600795,
+        0.44018058706352015,
+        0.35463917561066455,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "Public Speaking Contest for the first time."
+    },
+    {
+      "bbox" : [
+        0.58123667447719274,
+        0.41443161762946412,
+        0.24580857692620695,
+        0.015364686737749378
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "2023第十七届「開心英語朗讀」比厨"
+    },
+    {
+      "bbox" : [
+        0.57720841274404699,
+        0.40605627795155597,
+        0.26419835212903142,
+        0.011995459786925289
+      ],
+      "confidence" : 0.5,
+      "text" : "The 17* Dally Readers \"Read Out Loud\" Compotition 2023"
+    },
+    {
+      "bbox" : [
+        0.32989690635729058,
+        0.30079006776698236,
+        0.18350515610132462,
+        0.013163420739615184
+      ],
+      "confidence" : 0.5,
+      "text" : "English Musical Team"
+    },
+    {
+      "bbox" : [
+        0.23449663914016783,
+        0.13718215548059531,
+        0.044368670536921562,
+        0.010066962403583735
+      ],
+      "confidence" : 1,
+      "text" : "Animal"
+    },
+    {
+      "bbox" : [
+        0.19917750238997883,
+        0.12140902895136407,
+        0.11767272460154998,
+        0.02087107738038485
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "FHOTOPoctiy"
+    },
+    {
+      "bbox" : [
+        0.18722972590930417,
+        0.11725469970604507,
+        0.11815458688980493,
+        0.012265051460696674
+      ],
+      "confidence" : 0.5,
+      "text" : "Creative Challenge"
+    },
+    {
+      "bbox" : [
+        0.20206185640146848,
+        0.11173814898315748,
+        0.10927834877601036,
+        0.0090293453724604733
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "勤物海影「誇」制意大抵戰"
+    },
+    {
+      "bbox" : [
+        0.1360824762917259,
+        0.079941860432555578,
+        0.21443298535469255,
+        0.010351593284520733
+      ],
+      "confidence" : 0.5,
+      "text" : "Winners of the Animal"
+    },
+    {
+      "bbox" : [
+        0.13608247562237233,
+        0.059593023066553008,
+        0.16082473901601937,
+        0.016027744413767642
+      ],
+      "confidence" : 1,
+      "text" : "Poetry Competition"
+    },
+    {
+      "bbox" : [
+        0.42680412372686494,
+        0.25726744188229622,
+        0.086597937804002045,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.5,
+      "text" : "Class & Name"
+    },
+    {
+      "bbox" : [
+        0.42474226537786691,
+        0.23814898410492957,
+        0.14226804635463614,
+        0.0090293453724604733
+      ],
+      "confidence" : 0.5,
+      "text" : "2B Lam Hoi Ching Reina"
+    },
+    {
+      "bbox" : [
+        0.4245255391404929,
+        0.21867871477592171,
+        0.093253575838529168,
+        0.011091321639497997
+      ],
+      "confidence" : 0.5,
+      "text" : "2B Li Sze Ching"
+    },
+    {
+      "bbox" : [
+        0.42474227024720107,
+        0.20033860033317141,
+        0.092783499986697493,
+        0.010417213827438876
+      ],
+      "confidence" : 0.5,
+      "text" : "5B Law Tzu Ling"
+    },
+    {
+      "bbox" : [
+        0.42450538286255085,
+        0.18216374460894158,
+        0.047946226902497169,
+        0.0098154544830322266
+      ],
+      "confidence" : 0.5,
+      "text" : "F3 Girls"
+    },
+    {
+      "bbox" : [
+        0.42391944051820513,
+        0.16202536516495003,
+        0.048977102988805477,
+        0.012193867100011579
+      ],
+      "confidence" : 0.5,
+      "text" : "F3 Boys"
+    },
+    {
+      "bbox" : [
+        0.42474226724136782,
+        0.14389534881177357,
+        0.094845362198658412,
+        0.010174418679747554
+      ],
+      "confidence" : 0.5,
+      "text" : "1B Wong Yan Yu"
+    },
+    {
+      "bbox" : [
+        0.42363737671987706,
+        0.12400702216323967,
+        0.04955080533638978,
+        0.013038223537849891
+      ],
+      "confidence" : 0.5,
+      "text" : "F1 Boys"
+    },
+    {
+      "bbox" : [
+        0.42474226758997918,
+        0.10755813956096205,
+        0.047422681099329234,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.5,
+      "text" : "F1 Girls"
+    },
+    {
+      "bbox" : [
+        0.4247422685830709,
+        0.085755814153094634,
+        0.1113402048746745,
+        0.011873982560822949
+      ],
+      "confidence" : 0.5,
+      "text" : "3A Wong Lai Ching"
+    },
+    {
+      "bbox" : [
+        0.52371134581890477,
+        0.30232558150022737,
+        0.35670101948273503,
+        0.014534883520673225
+      ],
+      "confidence" : 0.5,
+      "text" : "So Yuk Ting （2B） won the Excellent"
+    },
+    {
+      "bbox" : [
+        0.52577319651498122,
+        0.28924418600310975,
+        0.3505154634133365,
+        0.013238883718141858
+      ],
+      "confidence" : 0.5,
+      "text" : "-Projection-Award-in-17\"-Daily-Readers"
+    },
+    {
+      "bbox" : [
+        0.52577319655699761,
+        0.27313769738359206,
+        0.28659793658134258,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "Read Out Loud Competition 2023"
+    },
+    {
+      "bbox" : [
+        0.62236482064696674,
+        0.25623872472564191,
+        0.058180295504056456,
+        0.0092672806561128196
+      ],
+      "confidence" : 1,
+      "text" : "Category"
+    },
+    {
+      "bbox" : [
+        0.8163559795680525,
+        0.25698294853548842,
+        0.035329277698810335,
+        0.0092899169663542835
+      ],
+      "confidence" : 1,
+      "text" : "Prize"
+    },
+    {
+      "bbox" : [
+        0.62061855758110762,
+        0.23691860462005399,
+        0.16701030731201172,
+        0.010259725170264744
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Verse Speaking （Urban）"
+    },
+    {
+      "bbox" : [
+        0.81649484471183831,
+        0.23814898411595886,
+        0.063917526831993698,
+        0.0090293453724604733
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.62039442055582206,
+        0.21789193938408591,
+        0.12008593632624698,
+        0.011988839500375659
+      ],
+      "confidence" : 1,
+      "text" : "Solo Verse Speaking"
+    },
+    {
+      "bbox" : [
+        0.81649484471643774,
+        0.21947674420907548,
+        0.063917526831993698,
+        0.0087209302200420558
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.62061855680946909,
+        0.20033860048577712,
+        0.11546391707200276,
+        0.0090293453724604733
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Prose Reading"
+    },
+    {
+      "bbox" : [
+        0.81646823657065282,
+        0.2004837914904769,
+        0.063970743081508519,
+        0.008916137988088324
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.62268041136456154,
+        0.18168604652736531,
+        0.096907218297322517,
+        0.0087209302200421668
+      ],
+      "confidence" : 0.5,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.62268041134565544,
+        0.16252821655462424,
+        0.096907218297322517,
+        0.010436899775037922
+      ],
+      "confidence" : 0.5,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.62061855616515038,
+        0.14389534881004329,
+        0.12164948536799502,
+        0.010174418679747554
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Verse Speaking"
+    },
+    {
+      "bbox" : [
+        0.62238539521751879,
+        0.12482788749952256,
+        0.097487902029966711,
+        0.011695435031003898
+      ],
+      "confidence" : 0.5,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.62268041134565544,
+        0.10755813955232241,
+        0.096907218297322517,
+        0.0087209302200421668
+      ],
+      "confidence" : 0.5,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.6204167674236053,
+        0.087095905410298102,
+        0.11590236272567367,
+        0.011654720349451697
+      ],
+      "confidence" : 1,
+      "text" : "Solo Prose Reading"
+    },
+    {
+      "bbox" : [
+        0.81820711330473361,
+        0.1810858643082851,
+        0.062420838918441413,
+        0.010372152177797744
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.81617524261133556,
+        0.16259578188733448,
+        0.066508048619979498,
+        0.010303524223999272
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.81649484529557326,
+        0.14389534883357591,
+        0.057731958536001327,
+        0.010174418679747554
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "2md Place"
+    },
+    {
+      "bbox" : [
+        0.81640434697938524,
+        0.12620256182509593,
+        0.055851098818656686,
+        0.010676272028455891
+      ],
+      "confidence" : 0.5,
+      "text" : "2nd Place"
+    },
+    {
+      "bbox" : [
+        0.81635829559781403,
+        0.10717473241665476,
+        0.055943201749752758,
+        0.010941233107521708
+      ],
+      "confidence" : 0.5,
+      "text" : "3rd Place"
+    },
+    {
+      "bbox" : [
+        0.8163927165150543,
+        0.088378722858541647,
+        0.055874359913361427,
+        0.010742554546209759
+      ],
+      "confidence" : 0.5,
+      "text" : "3rd Place"
+    },
+    {
+      "bbox" : [
+        0.52354811715688299,
+        0.060888082288405032,
+        0.25392158214862526,
+        0.015869099722489843
+      ],
+      "confidence" : 0.5,
+      "text" : "Speech Festival winners 2025"
+    },
+    {
+      "bbox" : [
+        0.90309278303709484,
+        0.027616278988211507,
+        0.03298969146532893,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "131"
+    }
+  ],
+  "ocr_text" : "English Oepartment - Activities and\nDevelopment Outside Classroom\nYYC students have excelled not only\nacademically but also in extracurricular\nactivities. They actively plan and organize\nbooths and events during Mental Health\nWeek, Multicultural Week, Chinese\nCulture Week, and the English Week\nattracting large audiences, inciuding both\njunior and senior students.\nMulticultural Week\nT Group 31\nChinese Culture Week\nMental Health Week\nIn addition to these initiatives, YYC students have demonstrated remarkable\nperformance in various competitions. Under the guidance of dedicated teachers, they have\nachieved impressive results in events such as the Speech Festival, Drama Festival, Animal\nPhotopoetry Competition, and the International Competitions and Assessments for Schools\n（ICAS）， to name a few. Later this year, we will participate in the Speak to Peak Inter-school\nPublic Speaking Contest for the first time.\n2023第十七届「開心英語朗讀」比厨\nThe 17* Dally Readers \"Read Out Loud\" Compotition 2023\nEnglish Musical Team\nAnimal\nFHOTOPoctiy\nCreative Challenge\n勤物海影「誇」制意大抵戰\nWinners of the Animal\nPoetry Competition\nClass & Name\n2B Lam Hoi Ching Reina\n2B Li Sze Ching\n5B Law Tzu Ling\nF3 Girls\nF3 Boys\n1B Wong Yan Yu\nF1 Boys\nF1 Girls\n3A Wong Lai Ching\nSo Yuk Ting （2B） won the Excellent\n-Projection-Award-in-17\"-Daily-Readers\nRead Out Loud Competition 2023\nCategory\nPrize\nSolo Verse Speaking （Urban）\nChampion\nSolo Verse Speaking\nChampion\nSolo Prose Reading\nChampion\nChoral Speaking\nChoral Speaking\nSolo Verse Speaking\nChoral Speaking\nChoral Speaking\nSolo Prose Reading\nChampion\nChampion\n2md Place\n2nd Place\n3rd Place\n3rd Place\nSpeech Festival winners 2025\n131",
+  "pdf_page" : 131
+}

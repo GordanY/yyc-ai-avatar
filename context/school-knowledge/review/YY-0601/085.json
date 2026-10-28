@@ -1,0 +1,517 @@
+{
+  "native_text" : "姓 名：林進傑\n畢業年份：2017\n就讀大學：香港中文大學\n現 職：醫生\nThe Chinese University of Hong Kong\nBachelor of Medicine and Bachelor of Surgery As a proud\ngraduate of Yung Yau College, I am delighted to contribute to the\nschool’s 25th anniversary publication. Looking back, my years\nat Yung Yau were more than just a phase of academic learning.\nThey were a transformative period that shaped my character, ignited my ambitions, and laid the\nfoundation for my career as an emergency medicine physician.\nWhen I first walked through the gates of Yung Yau, I was simply a young student filled with\ncuriosity but uncertain about my path. The school’s nurturing environment and dedicated teachers\ngave me the confidence to explore my potential. I vividly remember the lessons that sparked my\nenthusiasm for learning, as well as the encouragement from my teachers to ask questions and think\ncritically. Those moments in the classroom, coupled with the school’s emphasis on discipline and\nresilience, planted the seeds of my dream to pursue medicine.\nBeyond academics, Yung Yau taught me the value of compassion and service, qualities that\nare at the heart of my work in emergency medicine. Whether through extracurricular activities,\ncommunity service, or simply the friendships among classmates, I learned the importance of\nsupporting others in times of need. These experiences have stayed with me and continue to guide\nme as I navigate the high-pressure world of the emergency room, where quick thinking and empathy\nare equally vital.\nThe 25th anniversary of Yung Yau College is a milestone that celebrates not only the institution\nitself, but also the countless lives it has touched. I am deeply grateful for the teachers who believed\nin me, the friends who became my second family, and the opportunities that pushed me to grow.\nYung Yau gave me the tools to face challenges with courage and the heart to serve others with\nkindness.\nAs I reflect on my journey, I am filled with pride in our school’s legacy and optimism for its\nfuture. To the students of Yung Yau today, I encourage you to embrace every opportunity, learn from\nevery setback, and cherish the moments you share in this special place. Congratulations to Yung\nYau College on 25 years of excellence, and thank you for shaping me into the person I am today.\n姓 名：蔡培琳\n畢業年份：2021\n就讀大學：香港中文大學\n現 職：碩士學生（倫敦大學學院）\n值此母校 25 周年校慶之際，我的心彷彿又回到了那個充滿\n陽光與歡樂的校園。\n作為當年科研小組的一分子，那些課後與同學和崔老師在實\n驗室並肩作戰的日子，如今想起來，仍然記憶猶新。母校不單教\n會了我們知識，更以無盡的耐心與支持，點燃了我們對未知的好\n奇。每一次科研實驗的起與落、每一次站在比賽領獎台上的感動與歡呼，都是學校和老師們用\n愛與時間澆灌出來的成果。\n25 年來，母校從青澀走到如今的豐盛，我們這些散落在世界各地的校友，卻始終帶着翁\n中的溫暖前行。在此，我衷心祝福翁祐中學 25 歲生日快樂！願「文、行、忠、信」的火炬代\n代相傳，繼續照亮更多學生的道路，賦予他們一顆敢夢、敢闖的心。\n￼\n￼\n85\nShun Tak Fraternal Association Yung Yau College",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.40206184638243186,
+        0.938953488475892,
+        0.44123713175455731,
+        0.014771116506434478
+      ],
+      "confidence" : 0.5,
+      "text" : "Shun Tak Fraternal Association Yung Yau College"
+    },
+    {
+      "bbox" : [
+        0.89278350533113926,
+        0.94186046504562426,
+        0.026804123169336558,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "85"
+    },
+    {
+      "bbox" : [
+        0.13608247460899367,
+        0.87936046527414402,
+        0.024742267070672452,
+        0.017441860440084112
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.19587628964299925,
+        0.87923250541239939,
+        0.10721649267734623,
+        0.017569820175859729
+      ],
+      "confidence" : 0.5,
+      "text" : "名：林進傑"
+    },
+    {
+      "bbox" : [
+        0.13608247547282373,
+        0.86046511680434223,
+        0.1525773146213629,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2017"
+    },
+    {
+      "bbox" : [
+        0.13608247500604287,
+        0.84142212209144529,
+        0.22680412194667721,
+        0.016365688487584573
+      ],
+      "confidence" : 1,
+      "text" : "就讀大學：香港中文大學"
+    },
+    {
+      "bbox" : [
+        0.13608247405911206,
+        0.82267441904427163,
+        0.022680412500332564,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "現"
+    },
+    {
+      "bbox" : [
+        0.19579876338100896,
+        0.82245347520570322,
+        0.082629277155949504,
+        0.014976771098496378
+      ],
+      "confidence" : 0.5,
+      "text" : "職：醫生"
+    },
+    {
+      "bbox" : [
+        0.18556701183287316,
+        0.79627539480146026,
+        0.27835051218668622,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "The Chinese University of Hong Kong"
+    },
+    {
+      "bbox" : [
+        0.18556701025705863,
+        0.77595936786109276,
+        0.47010309268266731,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "Bachelor of Medicine and Bachelor of Surgery As a proud"
+    },
+    {
+      "bbox" : [
+        0.15051546628522688,
+        0.7572674416548939,
+        0.50515463413336348,
+        0.015988372518569549
+      ],
+      "confidence" : 0.5,
+      "text" : "graduate of Yung Yau College, l am delighted to contribute to the"
+    },
+    {
+      "bbox" : [
+        0.15243633796873268,
+        0.74159378841240997,
+        0.50543129749787163,
+        0.019389103013290554
+      ],
+      "confidence" : 0.5,
+      "text" : "school's 25\"h anniversary publication. Looking back, my years"
+    },
+    {
+      "bbox" : [
+        0.15251077845826971,
+        0.72669667485616785,
+        0.50530467889247799,
+        0.015736946941229291
+      ],
+      "confidence" : 0.5,
+      "text" : "at Yung Yau were more than just a phase of academic learning."
+    },
+    {
+      "bbox" : [
+        0.15257731655847004,
+        0.71049661408496656,
+        0.73402062440529847,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "They were a transformative period that shaped my character, ignited my ambitions, and laid the"
+    },
+    {
+      "bbox" : [
+        0.14845359638878577,
+        0.69331395359199455,
+        0.46597940493852674,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "foundation for my career as an emergency medicine physician."
+    },
+    {
+      "bbox" : [
+        0.18144331116820156,
+        0.67268623015031592,
+        0.7051546145708133,
+        0.014813769751693018
+      ],
+      "confidence" : 0.5,
+      "text" : "When I first walked through the gates of Yung Yau, I was simply a young student filled with"
+    },
+    {
+      "bbox" : [
+        0.15257734118524632,
+        0.65843023290051605,
+        0.7340205754989233,
+        0.014534883520673225
+      ],
+      "confidence" : 0.5,
+      "text" : "curiosity but uncertain about my path. The school's nurturing environment and dedicated teachers"
+    },
+    {
+      "bbox" : [
+        0.1505154667958668,
+        0.64098837219551907,
+        0.73608246827736867,
+        0.014767835694564968
+      ],
+      "confidence" : 0.5,
+      "text" : "gave me the confidence to explore my potential. I vividly remember the lessons that sparked my"
+    },
+    {
+      "bbox" : [
+        0.1504662732244301,
+        0.62373310305068319,
+        0.7361859541672926,
+        0.015862510112822803
+      ],
+      "confidence" : 0.5,
+      "text" : "enthuslasm for learning, as well as the encouragement from my teachers to ask questions and think"
+    },
+    {
+      "bbox" : [
+        0.15257731656170584,
+        0.61046511646846713,
+        0.73402062440529836,
+        0.011627906601262228
+      ],
+      "confidence" : 0.5,
+      "text" : "critically. Those moments in the Classroom, coupled with the school's emphasis on discipline and"
+    },
+    {
+      "bbox" : [
+        0.14845361494885592,
+        0.59142212186219434,
+        0.46391751216008115,
+        0.014682529204047889
+      ],
+      "confidence" : 0.5,
+      "text" : "resilience, planted the seeds of my dream to pursue medicine."
+    },
+    {
+      "bbox" : [
+        0.18337092326316734,
+        0.56882899132937637,
+        0.70541005256848455,
+        0.021814049232086741
+      ],
+      "confidence" : 0.5,
+      "text" : "Beyond academics, Yung Yau taught me the value of compassion and service, qualities that"
+    },
+    {
+      "bbox" : [
+        0.15044975854835785,
+        0.55375256578719478,
+        0.73828511360364091,
+        0.017850259087693776
+      ],
+      "confidence" : 0.5,
+      "text" : "are at the heart of my work in emergency medicine. Whether through extracurricular activities，"
+    },
+    {
+      "bbox" : [
+        0.15046458529926299,
+        0.53745114312385855,
+        0.73825391133626306,
+        0.017804026334603207
+      ],
+      "confidence" : 0.5,
+      "text" : "community service, or simply the friendships among classmates, I learned the importance of"
+    },
+    {
+      "bbox" : [
+        0.15257731656622736,
+        0.52470930220242096,
+        0.73402062440529847,
+        0.013101081546757598
+      ],
+      "confidence" : 0.5,
+      "text" : "supporting others in times of need. These experiences have stayed with me and continue to guide"
+    },
+    {
+      "bbox" : [
+        0.15051546680854791,
+        0.50564334083554119,
+        0.73608246827736878,
+        0.016365688487584573
+      ],
+      "confidence" : 0.5,
+      "text" : "me as / navigate the high-pressure world of the emergency room, where quick thinking and empathy"
+    },
+    {
+      "bbox" : [
+        0.15051546329492552,
+        0.49127906966650592,
+        0.12371134146665916,
+        0.013235602906272348
+      ],
+      "confidence" : 0.5,
+      "text" : "are equally vital."
+    },
+    {
+      "bbox" : [
+        0.18133972640630894,
+        0.46829391888025973,
+        0.70535351679875291,
+        0.018933527625710322
+      ],
+      "confidence" : 0.5,
+      "text" : "The 25\" anniversary of Yung Yau College is a milestone that celebrates not only the institution"
+    },
+    {
+      "bbox" : [
+        0.15051546678915065,
+        0.45485327303941148,
+        0.73608246827736878,
+        0.013169982901545141
+      ],
+      "confidence" : 0.5,
+      "text" : "itselt, but also the countless lives it has touched. l am deeply grateful for the teachers who believed"
+    },
+    {
+      "bbox" : [
+        0.14845361155414649,
+        0.43735891642566593,
+        0.7381443121494391,
+        0.016365688487584573
+      ],
+      "confidence" : 0.5,
+      "text" : "in me, the friends who became my second family, and the opportunities that pushed me to grow."
+    },
+    {
+      "bbox" : [
+        0.15257731655994697,
+        0.42268623046292264,
+        0.73402062440529836,
+        0.013544018058690654
+      ],
+      "confidence" : 0.5,
+      "text" : "Yung Yau gave me the tools to face challenges with courage and the heart to serve others with"
+    },
+    {
+      "bbox" : [
+        0.15048473643188126,
+        0.40688744585245706,
+        0.076350114284417542,
+        0.013259992104351692
+      ],
+      "confidence" : 0.5,
+      "text" : "kindness."
+    },
+    {
+      "bbox" : [
+        0.18144331116727841,
+        0.38517441870694913,
+        0.7051546145708133,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "As I reflect on my journey, l am filled with pride in our school's legacy and optimism for its"
+    },
+    {
+      "bbox" : [
+        0.14845361701446755,
+        0.36907449201382303,
+        0.7381443121494391,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "future. To the students of Yung Yau today, l encourage you to embrace every opportunity, leam from"
+    },
+    {
+      "bbox" : [
+        0.15051546680064412,
+        0.35319767452118844,
+        0.73608246827736878,
+        0.014748149208774874
+      ],
+      "confidence" : 0.5,
+      "text" : "every setback, and cherish the moments you share in this special place. Congratulations to Yung"
+    },
+    {
+      "bbox" : [
+        0.15051547499701856,
+        0.33575581374895658,
+        0.71340203896546972,
+        0.015988372518569549
+      ],
+      "confidence" : 0.5,
+      "text" : "Yau College on 25 years of excellence, and thank you for shaping me into the person l am today."
+    },
+    {
+      "bbox" : [
+        0.52371134049302437,
+        0.29796511676437121,
+        0.039175256704672812,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.57312400221385529,
+        0.29769929498122849,
+        0.11766952123397434,
+        0.016520014734892507
+      ],
+      "confidence" : 0.5,
+      "text" : "名：蔡培琳"
+    },
+    {
+      "bbox" : [
+        0.5237113421028281,
+        0.27906976724609633,
+        0.15670102681869125,
+        0.016076959820956138
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2021"
+    },
+    {
+      "bbox" : [
+        0.52371133465784692,
+        0.25846501131986432,
+        0.2288659902719351,
+        0.017697779373444411
+      ],
+      "confidence" : 1,
+      "text" : "就讀大學：香港中文大學"
+    },
+    {
+      "bbox" : [
+        0.52371133702957195,
+        0.23982558118783492,
+        0.3237113463572967,
+        0.01598837251856966
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "現 職：碩士學生（倫敦大學學院）"
+    },
+    {
+      "bbox" : [
+        0.37731958757619222,
+        0.21501128650938484,
+        0.47010309268266726,
+        0.013186388037274677
+      ],
+      "confidence" : 0.5,
+      "text" : "值此母校25周年校慶之際，我的心彷彿又回到了那個充滿"
+    },
+    {
+      "bbox" : [
+        0.34226804295676433,
+        0.19751693006306825,
+        0.15876288291735524,
+        0.014692372177847357
+      ],
+      "confidence" : 1,
+      "text" : "陽光與歡樂的校園。"
+    },
+    {
+      "bbox" : [
+        0.37720465691682281,
+        0.174622276739692,
+        0.47032820872771441,
+        0.017984150225637152
+      ],
+      "confidence" : 0.5,
+      "text" : "作為當年科研小組的一分子，那些課後與同學和雀老師在實"
+    },
+    {
+      "bbox" : [
+        0.34020619388786327,
+        0.15970654642870685,
+        0.50721647800543379,
+        0.014712058125446403
+      ],
+      "confidence" : 1,
+      "text" : "驗室並肩作戰的日子，如今想起來，仍然記憶猶新。母校不單教"
+    },
+    {
+      "bbox" : [
+        0.34226804365539376,
+        0.14221218974441663,
+        0.50515463413336337,
+        0.014764554344504521
+      ],
+      "confidence" : 1,
+      "text" : "會了我們知識，更以無盡的耐心與支持，點燃了我們對未知的好"
+    },
+    {
+      "bbox" : [
+        0.11334622959063367,
+        0.12386082486391925,
+        0.73413638579539775,
+        0.017417226365134542
+      ],
+      "confidence" : 1,
+      "text" : "奇。每一次科研實驗的起與落、每一次站在比賽領獎台上的感動與歡呼，都是學校和老師們用"
+    },
+    {
+      "bbox" : [
+        0.11340206393173706,
+        0.10891647855260966,
+        0.21443298535469252,
+        0.014672686230248311
+      ],
+      "confidence" : 1,
+      "text" : "愛與時間澆灌出來的成果。"
+    },
+    {
+      "bbox" : [
+        0.148453602753333,
+        0.087209302427959878,
+        0.69896908295460236,
+        0.014534883520673225
+      ],
+      "confidence" : 1,
+      "text" : "25年來，母校從青澀走到如今的豐盛，我們這些散落在世界各地的校友，卻始終帶着翁"
+    },
+    {
+      "bbox" : [
+        0.11340206173549507,
+        0.069767442345766595,
+        0.73402062440529858,
+        0.01601133873984717
+      ],
+      "confidence" : 0.5,
+      "text" : "中的溫暖前行。在此，我表心祝福翁祐中學 25歲生日快樂！願「文、行、忠、信」的火炬代"
+    },
+    {
+      "bbox" : [
+        0.11340207349682484,
+        0.053611738239563,
+        0.53402059506147337,
+        0.014702215151646825
+      ],
+      "confidence" : 1,
+      "text" : "代相傳，繼續照亮更多學生的道路，賦予他們一顆敢夢、敢闖的心。"
+    }
+  ],
+  "ocr_text" : "Shun Tak Fraternal Association Yung Yau College\n85\n姓\n名：林進傑\n畢業年份：2017\n就讀大學：香港中文大學\n現\n職：醫生\nThe Chinese University of Hong Kong\nBachelor of Medicine and Bachelor of Surgery As a proud\ngraduate of Yung Yau College, l am delighted to contribute to the\nschool's 25\"h anniversary publication. Looking back, my years\nat Yung Yau were more than just a phase of academic learning.\nThey were a transformative period that shaped my character, ignited my ambitions, and laid the\nfoundation for my career as an emergency medicine physician.\nWhen I first walked through the gates of Yung Yau, I was simply a young student filled with\ncuriosity but uncertain about my path. The school's nurturing environment and dedicated teachers\ngave me the confidence to explore my potential. I vividly remember the lessons that sparked my\nenthuslasm for learning, as well as the encouragement from my teachers to ask questions and think\ncritically. Those moments in the Classroom, coupled with the school's emphasis on discipline and\nresilience, planted the seeds of my dream to pursue medicine.\nBeyond academics, Yung Yau taught me the value of compassion and service, qualities that\nare at the heart of my work in emergency medicine. Whether through extracurricular activities，\ncommunity service, or simply the friendships among classmates, I learned the importance of\nsupporting others in times of need. These experiences have stayed with me and continue to guide\nme as / navigate the high-pressure world of the emergency room, where quick thinking and empathy\nare equally vital.\nThe 25\" anniversary of Yung Yau College is a milestone that celebrates not only the institution\nitselt, but also the countless lives it has touched. l am deeply grateful for the teachers who believed\nin me, the friends who became my second family, and the opportunities that pushed me to grow.\nYung Yau gave me the tools to face challenges with courage and the heart to serve others with\nkindness.\nAs I reflect on my journey, l am filled with pride in our school's legacy and optimism for its\nfuture. To the students of Yung Yau today, l encourage you to embrace every opportunity, leam from\nevery setback, and cherish the moments you share in this special place. Congratulations to Yung\nYau College on 25 years of excellence, and thank you for shaping me into the person l am today.\n姓\n名：蔡培琳\n畢業年份：2021\n就讀大學：香港中文大學\n現 職：碩士學生（倫敦大學學院）\n值此母校25周年校慶之際，我的心彷彿又回到了那個充滿\n陽光與歡樂的校園。\n作為當年科研小組的一分子，那些課後與同學和雀老師在實\n驗室並肩作戰的日子，如今想起來，仍然記憶猶新。母校不單教\n會了我們知識，更以無盡的耐心與支持，點燃了我們對未知的好\n奇。每一次科研實驗的起與落、每一次站在比賽領獎台上的感動與歡呼，都是學校和老師們用\n愛與時間澆灌出來的成果。\n25年來，母校從青澀走到如今的豐盛，我們這些散落在世界各地的校友，卻始終帶着翁\n中的溫暖前行。在此，我表心祝福翁祐中學 25歲生日快樂！願「文、行、忠、信」的火炬代\n代相傳，繼續照亮更多學生的道路，賦予他們一顆敢夢、敢闖的心。",
+  "pdf_page" : 85
+}

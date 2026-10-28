@@ -1,0 +1,12 @@
+{
+  "version": "0.4.5",
+  "vrmSHA256": "7e395172908ecf4635a404274b72e8032233c34fc521b478c0b816a30f0b5a6e",
+  "source": "YYC_InfoDay_v0.4.5.blend",
+  "blenderSHA256": "bb891ec8cf66180fc62676636a224fe01cabb0e8ef926ec9db6344f96fd2f700",
+  "bendSweepPoses": 80,
+  "nativeMotionSamples": 94,
+  "forearmIntersectionsAfter": 0,
+  "forearmIntersectionsBeforeWave": 318,
+  "testsPassed": 71,
+  "correctives": "Four directional fold shape keys per cuff, joint-driven in Amica and Blender; original upper-arm skin restored; narrow rolled cuff edge."
+}

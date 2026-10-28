@@ -1,0 +1,3686 @@
+{
+  "sourceCommit": "ca2415c77d20ec41dd4fcf917dbb0e97961ddf08",
+  "snapshotDate": "2026-10-28",
+  "files": [
+    {
+      "path": "models/yyc-info-day/README.md",
+      "bytes": 7598,
+      "sha256": "4dee8eeaf2b788a465449bff57781594b7a8cedb494d2870ed67f7e445f30440"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_FabricDetail.png",
+      "bytes": 70015,
+      "sha256": "c68dc39af1d101626bc0401c7fb04a4e9169003cbe6e3ae42b399b72dd6fd29b"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_Hair_Anime.png",
+      "bytes": 186596,
+      "sha256": "ddb7ac3a2d1f42e6f6354bcc36a98bc36159f12f3b868c444f79226f68729eaf"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay.blend",
+      "bytes": 32559579,
+      "sha256": "bb891ec8cf66180fc62676636a224fe01cabb0e8ef926ec9db6344f96fd2f700"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay.blend1",
+      "bytes": 22990530,
+      "sha256": "899e1487f4f7c10962460a490b601dea40111482ef505afc70784d7c43081386"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay.glb",
+      "bytes": 78353592,
+      "sha256": "7e395172908ecf4635a404274b72e8032233c34fc521b478c0b816a30f0b5a6e"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay_Amica_PC.zip",
+      "bytes": 61106291,
+      "sha256": "fa3e415631b59ce1bbaeb6995f3bac93d4882abfb0873d9b84f4c90aac2d2d18"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay_base.glb",
+      "bytes": 15572408,
+      "sha256": "6acbae62c971af8060fe12cf2b51ea3aa036b37b0b870f7991991758cde5963d"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay_v0.4.3.blend",
+      "bytes": 22989520,
+      "sha256": "2b81089a5bcf77b387d74eea46b3b37fe454ac4b025f096b1ff4ecfaf52e1764"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay_v0.4.4.blend",
+      "bytes": 28782396,
+      "sha256": "e27e4f455a095a69339c21b9f67cb2965228f0c858924b9cf5f05c371c49b701"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay_v0.4.4.blend1",
+      "bytes": 28781110,
+      "sha256": "5754069341d30e216eb922bc1f2dba96c90995a617b41dcee73c19f0de130db6"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay_v0.4.5.blend",
+      "bytes": 32559579,
+      "sha256": "bb891ec8cf66180fc62676636a224fe01cabb0e8ef926ec9db6344f96fd2f700"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_InfoDay_v0.4.5.blend1",
+      "bytes": 32559448,
+      "sha256": "4f31dd2867c9f06236c6341e4f4567e03af9147fe480bac64a25c8c8c0f92fee"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_Shirt_Anime.png",
+      "bytes": 67427,
+      "sha256": "8c8f7d66334af69bd3f08fed630cb6c5931eff3941f6d141042003d557235ba5"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_Sleeve_Anime.png",
+      "bytes": 26267,
+      "sha256": "35d391fc700ba25b367b2d265e691b317f8ddcc889947c374f123e813c1d50d8"
+    },
+    {
+      "path": "models/yyc-info-day/YYC_Trousers_Anime.png",
+      "bytes": 60114,
+      "sha256": "aa7690da23f29145fcf77d4e89caae7305741bd399e7dcc7dbf81861ef0fb1ed"
+    },
+    {
+      "path": "models/yyc-info-day/elbow-cloth-source-validation.json",
+      "bytes": 902,
+      "sha256": "a0b36038f471fa7bbc56894930ce003c48ee10c408214b3b02c15de6dd6fee17"
+    },
+    {
+      "path": "models/yyc-info-day/elbow-cloth-validation.json",
+      "bytes": 540,
+      "sha256": "18edaef82f1ceeea32a75954487432b01c787f99ae12cd518c3009e2d233250a"
+    },
+    {
+      "path": "models/yyc-info-day/gesture-model-validation.json",
+      "bytes": 838,
+      "sha256": "00feb80d69c585bde490766e5d9967d96a2b19c6e4c2ee7bedbfe240f2a47f88"
+    },
+    {
+      "path": "models/yyc-info-day/preview-amica-wave.png",
+      "bytes": 1227274,
+      "sha256": "60c5bed78eb03c69c87f24cb6be62846f453d126da5b312c3c3ab1ce73d02e25"
+    },
+    {
+      "path": "models/yyc-info-day/preview-amica.png",
+      "bytes": 1329744,
+      "sha256": "3a57ba6604880ab091bf43afd92ed9a8792a03d98340f079f6222e655fdd6a04"
+    },
+    {
+      "path": "models/yyc-info-day/preview-back.png",
+      "bytes": 819363,
+      "sha256": "e8e8113446f48f7765cb1a92b59b31aa994c4f76366b07c39538959661b152b6"
+    },
+    {
+      "path": "models/yyc-info-day/preview-collar-comparison.png",
+      "bytes": 147579,
+      "sha256": "a240308f9a4ab355cea61be6eb09d0b7d0fe19b94643614592047d4f65278af3"
+    },
+    {
+      "path": "models/yyc-info-day/preview-design-comparison.png",
+      "bytes": 872614,
+      "sha256": "f21cc4b0eb5360ff63aa5a4e310e17caaa12e82ae58604f889f5b31f0d02bd62"
+    },
+    {
+      "path": "models/yyc-info-day/preview-elbow-cloth-wave.png",
+      "bytes": 788045,
+      "sha256": "141678ba9c24201eed9830712ea25f95429f0878ea7285085f94c1b699a64fc6"
+    },
+    {
+      "path": "models/yyc-info-day/preview-face-blink.png",
+      "bytes": 257388,
+      "sha256": "8ddd7709a933cccfa9b46bbd1b3d2776bded2e48840e5a8f3736058788439401"
+    },
+    {
+      "path": "models/yyc-info-day/preview-face-mouth.png",
+      "bytes": 261289,
+      "sha256": "03d2a5a13e7a3fb8fa6ec4f262699ff7e7a7b538c1ce85b12394b74fc1dda92c"
+    },
+    {
+      "path": "models/yyc-info-day/preview-face-neutral.png",
+      "bytes": 260502,
+      "sha256": "abf4f50318312c40c769cdd19bc8d0d90b2c087afdb94aea7228aaec4684f8c0"
+    },
+    {
+      "path": "models/yyc-info-day/preview-front.png",
+      "bytes": 779181,
+      "sha256": "2e5b6caae0c14599267fe4491939a5a76699f929a24b1ea373824fb450ef81d9"
+    },
+    {
+      "path": "models/yyc-info-day/preview-gesture-cloth-front.png",
+      "bytes": 765230,
+      "sha256": "68e1c3bb08d54d26cd0b7e425b3c1b2466665d490fc38fdc7d6ee91ea2fc4cfb"
+    },
+    {
+      "path": "models/yyc-info-day/preview-neck-front.png",
+      "bytes": 1176911,
+      "sha256": "df6fed0d9fc79834be071b30084826715b936ddffd8bf5181e7a928b17bae8bd"
+    },
+    {
+      "path": "models/yyc-info-day/preview-neck-side.png",
+      "bytes": 1289294,
+      "sha256": "359228d2c975c5dab830d6dd438af2736e67ba22ce6c8e98da80d2eef8db4df0"
+    },
+    {
+      "path": "models/yyc-info-day/preview-side.png",
+      "bytes": 796177,
+      "sha256": "781605e5c056be9dad02122ba6fde9599cbdcea62a0e5c3af7987557fa9a1f18"
+    },
+    {
+      "path": "models/yyc-info-day/preview-sleeve-comparison.png",
+      "bytes": 270273,
+      "sha256": "0261dfdd33850aea31dce7f0dd607ae12c98a6541cd8007cfb858262ea162c65"
+    },
+    {
+      "path": "models/yyc-info-day/preview-upper-body-amica.png",
+      "bytes": 382149,
+      "sha256": "112c9c22ff36064a8c7203590e4339543022e8f568792e96544491aabe7e1bca"
+    },
+    {
+      "path": "models/yyc-info-day/preview-upper-body-comparison.png",
+      "bytes": 814419,
+      "sha256": "22d5d9edadaac204c84634316d5863d6ccd3729b1d92c012f493fa3e51fa9531"
+    },
+    {
+      "path": "models/yyc-info-day/preview-upper-body-motion.mp4",
+      "bytes": 882122,
+      "sha256": "7b7d0f2085f5a03f4fdeaf84ae1123db70ded1f47a22456ad860f32e070a509f"
+    },
+    {
+      "path": "models/yyc-info-day/preview-upper-body-normals.png",
+      "bytes": 1338527,
+      "sha256": "d5388ddffdbb2eb38a2aa5a55806ad24d7ee8b185086ac0a644056c2261227b9"
+    },
+    {
+      "path": "models/yyc-info-day/preview-volume-cloth-front.png",
+      "bytes": 771016,
+      "sha256": "c1f91b406a7df73ff44d5327a8b45bc67693e62c6a63446a11712b68bb7233f9"
+    },
+    {
+      "path": "models/yyc-info-day/preview-wave.png",
+      "bytes": 780421,
+      "sha256": "eb2dbd3ee7da445c04e2da48c485395d860d1980e838b804cdea74c1e10130f2"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_FabricDetail.png",
+      "bytes": 70122,
+      "sha256": "d72d92273eafb0e2ccad61b91b3b77d757ee202efab5affef42f3a8920c8b15e"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_Hair_Anime.png",
+      "bytes": 186596,
+      "sha256": "ddb7ac3a2d1f42e6f6354bcc36a98bc36159f12f3b868c444f79226f68729eaf"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_InfoDay.blend",
+      "bytes": 6396903,
+      "sha256": "56c060c42448e1e926129ca9d898d12e77a59a6050cbc966472b881c6a105dd6"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_InfoDay.blend1",
+      "bytes": 6733371,
+      "sha256": "b3cf3e67160589ed232433e09acacd4d5f130d9527be7d59b12ff6c3f8040845"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_InfoDay.glb",
+      "bytes": 19500064,
+      "sha256": "af4df6fef98ce1c18d9e3fa0b46dc5309f7e1fd6c597a7a916c33bdb8404d255"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_InfoDay.vrm",
+      "bytes": 19500064,
+      "sha256": "af4df6fef98ce1c18d9e3fa0b46dc5309f7e1fd6c597a7a916c33bdb8404d255"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_InfoDay_base.glb",
+      "bytes": 14921432,
+      "sha256": "9869f563abce3fcb32f21d3d4f07a921f310cd8ca1481255ebd20e1a377cd67b"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_Shirt_Anime.png",
+      "bytes": 92139,
+      "sha256": "69a989cdc05b54785c648a98ea28591a35637159d343e647f3197aa21eb690b3"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/YYC_Trousers_Anime.png",
+      "bytes": 60358,
+      "sha256": "6a2a85b5a1fcfcc0c23a751881ae5adca44d2a220ee2e525845e4b5608c31dba"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/animations/YYC_idle.vrma",
+      "bytes": 51056,
+      "sha256": "e274cd762cb347e36f3b949215c077f268484a3dfda0720b76c69c47d4369ef2"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/animations/YYC_nod.vrma",
+      "bytes": 51056,
+      "sha256": "0556f6b8b3ba06f0d967d695a04ba016e86d036b3f1385c7de0a40789718d085"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/animations/YYC_wave.vrma",
+      "bytes": 51056,
+      "sha256": "f340bfda717a2d410d30ad71bcaf1f4135d8cf24e96f8ffd13da16d91ea2e779"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-amica-wave.png",
+      "bytes": 148250,
+      "sha256": "489f3b149fe3ebf99bec27a1d56bc2c113e5f9637289f3220caeae7d051ae04f"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-back.png",
+      "bytes": 807813,
+      "sha256": "a7a2f1ce518c680c2759882fafe02918349a643fbd516ee0abb48b9e2bfe674a"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-face-blink.png",
+      "bytes": 254759,
+      "sha256": "1b6406aec2f4e9459138e2a368e8b3e4b226df92e329af2a965b681697cd149d"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-face-mouth.png",
+      "bytes": 258555,
+      "sha256": "05083ebeadd954bea2fe31396b9c1117970041cdcb7429b9802f2b7137d750f6"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-face-neutral.png",
+      "bytes": 258083,
+      "sha256": "e0f7f65ad903c5a852a4598415b0bb8acf725eff0f519e9775bb65f2863261ac"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-front.png",
+      "bytes": 773916,
+      "sha256": "0b50813f92ee8ea7436cb8c212aba08103f6584a980d52f4d082fb0c5778c6d2"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-side.png",
+      "bytes": 796092,
+      "sha256": "59e6e5284c05d92e21b4c66fc5e45c26e95915b8e670d5d0716012d468f0bd3d"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/preview-wave.png",
+      "bytes": 777847,
+      "sha256": "2e84594af86b916aa7a73e99fd9f0536e016f2703c969c2e91ae58bba57aea7d"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/source-license.json",
+      "bytes": 1180,
+      "sha256": "e579d8f1ade91d2f3ec32e081d610fb7fd203da56935d4920f5410add1d11bf5"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/uniform-geometry.json",
+      "bytes": 74066540,
+      "sha256": "8891a66b7a24661b78052d28aec58e0d7daf52d4e98b696fee14e98f8b88e3f9"
+    },
+    {
+      "path": "models/yyc-info-day/review-v3/validation.json",
+      "bytes": 815,
+      "sha256": "f4ecd2ffe4b6bfe750fd04254f27aca430b65c71b1ed24d19b349ce85a7acb4c"
+    },
+    {
+      "path": "models/yyc-info-day/source-license.json",
+      "bytes": 1180,
+      "sha256": "e579d8f1ade91d2f3ec32e081d610fb7fd203da56935d4920f5410add1d11bf5"
+    },
+    {
+      "path": "models/yyc-info-day/uniform-geometry.json",
+      "bytes": 451833792,
+      "sha256": "bbd1e57913d88a77ea5884f8b28df2e1a85e049ea37031e40df278cc842a14dc"
+    },
+    {
+      "path": "models/yyc-info-day/upper-body-validation.json",
+      "bytes": 7720,
+      "sha256": "29c5ccec64aeac7088d36a6aa2cca976d082558896abc86c8aa99f94d8abc3e2"
+    },
+    {
+      "path": "models/yyc-info-day/validation.json",
+      "bytes": 1827,
+      "sha256": "9056c0065e839abcb9326b667941a30857f70dd2719baf82f8b2e3fd0ddfa524"
+    },
+    {
+      "path": "public/.gitignore",
+      "bytes": 82,
+      "sha256": "89de51877a47c0d7a7db047c83940934c8b0a8f3c0ca027252aa7c1b83bd0e3d"
+    },
+    {
+      "path": "public/ammo.wasm.js",
+      "bytes": 393768,
+      "sha256": "3fa63c584d4732f72b954c5ea105f1faca99559c95c57ce7bb738d3497f98228"
+    },
+    {
+      "path": "public/ammo.wasm.wasm",
+      "bytes": 651386,
+      "sha256": "16be07b989963bddebfef66eab28a4387536eb37014d9df1531dab380bd96a93"
+    },
+    {
+      "path": "public/android-chrome-192x192.png",
+      "bytes": 31055,
+      "sha256": "b41b0b950967fd5251eecac3d629a3018e232a447c2a4e7b6c7ba86ba21b4db1"
+    },
+    {
+      "path": "public/android-chrome-384x384.png",
+      "bytes": 83516,
+      "sha256": "01982f394adeef6738e3c47723bf967992775ec7b11a5af49391b26e14143ea8"
+    },
+    {
+      "path": "public/animations/.gitignore",
+      "bytes": 9,
+      "sha256": "04def3c734ed51a0b92aaec07f586a20bfac49e4e3121a011a3e778ce2ce1347"
+    },
+    {
+      "path": "public/animations/dance.vrma",
+      "bytes": 729512,
+      "sha256": "8f57fd5257086261650e8c0a3095092ad27ee705142826d0b3ef2350ca425e04"
+    },
+    {
+      "path": "public/animations/greeting.vrma",
+      "bytes": 854284,
+      "sha256": "6322bbe2df7716529dd53e2a61816e67b946416d3761c672b8d50ee2829825bb"
+    },
+    {
+      "path": "public/animations/idle_loop.vrma",
+      "bytes": 157664,
+      "sha256": "ace95ba6dcc0bdf2ed1081c002332b4184441117c8d543b6f642b3d2c5cf99be"
+    },
+    {
+      "path": "public/animations/modelPose.vrma",
+      "bytes": 518364,
+      "sha256": "a2c86633690e911cf935c5b8cae6553aea0445567f88c2861f7597fc1bf08af1"
+    },
+    {
+      "path": "public/animations/peaceSign.vrma",
+      "bytes": 1335704,
+      "sha256": "6f66b6b5c0214a7b825498050380ea43a3f782b5ea24ce46f7096acf15866d75"
+    },
+    {
+      "path": "public/animations/shoot.vrma",
+      "bytes": 1108548,
+      "sha256": "c40c1a7b0dbcac5aa9582f45498474255e4b0ca5642a71ffaf43878c27bedf70"
+    },
+    {
+      "path": "public/animations/showFullBody.vrma",
+      "bytes": 1348388,
+      "sha256": "f45abc44800c647fa106537a2e31a84cb83b74cf3dd8a0ee71c6915f1555ac57"
+    },
+    {
+      "path": "public/animations/spin.vrma",
+      "bytes": 632316,
+      "sha256": "cc508712ca4db8833ffe982d2eecd427e9374a04c005db2a7a45775f0ca45586"
+    },
+    {
+      "path": "public/animations/squat.vrma",
+      "bytes": 771944,
+      "sha256": "b0096525231e9f49947a6fad0295575b1c2bfbc33c042d07f125c7c2fbe88995"
+    },
+    {
+      "path": "public/animations/yyc/YYC_idle.vrma",
+      "bytes": 51056,
+      "sha256": "5842fcb2bc94fb43e8e49ae270840086d8c1ab2d2b198c62cb095d25ad4d8ef3"
+    },
+    {
+      "path": "public/animations/yyc/YYC_nod.vrma",
+      "bytes": 51056,
+      "sha256": "b2e823c199bc4a522d5c1d0226c0e2b1144332887035d1dad9966561116bec51"
+    },
+    {
+      "path": "public/animations/yyc/YYC_wave.vrma",
+      "bytes": 51056,
+      "sha256": "57688fa418749a336ffd6494ee18169a08317c2fb5f7d69267736b2f97299235"
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "bytes": 28530,
+      "sha256": "a60ff2047664b26e972b3271f3f81dbc9b6825ea737dd3064eada282a3d86631"
+    },
+    {
+      "path": "public/bg/.gitignore",
+      "bytes": 9,
+      "sha256": "04def3c734ed51a0b92aaec07f586a20bfac49e4e3121a011a3e778ce2ce1347"
+    },
+    {
+      "path": "public/bg/bg-arbius1.jpg",
+      "bytes": 284174,
+      "sha256": "b877711fb3b0718a563362631be8b6e73db57bcfd344f1e3ef7c92e49ee5e9c1"
+    },
+    {
+      "path": "public/bg/bg-arbius2.jpg",
+      "bytes": 271703,
+      "sha256": "df6c15d92084d14cfb72494375fec5c985dbba3aaaa49cb597a06e28ef0497ed"
+    },
+    {
+      "path": "public/bg/bg-forest1.jpg",
+      "bytes": 450438,
+      "sha256": "49839dd7de676bff51f4c73c48efae5262ec9f35a2a2fc97b41e866dcc759f49"
+    },
+    {
+      "path": "public/bg/bg-landscape1.jpg",
+      "bytes": 486871,
+      "sha256": "15dcbc9ec97af9629e1885677e6e3942dbbe03c4c21b06150461e25edd125a1e"
+    },
+    {
+      "path": "public/bg/bg-landscape2.jpg",
+      "bytes": 463148,
+      "sha256": "8d17859e60ad57d9933c5e9264ae56fa8d7340857dd4b3de80d824736a7b3db0"
+    },
+    {
+      "path": "public/bg/bg-landscape3.jpg",
+      "bytes": 514012,
+      "sha256": "5229969b891e279e4ab55aa2201a8850d731d01f94026871c56af5feb498ce04"
+    },
+    {
+      "path": "public/bg/bg-room1.jpg",
+      "bytes": 449272,
+      "sha256": "ac814a5999fb01200a0c7b5a5b6774081c9c377ea57fcd29951eeacbb4e79422"
+    },
+    {
+      "path": "public/bg/bg-room2.jpg",
+      "bytes": 433381,
+      "sha256": "dd41f6474c8e8e77d1bff47364fcd41c5a27307a387c2326020a30fecd7f1abc"
+    },
+    {
+      "path": "public/bg/bg-sunset1.jpg",
+      "bytes": 304299,
+      "sha256": "977a0aa1e4a4f98705ff4fcf93e3ca9f5b60ed3b1de9fa48db959c18016cbd55"
+    },
+    {
+      "path": "public/bg/bg-town1.jpg",
+      "bytes": 487983,
+      "sha256": "7a95d5e6eed37c84a1e5fb224126da9b6ebeb645e5dabb65445854f6da7cffa4"
+    },
+    {
+      "path": "public/bg/thumb-bg-arbius1.jpg",
+      "bytes": 10133,
+      "sha256": "16a395307bfa0517088e3376647588846067e9513d9a9ee24717197cc3e2e5d0"
+    },
+    {
+      "path": "public/bg/thumb-bg-arbius2.jpg",
+      "bytes": 9283,
+      "sha256": "b572cb8f4411ef11eee7fb7c431c842d4c4d040ea860d2d16e6ef1e1befb5f19"
+    },
+    {
+      "path": "public/bg/thumb-bg-forest1.jpg",
+      "bytes": 13367,
+      "sha256": "7623a76f63548c64d3d1c2b48f061669757846caf3c130dd45907ad5b09a7865"
+    },
+    {
+      "path": "public/bg/thumb-bg-landscape1.jpg",
+      "bytes": 14711,
+      "sha256": "688e67af2f03349c72c19dfb937695e8edacb7e0f4dfcdd7622c75473bad267f"
+    },
+    {
+      "path": "public/bg/thumb-bg-landscape2.jpg",
+      "bytes": 14870,
+      "sha256": "e4dcb31e720a7cbb112cbd092180941354e782247954f8a26a1749c943664cec"
+    },
+    {
+      "path": "public/bg/thumb-bg-landscape3.jpg",
+      "bytes": 15527,
+      "sha256": "f862e72440b2c8666cf6baedf8c3bd2e1ae12c615d6ea60364b0e2c834f0aa36"
+    },
+    {
+      "path": "public/bg/thumb-bg-room1.jpg",
+      "bytes": 13082,
+      "sha256": "e68698428c764f61a982b5503497d0d9fad19e23ebf0c5117cade9e6b116aa8a"
+    },
+    {
+      "path": "public/bg/thumb-bg-room2.jpg",
+      "bytes": 13252,
+      "sha256": "e980adf2ee18e663b05ced3a1b46731d8a240d810685a7f0d70c581620d5264d"
+    },
+    {
+      "path": "public/bg/thumb-bg-sunset1.jpg",
+      "bytes": 11448,
+      "sha256": "1a89bb126c2d09a5f19780e20f780c82955925ef33b49403c2b49a219a6e7dc3"
+    },
+    {
+      "path": "public/bg/thumb-bg-town1.jpg",
+      "bytes": 14068,
+      "sha256": "60c1874efb196acfb5b6a4231ec452001231ec32affd9325c95bf5e9ab9d56e0"
+    },
+    {
+      "path": "public/browserconfig.xml",
+      "bytes": 246,
+      "sha256": "c348b0d6df3d900efef7ae4b4dfc8b62b1737b04d09d4584fef243211c266866"
+    },
+    {
+      "path": "public/controllers/generic-button/left.glb",
+      "bytes": 1206176,
+      "sha256": "44fb3f20ffc6b2cd4250451f8c293a3cffedcb8e719ef37ba6a30b158c504fdb"
+    },
+    {
+      "path": "public/controllers/generic-button/none.glb",
+      "bytes": 1268704,
+      "sha256": "a9c3a95a55af2785b3ae504ec2619048a1bdd39b5ca37177bf0a9408c85532bf"
+    },
+    {
+      "path": "public/controllers/generic-button/profile.json",
+      "bytes": 2632,
+      "sha256": "e35af4cf4a72e544fe45695a4cd186ff3e1f1b85e244123b4139b953271b0ed4"
+    },
+    {
+      "path": "public/controllers/generic-button/right.glb",
+      "bytes": 1206176,
+      "sha256": "7b66ad3cab8c01f58c7eb39a7ff5c31f2e6c537790c761c414f48b4327b3f945"
+    },
+    {
+      "path": "public/controllers/generic-fixed-hand/left.glb",
+      "bytes": 80936,
+      "sha256": "f9851355062ca3515455812cc0841bedcc93629da47472aedaf526ca79570e89"
+    },
+    {
+      "path": "public/controllers/generic-fixed-hand/profile.json",
+      "bytes": 1983,
+      "sha256": "7ff4e42673dc084cb37ac631c3f3ec6f7cfddd9336016dc660b9df043eb6568f"
+    },
+    {
+      "path": "public/controllers/generic-fixed-hand/right.glb",
+      "bytes": 80896,
+      "sha256": "161713dd30976e54f1901b8e332ef65c9c316ff34d46e62cb20ab705637aa0ee"
+    },
+    {
+      "path": "public/controllers/generic-hand/left.glb",
+      "bytes": 94572,
+      "sha256": "bc67783144944ea1cda54d9247885825ea5fb9d4651469fe7d00be517a5c2b87"
+    },
+    {
+      "path": "public/controllers/generic-hand/profile.json",
+      "bytes": 1942,
+      "sha256": "749bb0624eb032d1e726e87dad398e6729020f35d62d2e9b431d4202e4c656fc"
+    },
+    {
+      "path": "public/controllers/generic-hand/right.glb",
+      "bytes": 94004,
+      "sha256": "291790c14f7f88a7f9bd35330c47392ed8e8d395ae6728f4bb7089f1bc1f2b96"
+    },
+    {
+      "path": "public/controllers/generic-touchpad/left.glb",
+      "bytes": 1269840,
+      "sha256": "08a5f32f7d5bef5b225af5fed892f1c8802a55d1b58fc8b4d26f0675b9c0c107"
+    },
+    {
+      "path": "public/controllers/generic-touchpad/none.glb",
+      "bytes": 1306612,
+      "sha256": "3e68bc92cef327922a3e93812500c11eb9a4c0962ed09e7214e2fc7297063d4d"
+    },
+    {
+      "path": "public/controllers/generic-touchpad/profile.json",
+      "bytes": 9228,
+      "sha256": "29d693bf679dd9980a0d0b52e9035ed1e8eb104b1d2b1a7a32ed91b937e0b6f4"
+    },
+    {
+      "path": "public/controllers/generic-touchpad/right.glb",
+      "bytes": 1269940,
+      "sha256": "aa08a43c527e79b8f0c6d89c43230a9d1ab0d3bd2f1e77f73c244d3795692bce"
+    },
+    {
+      "path": "public/controllers/generic-trigger/left.glb",
+      "bytes": 1391416,
+      "sha256": "fdfab411fdca3ae8d83844bb1e1894ac6f87afcca342bb1dc1f9a30f943b01a9"
+    },
+    {
+      "path": "public/controllers/generic-trigger/none.glb",
+      "bytes": 1372712,
+      "sha256": "bf98afc58b57f7b56d440c73795bc89a06064903ab43e734c2e617f9be02f089"
+    },
+    {
+      "path": "public/controllers/generic-trigger/profile.json",
+      "bytes": 2840,
+      "sha256": "b9bad6d9c29212cdf0882932880f66a3529d63f6d1ff8ba06260c6216fa00d1d"
+    },
+    {
+      "path": "public/controllers/generic-trigger/right.glb",
+      "bytes": 1276056,
+      "sha256": "672aa1f57bba606e1dbb9014f614c1e4ebf082b7db3d8412b30900ceae2df675"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze/left.glb",
+      "bytes": 1470856,
+      "sha256": "3ee1bfae4d24e2ad1ec07ae5e8221b7a3ab5d7486d4c6f45cc015fa3f6099777"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze/none.glb",
+      "bytes": 1003428,
+      "sha256": "7166f2c377ceb9eb924e3ef9e6b732bbff07720f3389abf0a6129d52c186bb23"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze/profile.json",
+      "bytes": 5477,
+      "sha256": "9f48114c186a443c29b369e46b6d259937eea07e895b35b992a2aeead16fbc29"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze/right.glb",
+      "bytes": 1362972,
+      "sha256": "08c1e28bac254e83fa33e817c6251f6753c219dd9e87d8c2e09fae736d26c895"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-thumbstick/left.glb",
+      "bytes": 1442452,
+      "sha256": "22a6f7824467aa2fe52fec8ae5eaa665f4af89ca711810bbed04f3dbe3940a32"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-thumbstick/none.glb",
+      "bytes": 1502548,
+      "sha256": "6f0cde10489cd56093a71751caf969d88bccd404046f28eb73d947b6f36b04c1"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-thumbstick/profile.json",
+      "bytes": 10870,
+      "sha256": "e18518190becce2b6eac448a5b1fbf4d60fbd56822f7b21173605b6233e14eab"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-thumbstick/right.glb",
+      "bytes": 1332668,
+      "sha256": "9f86b08bee52ca869298fd2c0f155697efe81df35c9f6b58c7caf343b185623d"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad/left.glb",
+      "bytes": 1347472,
+      "sha256": "fd1178374518615ef56831829f60f82d8ce61d311d344b6873c913a0eaf7cf68"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad/none.glb",
+      "bytes": 1402940,
+      "sha256": "1740c34b5c85f94ec552bad5c428c7161e07efbb44668d40593a57570891c4d6"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad/profile.json",
+      "bytes": 14969,
+      "sha256": "4a848b1c992d14ba84c2d8a23466f3bdfac2c46735a9ed61174d827917771957"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad/right.glb",
+      "bytes": 1347408,
+      "sha256": "de5758b5a0e39c0e81442d9fc8898f9cdd3f206f132935e448b79b19e9731644"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad-thumbstick/left.glb",
+      "bytes": 1492700,
+      "sha256": "f2382c87423d83e6fc8d07c029debd8096a75b4bcf630d67349858f5a610a15d"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad-thumbstick/none.glb",
+      "bytes": 1424444,
+      "sha256": "2e0cfbf4e8dfcd629d0bbf60cd934e8bfef8bb8071e76b2562b89e885ff372a9"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad-thumbstick/profile.json",
+      "bytes": 20362,
+      "sha256": "04b8d33333fd8f8f4f60cad3ef6dfec755cefff8525b51d8b0d8ed276c24d7bd"
+    },
+    {
+      "path": "public/controllers/generic-trigger-squeeze-touchpad-thumbstick/right.glb",
+      "bytes": 1121788,
+      "sha256": "7b740df925faa2dd5a7a5db789f9f24632caa77f55556c4d79fed426db4be8db"
+    },
+    {
+      "path": "public/controllers/generic-trigger-thumbstick/left.glb",
+      "bytes": 1384852,
+      "sha256": "cdea1cbed36c59952f4833d3cfb2b5b814ed9068c0cfa502bc2962b5ddf4ed90"
+    },
+    {
+      "path": "public/controllers/generic-trigger-thumbstick/none.glb",
+      "bytes": 1291600,
+      "sha256": "43357a9ac9711835a6f6b94cea02760ddfe7992eeba2f197b1ce4948fed07a16"
+    },
+    {
+      "path": "public/controllers/generic-trigger-thumbstick/profile.json",
+      "bytes": 8233,
+      "sha256": "457df9a334e08a662aea706831d72e356842e5a7861ce415dfce9d10ffb134c1"
+    },
+    {
+      "path": "public/controllers/generic-trigger-thumbstick/right.glb",
+      "bytes": 1274116,
+      "sha256": "449ce37b01979f6aa79b5d370efbd3375d97f00dc07d192db8a8c5311b5014d7"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad/left.glb",
+      "bytes": 1332884,
+      "sha256": "bb91a428b22909c18da71990360327da9db6bf27559db4adca8d813d8a526091"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad/none.glb",
+      "bytes": 1406320,
+      "sha256": "617e2be6048d24b3faf731b42f8460821868ad176fba9eec74017800edd7a870"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad/profile.json",
+      "bytes": 12332,
+      "sha256": "0d298fcc9ad067168bc810dfcd29fbd9db921ae6c13bd172ede266afa51fccbe"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad/right.glb",
+      "bytes": 1333060,
+      "sha256": "c4bdc295e1725bc9cc6ae4143847b924e67c82bbdc35238870252f95df7a1606"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad-thumbstick/left.glb",
+      "bytes": 1383176,
+      "sha256": "4677c3741114c4cb7293ef96ea354c4c14f9001617d41c038237be41625db1ac"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad-thumbstick/none.glb",
+      "bytes": 1380184,
+      "sha256": "31aae8350df86b791af1d92f04783b0b6986038fe13d0f452edd20a268fceb46"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad-thumbstick/profile.json",
+      "bytes": 17725,
+      "sha256": "0eb98c49eb33637909dd3ce5c36f83e318cd7018b845a325b1a863307032d13a"
+    },
+    {
+      "path": "public/controllers/generic-trigger-touchpad-thumbstick/right.glb",
+      "bytes": 1383172,
+      "sha256": "c77d9cdc921aebea76fd78c9630dc4a7c218cbc90cf8c5710c2e6eb0d280ee45"
+    },
+    {
+      "path": "public/controllers/google-daydream/none.glb",
+      "bytes": 1265360,
+      "sha256": "1e03189a5774c51535bcb5e4aea9e551d9d8d3d6137f9a69740e6ad55bd28754"
+    },
+    {
+      "path": "public/controllers/google-daydream/profile.json",
+      "bytes": 9248,
+      "sha256": "2bd9c36683d4aaf87a4791a7d73b6e7e529c642d6324e37ae04c010330a848d7"
+    },
+    {
+      "path": "public/controllers/hp-mixed-reality/left.glb",
+      "bytes": 2394660,
+      "sha256": "7c0c1f6576e51d977e1874b8a772657341d2a145f383f2f5407bd72bdff8112f"
+    },
+    {
+      "path": "public/controllers/hp-mixed-reality/profile.json",
+      "bytes": 9499,
+      "sha256": "343f0ec5aa3577fc900349d367573a738d4af728501259060643319d4cbe4252"
+    },
+    {
+      "path": "public/controllers/hp-mixed-reality/right.glb",
+      "bytes": 2393240,
+      "sha256": "a3b2796735429497039f0313ed22e8c2f52f78000eff8a4e3e382cae0c68a7e0"
+    },
+    {
+      "path": "public/controllers/htc-vive/none.glb",
+      "bytes": 1114152,
+      "sha256": "bd201855c8114b9b0e9cdd465d6f08413d18604894c839fb78d54d890c2adc94"
+    },
+    {
+      "path": "public/controllers/htc-vive/profile.json",
+      "bytes": 14913,
+      "sha256": "a1902cfe23b7152effe90c45d741f5231340711345b6872caebe40c208f015fa"
+    },
+    {
+      "path": "public/controllers/htc-vive-cosmos/left.glb",
+      "bytes": 1387340,
+      "sha256": "4abe995b91ee69ef1abdc2703db18a14fe1d77c09d845fe9357ef6d3c5aa299f"
+    },
+    {
+      "path": "public/controllers/htc-vive-cosmos/profile.json",
+      "bytes": 10722,
+      "sha256": "08eeb0b74c3169a33821f3ae9e98199a2a23b9a70cadbc5c2800d7749587ba83"
+    },
+    {
+      "path": "public/controllers/htc-vive-cosmos/right.glb",
+      "bytes": 1410588,
+      "sha256": "515920e3d9ae5670e4454e64df183cb754c0bced92a0b380f6cb1d23e16e8229"
+    },
+    {
+      "path": "public/controllers/htc-vive-focus/none.glb",
+      "bytes": 630192,
+      "sha256": "bbd9978fbc6f54482a3aa15d63989c3cf067a47745a5778fe9c9c3788854563f"
+    },
+    {
+      "path": "public/controllers/htc-vive-focus/profile.json",
+      "bytes": 14157,
+      "sha256": "38209c3beacb942454daeab783a88d7208d82a1f0572de14e61bad0a884f1b5b"
+    },
+    {
+      "path": "public/controllers/htc-vive-focus-3/left.glb",
+      "bytes": 586776,
+      "sha256": "b026be4c96b373990868e469f6c6295125242799558e6e09905115778c046b15"
+    },
+    {
+      "path": "public/controllers/htc-vive-focus-3/profile.json",
+      "bytes": 9479,
+      "sha256": "cea1736d77e5e364dd34dca50f8092854dfa39178567f54d9127b69429621a23"
+    },
+    {
+      "path": "public/controllers/htc-vive-focus-3/right.glb",
+      "bytes": 581924,
+      "sha256": "ffbd65554cac1325019e77030f84b02a9a64d0b3aa5120fee7400411b29b7d08"
+    },
+    {
+      "path": "public/controllers/htc-vive-focus-plus/none.glb",
+      "bytes": 891284,
+      "sha256": "1477134fa3fe10780aa5bddab0c7eed622fd7cf0d2bfc2ab1950fc65b89760eb"
+    },
+    {
+      "path": "public/controllers/htc-vive-focus-plus/profile.json",
+      "bytes": 14957,
+      "sha256": "620a01a80b9a9b81e02fb0587533b472cab782981225caf2ce0bdc1e2dbd8427"
+    },
+    {
+      "path": "public/controllers/logitech-mx-ink/none.glb",
+      "bytes": 406496,
+      "sha256": "9242a427dbf6a9c329eab69990ac12e306de2adba1076449c3e925491dcee458"
+    },
+    {
+      "path": "public/controllers/logitech-mx-ink/profile.json",
+      "bytes": 11183,
+      "sha256": "c115f634c1542ce68da1e67b357a2779d80ed9e2633c12ac01c7b44eb6403ffb"
+    },
+    {
+      "path": "public/controllers/magicleap-one/none.glb",
+      "bytes": 605880,
+      "sha256": "d49f8ad492d8241c16f4aa2073a9a3c083200149bcc7c5d61b17356f156b07df"
+    },
+    {
+      "path": "public/controllers/magicleap-one/profile.json",
+      "bytes": 14933,
+      "sha256": "058e0b1296aaa021f4412d6ce190902152200db8d6eb9459e1c118ce127aba4c"
+    },
+    {
+      "path": "public/controllers/meta-quest-touch-plus/left.glb",
+      "bytes": 217984,
+      "sha256": "41a35b80221398d37029cbfaa9e39084ccd43e0206be72a5e8460f52e7882cb4"
+    },
+    {
+      "path": "public/controllers/meta-quest-touch-plus/profile.json",
+      "bytes": 11430,
+      "sha256": "f69041753f555fb91c36d97fd4a58885f3ceb35e2273b179f59cedd464aec688"
+    },
+    {
+      "path": "public/controllers/meta-quest-touch-plus/right.glb",
+      "bytes": 213868,
+      "sha256": "5126d638fb1d03e05d16d8eec3b31b9588df88eaa8b42cc21b857fac3bd44916"
+    },
+    {
+      "path": "public/controllers/meta-quest-touch-pro/left.glb",
+      "bytes": 297644,
+      "sha256": "5f64ff585815292bd7e35ac0db67e269cd10dd9f215f8a5f14b29de4c83819f9"
+    },
+    {
+      "path": "public/controllers/meta-quest-touch-pro/profile.json",
+      "bytes": 11427,
+      "sha256": "aaf3b93e0b54f3c0154b9cd43f636d2e0e010173aacb61c5a6aa5a209f969905"
+    },
+    {
+      "path": "public/controllers/meta-quest-touch-pro/right.glb",
+      "bytes": 300304,
+      "sha256": "de508862ac1460814b9236441982dfe2611ac5b1002d48503186e35a09d38272"
+    },
+    {
+      "path": "public/controllers/microsoft-mixed-reality/left.glb",
+      "bytes": 1340544,
+      "sha256": "57a587a1d6dc3f91368f141ebf2f60d334875aaa04d899357bfcb4f55e08217c"
+    },
+    {
+      "path": "public/controllers/microsoft-mixed-reality/profile.json",
+      "bytes": 13273,
+      "sha256": "d9b2a37bbe0d92bb0bb7f787250fcd6e0a7bee81069753866fa6b35dd69dd28a"
+    },
+    {
+      "path": "public/controllers/microsoft-mixed-reality/right.glb",
+      "bytes": 1340232,
+      "sha256": "e001df0d261dfe103d41d7d29e27bfd55f2d07ec4309add00a2f85c857a09b05"
+    },
+    {
+      "path": "public/controllers/oculus-go/none.glb",
+      "bytes": 397212,
+      "sha256": "103cf30dbbd181f9c99d5361f74d314101497229db574fdd8d80afdd7f1ec87a"
+    },
+    {
+      "path": "public/controllers/oculus-go/profile.json",
+      "bytes": 12304,
+      "sha256": "25ce6f441a0d02bb891fa117eddc997153f0103941e2d7a5f3fd37488f57d3e3"
+    },
+    {
+      "path": "public/controllers/oculus-touch/left.glb",
+      "bytes": 2695944,
+      "sha256": "9615c90065466283917acdbae619a27783cdea84af6974baafe68ab3d54b2b09"
+    },
+    {
+      "path": "public/controllers/oculus-touch/profile.json",
+      "bytes": 10749,
+      "sha256": "7d5cfff17c2b9894d18ae65f4004bbe16209521bd4d11dc4bfe9f575f4eb073c"
+    },
+    {
+      "path": "public/controllers/oculus-touch/right.glb",
+      "bytes": 1528052,
+      "sha256": "de007e79dc6dd67a4566aadc11a4bcdbd3266757c34643cdb555eca6b3d7f617"
+    },
+    {
+      "path": "public/controllers/oculus-touch-v2/left.glb",
+      "bytes": 527940,
+      "sha256": "1385bc8df4258cf67fbcab5665e502c0faa5b2d2374d5747125224ab850f6a7f"
+    },
+    {
+      "path": "public/controllers/oculus-touch-v2/profile.json",
+      "bytes": 10778,
+      "sha256": "69c7bd8eba00c3f9db0d2e924db7c1c659d2460e71f0669e945ab6e1c87141f7"
+    },
+    {
+      "path": "public/controllers/oculus-touch-v2/right.glb",
+      "bytes": 528220,
+      "sha256": "73c3945e6b001db5503747514c9cc31d0804fefca2e0d9dcff37adb409e55a61"
+    },
+    {
+      "path": "public/controllers/oculus-touch-v3/left.glb",
+      "bytes": 665820,
+      "sha256": "5a3015792dac074b31607e63eeb75743eac479540a36739e5f94b65335a7f88a"
+    },
+    {
+      "path": "public/controllers/oculus-touch-v3/profile.json",
+      "bytes": 11412,
+      "sha256": "438acabcdb360998d9e8fd97526292f5df5bfc88de9033dabe5817b5d5b29cc8"
+    },
+    {
+      "path": "public/controllers/oculus-touch-v3/right.glb",
+      "bytes": 665920,
+      "sha256": "18a2e651328b684d3aeeef9f16c083af1eea9c1f98f78f9da94960432c8a021b"
+    },
+    {
+      "path": "public/controllers/pico-4/left.glb",
+      "bytes": 769684,
+      "sha256": "0a0cc5101dcc192e30007db6fdcf7bd1a04b2c08bd7c05add8608138f30adb53"
+    },
+    {
+      "path": "public/controllers/pico-4/profile.json",
+      "bytes": 9449,
+      "sha256": "913cc48143e6fafda075b918eaae1ad6100d1732a2e4f59a02ece9134d244ce1"
+    },
+    {
+      "path": "public/controllers/pico-4/right.glb",
+      "bytes": 769528,
+      "sha256": "5b5e334bd9b4ea764e88ddf9ed37183e7d56d01d8493bd50273d9dfae8cc5460"
+    },
+    {
+      "path": "public/controllers/pico-g2/none.glb",
+      "bytes": 414632,
+      "sha256": "54b71ba0da9084f9e919552da9ddc9495732cccb68022550e8c8deaeb926bd62"
+    },
+    {
+      "path": "public/controllers/pico-g2/profile.json",
+      "bytes": 12296,
+      "sha256": "f390a634270fc773175b158393434314391a767b7cf276c1f1e8ae686c71f5aa"
+    },
+    {
+      "path": "public/controllers/pico-neo2/left.glb",
+      "bytes": 178644,
+      "sha256": "bbd06d1296b6bd47d2f2ed02060b40ed5f599820de1a4e7316fdb20dedeb3d58"
+    },
+    {
+      "path": "public/controllers/pico-neo2/profile.json",
+      "bytes": 9458,
+      "sha256": "bb4f12e0e0dcecce5e697b57bbf19f67c3390c9e92ee8f54735c21100c6c4dde"
+    },
+    {
+      "path": "public/controllers/pico-neo2/right.glb",
+      "bytes": 178040,
+      "sha256": "e9581c6b84bfbbb75c76aac4b7f93d83a0231327ca1cc2a93b877e808d3329ad"
+    },
+    {
+      "path": "public/controllers/pico-neo3/left.glb",
+      "bytes": 171840,
+      "sha256": "68443598d99f3b7273d4f5c4eeeaa7fa47491d7406b8cb3a98ffb1db9b254022"
+    },
+    {
+      "path": "public/controllers/pico-neo3/profile.json",
+      "bytes": 9458,
+      "sha256": "a087223824a9deefa2d14427a20bc2ebdb874cd8595281382c4371f3611f5ff1"
+    },
+    {
+      "path": "public/controllers/pico-neo3/right.glb",
+      "bytes": 171728,
+      "sha256": "42191f7075c61d7b338b4c9c4618c3e765519798fee12c29b8e79db4b6bab0a7"
+    },
+    {
+      "path": "public/controllers/profilesList.json",
+      "bytes": 2824,
+      "sha256": "eade317a253ae445f989449c8d8ea90b300feeafb5858589024db80d390750fc"
+    },
+    {
+      "path": "public/controllers/samsung-gearvr/none.glb",
+      "bytes": 709600,
+      "sha256": "2d4bf944b485ed5fa8ba92cfc31e8e0a307eb5e0ea798631696f829495180d7e"
+    },
+    {
+      "path": "public/controllers/samsung-gearvr/profile.json",
+      "bytes": 14157,
+      "sha256": "de5ce870e3ec7464124f6e5856fbce2bbf87b9d2516555b5ac6be5df03cbef59"
+    },
+    {
+      "path": "public/controllers/samsung-odyssey/left.glb",
+      "bytes": 1368600,
+      "sha256": "9041b7e20d1a020664f95b57983c6a11801de6f3c949aa8a9b5302ad7c853c4a"
+    },
+    {
+      "path": "public/controllers/samsung-odyssey/profile.json",
+      "bytes": 13280,
+      "sha256": "5a148b8ace40e8021957a02267b871d82267b1926b41dcdbfed0a1731ba4f1cf"
+    },
+    {
+      "path": "public/controllers/samsung-odyssey/right.glb",
+      "bytes": 1368484,
+      "sha256": "8024b8ca02ca4f5ade409706221e6f90028c6757eb7c548db2e5c3b988cca8f1"
+    },
+    {
+      "path": "public/controllers/valve-index/left.glb",
+      "bytes": 6215932,
+      "sha256": "845de49bdd4511ddf72e10846c7290dc2d48d0c30218e700017f486a5dcfece2"
+    },
+    {
+      "path": "public/controllers/valve-index/profile.json",
+      "bytes": 14507,
+      "sha256": "c4318b8a36655c0ea1f73244d225b196cd190dfd41f298f0837b6a2d5319ab62"
+    },
+    {
+      "path": "public/controllers/valve-index/right.glb",
+      "bytes": 6218424,
+      "sha256": "9b0d2606ea6856958fcef98d8d119a550cb061fc31cde4c17fb1fa2251b6db81"
+    },
+    {
+      "path": "public/controllers/yvr-touch/left.glb",
+      "bytes": 914456,
+      "sha256": "963ffb7d4dd035aea96d06f4ca7a95834357154ea50b6188d19eacd644ac75dc"
+    },
+    {
+      "path": "public/controllers/yvr-touch/profile.json",
+      "bytes": 9458,
+      "sha256": "49b5a05bb298f42142d620b7c8794fa305258da0e17c3351d622553b4d5350a7"
+    },
+    {
+      "path": "public/controllers/yvr-touch/right.glb",
+      "bytes": 1033924,
+      "sha256": "00bb9f71cf8dc340607a40ba27f182fef8bacf16eb96ce9fa39e642b85ecc16e"
+    },
+    {
+      "path": "public/debugLogger.js",
+      "bytes": 2227,
+      "sha256": "9b4a7a00613f35c37d3e7ec906ab2d76775114ba7c548325e4da6f980eea4d82"
+    },
+    {
+      "path": "public/favicon-16x16.png",
+      "bytes": 4666,
+      "sha256": "28fdf97e94c5a45b0399555f0c918c9e3d590a8a54bdbc7e2738bb5a4d97a6cc"
+    },
+    {
+      "path": "public/favicon-32x32.png",
+      "bytes": 5829,
+      "sha256": "0918e51482fb7fca936836dace6b2d78a0d8f1cb3a71b0702e97fa3d8c387a6f"
+    },
+    {
+      "path": "public/favicon.ico",
+      "bytes": 15086,
+      "sha256": "de9e84e54dc15434645f9f844a99c5b133f16238cc98a63aa83fa470fc5a27d3"
+    },
+    {
+      "path": "public/fonts/helvetiker_regular.typeface.json",
+      "bytes": 63182,
+      "sha256": "d5c5467690f74061179a292af83bd85c4c551e0f106b2af99714f11184c96981"
+    },
+    {
+      "path": "public/github-mark-white.svg",
+      "bytes": 960,
+      "sha256": "fab00c2d598c56cb4838603981b66e3490ebe27ea56fb188120a7e6d4ca46970"
+    },
+    {
+      "path": "public/intro.png",
+      "bytes": 188620,
+      "sha256": "d667eacdff3b89385b420565562cf589084a4a1aab9a1767a77230ea88766799"
+    },
+    {
+      "path": "public/liquid-metaballs.jpg",
+      "bytes": 349903,
+      "sha256": "d8906ec17e9af576f699f120ef64cf43db065d810d875eaabe7d0dd989eadd05"
+    },
+    {
+      "path": "public/logo.png",
+      "bytes": 91249,
+      "sha256": "5516c071894800036019d7edb0a1472c4ed231cc463b6badaefd301498cc1489"
+    },
+    {
+      "path": "public/manual-pcm-capture.js",
+      "bytes": 978,
+      "sha256": "094c05fae8f3c52a671b0f3b5319b8ed3f25b5d33bae5c97d178d1302854b8dd"
+    },
+    {
+      "path": "public/mstile-150x150.png",
+      "bytes": 15153,
+      "sha256": "1d650d17153e9177388ca1a94064d30a3dafe9169b69f8c07f45f0d2eac7d427"
+    },
+    {
+      "path": "public/ogp.png",
+      "bytes": 396786,
+      "sha256": "2269e23c0965d9bd206069f4913eea2a3e9a1b9eac88c20001c7679d9c4261e7"
+    },
+    {
+      "path": "public/particles/cartoon_star_field.json",
+      "bytes": 33023,
+      "sha256": "125951111c9cecd249ee615c40c6ac66edfa7827e82690bbae0ebaf0cda871e7"
+    },
+    {
+      "path": "public/room/bathroom.glb",
+      "bytes": 4152444,
+      "sha256": "474ded996cc1cfcb78f70c8482b50a9568fa23b78b2252ca9e31344c0c278e54"
+    },
+    {
+      "path": "public/room/myroom.glb",
+      "bytes": 4246460,
+      "sha256": "9d35a267714aee77a27e0cf38d951968d0485963fd889b4d2f160b5a6cd5e439"
+    },
+    {
+      "path": "public/safari-pinned-tab.svg",
+      "bytes": 4469,
+      "sha256": "8c3064c2d23cfbe61e3aa457e7eb3ff147251a8b459f5b2f0cf8edaebfb0d792"
+    },
+    {
+      "path": "public/scenarios/test1.js",
+      "bytes": 1655,
+      "sha256": "c14b893493e2919bbf30fcddcec3849c892cad99ea1bf169fc9a61d09dbb0a77"
+    },
+    {
+      "path": "public/scenarios/test2.js",
+      "bytes": 3308,
+      "sha256": "7d5d30ee83467e8391e8db8fc9b04471fa721acbbe1892cf6b92d8cd0efc1051"
+    },
+    {
+      "path": "public/site.webmanifest",
+      "bytes": 458,
+      "sha256": "389e4dcd4a91d16a93013beb25a45f48451c7e9eb66d9dec4d70562af0a65422"
+    },
+    {
+      "path": "public/speecht5_speaker_embeddings/.gitignore",
+      "bytes": 9,
+      "sha256": "04def3c734ed51a0b92aaec07f586a20bfac49e4e3121a011a3e778ce2ce1347"
+    },
+    {
+      "path": "public/speecht5_speaker_embeddings/cmu_us_awb_arctic-wav-arctic_a0002.bin",
+      "bytes": 2048,
+      "sha256": "7bda76abed5b75fc9eb5a872bfd2e4fe59ebf8210390d04f317fc597561372d8"
+    },
+    {
+      "path": "public/speecht5_speaker_embeddings/cmu_us_slt_arctic-wav-arctic_a0001.bin",
+      "bytes": 2048,
+      "sha256": "1be85882a04effc2cd1111869ae885f53cf2b05ac6ad3b072d56e079cf3b24ff"
+    },
+    {
+      "path": "public/splashscreen.html",
+      "bytes": 1408,
+      "sha256": "005cc1d72443f550b404b631344661ef9719be39bba8f36b15269768cde83819"
+    },
+    {
+      "path": "public/vrm/.gitignore",
+      "bytes": 9,
+      "sha256": "04def3c734ed51a0b92aaec07f586a20bfac49e4e3121a011a3e778ce2ce1347"
+    },
+    {
+      "path": "public/vrm/AvatarSample_B.vrm",
+      "bytes": 15097732,
+      "sha256": "82754e287e0b26b5d7a1fd223ed0fd5debcabed81f36549fb2c16b201f3e5ca9"
+    },
+    {
+      "path": "public/vrm/AvatarSample_C.vrm",
+      "bytes": 15438676,
+      "sha256": "04a490afc384382a91f0c52596bc3f9b929797118aacb03f9bad4d4bf607887b"
+    },
+    {
+      "path": "public/vrm/AvatarSample_D.vrm",
+      "bytes": 13127716,
+      "sha256": "8172f59e88a5f401ba86ffdb0cdb5edc3166223e39cdacade2890e0fd3a8d916"
+    },
+    {
+      "path": "public/vrm/YYC_InfoDay.vrm",
+      "bytes": 78353592,
+      "sha256": "7e395172908ecf4635a404274b72e8032233c34fc521b478c0b816a30f0b5a6e"
+    },
+    {
+      "path": "public/vrm/thumb-AvatarSample_B.vrm.jpg",
+      "bytes": 11765,
+      "sha256": "6c0e01e43474909ba23b91b9b56b519b81fc68e1973e84ad82d4b2b1f0c1e304"
+    },
+    {
+      "path": "public/vrm/thumb-AvatarSample_C.vrm.jpg",
+      "bytes": 15194,
+      "sha256": "6f29f68519d40d50b5b8db17129db985ea3c34360622e746a407fc85ccd6ee79"
+    },
+    {
+      "path": "public/vrm/thumb-AvatarSample_D.vrm.jpg",
+      "bytes": 12000,
+      "sha256": "43e53f79ccade16703a6e9c0bae613dfe4644fe1dabf364c3fdc8708fa8862ca"
+    },
+    {
+      "path": "public/vrm/thumb-YYC_InfoDay.vrm.jpg",
+      "bytes": 53808,
+      "sha256": "308a2528fb62d847738b335c20acde72eaeb0d8d99950320bcc7e020c9140826"
+    },
+    {
+      "path": "public/vrm/thumb-placeholder.jpg",
+      "bytes": 8241,
+      "sha256": "a8e6d6c22a8d6c417b1c69f948d8977c8c1fd44397615cc594ba0bd212b3fcbd"
+    },
+    {
+      "path": "context/design/approved-character.png",
+      "bytes": 1614279,
+      "sha256": "9e2630600b2492d94b9d4f70eb92204dfbfc8fa3c3658a554bba4c656104ceeb"
+    },
+    {
+      "path": "context/design/face-skin-sample.json",
+      "bytes": 161,
+      "sha256": "7e0d19bddcf80b0884dcae5495f82dd9a2fd5c37533e9a97664367f0ee06dac8"
+    },
+    {
+      "path": "context/design/hair-original.png",
+      "bytes": 47465,
+      "sha256": "2a9f0a8cbfbf2286e817eca3a59ffe129602779c2ec6dff599ec4c00a5f21901"
+    },
+    {
+      "path": "context/design/model-reference.jpg",
+      "bytes": 285563,
+      "sha256": "357bf94e378af5bc08992504912d9c5b0f737ea2a401857ce76ba56c4573b785"
+    },
+    {
+      "path": "context/school-knowledge/AI_USAGE.txt",
+      "bytes": 1958,
+      "sha256": "31140988dd2b7777ad6397f80aa84406b3cdedb179b754f5b439137fb5d2ea6b"
+    },
+    {
+      "path": "context/school-knowledge/README.md",
+      "bytes": 5481,
+      "sha256": "60091599f6008d13beee90cf7eab9a0b5d9a9ef89ce7e27b70b69d0481d3c024"
+    },
+    {
+      "path": "context/school-knowledge/manifest.json",
+      "bytes": 2562,
+      "sha256": "174c1aef5793e5c88a40237a284c9924a30075962dc0b253cd64ad0161416019"
+    },
+    {
+      "path": "context/school-knowledge/quality_report.json",
+      "bytes": 9596,
+      "sha256": "e44296c87691fe3d88ded1a7df8720cfc54ec927dd99355703c305528a61b6a0"
+    },
+    {
+      "path": "context/school-knowledge/retrieval_chunks.jsonl",
+      "bytes": 1918293,
+      "sha256": "9cefcaec5262f549c96b129f81cee7522e95aaa932e3a7881531d427d7f12a2e"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/001.json",
+      "bytes": 1309,
+      "sha256": "606c39f309aed1e014ead687bf47ff31f2c65b52d9752be2e1b979929cf6b712"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/002.json",
+      "bytes": 20076,
+      "sha256": "0060734f95508d6575d41250b2fbef65e51ede3e61f75debb30238e62f4f8808"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/003.json",
+      "bytes": 18608,
+      "sha256": "d954ad0f7ebdb81ddc0622e697e1f487f23155a6d85a3e62f801933cbfa07cfa"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/004.json",
+      "bytes": 11324,
+      "sha256": "a90dfe66021be32966fcd14730b2bb8ef831353ca14f984189f7641d6966fcdd"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/005.json",
+      "bytes": 12120,
+      "sha256": "5223b954707da719f03ee945ca32be26018ef87227f8ed1d5b2d8bc91e28a5b7"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/006.json",
+      "bytes": 15046,
+      "sha256": "9cde90c3ba7566ce7995d401e484afef62e99b5f4c8af04ee4195ecca8d4c4db"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/007.json",
+      "bytes": 40206,
+      "sha256": "d80de32ff4f7f1e6d952b10fd527d9aa03486224b5de6ce2f4eabf15a71e4345"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/008.json",
+      "bytes": 17796,
+      "sha256": "5136e8a564a792ac36231893231a44ae7a646f741f0841850bf377b868432318"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/009.json",
+      "bytes": 26216,
+      "sha256": "24e883e0758f34d3633d4b928fb67256d7a6984f4a66151187a8549698cf9c24"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/010.json",
+      "bytes": 13595,
+      "sha256": "d30dee97105b827cc6ba385bae9c0ab3a46a5863dfb1e2f2e7690a203e61009e"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/011.json",
+      "bytes": 5424,
+      "sha256": "3db4a2f08ea557ac276752d17467da65fd0941fb8f82e8b81b9591ba648a2232"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/012.json",
+      "bytes": 8725,
+      "sha256": "c9712751739d8427aea25e70598be8b0aa6bf5adf57acb69aa95037085df37b0"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/013.json",
+      "bytes": 12421,
+      "sha256": "a9a8673576752b67eeb761e2858e98446058a421d80ccb692e57199573e62912"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/014.json",
+      "bytes": 7886,
+      "sha256": "5385da5cefa7478de2cd1f3bfa1c2ca5192f6ee323ff9484d1461d62377053ff"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/015.json",
+      "bytes": 9398,
+      "sha256": "50cb06476fb3319860005f01e9f93c16cfd54a31efd22c4da745f5310187f56d"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/016.json",
+      "bytes": 12102,
+      "sha256": "429f67ca04401553f7af2b7511a89a416865bd947e62ef3dfdf29667c0a03ca7"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/017.json",
+      "bytes": 11724,
+      "sha256": "9acf9b4d55ff9cdd525edbd5a5f5269b9a32effda0b0c15c43a73d97feed4e10"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/018.json",
+      "bytes": 17546,
+      "sha256": "8c290d917724e23b6107c3106e34590c8f6167c2ccb27cd0b78abc71cc0f4461"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/019.json",
+      "bytes": 13888,
+      "sha256": "0f13a8c06e386d8760d909596af4201cc0d5f906dc13b0ac03fe37d16727cc38"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/020.json",
+      "bytes": 11774,
+      "sha256": "7ac15b51a7a0bdd8a7c0d91e2d4f2671731c4a54563e42ca5ff2662e47a4742b"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/021.json",
+      "bytes": 11101,
+      "sha256": "dc90431d1a1e5e6a3aa500df6b9849d06ebd83b9074875c36eb09da1cad9b9fd"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/022.json",
+      "bytes": 7626,
+      "sha256": "99256d6b0b76ce18e8b36493430686c4db0859d7ff1f82483261747c11177cb4"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/023.json",
+      "bytes": 9694,
+      "sha256": "77f956e91164e912e6d2002449e4ca948be0ddaa466acb4e859cbaa214d844fe"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/024.json",
+      "bytes": 4959,
+      "sha256": "86ed9a58aeadb00f538e4c5f3208742ce30991f67d4ba140a543cf689b7be765"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/025.json",
+      "bytes": 13986,
+      "sha256": "69376dbf60680419e3525a6fa35c6f33932937cb6ec46ab8a70a9dede4507c5a"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/026.json",
+      "bytes": 8530,
+      "sha256": "33d35157b3d1932abf7dfd9c75dfb9c52449b5c3f460efb1eb63f87ea8aee23e"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/027.json",
+      "bytes": 16364,
+      "sha256": "d10ac6ba1970ee6f79faa77cf8621ff9d09cfce179e417f5a8dd33e2ffa03a85"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/028.json",
+      "bytes": 7695,
+      "sha256": "87fe05edb29726a0d01f68b857b41c5b2fba17cb21791f2f5afc5aac3986bd45"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/029.json",
+      "bytes": 6579,
+      "sha256": "db9a786cfd8b27e6ab391d2f290be9c4887be659d04d70b613fa893f6120c7bf"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/030.json",
+      "bytes": 7151,
+      "sha256": "e5305a90d9fba358a4974a522ab3fdfb1fb60b14d7369dc3166bab2ef741bf29"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/031.json",
+      "bytes": 6030,
+      "sha256": "0d8439f86751a042cf8511b918dc91af61344167b881d42331e3555426ef5232"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/032.json",
+      "bytes": 12089,
+      "sha256": "2706b31887036797ca496c7626343a5580323c5c3a0ee33c5e0bfec625719ef0"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/033.json",
+      "bytes": 9326,
+      "sha256": "e637ae5b591294e2199d20dcdcb59a012cd78f83f41853c4faa14322e8a46ecc"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/034.json",
+      "bytes": 9861,
+      "sha256": "a4b769df2c790e422e6b0e050eab949a635e91e031a472471a3d4304e5c3aa50"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/035.json",
+      "bytes": 9841,
+      "sha256": "97a09e207a7a0a0fd3d86151b5ee0b97fb0f0c5c5ddacbd7a29d8bce75bebda8"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/036.json",
+      "bytes": 8857,
+      "sha256": "7533c4c5492d442a33494ec0c4f182e07e0f69c583d088dd46a79a351f7d1bbc"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/037.json",
+      "bytes": 11282,
+      "sha256": "b5a21813165dbb07a05ed3fcb0b0f16281e237b7e2c4e5a4764cb442e48c038e"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/038.json",
+      "bytes": 7827,
+      "sha256": "badb338efb3bd393a2fc2f5cb13adace65706051fb4fb7ecd499886b3fdba783"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/039.json",
+      "bytes": 8515,
+      "sha256": "bfbc92b995b1d873b884ca2d130c08054ed124bc7eafc2810cc56a4dfd349c68"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/040.json",
+      "bytes": 11935,
+      "sha256": "a79ce163a6c0cceb6727bbce452766325d2643656ebe5b749fe316c1cfe8732b"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/041.json",
+      "bytes": 11042,
+      "sha256": "008bbc72ddce211ec80a9ffb97584c6b46b227797df05d15892c56539f1f46f0"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/042.json",
+      "bytes": 8534,
+      "sha256": "8c97a98a669a9dc92576a0be57cea40d6e7d1d05acdc349af1d2911a51857065"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/043.json",
+      "bytes": 4154,
+      "sha256": "8c9cde36061403cce37235a1158c0c5a1b11eb4ee2eb2f30500604bc2bc148d6"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/044.json",
+      "bytes": 8466,
+      "sha256": "1f4295c53e9b66e50c4eb5bef0216533477bf70fe623079065f7be363dffdff7"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/045.json",
+      "bytes": 11579,
+      "sha256": "743fed666b05d14fa301c1de9bbe42605633ead8c39045cde623d9775da6f50f"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/046.json",
+      "bytes": 15372,
+      "sha256": "016e59992b592ca030719c9ba5b7c86d425a931231d23baa03f181ddaf59198f"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/047.json",
+      "bytes": 18899,
+      "sha256": "ebcedc2dc2146dad2409f140d68bd2f98c76295fe9ee0406f2ae18b86a8ee008"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/048.json",
+      "bytes": 10222,
+      "sha256": "65347a81876dbc7cf3c54050cb9287906e1366c67067a0015806b73e4f4e82d7"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/049.json",
+      "bytes": 7215,
+      "sha256": "156d0f6275840c06781b5dd490cab817379d1d49943630c12b1ea8303dd9f91e"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/050.json",
+      "bytes": 11211,
+      "sha256": "3a0a3f004884c341c8e32a9461e972455496d093f9d0d84bbcdf2497d5abef2f"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/051.json",
+      "bytes": 13789,
+      "sha256": "4cfbaf728acbf7b740ebf9cfe6fbe926f122795f0eb3d5140ddcc8bb7627a5e2"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/052.json",
+      "bytes": 15882,
+      "sha256": "f60ff54993956ba172497045fb05f2c3c186bb2b73f153453e9cda3b4dcfac0a"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/053.json",
+      "bytes": 11646,
+      "sha256": "cb599a4f0d46dd6f5ab07d19a1c4367ae55bb68b9567bc87efcc55e7d47b88a1"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/054.json",
+      "bytes": 15730,
+      "sha256": "0cbf5b79ec85d3a12916658bac403264b42fee1e198a27d4dc76f26691eb5e07"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/055.json",
+      "bytes": 12881,
+      "sha256": "a73b11a2c643fad0114f08be3f1b4380eeb16b1ccdec233fddd4c3b3fe80e656"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/056.json",
+      "bytes": 17101,
+      "sha256": "71d73818667f25cc8d2df3ca668dc3a0581f86aba948810334f37f2f4b658126"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/057.json",
+      "bytes": 42235,
+      "sha256": "0b5b7b2407c4c6e16c5c150bfa332de23d703d710d0f5b4730a213b6442f0152"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/058.json",
+      "bytes": 17162,
+      "sha256": "249cbf9ab2d28b9ef4040e1af72cfed003728714fb4977c99138ef466aefbf68"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/059.json",
+      "bytes": 6215,
+      "sha256": "45ee8cf16f159ff4159afd74115ca2801e51575f9180c288c99feb91b3ea036a"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/060.json",
+      "bytes": 13276,
+      "sha256": "a596b321430605630b052b2f54bcc4d857a6769974c630183f8f3cb551b26cf1"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/061.json",
+      "bytes": 3771,
+      "sha256": "b3b1b1597b1bf431f3bdc7547885916b0a0ff3ddafb3794d2d7dd0b20c25d006"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/062.json",
+      "bytes": 11273,
+      "sha256": "80cae36af007ab7839602b506b70a5290ef7c41319d53f48e0a9819186966553"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/063.json",
+      "bytes": 10732,
+      "sha256": "cf72ffb5dd18d6c49770df69f853b672b47521301eb182e8cd0268c249f870a8"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/064.json",
+      "bytes": 13413,
+      "sha256": "353af1b301282344673f2fda19c1e3df0f5cb0284801186cb36c59dd6a9f15a3"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/065.json",
+      "bytes": 13021,
+      "sha256": "d4db9b16eca2e41d258a86d20077c63903c0ebb06a73e5cfbd3c295e350d4c29"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/066.json",
+      "bytes": 8788,
+      "sha256": "0fc71b0f1b47cea2ed6435379e395ad85a66bea59cf38804d4d19df6a0eeb89e"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/067.json",
+      "bytes": 4941,
+      "sha256": "a9f550ce7b19db63d4b00e7e197e5a9ce925e0267549ebb809d3fe67202931dd"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/068.json",
+      "bytes": 12226,
+      "sha256": "8f2785a98542a152d430396216d4aea7ccc54fd1ac54ff4d39b54e67a93fa9fc"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/069.json",
+      "bytes": 13518,
+      "sha256": "68fd741cd3f7b9c111f0bb79eabfbc3ed1bee9176c86970628464d0e28d9d9f3"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/070.json",
+      "bytes": 15410,
+      "sha256": "e07ac7e465aa158b7140441069dab4fb93249d34e82ebd3aacc2ffac7e2b3b93"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/071.json",
+      "bytes": 12508,
+      "sha256": "cc872b7b897aa14f027a226529dc7d24431f0aeab47eaf4972c8c8e8e97ec71c"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/072.json",
+      "bytes": 14443,
+      "sha256": "c1dc32291f528ba7a1af3e82fc97e9e54b5d84d2cbcb8db05f76a5bb870647bd"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/073.json",
+      "bytes": 4798,
+      "sha256": "f220118e38d5cd5748718d8dccf660e6ea2826567e8cd441dea5fd19a2ef6b3b"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/074.json",
+      "bytes": 8732,
+      "sha256": "ef7414a8a4f04258adee464e76efc1bc821acb186d7b198d9766e96dbc7fbc16"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/075.json",
+      "bytes": 9010,
+      "sha256": "85d1c71f4a97e86f53542129a252c5e275a840e7b3ff020efb20ab13a59675f4"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/076.json",
+      "bytes": 14204,
+      "sha256": "b1301012525d5a87db9b67ca129ce0adbe672abf0d9a7080eb5b7cfa9100a0f4"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/077.json",
+      "bytes": 9716,
+      "sha256": "0e7c7505fa0489ec42d765db8e076d156347a7bdf876123842fad5597f0adc72"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/078.json",
+      "bytes": 23975,
+      "sha256": "ca5950f61ce7693efdcad06cf632b14acf93c380729effa7e50ee14fe41c8a8c"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/079.json",
+      "bytes": 26131,
+      "sha256": "b7f62565ab98390c2aeeafaf16f53fde22e84101857746f59d47b945c1d670fa"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/080.json",
+      "bytes": 25257,
+      "sha256": "9fc358eb32768cfda3c7ea877cb67c8fa3a3225471f3e5dc84872fc2b7dd30b3"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/081.json",
+      "bytes": 24360,
+      "sha256": "dc9c642f1442e1e414d22c76b24e769ba30afaa8652bbb75f6733dc846648394"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/082.json",
+      "bytes": 3718,
+      "sha256": "8ce75cdbdd8c5a47a1e25266149243ad885406825317e2868f6aeaeda210be22"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/083.json",
+      "bytes": 5585,
+      "sha256": "c02b6eaedaa59272af8836bf2930ace498c6fda3364a20102e1ed3b20cac85d4"
+    },
+    {
+      "path": "context/school-knowledge/review/1023-0925/084.json",
+      "bytes": 12822,
+      "sha256": "2f814c126cd1716f7f2d1caa41f80e9a70ae3b3c37f729e453cba75b71448ba3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/001.json",
+      "bytes": 8614,
+      "sha256": "b82395e45a8563cd0b4b83ea1c2ed91c632cd52839761dae959f1d0ddfb68fda"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/002.json",
+      "bytes": 13267,
+      "sha256": "30315345ebffbe4c5fea2378e08d2b1e728ff42f47d1848b10794a99b4cbbb16"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/003.json",
+      "bytes": 3473,
+      "sha256": "4ba9d74cb31deeb517994335e4d05c7c870c14501ebd1792e8aa7d272eb2d8d2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/004.json",
+      "bytes": 4409,
+      "sha256": "0fd88f51e13003278142214fe7c2e61b47d4ac7a98cb1f65736e75504ec269c6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/005.json",
+      "bytes": 6282,
+      "sha256": "18149c855ee830f8c68bc15c133712f1964b0acb1ae79842b8c049f5b236177c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/006.json",
+      "bytes": 2099,
+      "sha256": "1b1786c15273417801d45d0403fd360884925f9d06514b2bfe25a5ba5943ada8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/007.json",
+      "bytes": 1686,
+      "sha256": "8721fcbc2f2341352ee25abcf144ec467e110391cb8991b11ac81629c1fb6320"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/008.json",
+      "bytes": 2127,
+      "sha256": "cc3b325ddd9d35eb6f697dbf5e66d4dcfc2d8be8cfc79dda6b18c30d93aeb9e8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/009.json",
+      "bytes": 2834,
+      "sha256": "a46f23171d5573479cc965f85c771ab76c268a81e86d88cdd0cf0db1b4a52d17"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/010.json",
+      "bytes": 2795,
+      "sha256": "a0bf1b75cd3f9d88cad05af0937b490b505c198aa8c31b89c86c46c177c3b37d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/011.json",
+      "bytes": 3808,
+      "sha256": "2ba58526a9259fb81c50569d0a8c97c696fc5a22a3c6c1e06b698e913882f8ff"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/012.json",
+      "bytes": 3720,
+      "sha256": "9ab96bcee1ce9f2af391c42b562f2614599b7ea772a83da07dc3dc79099f0c3f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/013.json",
+      "bytes": 1494,
+      "sha256": "0fc9d77e0a77794348d72f98a995909613a38e4fa0cedb3606c4793ed8ec26ed"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/014.json",
+      "bytes": 1419,
+      "sha256": "61d802e83b0a7b62b3f858f199294e228c2dbf12ed7e0e089d615f6ea04c096b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/015.json",
+      "bytes": 1995,
+      "sha256": "9ca78053ee9d14575634859ea1c0121a73e34f86fbee649600c165049bb192f4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/016.json",
+      "bytes": 2037,
+      "sha256": "06e2605bd76ce768c01d105a876215a40b95a860353182cd2f349950749a8769"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/017.json",
+      "bytes": 2388,
+      "sha256": "ea08653bfc43bb5d12d76bf74be6e8e9c96de549df4216137339cba9d8b8645a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/018.json",
+      "bytes": 1980,
+      "sha256": "0e332c42d7b49fd98521aeacf79a1b439b730a49e659e583c9d5381c6a1187c5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/019.json",
+      "bytes": 11669,
+      "sha256": "dac98b40304773644382d180661ab236cc782d8affd8279a08e0556ba877f065"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/020.json",
+      "bytes": 10464,
+      "sha256": "b18ff9c20ec06a4783b8b8fb9947579bec73e2616aa73e584c93ecd5d79329c3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/021.json",
+      "bytes": 14831,
+      "sha256": "05bc1743a1149bd2bf86800455e92b3bd2a90f3cef627cc5f296846e435efae6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/022.json",
+      "bytes": 17387,
+      "sha256": "914e8a0aefaf0105861bce266846c07f4a00e9773034685fd85a57bb734734b6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/023.json",
+      "bytes": 10057,
+      "sha256": "a07c29c6a9a830817a3df40ac46ba68284f9f7b01418bdd6e8ecd88022f0c2aa"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/024.json",
+      "bytes": 16067,
+      "sha256": "5b29ea72fa9335dc6ace651f0fbea8dedf59be96779beac861b3b3a62be662bc"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/025.json",
+      "bytes": 21357,
+      "sha256": "7411888f2eeda83eb95a631fd276fa996f2180430595fc99847da44d1f58556a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/026.json",
+      "bytes": 17575,
+      "sha256": "b54ab3c6fb804ad8506e98a412192119972ab2376bbb89b1f96cd964f8d2aa56"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/027.json",
+      "bytes": 8431,
+      "sha256": "e86e75ee6aff1cb2c9d963a0f7b575dcb9f48b95b492ab6175faf6a16cc49dd6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/028.json",
+      "bytes": 4873,
+      "sha256": "bedc217ea204e77641b53090b5e4ba1e48f4280912532741b5a168712ec396fc"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/029.json",
+      "bytes": 5032,
+      "sha256": "97d3dd7a944c0d3ea024ec2065b3abfb275f670b3a537db738f0cc4d254b988d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/030.json",
+      "bytes": 7959,
+      "sha256": "f6cc32c9b04eaeaca6a77e8695dda14a6b7ccf14ab5e6be1ab641337174bfb23"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/031.json",
+      "bytes": 4173,
+      "sha256": "694f046bfb23fed1343dbfa1ebacaf499fa7f80031fa763f9146fc1e91509c48"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/032.json",
+      "bytes": 20610,
+      "sha256": "7e13ba71b9af6b2b7eb114daf34bce28bcef7ba75546f55fa67ee14aa3f2888b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/033.json",
+      "bytes": 14664,
+      "sha256": "7c4d375f4c0d160d96836f57697c596bbad80273dfd47fd992eb9587476af9c5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/034.json",
+      "bytes": 8638,
+      "sha256": "c457be16805882c46090810512afb201eff7d4249263c228c3fce8d349473a80"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/035.json",
+      "bytes": 6205,
+      "sha256": "989cb053df5cdc8afde2f78df5956b2809d583fcdb7377c176164cde53518aa3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/036.json",
+      "bytes": 12707,
+      "sha256": "1d643661fe5f4d841254eb843c35ad786e44953c90f6c114184a46f0c18aa450"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/037.json",
+      "bytes": 12197,
+      "sha256": "65d5ab61d3ca7b6556514f692ca5458ed687902caa31c961ee51a7efe33769ca"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/038.json",
+      "bytes": 15218,
+      "sha256": "f4ce9e8f4cb7fdf3db5aba3013523a571342bc1ebeae51e2fb757512527db1a4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/039.json",
+      "bytes": 14331,
+      "sha256": "8ee521529d8a750e44d0cb3c3b4bff74eaa4c888b262db453b29cbde85a5269a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/040.json",
+      "bytes": 378,
+      "sha256": "06fad7aa76bc47251e3064e802acbf4094ed9d1c429c308a2124f75277016dc2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/041.json",
+      "bytes": 2035,
+      "sha256": "f652d925e593087e832c5cfd12ec4817073170d7c5c1ac8920e0d95ea129fc1c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/042.json",
+      "bytes": 11062,
+      "sha256": "7bd9e00507fd1b5c1092958e873d30cc5bb84a0cb399ec50db49e88b2639d358"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/043.json",
+      "bytes": 10513,
+      "sha256": "ba664d8cb83c6188452246bc183a9d866257fa5aa0e3b0eae30fe68aadcdd74a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/044.json",
+      "bytes": 13067,
+      "sha256": "3c094c6e733e7672399a30f1bfa399e47d436bc4e9b03037813c452b45c9da59"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/045.json",
+      "bytes": 9014,
+      "sha256": "89bf418dbf8eb278a483e7bec65f7aa9829e6c7a22f9667a99062a9b309ff278"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/046.json",
+      "bytes": 9575,
+      "sha256": "381899be46950883e445d56ef84eee9cc956f58d1a6234fbb529c0ede3321b25"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/047.json",
+      "bytes": 9064,
+      "sha256": "239f3fbf52c31e5af9be0b07ec88bb5b4e548249b3fb8617ffc7a6aae3cb1e7c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/048.json",
+      "bytes": 12488,
+      "sha256": "432d5a024ac4463fc40a0f48335df5c494c94b2d043ec663890fc2af8438011a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/049.json",
+      "bytes": 9346,
+      "sha256": "ef4d7687d60593c547ff5e5efe922d272b0b911c9b04dd0a4ed07cdcbad5e19d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/050.json",
+      "bytes": 17756,
+      "sha256": "fd3ba712e86f40607b489755d0aa7dd673479fad2e2d4b10420bd5266c7e33a9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/051.json",
+      "bytes": 14891,
+      "sha256": "bdc8b1a2adcaccc45739375dd8d64a380ba3faa26c23253722c1dfbb7066d114"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/052.json",
+      "bytes": 13483,
+      "sha256": "50abb7a853434301d961c67c165c97d6cf1d99978a7e4b7731fdf7e2745be25e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/053.json",
+      "bytes": 9389,
+      "sha256": "985502ce4196762037dedfc894b4beec77b09ec6231a1e8f06237ca3e19a0a13"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/054.json",
+      "bytes": 10460,
+      "sha256": "0c1a027d7b178ee9ff0ba1c8486ff7101d3888f78d680ad2d59df2b134f58e99"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/055.json",
+      "bytes": 4224,
+      "sha256": "14d4d52e533f703c0775d3952ffab95a8fe24fa33183d34e618ab5bce1bff3b7"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/056.json",
+      "bytes": 11348,
+      "sha256": "a6d9b32a0bce029d1ceabc200923181627b3d1b769836ca8661041260b376bd9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/057.json",
+      "bytes": 9063,
+      "sha256": "33e5fcd04fe97227908c6bd0e8f99be05ba68120981ef98bf24b8970b160e674"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/058.json",
+      "bytes": 11835,
+      "sha256": "2975839046c334501a96c17f25296e82090894f1b3cd0dc6c27be43a36e363fd"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/059.json",
+      "bytes": 4866,
+      "sha256": "0acbf9884cd26d9667db0f7374cc39356b47aaa528c00527e7d127f6a102f5dd"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/060.json",
+      "bytes": 12494,
+      "sha256": "4a26edccc3f64fe77085d4b471c279d3c37d19acf644873e9e8ee87a5c0f841c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/061.json",
+      "bytes": 12479,
+      "sha256": "4a7b265af090d77881211b486d81e1741a639d2e5533772442dd3d391175c22a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/062.json",
+      "bytes": 12759,
+      "sha256": "a86e11dae7aa4db80051f9a6e6a4e3e6d3d20a9b66b9e0e35f75f83cb1615fb8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/063.json",
+      "bytes": 10040,
+      "sha256": "f75686122e790410127416dde382f79464b42978dc12ffe84364c19519e59fa6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/064.json",
+      "bytes": 10311,
+      "sha256": "90e2a1c02dd26c724651eb12f21b63276b69439148658bd13b4407abaa58cdf2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/065.json",
+      "bytes": 13211,
+      "sha256": "704ea9bb72f3ce7db10f0e3146d171dbc007e7056d24b2b141019af691fb8f30"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/066.json",
+      "bytes": 13351,
+      "sha256": "ca1d1d0a313508aaa2a1b26b61d01d0cfb3c06759cd231341562353fec633c63"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/067.json",
+      "bytes": 8780,
+      "sha256": "96874830e1fd5371187157e2a89bf33f753d3c7e85b0746a53d658b5f762e03c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/068.json",
+      "bytes": 5567,
+      "sha256": "f52de410752d08a81a31b5eeba27f5e60d4aa94536163bdf30bebcf30b48659d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/069.json",
+      "bytes": 3930,
+      "sha256": "08b0260db2052f94bf1bceff87bef15b9ce756dfc14bc3a0cbf6521424c88e83"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/070.json",
+      "bytes": 3443,
+      "sha256": "760c3ea6bc1c439aea690ee30a24cf51830f741c057e08ad4b6f0debeefc9e0e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/071.json",
+      "bytes": 5098,
+      "sha256": "558d85d8675a9d542208c76c5afc0c40cf47f2e3e72131313ca063cfd2a59e72"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/072.json",
+      "bytes": 32486,
+      "sha256": "5d9efab1e0871e698933ff07fdd65b0b1cdafde20dc4cb3b5db4d879ef5d3955"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/073.json",
+      "bytes": 27186,
+      "sha256": "52be58e5061e1465ef12cf7f28087e847af967fb0ef4e6d999dbb4fd9cfba6ad"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/074.json",
+      "bytes": 89,
+      "sha256": "3cf7abf2e878d434ef66b532c701362e60e13d03f224c0414d4191736b0662c8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/075.json",
+      "bytes": 614,
+      "sha256": "e7cca5506279f48470cf0823399f66e59997419abc75287ea0efb1b837a9ef9a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/076.json",
+      "bytes": 17117,
+      "sha256": "42b8bcd7246c99c696dd1c1c9c7291d6f1068a11a23988d9eb966f218474b549"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/077.json",
+      "bytes": 15053,
+      "sha256": "017ad724f07e0e0b42f5f9cc0a1c5fc603788feb3ca34d8caffece7be9fe0287"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/078.json",
+      "bytes": 16065,
+      "sha256": "afc2b50d391ef58540722695cd55f26744da9ba08b5b78c4b573ad08edb53bc3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/079.json",
+      "bytes": 14682,
+      "sha256": "be901054c157127ab0060fce2892b1127e1c60a40170419056bdb281f4ef34b3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/080.json",
+      "bytes": 11366,
+      "sha256": "fb4a46328c2fa1daba8f627c7d7906c86e7d2f2261ae95ea643ab53373a6a5cc"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/081.json",
+      "bytes": 11101,
+      "sha256": "834e61f1d479bbd147002639e062a9d30c1284cffc4297ce4bfe16a1728af610"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/082.json",
+      "bytes": 13546,
+      "sha256": "18e1e81c16a2d3de1d5e9fb7218e8265ac04458c1411c37ece8dc4dd2fd392d4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/083.json",
+      "bytes": 13869,
+      "sha256": "6b9ee6c6329f94aa74ced0e8198fc00774bfc30007faf12be5dd74934f10d0a2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/084.json",
+      "bytes": 10180,
+      "sha256": "c134b202f0299e0f1e7f0fa145eaf46f4581cfe167970cc8645c909f7bcfe591"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/085.json",
+      "bytes": 20354,
+      "sha256": "af6ac6366728a907dd8b7affbfc09eed582ebb512da99677618d75862f21985d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/086.json",
+      "bytes": 11966,
+      "sha256": "9760e34a7dcdd1220812c1ff37df4ba3c9d70fe6177e96554ab5cadbb53420ec"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/087.json",
+      "bytes": 11287,
+      "sha256": "dbd8cf28bdc1eaacc502bcb4a7c5cb6cfd136e2aefe7926e1c56eaf89ef65932"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/088.json",
+      "bytes": 13026,
+      "sha256": "8151b64485a526c890a2a5f448b87fa4e27139ecf9dccd3d87f3dc52cb1ff77a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/089.json",
+      "bytes": 9075,
+      "sha256": "5973a9c230251c9ab4ee7ed348e5e0c0a395d0a05de3e3173b0462b5982e3136"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/090.json",
+      "bytes": 11818,
+      "sha256": "9a9b3e305c275b3abdb9a0ded92d2ecc16c94a941953d9e888c36989ffb71647"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/091.json",
+      "bytes": 12098,
+      "sha256": "ab731a74bf73654a8715f807110ca5e398d6beb006043ba4d1f9821427419fbe"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/092.json",
+      "bytes": 16131,
+      "sha256": "3c1d6570bf6dcd21336dc90a632b9076cf92f0217178217012d82a536d156653"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/093.json",
+      "bytes": 15358,
+      "sha256": "b6b84a5babde2cc9e12426f1f72cc7b693c86bf06b19b2ba0c5c3d79eecf4312"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/094.json",
+      "bytes": 11065,
+      "sha256": "01da4bd8157e8ae97acb723aa5aa1b93f9cb9c89704402da4338a143e05fc483"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/095.json",
+      "bytes": 10704,
+      "sha256": "81302d5d860e75d74234ae5eb0b752691916036ec2f5a7f1915c6db3f273e1e5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/096.json",
+      "bytes": 12116,
+      "sha256": "acebf59edece6fe79a44aa6275c907606f265f9b4d1a3c7779365255e268a897"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/097.json",
+      "bytes": 10725,
+      "sha256": "57ee614319651bfcf96e50fb0f8cb98ce80c77dacb06e3619992805a6d12d3ea"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/098.json",
+      "bytes": 10388,
+      "sha256": "166d94fc923e45b2a1c279636336fc6980c29460bf1f22a3f87798e9bc746fa0"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/099.json",
+      "bytes": 11494,
+      "sha256": "92a69648c2ecd238ffc1736b00421e521c90a1b708b93b5cd5fc3946229e62e4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/100.json",
+      "bytes": 16463,
+      "sha256": "01d3fc9f9f769add5f514adaab153afd8cf15c4259da9a7bc0e1c42113698ee4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/101.json",
+      "bytes": 10527,
+      "sha256": "0850b8c7c4aa4d16ae2db427fdba879922c0e8249792500b0a412269f5681506"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/102.json",
+      "bytes": 12150,
+      "sha256": "8adeac2b5dcb5d5b9c511fddadcc0da25b0d6a82e02bb29c4370ce5e66edb386"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/103.json",
+      "bytes": 10882,
+      "sha256": "4fa10672a3e16be336eeff4cf375c41150182430b262ced8df3e63b7016a40a1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/104.json",
+      "bytes": 15823,
+      "sha256": "16f947f7e5c3703b1babc86723dc3c7b4f27da567938ea4b67daf53488536bbf"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/105.json",
+      "bytes": 10084,
+      "sha256": "351a7163ef9db3caecf3233ae8b6dfc87d7d66b386162248a2257def4131ff8f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/106.json",
+      "bytes": 12062,
+      "sha256": "83558a98c8b91c1b0eb563c5beb81141af0fd938541fe0a6edc7ac2f252d1574"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/107.json",
+      "bytes": 16779,
+      "sha256": "7d092fbc192df333e98f80f130d73b8d5129bcf6caf39ee347d5c1207a317cdd"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/108.json",
+      "bytes": 13823,
+      "sha256": "37361ec0fba602a9ef3b705177c837880f11cb5c43ce3b6e1aad241bac733582"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/109.json",
+      "bytes": 14749,
+      "sha256": "762dcfe210ced0ce59bc656a2f89dc28a5f498cb48381b4dd9588996cd7300a7"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/110.json",
+      "bytes": 14989,
+      "sha256": "7cb3637f26961564e0fd88ffc8e837b8f19bf66fcdccfb883fc3e87ef27146da"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/111.json",
+      "bytes": 21978,
+      "sha256": "831e9b1f2393541273d4e5c49a48a1259c1f386b3df337c99d327dba187b74f3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/112.json",
+      "bytes": 13260,
+      "sha256": "ec46a6b39de1b683853b48cdd35b276a111c5573bf5cfd21c3093d97c246b851"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/113.json",
+      "bytes": 10331,
+      "sha256": "48955ac7f503893df948fbd9cd0dabcf199681725725658088c3c573707ed1af"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/114.json",
+      "bytes": 863,
+      "sha256": "cf6cbd0ab68a37ab2c2cbca402c20f093ebaa8f35f3de8a8d08155c7da741187"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/115.json",
+      "bytes": 13718,
+      "sha256": "9aee936b2bf2b422c682e17b8cfa55cc6fb8407497a59bf1c20fd4e6d376c30c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/116.json",
+      "bytes": 10865,
+      "sha256": "dd7974f6e87660101da742ef5e6e78654a9502a6608351a2de23da1b0ab1dfc1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/117.json",
+      "bytes": 11866,
+      "sha256": "d308cc7585b93ffab7c361de679433157ee155e117cb3e43a63fcc9734424399"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/118.json",
+      "bytes": 12607,
+      "sha256": "f396eece59ef911f3ef8a5d55ade26728117a623edb05a438c8878832bdac815"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/119.json",
+      "bytes": 14294,
+      "sha256": "55956dfb94d7e5fc7ff855f872b41d8066a07880a3aa2461ecbaaeab5544d7e9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/120.json",
+      "bytes": 11041,
+      "sha256": "c2b0c7f2400937fc9a0a8a6985e040f40ab030454a6d91aec64dade2f22707ed"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/121.json",
+      "bytes": 13653,
+      "sha256": "6c6b25431c227c73e211296f0bf35541ab1ce4e2f5d8fca280f1c2f0f8358e95"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/122.json",
+      "bytes": 15278,
+      "sha256": "08c6cee79e827e6701a3b60d6f1d445d7af8c8e519a97d242bc20e916a12865a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/123.json",
+      "bytes": 15627,
+      "sha256": "fad63883e683aaceaa68d1317457b8bd6096a52d400488669e83e725de37ae43"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/124.json",
+      "bytes": 13932,
+      "sha256": "9587c49b2b3bee10f047ae2d8dc72cabf8526d514708091b0cb862cc7cb7e2e4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/125.json",
+      "bytes": 16065,
+      "sha256": "5c31f7d0c4d6db193107cad0454d29eae340ffaeb8cf4e24196bbb1b02b34fb2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/126.json",
+      "bytes": 90,
+      "sha256": "67d95e5d9bf65603233fcc84c2e752cf6c2c4adb7a18920a8b3e6db4754b753c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/127.json",
+      "bytes": 104,
+      "sha256": "14098094f35f34386647cb2ca5bdc49895a7c44b30aa93633c24f9f34e6bdd6f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/128.json",
+      "bytes": 31064,
+      "sha256": "183e8797527c3b654902307fa29c92481c386119114aa0dcdd9c8ee1e159c689"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/129.json",
+      "bytes": 27538,
+      "sha256": "cd703b7a73fbbd97749ae3eae01c1367ba0710e06c3f0f00339404c21ccf6046"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/130.json",
+      "bytes": 39010,
+      "sha256": "056432f3081b704b68e4bd3daf03d0d735d725bd3e0809bc13f2173b16610d47"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/131.json",
+      "bytes": 36232,
+      "sha256": "fcf8a33706ad016bc8b2bf830c3779b9dcf09c2aae5bc4f522d085c9fa1f7a36"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/132.json",
+      "bytes": 25417,
+      "sha256": "c88b9e1e0f876cd4c549a7580f18fa844e1dabdfd1765324f159944cb8b9d4c4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/133.json",
+      "bytes": 29865,
+      "sha256": "ea030daee07ef020f91c9f576f7221840f61b149f9536d3c398e76da50429674"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/134.json",
+      "bytes": 37923,
+      "sha256": "45d71e8a0cc822581da9ec35835e2e125ed90e144978fe33a0af397f0a1f72ef"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/135.json",
+      "bytes": 32995,
+      "sha256": "12b576509fdbb4c576588464352600c2512dad002ac5e288548a18365b0e6043"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/136.json",
+      "bytes": 26810,
+      "sha256": "28f6ec3790b006dd4ca3ee673156cc71c79b0114ef2b012db69143fbbfe72434"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/137.json",
+      "bytes": 36530,
+      "sha256": "1fcae0181046e20f4fe0c0c03e789576190ca41c5541563bf54364ef6937dff9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/138.json",
+      "bytes": 34279,
+      "sha256": "62a5bb608af64c82145e1a609b345befda1f33728d3f3b2f9c8a60a5d59d792e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/139.json",
+      "bytes": 25310,
+      "sha256": "990b67f3c5375d1fd160fe88fca79c5870aa63fa6a3a98e5994689db728a7599"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/140.json",
+      "bytes": 38000,
+      "sha256": "4ff222ceabe10dbd885a44309e87987e9c5c42bde1018498e8f7953d97aa2d0c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/141.json",
+      "bytes": 33194,
+      "sha256": "799adbfc63936710d1b0b6d86b804b2dcbc195fc496779b87fadfcf21502c8dc"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/142.json",
+      "bytes": 27940,
+      "sha256": "4b96257470e3649e3ddb93d336024bb79603c431594b0480a1cfe73c973deebf"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/143.json",
+      "bytes": 38781,
+      "sha256": "26eff793c21a1c9470d80475627341f1166695849395d7a1bf6663e806c7c4c4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/144.json",
+      "bytes": 24779,
+      "sha256": "2937ade372e398fe212b6d6417344d53be940dc6ff96ae2cb2a554a4ed6584c3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/145.json",
+      "bytes": 36751,
+      "sha256": "0b1e94e8a045a1a116b317424fe8e7d8cc375c9ef57293e6c432bef5af186e95"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/146.json",
+      "bytes": 28818,
+      "sha256": "b90a37d614cc25cdede8400b85cd8c7afa2ff971fd37778582878b2a782ab93f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/147.json",
+      "bytes": 31489,
+      "sha256": "86f21ae885125b2937d69a5fcfbaa65df2dbd47f8a23bd4e54dc52accf7be8f8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/148.json",
+      "bytes": 36013,
+      "sha256": "2d4f133727816fc97cc2f811cee913645ab535db7d07ebea988e45c1af879040"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/149.json",
+      "bytes": 31305,
+      "sha256": "c54f6f7a1e223b62cf29e9b5e2cb7f1256989ce1a02ee11ab62029f38fddd206"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/150.json",
+      "bytes": 30088,
+      "sha256": "0ed46e63e874665bbbff741d4eeac0e58bd73fca91302cb172f5114998c1a90b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/151.json",
+      "bytes": 36239,
+      "sha256": "88f61668f02fb0e91d7687abf1b87a2b7e061ce03d7f593d949b1a2784a1024e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/152.json",
+      "bytes": 28001,
+      "sha256": "f0c760a26a33715d3cb566476c8cd5c28339ae61cc330b28aaf99aed3c0b7b4b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/153.json",
+      "bytes": 30044,
+      "sha256": "644e927a2316db8ac795098f843f9c9c5f3c12e6ac3f8d1c2739a4de401ce2a5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/154.json",
+      "bytes": 34280,
+      "sha256": "904e21ac08f97de1b145cf7600252acf5b7628185bb62f5d82a8803fb20af6c7"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/155.json",
+      "bytes": 28984,
+      "sha256": "19ee3cdf917fbf565b709f98223c4287e3e3df4a2bda45da5de08c69215a2cec"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/156.json",
+      "bytes": 36893,
+      "sha256": "c4b4fdcb7ed893a029000774b31cd75f73074616b9e294d1b1adb9113cba5cb0"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/157.json",
+      "bytes": 28868,
+      "sha256": "9d9102115ee367b50c5d4474898510c4bcac9bc97c3364675aea1f1b15fa9911"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/158.json",
+      "bytes": 37037,
+      "sha256": "55fae0ea10bfc0304983018ffb9c8bb2343fab6907c241ba5013bc9fb691fd8b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/159.json",
+      "bytes": 35692,
+      "sha256": "4a3f7c34e4e296e75d883069c93b14b4622217bf315779852d22e1d0c5c5fe2d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/160.json",
+      "bytes": 26535,
+      "sha256": "45ea1c9b9748fed408f2ff5ddf2999964c235fcb687af60167f5906904d82e02"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/161.json",
+      "bytes": 38787,
+      "sha256": "632194a605f07ca8fbbda8e66b9393eddd5804c7c8ba1126386efc859f773e6f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/162.json",
+      "bytes": 31527,
+      "sha256": "e45fb69aaebafca30138df4abca9d47c2136f65b747e65b58f9afd9bc60c793b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/163.json",
+      "bytes": 29983,
+      "sha256": "04aa4f9465c3758fcaaebdc078e6a8d9d899b3d7f37761c66a5880e55214b37b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/164.json",
+      "bytes": 35674,
+      "sha256": "0ea492923af96ddfca8775cc51129bf20a02c38507d7b909f299238ac14caaa3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/165.json",
+      "bytes": 25284,
+      "sha256": "a5a4682a441ec5d6f34eb642bac6254d089c5909d11a1dc3aa64f0a53352c667"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/166.json",
+      "bytes": 33320,
+      "sha256": "4c251fec52024b70d02e7517dc79ded58263e64ff6d43da84d440b58b348804d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/167.json",
+      "bytes": 34447,
+      "sha256": "e79cd87afac7f05720f3cae7ebb13ac936d0813c28056ef6f4255da097fac3c4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/168.json",
+      "bytes": 27624,
+      "sha256": "9afcf15592d1cc0bd7c72bcab15be6c4f8123849de36a27ee4d707e6bb4bbc92"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/169.json",
+      "bytes": 34857,
+      "sha256": "bcc89427ab726c3e298b37d0527c81af14cbf5801f1d56389d23ce61cdef4487"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/170.json",
+      "bytes": 38227,
+      "sha256": "f8c79f699a4c61bc862c7aec005a16101d1e9bc99c319b619835e57cbb28e6d9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/171.json",
+      "bytes": 34694,
+      "sha256": "b4c4ade04f6209fa72d9ce118daab7a863a39e2b3d506542204d6f78ba1a33e5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/172.json",
+      "bytes": 35286,
+      "sha256": "42bffcb341d4c78c7ce946fa06529069ca90db7c46ca522da3266406af14b117"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/173.json",
+      "bytes": 36077,
+      "sha256": "4bb1aebe43d18aa9e3280bd4acdedaab1f9384ddb37240d7c4d8b833f8851a84"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/174.json",
+      "bytes": 36442,
+      "sha256": "4705b457d2edfc42a28ecd1844bc074a4d56d0369375b06454f8d9acc4f98cdf"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/175.json",
+      "bytes": 34597,
+      "sha256": "1abe5c0e4437a9cabd72eb8d2c7a95eb3b3d2178b26981f0652f1cb833db54a8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/176.json",
+      "bytes": 39081,
+      "sha256": "7d2cd9b8dc921471e91e85f1bdec377ef815601c445c4abb703ba982d1da3714"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/177.json",
+      "bytes": 35019,
+      "sha256": "bf6175aa0103e93a1f59d29df3a37542808803ae12f56d82b23f57d225dc97fa"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/178.json",
+      "bytes": 40368,
+      "sha256": "ac5bf6292658cf7ef5891fbd48d48173ce799aed8ee0f33edbeb7e2be929951f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/179.json",
+      "bytes": 36447,
+      "sha256": "51f673138206515f9ec0a9225d63b62424924852faa8a8401f529832bfdcd2cf"
+    },
+    {
+      "path": "context/school-knowledge/review/YY-0601/180.json",
+      "bytes": 19428,
+      "sha256": "d24d304fd7ad13cbb42837ab4d52a2d23bc1eef07b80b9fc40303d360c2dedc9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/001.json",
+      "bytes": 20434,
+      "sha256": "9500a97eceaaca9a4f77794639f3c6c796665e48fbb4d885103b7f8b42191049"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/002.json",
+      "bytes": 88,
+      "sha256": "50badc2813a08dad58a9b3026161813e0bc240d8c060508af45be7a3b8589ed2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/003.json",
+      "bytes": 122,
+      "sha256": "70363ba667ccd25f535aea882fa175c718779115b5b5833839c9436428287c6d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/004.json",
+      "bytes": 12521,
+      "sha256": "f312f05caac56738335d297713e56fa22720ad58ed030f8398f07695aaf8cb01"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/005.json",
+      "bytes": 10321,
+      "sha256": "013ccebe9b97a9d16c085e9587a9bb2d0f6d8059ae0ccbd6d14d514eda2944c7"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/006.json",
+      "bytes": 3526,
+      "sha256": "a796400eb12fac089eb1b0dd75a0243f33c40450b95d025595e7bde1af2db3d4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/007.json",
+      "bytes": 10128,
+      "sha256": "caef71b952d68b8bd6b2c4cd27b5e5ae9b89f9c6e27018a6b4497bc51c87d89a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/008.json",
+      "bytes": 9585,
+      "sha256": "051e81fba7defdc0b30c88c6b0bd265ae853903dd398e0dfb25d87ab95042525"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/009.json",
+      "bytes": 4810,
+      "sha256": "192c200eb9c1252d90da95d3004faaea70a723f9034148d9ca352c360fa859a6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/010.json",
+      "bytes": 9930,
+      "sha256": "b31acd99d47438d7d98c0247445e133e75217dfe8e28f40c7e94466136df706b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/011.json",
+      "bytes": 10300,
+      "sha256": "71d77ed8e1239b5758a09de5ef60469232163a519b57d182774395654ddcd182"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/012.json",
+      "bytes": 7835,
+      "sha256": "7a40efd7bd1907cff843b03ba30062bdd4a266ac065b243d8baa7a41b16e3452"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/013.json",
+      "bytes": 8947,
+      "sha256": "1e5cf4127ed66c64dc8abc85c7315e240cff3e029a553ae4094a5df5055019f7"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/014.json",
+      "bytes": 3962,
+      "sha256": "3f6887f9022fb3cffcdb8f585a18708dc59c18fc5adf3fc1244a0b0c0051dd1c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/015.json",
+      "bytes": 7593,
+      "sha256": "2e0701a5dd97c6d475ac1db9782c6d83c956ede4b7ce261d6da6c4c20619264e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/016.json",
+      "bytes": 3831,
+      "sha256": "fbef55f7abb765beaaa2655fddc29ba3a071a521c7089e9147b854cf06b340db"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/017.json",
+      "bytes": 5045,
+      "sha256": "df0dc694d3a8af931cbe7f064ab80d692c6a03ce1deeb684e28d7846edfe8272"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/018.json",
+      "bytes": 7383,
+      "sha256": "7b8a87e14b343f4906ff668196242a6ded921874a5d3c8138cce96563d34e10e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/019.json",
+      "bytes": 6833,
+      "sha256": "a33b19f86c9154df82c14c1713be799232415bcffb49e6eec45f3c5470dff1ee"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/020.json",
+      "bytes": 12590,
+      "sha256": "47feedec68149569445077228a19e8f21dde857366391ecb7ff255edb1a5fa46"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/021.json",
+      "bytes": 9578,
+      "sha256": "e4a29b5600848f35636f4314fb052e4a91c237b58d43d44155877139bbe6368a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/022.json",
+      "bytes": 9918,
+      "sha256": "30264f35ce7023a4c34da54fc8cfe931781e7cf8aef1398c04ceeb46d436eb0f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/023.json",
+      "bytes": 8973,
+      "sha256": "07f8f591ec2a50c24833ee8fcec0e1ffff4714f2ae7a245a27f0604eb8802c20"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/024.json",
+      "bytes": 11891,
+      "sha256": "35991a66bfb42075bdb1b1bfd6ddadfa459f6d4f64fad8df9be3f4fdeb987be8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/025.json",
+      "bytes": 20268,
+      "sha256": "35b01579d296f68827f6a4fc2954f444c3afbb93c63349be2721e9cafac1d9df"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/026.json",
+      "bytes": 6013,
+      "sha256": "45752b832fea0db3f68c7512ed2e011607cedea691fd127cfe51d3a9e1e2492e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/027.json",
+      "bytes": 5490,
+      "sha256": "8b7af7046eb4e195411554d1a0791eef242217b9634d7fe74921d1cad650455d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/028.json",
+      "bytes": 3311,
+      "sha256": "a18275395ff3de864db5445b3f536b6d11c34dcb9ad3984def578d92d40fe4b1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/029.json",
+      "bytes": 2995,
+      "sha256": "f7adc651c4e1e0c1fd96d16af19b3a386fc690b790fd0c3205d1d65ee929d1e5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/030.json",
+      "bytes": 7297,
+      "sha256": "466534e3c4f34365fb046a29054569cc585e5accd061eee0464a616d1d3b627a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/031.json",
+      "bytes": 13417,
+      "sha256": "ef430a6da0da0e9abf911534bec2dbf20386fce057e92a118a42abac933fdd43"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/032.json",
+      "bytes": 10106,
+      "sha256": "be6da696b699647ad28a8fba2f9070902ab59eb401c6823ce4847ec8c07b8a29"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/033.json",
+      "bytes": 4448,
+      "sha256": "843644ad3f8c564f288fff1d1e3d6ea8c4abf94e4f8d0fb7d6f1f57f617dd3bd"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/034.json",
+      "bytes": 10500,
+      "sha256": "91c758b324924128e73e202d8849ff77fdde2f478e58b834d5a8daa3efccb3b1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/035.json",
+      "bytes": 8675,
+      "sha256": "c67e1a78c5ac02f31044bd6b01b1d277c253a0a14bfec64dadb393185d3db218"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/036.json",
+      "bytes": 9215,
+      "sha256": "b713ba91b1d8f0c6d27e3f595f968985565fe96584125886670edc490d036a2a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/037.json",
+      "bytes": 6672,
+      "sha256": "dbe6d66f18a041012bcf644d8c58d27ae38eb10a9c4dd15b7c051c9c1caa5289"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/038.json",
+      "bytes": 4789,
+      "sha256": "982563702c19b00978d90acd8c02c056731a8430a7950c0a6436563f8817eedf"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/039.json",
+      "bytes": 3661,
+      "sha256": "b75f3de7545eed6b6f6a49dcbb791413185ce01ea4bacd6d8313c71f81d3355c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/040.json",
+      "bytes": 6283,
+      "sha256": "802f7a8bfac64c1f15f3c1c8907c93871b7ace7df17272bdcced09c4a413f622"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/041.json",
+      "bytes": 8082,
+      "sha256": "7e7bb3287871d715886bbc5614eac67c3c57ce31e5a9704e051033b7b3abe07b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/042.json",
+      "bytes": 9836,
+      "sha256": "8eb97385fa13714f091b2d11d955491f6eba54f81d1728af2692bba2d6fa6876"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/043.json",
+      "bytes": 2517,
+      "sha256": "5094a7cbc19b43bb410a0c93f03330eb8c45c4302be68f2731e1b10c412fdebb"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/044.json",
+      "bytes": 7051,
+      "sha256": "4d1af72ce60cb521932cc96415ee5c752ea4f53dfef37fdf8ab8bf0be2e4e51e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/045.json",
+      "bytes": 8216,
+      "sha256": "8e3747261aa063efb186958b4d60dc3e7abc5b1f7dd3d50b5c275bb1f6a24563"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/046.json",
+      "bytes": 9401,
+      "sha256": "d1b90cf81062b7a64f786fd99f1573552d235764ed931f0b9750b344b49402a1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/047.json",
+      "bytes": 5806,
+      "sha256": "3a5151567d69cbb083c72daf2cadd0446dcf62a1b30835c2051008cb3962d64c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/048.json",
+      "bytes": 5146,
+      "sha256": "22dde02f5ad552f2aed6b019f8a850a00e67229734d39577d07531cb2ae7335d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/049.json",
+      "bytes": 7572,
+      "sha256": "dd604ea9d3de7204b03aca4f8c204c9318e1d87d1150af02e4c546c9a5e205df"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/050.json",
+      "bytes": 7652,
+      "sha256": "e32bdc2638a557189988560d2c456e6606575f0658be6ca0bd4c74578e3cd9b7"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/051.json",
+      "bytes": 12171,
+      "sha256": "28ad9aa509ae2a028325deb732f4f89434883718f29cf8b5591f95ae508d8a08"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/052.json",
+      "bytes": 5531,
+      "sha256": "18c3f0d883f3d16f92995574073e32fec0c731a3c13b7490afa2f39322409aa0"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/053.json",
+      "bytes": 8047,
+      "sha256": "8f96fd30da5f012523a1c3ab391f21ce5f393bb00dc9b6d06fedd703a816442e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/054.json",
+      "bytes": 11099,
+      "sha256": "27616ebbebe5c35f673c7cc3f41438d543145a55d62f6b93b37ac1ae34c55a35"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/055.json",
+      "bytes": 1202,
+      "sha256": "039bb5e2007cf72a52bdeaf13fda3b3c97a2fa26e460697ebb622b92e9e51968"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/056.json",
+      "bytes": 16480,
+      "sha256": "b2f3a6ef8ac7b8e26b1e0cda3627b40d934c8b2de66da947d13b50c765c27720"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/057.json",
+      "bytes": 8398,
+      "sha256": "17887bfd272e2ce146c1722af45c8674e242841dae48ff8a4bb92f96608c8aa2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/058.json",
+      "bytes": 7300,
+      "sha256": "dd12f072d07723441e485d8f867e0ba186c145bc4d480095f83024a64979aa42"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/059.json",
+      "bytes": 8136,
+      "sha256": "20e57e79283b48c1c38ee1e4c53ec188fa44f058841e995016506fb5c7e5529e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/060.json",
+      "bytes": 4607,
+      "sha256": "23a7e1cee16a62795c8fadbd1a3719c2c1b8243a3aa68b7d6d390f292b65fd39"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/061.json",
+      "bytes": 16294,
+      "sha256": "321562a0de91dcc0fc4dcf833c5c100abd8f29b37c797deb056e3361f22c3368"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/062.json",
+      "bytes": 5049,
+      "sha256": "1e75568cea4e6b08dec1a824e18c9ddb578417c0607d4ab095784a1f235f2fc2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/063.json",
+      "bytes": 5552,
+      "sha256": "b4ee73b200926ea367db65e9292444c53e60628284d37d13c22bc2a0503c52ad"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/064.json",
+      "bytes": 8818,
+      "sha256": "5174d58355de7a44028abd4ed578a479b8a2659ac6de31547ecdd326c44feeab"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/065.json",
+      "bytes": 8568,
+      "sha256": "7d76a4db715f568b090c4d66208fd23d14a8af58e2834789dad95fe7d2575ded"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/066.json",
+      "bytes": 6710,
+      "sha256": "831a09496a1d593f7d5883310f281c5ce51f82ac000f21f2ae246971c867ff70"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/067.json",
+      "bytes": 94,
+      "sha256": "b383ad039b0701e0a0761c7f44a8dddb8ad7f20ae09380cce7b8489da6621714"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/068.json",
+      "bytes": 11880,
+      "sha256": "87b41ed21e94930ee6f54c2ebb946bf24863f2d98f846bb8cd50f644406305ac"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/069.json",
+      "bytes": 6459,
+      "sha256": "df0a893f8c66ad6728047cb552354ecb34c954f67b703142f588434e21dfb294"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/070.json",
+      "bytes": 6623,
+      "sha256": "a497d7a308e4609d5e8c352c5affc9e521aeb90e55f0ce1d16fb3dfc6d4b346e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/071.json",
+      "bytes": 7222,
+      "sha256": "f4dff71341543aa27d4c31ae8a73ad71853d9b79849995aa15f598a197f69b2f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/072.json",
+      "bytes": 14170,
+      "sha256": "dfaf6afcc101c2d65f48cb6b9e29011de09cd12fc4b697dd3c4c94f8c61beb49"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/073.json",
+      "bytes": 8493,
+      "sha256": "509fa6620d358639f7b4559d4d7e9c78c916273420bbe07b5a218df6ca7a7e7f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/074.json",
+      "bytes": 7649,
+      "sha256": "e2b42a0eb042fd18a6ab9ed10d6e613658e4a2f977653cb2718381d51cc4b6c8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/075.json",
+      "bytes": 8208,
+      "sha256": "bf3c360825f3ccb73de36786d35cc3a737cce4a068b3f912ccf4db6b057b7670"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/076.json",
+      "bytes": 9355,
+      "sha256": "8e27c34364bab929ea175a9e2c573918fe20c85dcb83967496a7d9225dc9d0bb"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/077.json",
+      "bytes": 8526,
+      "sha256": "6a7d2f1dfe25802b76ad76cd72d77d4bd7670c9804d5860c2e895683000055f2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/078.json",
+      "bytes": 9391,
+      "sha256": "c9a774cb5208d6f4544483af7dbae3a1093a03f2855d49e7097e025c2d01faa2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/079.json",
+      "bytes": 94,
+      "sha256": "72d8bc92fc8d379e80a4ff94cd11d61d56c11e5c940a6690ce3a611b2937de75"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/080.json",
+      "bytes": 8385,
+      "sha256": "5e62d5f6c7b51edfc642675bb9de10ad817e19881675ea4b05df4ffef23966dc"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/081.json",
+      "bytes": 8245,
+      "sha256": "0330310e379fe3d202ed9daa1b686e003687f9f4d9c019f8d586aca9b950ac79"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/082.json",
+      "bytes": 8780,
+      "sha256": "0bf22f599f65565d62a517b30b7c2c31b870ee9e8466f523574528168f3e5eac"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/083.json",
+      "bytes": 9958,
+      "sha256": "bd3458cd6bf2e559553371658b42332dd131126d47c26a43caa74848175bac3e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/084.json",
+      "bytes": 10834,
+      "sha256": "3ae185ed75cde93a8e124f38509479daf837fc114d51e81f5444be56e732257f"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/085.json",
+      "bytes": 11524,
+      "sha256": "021e0004f1ed0cebdcd5a7ed6e8704cfa45d4d820325ee2b07f0ba3a294e4596"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/086.json",
+      "bytes": 13539,
+      "sha256": "3cd07bd913538a3b22585ecd82bfaeb426326b57dbb3e3bbc053f9672c257b79"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/087.json",
+      "bytes": 14516,
+      "sha256": "9e198b35ed42c5e1ee0bc3bdc496ceb936abb48db83d3e4880bea3ece29f129c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/088.json",
+      "bytes": 14166,
+      "sha256": "3d9e8b84530899b6c67cc575faec133cb622ce44139ee8213f9139d7dab7030d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/089.json",
+      "bytes": 17324,
+      "sha256": "bbdb7b67226ee23aab47f969a0b833829ce0e31bc1f77789788d3793f473512d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/090.json",
+      "bytes": 18260,
+      "sha256": "7edd429cf041c265381111a73b95802d2245e1d0cc1f473488788256138f4e18"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/091.json",
+      "bytes": 2340,
+      "sha256": "0ef0f197f5fbb5f8bed69acc84a7fcd20bf73124c801c8dc5d9ea18f7fcf372d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/092.json",
+      "bytes": 12077,
+      "sha256": "94d68141db33f626cae0828f9517ea5dc23123eec6ae84c015542b1f645c95e1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/093.json",
+      "bytes": 13280,
+      "sha256": "5ca183ba49741a8a996ea5a59a36da5536a3acd9142729bf36da1cbe9825b12e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/094.json",
+      "bytes": 23110,
+      "sha256": "96788c73a0fee9102991dc847db1fc93593b8ea10ab8c62d54c2c7a165b4fa64"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/095.json",
+      "bytes": 12521,
+      "sha256": "8265e3cc57df7ae907712d231873b43128537783fcf7065ad5bcc5b608de891b"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/096.json",
+      "bytes": 6007,
+      "sha256": "ec1b5b69f7df9f6912a3f2e22d818560947eea2fbfb8e5cc8206048c2e088fed"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/097.json",
+      "bytes": 7292,
+      "sha256": "f9799db99c92fcd12cb85c97180be898bfd7cea0fb12ab5b3883486de77d4e19"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/098.json",
+      "bytes": 7552,
+      "sha256": "feb810bedc36c9fa1bf10f1d09817ad13bf908d3b038052e83c35af527333b4d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/099.json",
+      "bytes": 5442,
+      "sha256": "070a2ad708f78a8581b94d5a5129f417d0a85404c1b637e9a4a6617ddf2f52e4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/100.json",
+      "bytes": 5464,
+      "sha256": "7bf10d09d603e49390ada7ff6d7ce16ec13354a73fedb66ef0aad3c2f2139327"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/101.json",
+      "bytes": 17450,
+      "sha256": "f9a6a9356751ca2867ca0bbc5926b56ab699d834e893419432c8ce0b6d00de80"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/102.json",
+      "bytes": 6745,
+      "sha256": "25b47edb989255f21e5bc60b715c694641eadbcf93a651dfc52e645889fe500e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/103.json",
+      "bytes": 8803,
+      "sha256": "4c845121c7c6e9de1ff44eee73196af42f4f5b113d393eb316374f057a0a5122"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/104.json",
+      "bytes": 331,
+      "sha256": "4e687cc97824ec988a0f23a6602fed4e61b652bbaea98d327eaf6e24566cad49"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/105.json",
+      "bytes": 337,
+      "sha256": "28a09fa1635b426eea2361a9c12d52817de54e8754f246f9492c77b57e18e6b0"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/106.json",
+      "bytes": 11089,
+      "sha256": "3a51c529bb701efa1e1980962d47a96343943beb70bf3b0c7cc48919548c6272"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/107.json",
+      "bytes": 10362,
+      "sha256": "ad0835b06f5e99815563ee896ad6899849419f4134231fc7b97b44a7be282a82"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/108.json",
+      "bytes": 6508,
+      "sha256": "a15dc67b7c65b84af78597238c79e2be7865567bf618805ccd74374b12f1d9bc"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/109.json",
+      "bytes": 7909,
+      "sha256": "0f9f27dcc286263660233453702a4e76c0c1fb9a18f6c1661d87a5a01f0bd914"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/110.json",
+      "bytes": 30042,
+      "sha256": "4aa72223958d409121076ec7346f57b5c383e68a5f88bf59a01143103133b6c4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/111.json",
+      "bytes": 9443,
+      "sha256": "3865617080670a5488663f3774ccc2f767f751513a6eca26339d96dabc6136d9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/112.json",
+      "bytes": 6417,
+      "sha256": "9f2c257f87b327df0b40d8ae07b13f9ba349cff8a3474ede75ddff2b5dfe6eb2"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/113.json",
+      "bytes": 4905,
+      "sha256": "87d6fddfd01ce7256f4498a15be0cb35a0877f8989cfe6abfcb097cde8b4db80"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/114.json",
+      "bytes": 10810,
+      "sha256": "2a4db2673a534f525bfdc8eb45344971d6d36ceae290c535e8ea89f6d4d13c46"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/115.json",
+      "bytes": 6414,
+      "sha256": "58b4538452d4957bb73dabaaedce012167e1b1b58d851be93cc7362aab922442"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/116.json",
+      "bytes": 4454,
+      "sha256": "7f302f2fe0ba7528ef773496c192ad5b658137c9212edc08a5eed23155597988"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/117.json",
+      "bytes": 6168,
+      "sha256": "e6cade3932f51e1e8278dd8d9abc4a3b147c6f74b6ece26f4e732a40e5c5f6e5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/118.json",
+      "bytes": 5228,
+      "sha256": "0e9cc9361a7d8e85e482486debd34472dd69ddad053172198e0d6a5c60fbed35"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/119.json",
+      "bytes": 7994,
+      "sha256": "e039b87c4fa50834937c231e75ea3b2f3c1ce9abc43d9c5ee987694fc1832ba1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/120.json",
+      "bytes": 11418,
+      "sha256": "2e248e8005bf84132ddf4b8f431dbe9c765de6fc740ef5612c0e389db375edb3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/121.json",
+      "bytes": 10298,
+      "sha256": "61d90ff3f08832bc768344d23f63a2441e03982c3cc9e716c1fe1de4216b2442"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/122.json",
+      "bytes": 7951,
+      "sha256": "b8839f252033da7161167ae377286b43814eb8d71713febbfe3f0f2d7fd7f640"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/123.json",
+      "bytes": 4150,
+      "sha256": "14b578fc27daf0e74cb95d6668ddbaa94fd5a7b3501ee41abcb208c77170867a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/124.json",
+      "bytes": 8013,
+      "sha256": "58383eddce977f15cdcc7dc94ef2f6e7978cebf2eabcb2aae8cfacecaac5cb12"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/125.json",
+      "bytes": 11800,
+      "sha256": "93cf8581b2b0f501bbd53dfdeb37d29a3ed06c011d56a5577e8e87b2ec603394"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/126.json",
+      "bytes": 13427,
+      "sha256": "62d04286cb228b5772c640611d16a36c04bec823ff51505cad912c509490219d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/127.json",
+      "bytes": 7552,
+      "sha256": "750b937d335319481d157d27eca2a94295399dd2f8efbecd5d538e685f0be282"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/128.json",
+      "bytes": 16490,
+      "sha256": "df63b2fe11039f072112b1be73eaac3b423482ee749f8bb9c87c9af27cab1b61"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/129.json",
+      "bytes": 17896,
+      "sha256": "0564541bda517b4eae9081cb3f2d4b0203659ec7d9cc18759846d348a1b59de6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/130.json",
+      "bytes": 10822,
+      "sha256": "f6e05046b4011d492c35d28b71ea816a3adf90eee871914206f03f75d1d7ac79"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/131.json",
+      "bytes": 17802,
+      "sha256": "106fe38b93e282a95aba90f87dd417ec282b67d4ad10786f1ea78c8087633ac1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/132.json",
+      "bytes": 5957,
+      "sha256": "b65b3099a780c401e7046f600399808af526539023866d70d1ba37f031ce82c1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/133.json",
+      "bytes": 11363,
+      "sha256": "fb11f615b0e85f531af2043f8007a8cd8b9a307fc907dcc155ae35ff6def33b5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/134.json",
+      "bytes": 8311,
+      "sha256": "55019b3c15fed48c88bb46d67d735385e084be670e110d213cade9c8a5c93cde"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/135.json",
+      "bytes": 8290,
+      "sha256": "b9688e9587e1d41ad4a559065c50c144d4534247f9099ef9fa3e07667d86a24e"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/136.json",
+      "bytes": 4805,
+      "sha256": "effdc318733288b27df1453edc109e400406236ed29dfed4b59379e93ab96205"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/137.json",
+      "bytes": 13058,
+      "sha256": "d77221717d2ef531b1eb150a799164ec51bb3f7ba0b93b54a929192418fb8463"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/138.json",
+      "bytes": 11073,
+      "sha256": "c01deb76676ca68476d3e645186e1c303a56297b6bf749fb4f1c0f9d54e6fa8d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/139.json",
+      "bytes": 7630,
+      "sha256": "a1c5efb85e046f0619996953613c557cece70be17cabcb865ebc76954cf5e584"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/140.json",
+      "bytes": 6503,
+      "sha256": "12ce8e2be2ea4c9ce996836c621e2259eb18d3488481ff415e04a1115b04ae42"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/141.json",
+      "bytes": 7594,
+      "sha256": "667b0623465b3aa2027129fbb464a6ab50359de7f38fc6667cc2eded55c7e374"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/142.json",
+      "bytes": 9454,
+      "sha256": "65d0154885711427f925ddcf2f6c347f579f9dde229209e03559c05838d793e3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/143.json",
+      "bytes": 7069,
+      "sha256": "d0ca9547fcac6dab28c5439bae8d27e20d548b257b18d56826f9417fb71095c9"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/144.json",
+      "bytes": 9746,
+      "sha256": "915689c2da5f353ff74dee1fc8bf4d747ee3bb27cfb479a76065cfed3cbc93af"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/145.json",
+      "bytes": 9715,
+      "sha256": "dbc5ab7e8a5b94c8b7f166b0c2b17e6cea6b332e6253481d3bb117562f195f11"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/146.json",
+      "bytes": 13886,
+      "sha256": "59f6334c444cdcd152e1303ae48793b6e49061cf32e413a49f760dd923b720fb"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/147.json",
+      "bytes": 2654,
+      "sha256": "256b89d88c8cee53deb429f204cdbba272e467975e5bcccc8dccd2182887cbed"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/148.json",
+      "bytes": 9147,
+      "sha256": "ee765d0900682ec4058079f86771aa2073b02c21840a935b2786452dd9939852"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/149.json",
+      "bytes": 14282,
+      "sha256": "c958075d2842e7ff8b617d2c0ea90ec698db82e0f84a3f18370e6c997b02662a"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/150.json",
+      "bytes": 8110,
+      "sha256": "f5641c3c1638bedf90d41a8f9b4887b2817667fd1dfef8023a7fb52882d10fc1"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/151.json",
+      "bytes": 2378,
+      "sha256": "b6cf04f01f811fd0d7be534693c759f3b043c4c56b1528dfbae5355708ef6a83"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/152.json",
+      "bytes": 4010,
+      "sha256": "b0576ad0a886b72a0245f5ba57f997cce7a0ff616af0b1e1705db99af53bd92c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/153.json",
+      "bytes": 5798,
+      "sha256": "3737c1c6fc3429f9ea7785da5d99cb3fb0411162673564d1c309d1ea001ce756"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/154.json",
+      "bytes": 17474,
+      "sha256": "d1b0040d005cfa349338455e89051ffa8ad2f2b9f0b49421783ffa89563340bd"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/155.json",
+      "bytes": 17237,
+      "sha256": "765875e4a85603650d34f7e7ed4488fb44ee315ab52fc388bac873b07f93218d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/156.json",
+      "bytes": 8990,
+      "sha256": "9cca44f0a20676f1ca4e187aba04e2c61a88db535d8d0daca9f53d0c15b1d2fb"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/157.json",
+      "bytes": 9069,
+      "sha256": "3e919c15b49e71ceed3aa89867f2686cfeb429c61ffb0ef4eec6eb5500884d07"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/158.json",
+      "bytes": 8374,
+      "sha256": "bf3651c48094c06e69c2467fec573114ab162228578b800b4a828264d486f706"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/159.json",
+      "bytes": 7266,
+      "sha256": "780bafc5e39db3cf63cfc499d52ec90351d310e632d911974178e2d31e8f6f67"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/160.json",
+      "bytes": 2916,
+      "sha256": "7ab14a31cfdc4531161d5fbfd886a00a0d49f89a3f7bd3b514ccf58cafac6e20"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/161.json",
+      "bytes": 5659,
+      "sha256": "fc39a52e55ce477f02a69880b874fd4e1748d81825697fb03b1e8a5aadfd5b05"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/162.json",
+      "bytes": 7940,
+      "sha256": "44079232f86ae3a560871234beb2cf73c92a2e0fac012bc60db2f29cba560c6d"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/163.json",
+      "bytes": 7238,
+      "sha256": "53866e1379648f261fa70e3109b93cc3a9eb1356e4419e4673427b24133854fb"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/164.json",
+      "bytes": 7285,
+      "sha256": "37e6774ba943f3f36b6faaf4048269b6b36d3efb1219fbd0cdf7bdcfa7225718"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/165.json",
+      "bytes": 7267,
+      "sha256": "741d765635b0d87b9fe0944aff03e2c112894eced1cb134b6904910cd94cb617"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/166.json",
+      "bytes": 16291,
+      "sha256": "c5f0ac21dfd70d86420faa7b43f4b6508d62e67e7c37faba17e4902d8f2058c8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/167.json",
+      "bytes": 9392,
+      "sha256": "d4126963b6f77849bd6e87ac1d4532a63661c19a59f0a5facd83a9bfa546fafd"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/168.json",
+      "bytes": 9244,
+      "sha256": "0e6d0483395e260e3f8a46aa148704119e134047d3cfe461b303c8e8498e97b6"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/169.json",
+      "bytes": 4058,
+      "sha256": "1277bafebcecfb5b4b74009a3f9055d89b9e6c483f6fafaf12de18db63f4f329"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/170.json",
+      "bytes": 3142,
+      "sha256": "031b87fb8ba2ff0400c9bd337e0426b51cc003c9c73b0b5132b398c539f7dcde"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/171.json",
+      "bytes": 3145,
+      "sha256": "f46d5c9d7256801fffa9320d77a9b30a8aa0f0c23705d5f3b852483aef4655d4"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/172.json",
+      "bytes": 7021,
+      "sha256": "9099e02755750d1aa4f301c212c42d78e870a76f04c0f133461aaf5f969b7085"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/173.json",
+      "bytes": 6021,
+      "sha256": "200816a77362bc84c52426154fea92e5f5d4754e914b3490a4663a41f1dbd72c"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/174.json",
+      "bytes": 8073,
+      "sha256": "59267daaa8473e51ea1a21a13f4245b7b64962afb31f0f9fc4fde3a152869fe8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/175.json",
+      "bytes": 5104,
+      "sha256": "6795dd40f4e275ca66259850f18ce16b43510679b21804c757908162ad432b73"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/176.json",
+      "bytes": 4052,
+      "sha256": "009d251b85124fb7654303edd7027499b3b38d2ab7c7b181281ba4eef2337073"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/177.json",
+      "bytes": 7813,
+      "sha256": "517e67f92fd99e0d322c58e0a4830e5ac3b56d49111193ada3b5a2690bbb5f46"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/178.json",
+      "bytes": 9061,
+      "sha256": "3a49775550d1b296f82f514992decb452bc6e28643bcac51ba4d9136188920ba"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/179.json",
+      "bytes": 5794,
+      "sha256": "eaaec81c3ac07e9bd4f2926a687cb79c4be1478b4ea225bfa60e5adf92febf02"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/180.json",
+      "bytes": 7258,
+      "sha256": "a65125139c2feda55c59569f073b9404f3362263c17344c846287be00bb1ead5"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/181.json",
+      "bytes": 9440,
+      "sha256": "17940e74c5f0cf9b7371e72227655b61fa87d35f0b57a32800f3e53453602eb8"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/182.json",
+      "bytes": 6182,
+      "sha256": "1b468cd5292ad7cde18ce0025c209354148410dca099c89916d4dfe263c3bf19"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/183.json",
+      "bytes": 6912,
+      "sha256": "44efb78447573cfcf876bf2fd890faa3613920617d68200ad1c6fa23d458dfd3"
+    },
+    {
+      "path": "context/school-knowledge/review/YY2-0604/184.json",
+      "bytes": 21466,
+      "sha256": "ae17931cbbc546f2bf8c1391b7d985469e2af3f6fa2db74a34d582ea449e29e1"
+    },
+    {
+      "path": "context/school-knowledge/review/animation-year.png",
+      "bytes": 1778133,
+      "sha256": "ffad5be50fca175c3c8d616b137269900e5317fd03ad8ef8448316dafb84de9f"
+    },
+    {
+      "path": "context/school-knowledge/review/curriculum.png",
+      "bytes": 1641880,
+      "sha256": "cdfb4a5a3ee9f3613fdea9f3c95c03329364b43ab4c835ce933bf06cff6330d0"
+    },
+    {
+      "path": "context/school-knowledge/review/english.png",
+      "bytes": 1316106,
+      "sha256": "4fb019a6419a422083093f307a3e738493dbeddad3b9e1cb40448f619f9e22d9"
+    },
+    {
+      "path": "context/school-knowledge/review/olympiad.png",
+      "bytes": 2245704,
+      "sha256": "6a4130d13d28a7bfd24c824f5f6454c4d03f7ab3ced66888ecdb07da68d7ed83"
+    },
+    {
+      "path": "context/school-knowledge/review/results.png",
+      "bytes": 2346772,
+      "sha256": "9d09b7afdb78eadd4773784249b180cbd51c0d52394c62cbea478f36296fb724"
+    },
+    {
+      "path": "context/school-knowledge/review/sport-table.png",
+      "bytes": 645989,
+      "sha256": "2b058a3d48cd565825e87d2dbac441f1c9d559067b2c37c06d58c2e6eaa73376"
+    },
+    {
+      "path": "context/school-knowledge/review/steam-blueprint.png",
+      "bytes": 1928027,
+      "sha256": "95f5276d3343026470730f79ed50cf5cf7454766a10f2fdcb5e251ddb3699a3e"
+    },
+    {
+      "path": "context/school-knowledge/review/volleyball-trip.png",
+      "bytes": 1475734,
+      "sha256": "67d6ec6c73babce3c87e2f8e1932599c89aabc9535723bc5ad150403c16a23fb"
+    },
+    {
+      "path": "context/school-knowledge/school_knowledge.json",
+      "bytes": 181351,
+      "sha256": "20c071300f3712e09e54100185ad510f1bb795194aeeef052043d3c5fe6c96fd"
+    },
+    {
+      "path": "context/school-knowledge/school_knowledge.schema.json",
+      "bytes": 2384,
+      "sha256": "ac891671a2b108c79400fc6a397ece199cc22845c5d0a15a7d89823c2c97ca14"
+    },
+    {
+      "path": "context/school-knowledge/school_summary.md",
+      "bytes": 57441,
+      "sha256": "89fec14d3007c363de17ccb301a67eae4c74a37b820304b4281dd617d7264cea"
+    },
+    {
+      "path": "context/school-knowledge/section_map.json",
+      "bytes": 9762,
+      "sha256": "eea7cde4de491f8c342acccaa9f9663e1ebc8b3ca25a808fa67d7b938f6d5931"
+    },
+    {
+      "path": "context/school-knowledge/source_pages.jsonl",
+      "bytes": 2512783,
+      "sha256": "87eee613d9b3e7c24422a013656fb111a6e9d13308db471d561f87e6fd94acb0"
+    },
+    {
+      "path": "context/school-knowledge/source_text/1023-0925.txt",
+      "bytes": 173543,
+      "sha256": "9075ac86540385d3cd771bf8e0bc4a7484e78ad760d0261fb10aea2cea6dd110"
+    },
+    {
+      "path": "context/school-knowledge/source_text/YY-0601.txt",
+      "bytes": 503479,
+      "sha256": "bdc1d6a782f197dba8d5a9668fb247a4479d28bae80804eecf45e3b7009a814b"
+    },
+    {
+      "path": "context/school-knowledge/source_text/YY2-0604.txt",
+      "bytes": 250246,
+      "sha256": "bc85e7b7838c47125a4eb37a776bf71e295bfe86088c38147cd85a21c3fe198f"
+    },
+    {
+      "path": "context/school-knowledge/tools/build_knowledge.py",
+      "bytes": 86306,
+      "sha256": "cde508f856e065f51bec1a9d49b8e3e45d26a2b52802fe01622ee5e3a65bf861"
+    },
+    {
+      "path": "context/school-knowledge/tools/extract",
+      "bytes": 103832,
+      "sha256": "4c6ead0f658e80a28940d87e7e455ee7ee738e0cf0b2cce4673027917d8b7218"
+    },
+    {
+      "path": "context/school-knowledge/tools/extract.swift",
+      "bytes": 1732,
+      "sha256": "7271c0dc93f79934e23caffdf0606ac9fae67811ab42fabfb33051d7df0c9654"
+    },
+    {
+      "path": "context/school-knowledge/tools/search_knowledge.py",
+      "bytes": 2611,
+      "sha256": "417d2788abd1da5bb0ab940e9ed57737935a1d68fc67b3517c6700186525d95e"
+    },
+    {
+      "path": "context/school-knowledge/tools/validate_knowledge.py",
+      "bytes": 2128,
+      "sha256": "a6341b796602ffd755a2624fb0bc72b4f5b22cdb4377398d3fe30ea6b1e2fd0c"
+    },
+    {
+      "path": "context/source-pdfs/1023-0925.pdf",
+      "bytes": 204649015,
+      "sha256": "8ca7a3e74ff34370df4221643f31202324514467441c9990ed3e7bcc0bea9de5"
+    },
+    {
+      "path": "context/source-pdfs/YY-0601.pdf",
+      "bytes": 107797555,
+      "sha256": "90b385afd492e7084fa7e6b72a2074ff1cb7635c4894a13603356e69dd34ef74"
+    },
+    {
+      "path": "context/source-pdfs/YY2-0604.pdf",
+      "bytes": 54311666,
+      "sha256": "6728caf39b8ac28d7aa9c87076dc588b333fbc46b3a0df65f940f3ad8fff48be"
+    },
+    {
+      "path": "src/server/data/schoolKnowledge.json",
+      "bytes": 181351,
+      "sha256": "20c071300f3712e09e54100185ad510f1bb795194aeeef052043d3c5fe6c96fd"
+    },
+    {
+      "path": "src/server/data/schoolSourceChunks.json",
+      "bytes": 1721901,
+      "sha256": "78c24316b9a51088878923b2d56a6217a9143d41821df79d67ecd96db334da96"
+    },
+    {
+      "path": "src/config/infoDayPrompt.ts",
+      "bytes": 4541,
+      "sha256": "b4b184f34f8943f287c43386c60018969519065b30442300d80598fe9b74e218"
+    },
+    {
+      "path": "src/config/schoolKnowledge.json",
+      "bytes": 298,
+      "sha256": "0e4893307a5647ee0b3af779d6e125cb384576dd2416b1fa0a872c8f70be19cb"
+    }
+  ]
+}

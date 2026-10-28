@@ -1,0 +1,767 @@
+{
+  "native_text" : "￼\n￼\n￼\n8\n學\n校\n概\n覽\n2\n0\n2\n6",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.035051541130548924,
+        0.93313953507065561,
+        0.20824742928529397,
+        0.017441860440084112
+      ],
+      "confidence" : 0.5,
+      "text" : "凌卓朗2019年畢業生"
+    },
+    {
+      "bbox" : [
+        0.03505154425147277,
+        0.91133720946019048,
+        0.13195876586131561,
+        0.017556695851999815
+      ],
+      "confidence" : 1,
+      "text" : "香港中文大學"
+    },
+    {
+      "bbox" : [
+        0.035051548773244789,
+        0.88939051941241509,
+        0.15257731462136292,
+        0.017586224773398329
+      ],
+      "confidence" : 0.5,
+      "text" : "內外全科醫學士"
+    },
+    {
+      "bbox" : [
+        0.032989682076342085,
+        0.87063953512919834,
+        0.57113402929061496,
+        0.014800645427832992
+      ],
+      "confidence" : 1,
+      "text" : "撰寫此文時，我剛成為畢業未滿一個月的實習醫生，仍在適應繁瑣的日常工作。"
+    },
+    {
+      "bbox" : [
+        0.035051549767566907,
+        0.85609480806694505,
+        0.43711339510404151,
+        0.01309123857295813
+      ],
+      "confidence" : 1,
+      "text" : "回想中學點滴，感覺當時少了一些東西，但同時也獲得許多。"
+    },
+    {
+      "bbox" : [
+        0.032989696265807729,
+        0.84142212163541474,
+        0.65154638045873403,
+        0.013229041282533327
+      ],
+      "confidence" : 1,
+      "text" : "少的是憂慮。那時純真無憂，只知向着標竿直跑。遇到疑問與難題，就記下來，課後拉着老"
+    },
+    {
+      "bbox" : [
+        0.035051546036565032,
+        0.82703488359785926,
+        0.64948453658666361,
+        0.01325857020393173
+      ],
+      "confidence" : 1,
+      "text" : "師請教。如今想來，不知當年給老師增添了多少工作量，但他們總不吝嗇時間，一一耐心解"
+    },
+    {
+      "bbox" : [
+        0.035051546033860959,
+        0.81249999987698385,
+        0.64948453658666361,
+        0.013120767494356644
+      ],
+      "confidence" : 1,
+      "text" : "答，直至天色漸暗。那時沒有太多煩惱，生活也無大顧慮。如今步入社會，面對現實與責任"
+    },
+    {
+      "bbox" : [
+        0.03505154013483569,
+        0.79796511615606058,
+        0.6474226927145933,
+        0.013081395599158663
+      ],
+      "confidence" : 1,
+      "text" : "的沉重，每個抉擇都足以影響他人的生命與感受，每日直面生命的無常。這份壓力雖沉重，"
+    },
+    {
+      "bbox" : [
+        0.032989690306547657,
+        0.78329571108207041,
+        0.17938144390399638,
+        0.013215916958673191
+      ],
+      "confidence" : 1,
+      "text" : "卻是人成長的必經階段。"
+    },
+    {
+      "bbox" : [
+        0.032989696265478374,
+        0.76862302464505516,
+        0.65154638045873403,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "未來的道路仍充滿挑戰，但憑藉過去值得回味的回憶支撐，我依然願意秉持初心。期盼十年"
+    },
+    {
+      "bbox" : [
+        0.032989680380787888,
+        0.75282167035653991,
+        0.56907218541854465,
+        0.014672686230248311
+      ],
+      "confidence" : 1,
+      "text" : "後的自己，能像當年老師般，耐心回答他人疑問，盡力幫助與陪伴每一位病人。"
+    },
+    {
+      "bbox" : [
+        0.037113398656322086,
+        0.69912790699844019,
+        0.20824742928529399,
+        0.017576381799598861
+      ],
+      "confidence" : 0.5,
+      "text" : "林進傑2017年畢業生"
+    },
+    {
+      "bbox" : [
+        0.037113400471404052,
+        0.68002257360204399,
+        0.13195876586131561,
+        0.016365688487584684
+      ],
+      "confidence" : 1,
+      "text" : "香港中文大學"
+    },
+    {
+      "bbox" : [
+        0.037083516550483961,
+        0.65830999396276813,
+        0.15263709043845153,
+        0.019135826059173522
+      ],
+      "confidence" : 1,
+      "text" : "內外全科醫學士"
+    },
+    {
+      "bbox" : [
+        0.41030926639897103,
+        0.69751692991193948,
+        0.52577321957319212,
+        0.010331907336921797
+      ],
+      "confidence" : 0.5,
+      "text" : "As a proud graduate of Yung Yau College, l am honored to contribute to the"
+    },
+    {
+      "bbox" : [
+        0.41025875944346468,
+        0.68205106684956252,
+        0.52586844028570712,
+        0.012861038169258099
+      ],
+      "confidence" : 0.5,
+      "text" : "school's 25th anniversary publication. Looking back, my years at Yung Yau"
+    },
+    {
+      "bbox" : [
+        0.41030926645051724,
+        0.66860465135563163,
+        0.52577321957319212,
+        0.011627906601262228
+      ],
+      "confidence" : 0.5,
+      "text" : "were more than just a phase of academic learning. They were a"
+    },
+    {
+      "bbox" : [
+        0.41030926639897086,
+        0.65406320546995156,
+        0.52577321957319212,
+        0.011851015801354281
+      ],
+      "confidence" : 0.5,
+      "text" : "transformative period that shaped my character, ignited my ambitions, and"
+    },
+    {
+      "bbox" : [
+        0.41030928922289195,
+        0.64098837228449113,
+        0.48247420482146436,
+        0.011627906601262228
+      ],
+      "confidence" : 0.5,
+      "text" : "laid the foundation for my career as an emergency medicine physician."
+    },
+    {
+      "bbox" : [
+        0.41030926639937687,
+        0.62790697670864071,
+        0.52577321957319212,
+        0.010354874096390354
+      ],
+      "confidence" : 0.5,
+      "text" : "When I first walked through the gate of Yung Yau, I was a young student"
+    },
+    {
+      "bbox" : [
+        0.41024776375085265,
+        0.61188824640375095,
+        0.52589930020845843,
+        0.013560645467271648
+      ],
+      "confidence" : 0.5,
+      "text" : "filled with curiosity yet uncertain about my path. The school's nurturing"
+    },
+    {
+      "bbox" : [
+        0.41030926639809734,
+        0.59875846516640652,
+        0.52577321957319212,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "environment and dedicated teachers gave me the confidence to explore my"
+    },
+    {
+      "bbox" : [
+        0.41030926640437315,
+        0.58408577873351297,
+        0.52577321957319212,
+        0.011851015801354281
+      ],
+      "confidence" : 0.5,
+      "text" : "potential. I vividly remember the lessons that sparked my enthusiasm for"
+    },
+    {
+      "bbox" : [
+        0.41025576335037073,
+        0.56976752594714852,
+        0.52587225498297274,
+        0.013254133357958664
+      ],
+      "confidence" : 0.5,
+      "text" : "knowledge and the encouragement from teachers to ask questions and think"
+    },
+    {
+      "bbox" : [
+        0.41030926642447285,
+        0.55643340858093815,
+        0.52577321957319223,
+        0.011880544722752906
+      ],
+      "confidence" : 0.5,
+      "text" : "critically. Those classroom moments, coupled with the emphasis on discipline"
+    },
+    {
+      "bbox" : [
+        0.41025269706268247,
+        0.54211774987665651,
+        0.45375858209072012,
+        0.013348552497192134
+      ],
+      "confidence" : 0.5,
+      "text" : "and resilience, planted the seeds of my dream to pursue medicine."
+    },
+    {
+      "bbox" : [
+        0.03711338188833261,
+        0.52470930251471004,
+        0.89896911229842746,
+        0.011627906601262117
+      ],
+      "confidence" : 0.5,
+      "text" : "Beyond academics, Yung Yau taught me the value of compassion and service - qualities at the heart of my work in emergency medicine."
+    },
+    {
+      "bbox" : [
+        0.037113381889850347,
+        0.51015801365802427,
+        0.89896911229842735,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "Whether through extracurricular activities, community services, or simply friendships among classmates, I learned the importance of supporting"
+    },
+    {
+      "bbox" : [
+        0.037113381891781837,
+        0.49709302321945714,
+        0.89896911229842746,
+        0.010243320034535097
+      ],
+      "confidence" : 0.5,
+      "text" : "others in times of need. These experiences remain with me, guiding me in the high-pressure world of the emergency room, where quick thinking"
+    },
+    {
+      "bbox" : [
+        0.037113400564893234,
+        0.482505643512944,
+        0.18969072439731693,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "and empathy are equally vital."
+    },
+    {
+      "bbox" : [
+        0.037113381890333239,
+        0.46947674414968965,
+        0.89896911229842758,
+        0.010207228951206626
+      ],
+      "confidence" : 0.5,
+      "text" : "The 25th anniversary of Yung Yau College celebrates not just the institution but also the countless lives it has touched. l am deeply grateful to"
+    },
+    {
+      "bbox" : [
+        0.03711338188274501,
+        0.45485327312645318,
+        0.89896911229842746,
+        0.010263005982134255
+      ],
+      "confidence" : 0.5,
+      "text" : "the teachers who believed in me, the friends who became my second family, and the opportunities that pushed me to grow. Yung Yau gave me"
+    },
+    {
+      "bbox" : [
+        0.037068274008083116,
+        0.43964539318626872,
+        0.52999080755771732,
+        0.012567151480818994
+      ],
+      "confidence" : 0.5,
+      "text" : "the tools to face challenges with courage and the heart to serve others with kindness."
+    },
+    {
+      "bbox" : [
+        0.037113381877062666,
+        0.42720090297342772,
+        0.89896911229842746,
+        0.010299097065462726
+      ],
+      "confidence" : 0.5,
+      "text" : "As I reflect on my journey, I feel pride in our school's legacy and optimism for its future. To the students of Yung Yau today, I encourage you to"
+    },
+    {
+      "bbox" : [
+        0.037113381973087695,
+        0.41252821676935392,
+        0.89896911229842746,
+        0.011890387696552485
+      ],
+      "confidence" : 0.5,
+      "text" : "embrace every opportunity, learn from every setback, and cherish the moments you share in this special place. Congratulations to Yung Yau"
+    },
+    {
+      "bbox" : [
+        0.039175259188006399,
+        0.39825581414339872,
+        0.57319587316268528,
+        0.011627906601262117
+      ],
+      "confidence" : 0.5,
+      "text" : "College on 25 years of excellence, and thank you for shaping me into the personIam today."
+    },
+    {
+      "bbox" : [
+        0.035051549314881567,
+        0.33860045175256703,
+        0.20618556096003604,
+        0.019187358916478603
+      ],
+      "confidence" : 0.5,
+      "text" : "黃志華 2016年畢業生"
+    },
+    {
+      "bbox" : [
+        0.034988602256524656,
+        0.31518689083617668,
+        0.13208465087108123,
+        0.019335520724948818
+      ],
+      "confidence" : 0.5,
+      "text" : "香港科技大學"
+    },
+    {
+      "bbox" : [
+        0.034972502260986568,
+        0.29480959492810899,
+        0.1094364386338454,
+        0.017938950260928732
+      ],
+      "confidence" : 0.5,
+      "text" : "工程學學士"
+    },
+    {
+      "bbox" : [
+        0.29072164884774893,
+        0.3401162789718597,
+        0.063917526831993698,
+        0.013156858577685226
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "结业仪"
+    },
+    {
+      "bbox" : [
+        0.48865979042526331,
+        0.33860045175761844,
+        0.20824742928529394,
+        0.019187358916478492
+      ],
+      "confidence" : 1,
+      "text" : "卓嘉豪2012年畢業生"
+    },
+    {
+      "bbox" : [
+        0.4865979422695918,
+        0.31659142210621816,
+        0.25360823900271684,
+        0.019187358916478603
+      ],
+      "confidence" : 1,
+      "text" : "iMeddy創辦人及行政總裁"
+    },
+    {
+      "bbox" : [
+        0.070103098294627672,
+        0.2398255815077952,
+        0.35670101948273486,
+        0.014689091365977736
+      ],
+      "confidence" : 1,
+      "text" : "濃濃母校情，依依校友情，師恩難忘，同窗情深。"
+    },
+    {
+      "bbox" : [
+        0.037113397925247447,
+        0.22516929997889124,
+        0.39175258538661861,
+        0.013202793173004213
+      ],
+      "confidence" : 1,
+      "text" : "記得初入校門時，老師們無微不至的關懷，以及中一成"
+    },
+    {
+      "bbox" : [
+        0.037113404252824812,
+        0.21049661408659548,
+        0.38969071706136066,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "長營的點滴，為我的中學生活奠下溫暖的基礎。校園裡"
+    },
+    {
+      "bbox" : [
+        0.03711339940643827,
+        0.1962209301129878,
+        0.259793819525303,
+        0.013147015603885759
+      ],
+      "confidence" : 1,
+      "text" : "的錦鯉，見證了我們的成長與歡笑。"
+    },
+    {
+      "bbox" : [
+        0.070103092075385079,
+        0.18168604639027008,
+        0.35876288780799287,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "在學術路上，我積極參與數學和電腦學會，更在機"
+    },
+    {
+      "bbox" : [
+        0.037113404252824812,
+        0.16704288941904899,
+        0.38969071706136066,
+        0.013189668849144187
+      ],
+      "confidence" : 1,
+      "text" : "械人學會投入大量心力，每天奮鬥至晚上七點，甚至有"
+    },
+    {
+      "bbox" : [
+        0.037113404252824812,
+        0.15237020298854353,
+        0.38969071706136066,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "機會到外地比賽。這些經歷不僅豐富了我的知識，也磨"
+    },
+    {
+      "bbox" : [
+        0.037113402381601025,
+        0.13808139523821128,
+        0.1134020609733386,
+        0.013160139927745673
+      ],
+      "confidence" : 0.5,
+      "text" : "練了我的意志。"
+    },
+    {
+      "bbox" : [
+        0.070103098402962485,
+        0.12354651150661655,
+        0.35670101948273492,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "在DSE前夕，老師們與我們並肩作戰，不辭辛勞地"
+    },
+    {
+      "bbox" : [
+        0.037113404268240537,
+        0.10755813964180427,
+        0.3896907170613606,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "為我們打氣。這份深厚的師生情，我將永遠銘記於心。"
+    },
+    {
+      "bbox" : [
+        0.036952910895473166,
+        0.091723756881888718,
+        0.39001017350416917,
+        0.017022085512733875
+      ],
+      "confidence" : 1,
+      "text" : "老師們的教育使命、熱誠、責任與奉獻，讓我立志成為"
+    },
+    {
+      "bbox" : [
+        0.037113404845608301,
+        0.07844243777951887,
+        0.38969071706136066,
+        0.014672686230248311
+      ],
+      "confidence" : 1,
+      "text" : "一名老師。這份精神時刻伴隨於我的職業生涯，驅使我"
+    },
+    {
+      "bbox" : [
+        0.037113398227761087,
+        0.063769751486705051,
+        0.21237114148262223,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "傳承下去，幫助下一代成長。"
+    },
+    {
+      "bbox" : [
+        0.063917530964691618,
+        0.049418604529804955,
+        0.36082473168006313,
+        0.013222479120603259
+      ],
+      "confidence" : 1,
+      "text" : "感謝母校的栽培，感謝老師們的教誨。這些寶貴的"
+    },
+    {
+      "bbox" : [
+        0.035051551355763627,
+        0.034883720810662266,
+        0.24536081460806039,
+        0.013084676411028062
+      ],
+      "confidence" : 1,
+      "text" : "經歷與回憶，將永遠激勵我前行。"
+    },
+    {
+      "bbox" : [
+        0.48659794182348931,
+        0.26580135439456454,
+        0.25773195120004505,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "親愛的翁祐中學校友、師長及同學們："
+    },
+    {
+      "bbox" : [
+        0.51340206233346353,
+        0.25282167067008809,
+        0.40618556585067356,
+        0.013166701551484694
+      ],
+      "confidence" : 1,
+      "text" : "時光飛逝，我從翁祐中學畢業已十三年。作為2012理科高考"
+    },
+    {
+      "bbox" : [
+        0.48659794827578706,
+        0.23982558158588496,
+        0.43092781458145535,
+        0.011867420937083928
+      ],
+      "confidence" : 1,
+      "text" : "校友，在25週年校慶分享經歷深感榮幸。翁祐求學的時光對我來"
+    },
+    {
+      "bbox" : [
+        0.48659793647824995,
+        0.2251692999786028,
+        0.42680412683731467,
+        0.013202793173004213
+      ],
+      "confidence" : 1,
+      "text" : "說非常寶貴。學校嚴謹的理科教育培養邏輯思維和探索精神。同"
+    },
+    {
+      "bbox" : [
+        0.48659793652835104,
+        0.21218961625893451,
+        0.42680412683731472,
+        0.013101081546757598
+      ],
+      "confidence" : 1,
+      "text" : "學之間互助加強團隊合作能力。而操場上掛著的字句「艱苦我奮"
+    },
+    {
+      "bbox" : [
+        0.48659793647824973,
+        0.19751692982547608,
+        0.42680412683731478,
+        0.013238884256332795
+      ],
+      "confidence" : 0.5,
+      "text" : "進，困乏我多情。千斤擔子兩肩挑，趁青春結伴向同行」更一直"
+    },
+    {
+      "bbox" : [
+        0.4865979423629288,
+        0.1845372461040572,
+        0.42886597070938498,
+        0.01313717263008618
+      ],
+      "confidence" : 1,
+      "text" : "激勵我，無論是在讀書和創業時遇到困難都緊記奮進，肩負責任"
+    },
+    {
+      "bbox" : [
+        0.48659793367531251,
+        0.16986455967346759,
+        0.33608248294928128,
+        0.013544018058690654
+      ],
+      "confidence" : 1,
+      "text" : "與夥伴前行。感謝母校的基礎讓我能夠一直前行。"
+    },
+    {
+      "bbox" : [
+        0.5154639125331395,
+        0.15688487595010869,
+        0.40000000978127515,
+        0.013173263713414762
+      ],
+      "confidence" : 1,
+      "text" : "離校後，我在香港理工大學修讀機械工程學士，延續學校的"
+    },
+    {
+      "bbox" : [
+        0.48659793647824995,
+        0.14221218951931491,
+        0.42680412683731467,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "應用導向，運用在母校學到的邏輯思維，解決工程學上問題。之"
+    },
+    {
+      "bbox" : [
+        0.48659794238536264,
+        0.12923250579695822,
+        0.42886597070938498,
+        0.013209354796743233
+      ],
+      "confidence" : 1,
+      "text" : "後，我前往英國萊斯特大學攻讀MBA，拓寬視野並強化管理領導"
+    },
+    {
+      "bbox" : [
+        0.48659793377927446,
+        0.11625282185005847,
+        0.2762886683146159,
+        0.011851015801354392
+      ],
+      "confidence" : 1,
+      "text" : "能力。感激這些機會，皆源自翁祐啟蒙。"
+    },
+    {
+      "bbox" : [
+        0.51752576820323104,
+        0.10158013564388024,
+        0.40000000978127503,
+        0.013245445880071816
+      ],
+      "confidence" : 0.5,
+      "text" : "我於2018年創立醫療AI公司，利用AI輔助診斷和進行遙距診"
+    },
+    {
+      "bbox" : [
+        0.48453607559535472,
+        0.08860045154317342,
+        0.43505155123197115,
+        0.013143734253825312
+      ],
+      "confidence" : 1,
+      "text" : "症。公司獲認可並獲得2023福布斯中國年輕創業家獎。感謝團隊"
+    },
+    {
+      "bbox" : [
+        0.48659794021838637,
+        0.073927765495621189,
+        0.21443298535469252,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "及母校，無此基礎不可能實現。"
+    },
+    {
+      "bbox" : [
+        0.51546391253258828,
+        0.059593023359787667,
+        0.40000000978127503,
+        0.014534883520673225
+      ],
+      "confidence" : 1,
+      "text" : "校訓「文行忠信」時刻提醒我利用知識服務他人。感謝栽培"
+    },
+    {
+      "bbox" : [
+        0.48453609260617952,
+        0.046275394799214498,
+        0.43092781458145529,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "及陪伴。藉着校慶這個大日子，祝母校繁榮，繼續培育人才。後"
+    },
+    {
+      "bbox" : [
+        0.48659793966170728,
+        0.033295711132924954,
+        0.16701030731201172,
+        0.013215916958673302
+      ],
+      "confidence" : 1,
+      "text" : "輩珍惜時光、腳踏實地！"
+    }
+  ],
+  "ocr_text" : "凌卓朗2019年畢業生\n香港中文大學\n內外全科醫學士\n撰寫此文時，我剛成為畢業未滿一個月的實習醫生，仍在適應繁瑣的日常工作。\n回想中學點滴，感覺當時少了一些東西，但同時也獲得許多。\n少的是憂慮。那時純真無憂，只知向着標竿直跑。遇到疑問與難題，就記下來，課後拉着老\n師請教。如今想來，不知當年給老師增添了多少工作量，但他們總不吝嗇時間，一一耐心解\n答，直至天色漸暗。那時沒有太多煩惱，生活也無大顧慮。如今步入社會，面對現實與責任\n的沉重，每個抉擇都足以影響他人的生命與感受，每日直面生命的無常。這份壓力雖沉重，\n卻是人成長的必經階段。\n未來的道路仍充滿挑戰，但憑藉過去值得回味的回憶支撐，我依然願意秉持初心。期盼十年\n後的自己，能像當年老師般，耐心回答他人疑問，盡力幫助與陪伴每一位病人。\n林進傑2017年畢業生\n香港中文大學\n內外全科醫學士\nAs a proud graduate of Yung Yau College, l am honored to contribute to the\nschool's 25th anniversary publication. Looking back, my years at Yung Yau\nwere more than just a phase of academic learning. They were a\ntransformative period that shaped my character, ignited my ambitions, and\nlaid the foundation for my career as an emergency medicine physician.\nWhen I first walked through the gate of Yung Yau, I was a young student\nfilled with curiosity yet uncertain about my path. The school's nurturing\nenvironment and dedicated teachers gave me the confidence to explore my\npotential. I vividly remember the lessons that sparked my enthusiasm for\nknowledge and the encouragement from teachers to ask questions and think\ncritically. Those classroom moments, coupled with the emphasis on discipline\nand resilience, planted the seeds of my dream to pursue medicine.\nBeyond academics, Yung Yau taught me the value of compassion and service - qualities at the heart of my work in emergency medicine.\nWhether through extracurricular activities, community services, or simply friendships among classmates, I learned the importance of supporting\nothers in times of need. These experiences remain with me, guiding me in the high-pressure world of the emergency room, where quick thinking\nand empathy are equally vital.\nThe 25th anniversary of Yung Yau College celebrates not just the institution but also the countless lives it has touched. l am deeply grateful to\nthe teachers who believed in me, the friends who became my second family, and the opportunities that pushed me to grow. Yung Yau gave me\nthe tools to face challenges with courage and the heart to serve others with kindness.\nAs I reflect on my journey, I feel pride in our school's legacy and optimism for its future. To the students of Yung Yau today, I encourage you to\nembrace every opportunity, learn from every setback, and cherish the moments you share in this special place. Congratulations to Yung Yau\nCollege on 25 years of excellence, and thank you for shaping me into the personIam today.\n黃志華 2016年畢業生\n香港科技大學\n工程學學士\n结业仪\n卓嘉豪2012年畢業生\niMeddy創辦人及行政總裁\n濃濃母校情，依依校友情，師恩難忘，同窗情深。\n記得初入校門時，老師們無微不至的關懷，以及中一成\n長營的點滴，為我的中學生活奠下溫暖的基礎。校園裡\n的錦鯉，見證了我們的成長與歡笑。\n在學術路上，我積極參與數學和電腦學會，更在機\n械人學會投入大量心力，每天奮鬥至晚上七點，甚至有\n機會到外地比賽。這些經歷不僅豐富了我的知識，也磨\n練了我的意志。\n在DSE前夕，老師們與我們並肩作戰，不辭辛勞地\n為我們打氣。這份深厚的師生情，我將永遠銘記於心。\n老師們的教育使命、熱誠、責任與奉獻，讓我立志成為\n一名老師。這份精神時刻伴隨於我的職業生涯，驅使我\n傳承下去，幫助下一代成長。\n感謝母校的栽培，感謝老師們的教誨。這些寶貴的\n經歷與回憶，將永遠激勵我前行。\n親愛的翁祐中學校友、師長及同學們：\n時光飛逝，我從翁祐中學畢業已十三年。作為2012理科高考\n校友，在25週年校慶分享經歷深感榮幸。翁祐求學的時光對我來\n說非常寶貴。學校嚴謹的理科教育培養邏輯思維和探索精神。同\n學之間互助加強團隊合作能力。而操場上掛著的字句「艱苦我奮\n進，困乏我多情。千斤擔子兩肩挑，趁青春結伴向同行」更一直\n激勵我，無論是在讀書和創業時遇到困難都緊記奮進，肩負責任\n與夥伴前行。感謝母校的基礎讓我能夠一直前行。\n離校後，我在香港理工大學修讀機械工程學士，延續學校的\n應用導向，運用在母校學到的邏輯思維，解決工程學上問題。之\n後，我前往英國萊斯特大學攻讀MBA，拓寬視野並強化管理領導\n能力。感激這些機會，皆源自翁祐啟蒙。\n我於2018年創立醫療AI公司，利用AI輔助診斷和進行遙距診\n症。公司獲認可並獲得2023福布斯中國年輕創業家獎。感謝團隊\n及母校，無此基礎不可能實現。\n校訓「文行忠信」時刻提醒我利用知識服務他人。感謝栽培\n及陪伴。藉着校慶這個大日子，祝母校繁榮，繼續培育人才。後\n輩珍惜時光、腳踏實地！",
+  "pdf_page" : 9
+}

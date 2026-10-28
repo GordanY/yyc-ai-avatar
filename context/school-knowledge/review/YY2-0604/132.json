@@ -1,0 +1,187 @@
+{
+  "native_text" : "Every Thursday, the YYEA (Yung Yau English Ambassadors) sets up interactive game\nbooths to encourage students to speak and write in English. These engaging activities have\nattracted hundreds of participants during festive occasions such as Halloween, Christmas,\nThanksgiving Day, Valentine’s Day, Women’s Day,\nEaster, Earth Day, World Art Day, and Mother’s Day.\n￼\n￼\n￼\n￼\n￼\n￼\n￼\n￼\n￼\nValentine's Day Valentine's Day\nThanksgiving ActivityThanksgiving Activity\nStudents exploring themes Students exploring themes\nof love and care through of love and care through\ninteractive game boothsinteractive game booths\nMBTI boothMBTI booth\nLearning about NeWater Learning about NeWater\nVisitor CentreVisitor Centre\nHalloween Trick-or-Treating ActivitiesHalloween Trick-or-Treating Activities\nHalloween Trick-or-Treating Festivit ActivitiesHalloween Trick-or-Treating Festivit Activities\n132",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.15051546087846335,
+        0.9023702028999474,
+        0.73402062440529847,
+        0.016365688487584573
+      ],
+      "confidence" : 0.5,
+      "text" : "Every Thursday, the YYEA （Yung Yau English Ambassadors） sets up interactive game"
+    },
+    {
+      "bbox" : [
+        0.11134019886825779,
+        0.88517441870680402,
+        0.7752577463785808,
+        0.014534883520673225
+      ],
+      "confidence" : 0.5,
+      "text" : "booths to encourage students to speak and write in English. These engaging activities have"
+    },
+    {
+      "bbox" : [
+        0.11340207311588484,
+        0.86773255824258211,
+        0.77319585360013532,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "attracted hundreds of participants during festive occasions such as Halloween, Christmas，"
+    },
+    {
+      "bbox" : [
+        0.11134020122702395,
+        0.84738372095486103,
+        0.45979382441594052,
+        0.017441860440084112
+      ],
+      "confidence" : 0.5,
+      "text" : "Thanksgiving Day, Valentine's Day, Women's Day，"
+    },
+    {
+      "bbox" : [
+        0.11134019691088234,
+        0.82844243805403761,
+        0.44123713175455725,
+        0.017494356659142229
+      ],
+      "confidence" : 0.5,
+      "text" : "Easter, Earth Day, World Art Day, and Mother's Day."
+    },
+    {
+      "bbox" : [
+        0.14845361192587347,
+        0.70033860031673711,
+        0.37731958046937597,
+        0.014777678668364436
+      ],
+      "confidence" : 0.5,
+      "text" : "Halloween Trick-or-Treating Festivit Activities"
+    },
+    {
+      "bbox" : [
+        0.68659793692352455,
+        0.70348837229313443,
+        0.098969074395986678,
+        0.011627906601262117
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "MBTI booth"
+    },
+    {
+      "bbox" : [
+        0.3422680452152071,
+        0.49418604661791521,
+        0.31340205363738233,
+        0.014534883520673225
+      ],
+      "confidence" : 0.5,
+      "text" : "Halloween Trick-or-Treating Activities"
+    },
+    {
+      "bbox" : [
+        0.39294194232408575,
+        0.44195905264987545,
+        0.18323471607306063,
+        0.020817227072963296
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Shun Tak Fuatetna Associatior"
+    },
+    {
+      "bbox" : [
+        0.12164948486098701,
+        0.32558139545722431,
+        0.23092783414400539,
+        0.014712058125446403
+      ],
+      "confidence" : 1,
+      "text" : "Students exploring themes"
+    },
+    {
+      "bbox" : [
+        0.12358835993096033,
+        0.31234200021820058,
+        0.22911152472862828,
+        0.013368616254819443
+      ],
+      "confidence" : 0.5,
+      "text" : "of love and care through"
+    },
+    {
+      "bbox" : [
+        0.12164948155245876,
+        0.29505813964282668,
+        0.20412371708796573,
+        0.0147612735326349
+      ],
+      "confidence" : 0.5,
+      "text" : "interactive game booths"
+    },
+    {
+      "bbox" : [
+        0.54639175236711757,
+        0.27313769752818939,
+        0.17731958780533219,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "Thanksgiving Activity"
+    },
+    {
+      "bbox" : [
+        0.4987638707139942,
+        0.22424646434441986,
+        0.10066027519030452,
+        0.027774496487516287
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Be Lovdly"
+    },
+    {
+      "bbox" : [
+        0.13402061514108227,
+        0.093023255921981574,
+        0.20824742928529399,
+        0.01476455434450441
+      ],
+      "confidence" : 0.5,
+      "text" : "Learning about NeWater"
+    },
+    {
+      "bbox" : [
+        0.13402061762428863,
+        0.079941860448967228,
+        0.11752577317066681,
+        0.013173263713414762
+      ],
+      "confidence" : 0.5,
+      "text" : "Visitor Centre"
+    },
+    {
+      "bbox" : [
+        0.56055855088578743,
+        0.076472195267319298,
+        0.13265213599571823,
+        0.015987777279408144
+      ],
+      "confidence" : 0.5,
+      "text" : "Valentine's Day"
+    },
+    {
+      "bbox" : [
+        0.05979381373733339,
+        0.025959367899090702,
+        0.035051547563993007,
+        0.013544018058690765
+      ],
+      "confidence" : 1,
+      "text" : "132"
+    }
+  ],
+  "ocr_text" : "Every Thursday, the YYEA （Yung Yau English Ambassadors） sets up interactive game\nbooths to encourage students to speak and write in English. These engaging activities have\nattracted hundreds of participants during festive occasions such as Halloween, Christmas，\nThanksgiving Day, Valentine's Day, Women's Day，\nEaster, Earth Day, World Art Day, and Mother's Day.\nHalloween Trick-or-Treating Festivit Activities\nMBTI booth\nHalloween Trick-or-Treating Activities\nShun Tak Fuatetna Associatior\nStudents exploring themes\nof love and care through\ninteractive game booths\nThanksgiving Activity\nBe Lovdly\nLearning about NeWater\nVisitor Centre\nValentine's Day\n132",
+  "pdf_page" : 132
+}

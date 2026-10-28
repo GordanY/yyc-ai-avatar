@@ -1,0 +1,437 @@
+{
+  "native_text" : "￼\n￼\n「千斤擔子兩肩挑，趁青春結伴同行」\n十年前剛從翁中畢業的我，對這句話其實只對後半句稍有感\n觸。甫上大學，何來甚麼擔子？但隨着時間悄悄流逝，兩肩的負\n擔也在不知不覺間慢慢增長。像溫水煮蛙一般，又像駱駝身上的\n稻草，一點一滴地累積——不覺，不覺，不覺，不覺，不覺……啊，原來已經這麼重！\n忽然之間，學生證過期了，大學診所不讓我登記了，買戲票的優惠也沒有了。我老了。這\n意味着甚麼呢？這意味着我不再是一個醫學生，我不再是一團只佔用空間卻沒有功能的腫瘤——\n至少我不應如此。這是重擔，是責任，也是使命；這也意味着一個章節的尾聲，同時是另一篇\n章的序幕。終於開始體驗人生了，也開始體會那曾被我忽略的前半句。的確，我有兩個肩膀。\n_______________________________________________________________________\nWhen I graduated from YYC ten years ago, I could only relate to the latter half of this\nquote. Having just entered university, what burden was there to bear? Yet, as time slipped\nquietly by, the weight on my shoulders also grew without me noticing. Like a frog slowly\nheated in warm water, or a camel loaded one straw at a time, it built up so gradually that I\nhardly realised it — I’m fine, I’m fine, I’m fine, I’m fine, I’m fine… until suddenly: ah, it’s heavy.\nAll of a sudden, my student ID expired, the university clinic no longer accepted my\nregistration, and I was no longer eligible for discounted movie tickets. I am old. What does\nthis mean? It means I am no longer a medical student; I am no longer a non-functioning,\nspace-occupying lesion — at least, I should not be. It is a burden, a responsibility, and also\na mission. It marks the end of one chapter and the preface to another. I am finally beginning\nto experience life, and to understand the meaning of the first half of the quote that I once\noverlooked. Indeed, I have two shoulders.\n翁祐情．學子心翁祐情．學子心\n￼\n姓 名：岑仲彬\n畢業年份：2016\n就讀大學：香港大學\n現 職：醫生\n恭喜母校創校二十五週年！\n回首中學歲月，心中滿是感激。記得當年公開試因疫情影響\n而延期，不免令我倍感壓力和憂慮。幸得老師的鼓勵和同學的支\n持，讓我一掃壓力的陰霾。師長的諄諄教誨、同窗的並肩同行，\n點滴積累成我面對人生挑戰的勇氣與智慧。這份深厚的養分已成為我強大的後盾，讓剛踏入社\n會職場的我，始終能懷抱信心，砥礪前行。\n衷心祝願母校在未來繼續以春風化雨之姿，孕育更多英才，照亮更多青春前路！\n姓 名：李正培\n畢業年份：2020\n就讀大學：香港大學\n現 職：藥劑師\n￼\n76 順德聯誼總會翁祐中學順德聯誼總會翁祐中學",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.078350515623235487,
+        0.94186046504562426,
+        0.026804123169336586,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "76"
+    },
+    {
+      "bbox" : [
+        0.17113401892958388,
+        0.94186046522457323,
+        0.19175258049598107,
+        0.0146858100159174
+      ],
+      "confidence" : 1,
+      "text" : "順德聯誼總會翁祐中學"
+    },
+    {
+      "bbox" : [
+        0.32989690234212699,
+        0.85158013625597095,
+        0.34020619514660955,
+        0.037954748080492484
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "翁祐情，學子心"
+    },
+    {
+      "bbox" : [
+        0.14020618593447232,
+        0.8139534885091938,
+        0.024742267070672452,
+        0.017441860440084112
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.200000001270532,
+        0.81376975165144794,
+        0.10515463657868215,
+        0.017625597206787358
+      ],
+      "confidence" : 1,
+      "text" : "名：岑仲彬"
+    },
+    {
+      "bbox" : [
+        0.1402061868255535,
+        0.79505814002018527,
+        0.15463917072002706,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2016"
+    },
+    {
+      "bbox" : [
+        0.14020618451856232,
+        0.77595936800602883,
+        0.18556701219998872,
+        0.017645283154386404
+      ],
+      "confidence" : 0.5,
+      "text" : "就讀大學：香港大學"
+    },
+    {
+      "bbox" : [
+        0.14020618594919987,
+        0.75726744228581022,
+        0.024742267070672452,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "現"
+    },
+    {
+      "bbox" : [
+        0.18122302936408405,
+        0.75646712516866432,
+        0.10147146689586153,
+        0.016135517146194545
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "職：醫生"
+    },
+    {
+      "bbox" : [
+        0.19366964964860892,
+        0.72812963490414395,
+        0.28484163528833639,
+        0.017566495770525492
+      ],
+      "confidence" : 1,
+      "text" : "「千斤擔子兩肩挑，趁青春結伴同行」"
+    },
+    {
+      "bbox" : [
+        0.1855670102463555,
+        0.70930232568577389,
+        0.47010309268266726,
+        0.014738306234975407
+      ],
+      "confidence" : 1,
+      "text" : "十年前剛從翁中畢業的我，對這句話其實只對後半句稍有感"
+    },
+    {
+      "bbox" : [
+        0.15051546043593597,
+        0.69186046521942313,
+        0.50309279026129305,
+        0.014685810015917289
+      ],
+      "confidence" : 1,
+      "text" : "觸。甫上大學，何來甚麼擔子？但隨着時間悄悄流逝，兩肩的負"
+    },
+    {
+      "bbox" : [
+        0.15051546476321528,
+        0.67587209330507036,
+        0.50515463413336337,
+        0.014534883520673225
+      ],
+      "confidence" : 1,
+      "text" : "擔也在不知不覺間慢慢增長。像溫水煮蛙一般，又像駱駝身上的"
+    },
+    {
+      "bbox" : [
+        0.15051546859575929,
+        0.65843023266075695,
+        0.65979380485339045,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "稻草，一點一滴地累積—不覺，不覺，不覺，不覺，不覺⋯⋯啊，原來已經這麼重！"
+    },
+    {
+      "bbox" : [
+        0.18556700481135854,
+        0.63808139522561735,
+        0.69896908295460236,
+        0.013160139927745673
+      ],
+      "confidence" : 1,
+      "text" : "忽然之間，學生證過期了，大學診所不讓我登記了，買戲票的優惠也沒有了。我老了。這"
+    },
+    {
+      "bbox" : [
+        0.15051546174386515,
+        0.62063953498624014,
+        0.72577320001064205,
+        0.014800645427832992
+      ],
+      "confidence" : 1,
+      "text" : "意味着甚麼呢？這意味着我不再是一個醫學生，我不再是一團只佔用空間卻沒有功能的腫瘤一"
+    },
+    {
+      "bbox" : [
+        0.15051546089042625,
+        0.60319767452079187,
+        0.73402062440529847,
+        0.014748149208774985
+      ],
+      "confidence" : 1,
+      "text" : "至少我不應如此。這是重擔，是責任，也是使命；這也意味着一個章節的尾聲，同時是另一篇"
+    },
+    {
+      "bbox" : [
+        0.15051547439998542,
+        0.58720930220234446,
+        0.72164946336012625,
+        0.013242165068202305
+      ],
+      "confidence" : 1,
+      "text" : "章的序幕。終於開始體驗人生了，也開始體會那曾被我忽略的前半句。的確，我有兩個肩膀。"
+    },
+    {
+      "bbox" : [
+        0.18556701070882708,
+        0.55079006775960271,
+        0.70103092682667256,
+        0.013163420739615184
+      ],
+      "confidence" : 0.5,
+      "text" : "When l graduated from YYC ten years ago, I could only relate to the latter half of this"
+    },
+    {
+      "bbox" : [
+        0.15257731656385459,
+        0.53329571107537665,
+        0.73402062440529847,
+        0.013215916958673191
+      ],
+      "confidence" : 0.5,
+      "text" : "quote. Having Just entered university, what burden was there to bear? Yet, as time slipped"
+    },
+    {
+      "bbox" : [
+        0.15257731655193452,
+        0.51744186034215045,
+        0.73402062440529847,
+        0.013081395599158663
+      ],
+      "confidence" : 0.5,
+      "text" : "quietly by, the weight on my shoulders also grew without me noticing. Like a frog slowly"
+    },
+    {
+      "bbox" : [
+        0.15051546678973138,
+        0.49999999987668176,
+        0.73608246827736867,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "heated in warm water, or a camel loaded one straw at a time, it built up so gradually that l"
+    },
+    {
+      "bbox" : [
+        0.15051545498492602,
+        0.48250564319262912,
+        0.73195878053322816,
+        0.01313389181821667
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "hardly realised it-Im fine, Tm fine, Tm fine, Tm fine, Tm fine... until suddenly: an, it's heavy."
+    },
+    {
+      "bbox" : [
+        0.18556701070558737,
+        0.46049661377244611,
+        0.70103092682667256,
+        0.01479408380409386
+      ],
+      "confidence" : 0.5,
+      "text" : "All of a sudden, my student ID expired, the university clinic no longer accepted my"
+    },
+    {
+      "bbox" : [
+        0.1505154667885239,
+        0.44469525957063538,
+        0.73608246827736878,
+        0.013153577765815716
+      ],
+      "confidence" : 0.5,
+      "text" : "registration, and I was no longer eligible for discounted movie tickets. l am old. What does"
+    },
+    {
+      "bbox" : [
+        0.15044658116268805,
+        0.42730594009722844,
+        0.73624385931552982,
+        0.016806701505157284
+      ],
+      "confidence" : 0.5,
+      "text" : "this mean? It means l am no longer a medical student; l am no longer a non-functioning，"
+    },
+    {
+      "bbox" : [
+        0.15051546679269195,
+        0.41133720917966132,
+        0.73608246827736878,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "space-occupying lesion - at least, I should not be. It is a burden, a responsibility, and also"
+    },
+    {
+      "bbox" : [
+        0.15257731655798926,
+        0.39534883739885451,
+        0.73402062440529847,
+        0.011627906601262117
+      ],
+      "confidence" : 0.5,
+      "text" : "a mission. It marks the end of one chapter and the preface to another. l am finally beginning"
+    },
+    {
+      "bbox" : [
+        0.15051546677644731,
+        0.3764108352304073,
+        0.7360824682773689,
+        0.0146726862302482
+      ],
+      "confidence" : 0.5,
+      "text" : "to experience life, and to understand the meaning of the first half of the quote that I once"
+    },
+    {
+      "bbox" : [
+        0.15257732187784986,
+        0.36046511615894039,
+        0.32989690242669523,
+        0.013124048844417091
+      ],
+      "confidence" : 0.5,
+      "text" : "overlooked. Indeed, I have two shoulders."
+    },
+    {
+      "bbox" : [
+        0.52164948469110495,
+        0.28779069779594613,
+        0.026804123169336558,
+        0.017441860440084223
+      ],
+      "confidence" : 1,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.58140699919307059,
+        0.28767954459569978,
+        0.10728909419133104,
+        0.017664166659318581
+      ],
+      "confidence" : 1,
+      "text" : "名：李正培"
+    },
+    {
+      "bbox" : [
+        0.52164948668931854,
+        0.26862302460864085,
+        0.15257731462136292,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "畢業年份：2020"
+    },
+    {
+      "bbox" : [
+        0.52164948327335403,
+        0.25000000002253997,
+        0.18762886829865277,
+        0.017494356659142229
+      ],
+      "confidence" : 1,
+      "text" : "就讀大學：香港大學"
+    },
+    {
+      "bbox" : [
+        0.52164948436839043,
+        0.23110465157703275,
+        0.022680412500332592,
+        0.015988371442187677
+      ],
+      "confidence" : 0.5,
+      "text" : "現"
+    },
+    {
+      "bbox" : [
+        0.58124708771242928,
+        0.23049912453003241,
+        0.1055470613332895,
+        0.018652913801826099
+      ],
+      "confidence" : 0.5,
+      "text" : "職：藥劑師"
+    },
+    {
+      "bbox" : [
+        0.37525774279971558,
+        0.19469525938615651,
+        0.21237111702943456,
+        0.017514043144932101
+      ],
+      "confidence" : 1,
+      "text" : "恭喜母校創校二十五週年！"
+    },
+    {
+      "bbox" : [
+        0.37525773785227212,
+        0.17587209312813445,
+        0.47216493655473757,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "回首中學歲月，心中滿是感激。記得當年公開試因疫情影響"
+    },
+    {
+      "bbox" : [
+        0.34020618798840435,
+        0.15843023266138712,
+        0.50515463413336348,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "而延期，不免令我倍感壓力和憂慮。幸得老師的鼓勵和同學昀支"
+    },
+    {
+      "bbox" : [
+        0.33814433231212948,
+        0.14098837219624427,
+        0.50515463413336337,
+        0.014767835694564968
+      ],
+      "confidence" : 1,
+      "text" : "持，讓我一掃壓力的陰霾。師長的諄諄教誨、同的並肩同行，"
+    },
+    {
+      "bbox" : [
+        0.11134020905958245,
+        0.125000000102235,
+        0.73608246827736878,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "點滴積累成我面對人生挑戰的勇氣與智慧。這份深厚的養分已成為我強大的後盾，讓剛踏入社"
+    },
+    {
+      "bbox" : [
+        0.11134020761553533,
+        0.10755813963976224,
+        0.3381443268213517,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "會職場的我，始終能懷抱信心，砥礪前行。"
+    },
+    {
+      "bbox" : [
+        0.14639177351050867,
+        0.085755814140422992,
+        0.62061852675217843,
+        0.017517323418610786
+      ],
+      "confidence" : 1,
+      "text" : "衷心祝願母校在未來繼續以春風化雨之姿，孕育更多英才，照亮更多青春前路！"
+    }
+  ],
+  "ocr_text" : "76\n順德聯誼總會翁祐中學\n翁祐情，學子心\n姓\n名：岑仲彬\n畢業年份：2016\n就讀大學：香港大學\n現\n職：醫生\n「千斤擔子兩肩挑，趁青春結伴同行」\n十年前剛從翁中畢業的我，對這句話其實只對後半句稍有感\n觸。甫上大學，何來甚麼擔子？但隨着時間悄悄流逝，兩肩的負\n擔也在不知不覺間慢慢增長。像溫水煮蛙一般，又像駱駝身上的\n稻草，一點一滴地累積—不覺，不覺，不覺，不覺，不覺⋯⋯啊，原來已經這麼重！\n忽然之間，學生證過期了，大學診所不讓我登記了，買戲票的優惠也沒有了。我老了。這\n意味着甚麼呢？這意味着我不再是一個醫學生，我不再是一團只佔用空間卻沒有功能的腫瘤一\n至少我不應如此。這是重擔，是責任，也是使命；這也意味着一個章節的尾聲，同時是另一篇\n章的序幕。終於開始體驗人生了，也開始體會那曾被我忽略的前半句。的確，我有兩個肩膀。\nWhen l graduated from YYC ten years ago, I could only relate to the latter half of this\nquote. Having Just entered university, what burden was there to bear? Yet, as time slipped\nquietly by, the weight on my shoulders also grew without me noticing. Like a frog slowly\nheated in warm water, or a camel loaded one straw at a time, it built up so gradually that l\nhardly realised it-Im fine, Tm fine, Tm fine, Tm fine, Tm fine... until suddenly: an, it's heavy.\nAll of a sudden, my student ID expired, the university clinic no longer accepted my\nregistration, and I was no longer eligible for discounted movie tickets. l am old. What does\nthis mean? It means l am no longer a medical student; l am no longer a non-functioning，\nspace-occupying lesion - at least, I should not be. It is a burden, a responsibility, and also\na mission. It marks the end of one chapter and the preface to another. l am finally beginning\nto experience life, and to understand the meaning of the first half of the quote that I once\noverlooked. Indeed, I have two shoulders.\n姓\n名：李正培\n畢業年份：2020\n就讀大學：香港大學\n現\n職：藥劑師\n恭喜母校創校二十五週年！\n回首中學歲月，心中滿是感激。記得當年公開試因疫情影響\n而延期，不免令我倍感壓力和憂慮。幸得老師的鼓勵和同學昀支\n持，讓我一掃壓力的陰霾。師長的諄諄教誨、同的並肩同行，\n點滴積累成我面對人生挑戰的勇氣與智慧。這份深厚的養分已成為我強大的後盾，讓剛踏入社\n會職場的我，始終能懷抱信心，砥礪前行。\n衷心祝願母校在未來繼續以春風化雨之姿，孕育更多英才，照亮更多青春前路！",
+  "pdf_page" : 76
+}

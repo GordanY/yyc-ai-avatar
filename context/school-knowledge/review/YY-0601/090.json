@@ -1,0 +1,327 @@
+{
+  "native_text" : "恭喜母校創校二十五週年！\n作為二零一五年的畢業生，我始終銘記着「態度決定高度」\n這個信念。二十五歲的我，已踏入警察生涯第六年。這份態度不\n僅推動我在工作中持續進步，也賦予我面對各種逆境的勇氣與韌\n力——而這一切都深深受益於母校當年的栽培。\n無論是中學時期課堂上的教誨，還是田徑場上鍛鍊出來的意志，都讓我在後來崎嶇的道路\n上走得更加穩健、更加堅定。\n衷心祝願母校繼續引領學子奮勇向前，開創無限未來！\nIt has been almost a year since I left the place I used to\ncall home. I have seen and been through a lot, and I have\nwon and lost a lot. Life has treated me well, but not well\nenough for me to move on completely. Being far away from\nhome and the people I care about, I cannot help but think\nabout it every night. All the fun and laughter, and the time I spent with friends, come\nback to me, and this busy, endless life only makes my sorrow even louder.\nI try to speak from the heart, but words simply cannot describe my gratitude for\nYYC. I have gained everything I could ever ask for: knowledge, friendship, and a bright\nfuture. I wish I could go back in time and experience it all again, but life has only just\nbegun, and there is still more to see and learn. I will keep fighting my way to the end,\nbut I will never forget my beginnings, my backbone, and the reason I am here today. I\nwish all the teachers I have met the very best. One day, I will bring you good news.\n姓 名：梁紫軒\n畢業年份：2015\n現 職：警察\nName: Vinod Jackson ( 威龍杰克 )\nGraduation Year: 2025\nUniversity Attended : Monash University\nUndergraduate of Engineering Faculty\n￼\n￼\n90 順德聯誼總會翁祐中學順德聯誼總會翁祐中學",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.07835051508194496,
+        0.94186046504562426,
+        0.02474226859899667,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "90"
+    },
+    {
+      "bbox" : [
+        0.17113401892843874,
+        0.94186046522466604,
+        0.19175258049598107,
+        0.0146858100159174
+      ],
+      "confidence" : 1,
+      "text" : "順德聯誼總會翁祐中學"
+    },
+    {
+      "bbox" : [
+        0.12989690761013917,
+        0.81831395390261419,
+        0.024742267070672452,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "姓"
+    },
+    {
+      "bbox" : [
+        0.1298969071357591,
+        0.780523256035206,
+        0.028865979268000663,
+        0.014534883520673225
+      ],
+      "confidence" : 1,
+      "text" : "現"
+    },
+    {
+      "bbox" : [
+        0.19163294129420541,
+        0.81649619331027434,
+        0.10539391101934972,
+        0.018170404111289562
+      ],
+      "confidence" : 0.5,
+      "text" : "名：梁紫軒"
+    },
+    {
+      "bbox" : [
+        0.12989690938515855,
+        0.79796511607755605,
+        0.15463917072002706,
+        0.015988372518569549
+      ],
+      "confidence" : 1,
+      "text" : "畢業年份：2015"
+    },
+    {
+      "bbox" : [
+        0.17723154294511417,
+        0.77880130793107227,
+        0.097083305701231359,
+        0.016525291158706379
+      ],
+      "confidence" : 0.5,
+      "text" : "職：警祭"
+    },
+    {
+      "bbox" : [
+        0.18556700845456511,
+        0.73401162809391141,
+        0.21237114148262218,
+        0.017681374237714986
+      ],
+      "confidence" : 1,
+      "text" : "恭喜母校創校二十五週年！"
+    },
+    {
+      "bbox" : [
+        0.18550040479442351,
+        0.7136226959526456,
+        0.46405777564415562,
+        0.017146934504971845
+      ],
+      "confidence" : 1,
+      "text" : "作為二零一五年的畢業生，我始終銘記着「態度決定高度」"
+    },
+    {
+      "bbox" : [
+        0.15051546633095561,
+        0.69751693005072457,
+        0.50515463413336337,
+        0.014692372177847357
+      ],
+      "confidence" : 1,
+      "text" : "這個信念。二十五歲的我，已踏入警察生涯第六年。這份態度不"
+    },
+    {
+      "bbox" : [
+        0.15051546043636377,
+        0.68002257336643424,
+        0.50309279026129305,
+        0.014744868396905364
+      ],
+      "confidence" : 1,
+      "text" : "僅推動我在工作中持續進步，也賦予我面對各種逆境的勇氣與韌"
+    },
+    {
+      "bbox" : [
+        0.15051546236984756,
+        0.66422121885436392,
+        0.36701031220264924,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "力—而這一切都深深受益於母校當年的栽培。"
+    },
+    {
+      "bbox" : [
+        0.185567004414848,
+        0.6422121894408106,
+        0.69896908295460236,
+        0.016365688487584573
+      ],
+      "confidence" : 1,
+      "text" : "無論是中學時期課堂上的教誨，還是田徑場上鍛鍊出來的意志，都讓我在後來崎嶇的道路"
+    },
+    {
+      "bbox" : [
+        0.15257731403095948,
+        0.62641083523430385,
+        0.2288659902719351,
+        0.014672686230248422
+      ],
+      "confidence" : 1,
+      "text" : "上走得更加穩健、更加堅定。"
+    },
+    {
+      "bbox" : [
+        0.18556701206244222,
+        0.60319767457646956,
+        0.42680412683731472,
+        0.017569819637668904
+      ],
+      "confidence" : 1,
+      "text" : "衷心祝願母校繼續引領學子奮勇向前，開創無限未來！"
+    },
+    {
+      "bbox" : [
+        0.48842051990331881,
+        0.45048812172914254,
+        0.33452305426964379,
+        0.020385128649847317
+      ],
+      "confidence" : 0.5,
+      "text" : "Name: Vinod Jackson（威龍杰克）"
+    },
+    {
+      "bbox" : [
+        0.4886597945936717,
+        0.43453724610578193,
+        0.22680412194667721,
+        0.01313717263008618
+      ],
+      "confidence" : 0.5,
+      "text" : "Graduation Year: 2025"
+    },
+    {
+      "bbox" : [
+        0.48865979426285816,
+        0.41252821690977093,
+        0.40618556585067361,
+        0.016365688487584684
+      ],
+      "confidence" : 1,
+      "text" : "University Attended : Monash University"
+    },
+    {
+      "bbox" : [
+        0.48659794031613429,
+        0.39389534862956066,
+        0.38969071706136066,
+        0.015988372518569549
+      ],
+      "confidence" : 0.5,
+      "text" : "Undergraduate of Engineering Faculty"
+    },
+    {
+      "bbox" : [
+        0.37938144909094079,
+        0.35891647832197926,
+        0.47216493655473762,
+        0.013176545063475209
+      ],
+      "confidence" : 0.5,
+      "text" : "It has been almost a year since I left the place l used to"
+    },
+    {
+      "bbox" : [
+        0.34432990522173357,
+        0.34142212163631158,
+        0.50721647800543368,
+        0.013229041282533327
+      ],
+      "confidence" : 0.5,
+      "text" : "call home. I have seen and been through a lot, and I have"
+    },
+    {
+      "bbox" : [
+        0.3443299052812151,
+        0.32392776517906885,
+        0.50721647800543368,
+        0.014735025423105896
+      ],
+      "confidence" : 0.5,
+      "text" : "won and lost a lot. Life has treated me well, but not well"
+    },
+    {
+      "bbox" : [
+        0.34432990986326256,
+        0.30812641090223758,
+        0.50721647800543357,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "enough for me to move on completely. Being far away from"
+    },
+    {
+      "bbox" : [
+        0.34226803540398409,
+        0.28924418657178397,
+        0.51134021465594959,
+        0.016060553608844841
+      ],
+      "confidence" : 0.5,
+      "text" : "home and the people l care about, I cannot help but think"
+    },
+    {
+      "bbox" : [
+        0.11546392403141872,
+        0.27180232610666766,
+        0.73608246827736867,
+        0.016008057389786834
+      ],
+      "confidence" : 0.5,
+      "text" : "about it every night. All the fun and laughter, and the time I spent with friends, come"
+    },
+    {
+      "bbox" : [
+        0.11744079674939155,
+        0.25476888902373807,
+        0.61869371854341948,
+        0.017112667350682953
+      ],
+      "confidence" : 0.5,
+      "text" : "oack to me, and this busy, endless life only makes my sorrow even louder."
+    },
+    {
+      "bbox" : [
+        0.14839921779037887,
+        0.23303235931268951,
+        0.70524670527531552,
+        0.016989770376924507
+      ],
+      "confidence" : 0.5,
+      "text" : "I try to speak from the heart, but words simply cannot describe my gratitude for"
+    },
+    {
+      "bbox" : [
+        0.11546392627551737,
+        0.21656976723178789,
+        0.7381443121494391,
+        0.015988372518569549
+      ],
+      "confidence" : 0.5,
+      "text" : "YYC. I have gained everything I could ever ask for: knowledge, friendship, and a bright"
+    },
+    {
+      "bbox" : [
+        0.11546392628962383,
+        0.20203160278585841,
+        0.7381443121494391,
+        0.013084676411028062
+      ],
+      "confidence" : 0.5,
+      "text" : "future. | wish I could go back in time and experience it all again, but life has only Just"
+    },
+    {
+      "bbox" : [
+        0.1175257760545335,
+        0.18453724579139463,
+        0.73608246827736878,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "begun, and there is still more to see and learn. I will Keep fighting my way to the end，"
+    },
+    {
+      "bbox" : [
+        0.11748373872991344,
+        0.16624436754983352,
+        0.73618218837640226,
+        0.016912105121138943
+      ],
+      "confidence" : 0.5,
+      "text" : "but I will never forget my beginnings, my backbone, and the reason l am here today.1"
+    },
+    {
+      "bbox" : [
+        0.11546392516566985,
+        0.1495485326801016,
+        0.69484534630408656,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "wish all the teachers I have met the very best. One day, I will bring you good news."
+    }
+  ],
+  "ocr_text" : "90\n順德聯誼總會翁祐中學\n姓\n現\n名：梁紫軒\n畢業年份：2015\n職：警祭\n恭喜母校創校二十五週年！\n作為二零一五年的畢業生，我始終銘記着「態度決定高度」\n這個信念。二十五歲的我，已踏入警察生涯第六年。這份態度不\n僅推動我在工作中持續進步，也賦予我面對各種逆境的勇氣與韌\n力—而這一切都深深受益於母校當年的栽培。\n無論是中學時期課堂上的教誨，還是田徑場上鍛鍊出來的意志，都讓我在後來崎嶇的道路\n上走得更加穩健、更加堅定。\n衷心祝願母校繼續引領學子奮勇向前，開創無限未來！\nName: Vinod Jackson（威龍杰克）\nGraduation Year: 2025\nUniversity Attended : Monash University\nUndergraduate of Engineering Faculty\nIt has been almost a year since I left the place l used to\ncall home. I have seen and been through a lot, and I have\nwon and lost a lot. Life has treated me well, but not well\nenough for me to move on completely. Being far away from\nhome and the people l care about, I cannot help but think\nabout it every night. All the fun and laughter, and the time I spent with friends, come\noack to me, and this busy, endless life only makes my sorrow even louder.\nI try to speak from the heart, but words simply cannot describe my gratitude for\nYYC. I have gained everything I could ever ask for: knowledge, friendship, and a bright\nfuture. | wish I could go back in time and experience it all again, but life has only Just\nbegun, and there is still more to see and learn. I will Keep fighting my way to the end，\nbut I will never forget my beginnings, my backbone, and the reason l am here today.1\nwish all the teachers I have met the very best. One day, I will bring you good news.",
+  "pdf_page" : 90
+}

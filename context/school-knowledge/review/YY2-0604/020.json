@@ -1,0 +1,417 @@
+{
+  "native_text" : "￼\n20",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.14405642276057115,
+        0.90971577732841136,
+        0.78199978363819622,
+        0.06684385519264513
+      ],
+      "confidence" : 0.5,
+      "text" : "人工智能教育"
+    },
+    {
+      "bbox" : [
+        0.045244235028166511,
+        0.8465762364744901,
+        0.35693743290045327,
+        0.046347869976379519
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "校本LAC 課程"
+    },
+    {
+      "bbox" : [
+        0.049484536184866083,
+        0.81249999992740962,
+        0.88041237073066925,
+        0.020457110609480855
+      ],
+      "confidence" : 0.5,
+      "text" : "本校積極將人工智能技術融入日常教與學，運用大型語言模型（LLM）推"
+    },
+    {
+      "bbox" : [
+        0.049484517627130811,
+        0.78779069760173892,
+        0.88247426350911451,
+        0.02034883735949522
+      ],
+      "confidence" : 0.5,
+      "text" : "動跨課程語文學習，並以個人、社會及人文教育學習領域（PSHE）為試"
+    },
+    {
+      "bbox" : [
+        0.049484536181057207,
+        0.76297968364992252,
+        0.88041237073066914,
+        0.020450548985741723
+      ],
+      "confidence" : 1,
+      "text" : "點，促進學生跨學科思維與語言應用能力。本校老師更獲邀到香港大學分"
+    },
+    {
+      "bbox" : [
+        0.049484542022250222,
+        0.73814898375368831,
+        0.41237112192007214,
+        0.020571946559587384
+      ],
+      "confidence" : 0.5,
+      "text" : "享是次校本 LAC 課程經驗及成果。"
+    },
+    {
+      "bbox" : [
+        0.06597937316718272,
+        0.69018058671082583,
+        0.8432989854079026,
+        0.027842669131793563
+      ],
+      "confidence" : 0.5,
+      "text" : "獲邀到香港大學分享是次校本LAC 課程經驗及成果"
+    },
+    {
+      "bbox" : [
+        0.049484542937195695,
+        0.4300225731906403,
+        0.87422679020808292,
+        0.020558822235727359
+      ],
+      "confidence" : 1,
+      "text" : "本計劃著重提升學生的英語詞彙量及閱讀與寫作能力，以加強英語科及"
+    },
+    {
+      "bbox" : [
+        0.049484524380740767,
+        0.40552325574207682,
+        0.87628868298652829,
+        0.020548978723737066
+      ],
+      "confidence" : 1,
+      "text" : "PSHE科的學習成效，並延伸英語學習至課堂以外。策略包括課前預習活"
+    },
+    {
+      "bbox" : [
+        0.049484524379723512,
+        0.37923250584610402,
+        0.8762886829865284,
+        0.020476796557079902
+      ],
+      "confidence" : 0.5,
+      "text" : "動，讓學生掌握核心概念與關鍵詞彙；跨科協作，探索共同主題以深化理"
+    },
+    {
+      "bbox" : [
+        0.049428428999197888,
+        0.35311371618376408,
+        0.87639148418719959,
+        0.023138861085706619
+      ],
+      "confidence" : 1,
+      "text" : "解；以及應用校本人工智能電子平台，設計遊戲化任務結合PSHE內容，提"
+    },
+    {
+      "bbox" : [
+        0.047422699064879337,
+        0.32844243742503609,
+        0.87835047795222354,
+        0.020394771954814095
+      ],
+      "confidence" : 1,
+      "text" : "升學習動機與投入度。透過這些措施，學生能同時提升語言能力與學科知"
+    },
+    {
+      "bbox" : [
+        0.049436516679394964,
+        0.30365064136261577,
+        0.10937438867030999,
+        0.020605694359635107
+      ],
+      "confidence" : 1,
+      "text" : "識掌握。"
+    },
+    {
+      "bbox" : [
+        0.12989690916797406,
+        0.25436046517112465,
+        0.15670102681869116,
+        0.0074905506913333086
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Why co peopie worship this spirit？"
+    },
+    {
+      "bbox" : [
+        0.12752225115755714,
+        0.21348810553438646,
+        0.07690291526990059,
+        0.010259760690865649
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "People Worship"
+    },
+    {
+      "bbox" : [
+        0.2329896898231312,
+        0.21501128669901903,
+        0.12577319756532326,
+        0.007372434198452793
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "because they beteve ne"
+    },
+    {
+      "bbox" : [
+        0.12783505189817801,
+        0.2048532731736763,
+        0.23092783414400542,
+        0.0090293451033650607
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "has the power to control winds and waters.which"
+    },
+    {
+      "bbox" : [
+        0.12564400063483264,
+        0.19563550980727173,
+        0.1652226937122834,
+        0.010707961248221265
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "are essential for theirtivelhood."
+    },
+    {
+      "bbox" : [
+        0.29484536019225061,
+        0.19622093029434395,
+        0.063917526831993698,
+        0.0075036747460979214
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "especiailymn"
+    },
+    {
+      "bbox" : [
+        0.12783504718126182,
+        0.18735891648827396,
+        0.2762886683146159,
+        0.0090293451033650607
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "FShing communities: They seek his protection tor safery."
+    },
+    {
+      "bbox" : [
+        0.12783505219061853,
+        0.17877906983330494,
+        0.05154639024000901,
+        0.0074511785270398034
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "prospenity-"
+    },
+    {
+      "bbox" : [
+        0.21649484537976563,
+        0.17877906983264669,
+        0.057731958536001354,
+        0.0074511785270398034
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "well-being."
+    },
+    {
+      "bbox" : [
+        0.31752577342050659,
+        0.18002257336793959,
+        0.055670102437337277,
+        0.0062076749435666656
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Tndividually"
+    },
+    {
+      "bbox" : [
+        0.12783504718367339,
+        0.1698645598471773,
+        0.2762886683146159,
+        0.0074610215008393821
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "commnally. Festvals dedicated to him aiso Serveas"
+    },
+    {
+      "bbox" : [
+        0.12783504718529576,
+        0.16133720935520668,
+        0.27628866831461585,
+        0.0073986823079816855
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "ppportuntties for commurity Donding and shared rituais."
+    },
+    {
+      "bbox" : [
+        0.12989690328077538,
+        0.15116279070726091,
+        0.27216495611728764,
+        0.0087209302200421668
+      ],
+      "confidence" : 0.5,
+      "text" : "（einforcing soclal unity and providing psychological comtort."
+    },
+    {
+      "bbox" : [
+        0.57731958705309561,
+        0.25846501104650099,
+        0.092783506099994306,
+        0.0090293456415558859
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Ws yourgoedtrgrr"
+    },
+    {
+      "bbox" : [
+        0.57731958208146461,
+        0.25000000001022205,
+        0.2288659902719351,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Youam Weiconed to fry a nev:gane cr ask pre"
+    },
+    {
+      "bbox" : [
+        0.5751205192587685,
+        0.24016544112872684,
+        0.13638037901658284,
+        0.0099552458080697237
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "tor ibout the read matoriat"
+    },
+    {
+      "bbox" : [
+        0.5731958735270305,
+        0.2165697674526138,
+        0.20206186098930157,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.5,
+      "text" : "The History and Fun Facts About Pak Tai"
+    },
+    {
+      "bbox" : [
+        0.56701031508522615,
+        0.19912790698764093,
+        0.23711339021340394,
+        0.0087209302200421668
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Pak Tor （lt而），aiso xpown as me \"Nortt Emporer"
+    },
+    {
+      "bbox" : [
+        0.57525772716754653,
+        0.18895348838189618,
+        0.28041238051194406,
+        0.0087209302200421668
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Ka Tnoitt doity who himn pieyed asigrifcant rolew Ghinmee"
+    },
+    {
+      "bbox" : [
+        0.57319587780847336,
+        0.18002257354280882,
+        0.27835051218668616,
+        0.0090293451033650607
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "mytholoy Sol ciithire, iind felgoin pritices far cnntoner"
+    },
+    {
+      "bbox" : [
+        0.5731958773846364,
+        0.16986455976100256,
+        0.28247422438401448,
+        0.010367998420250379
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Wnin fsongnn are shrouded in myotery_mne.myty Pak Tiw"
+    },
+    {
+      "bbox" : [
+        0.57517152395147675,
+        0.16129291526879419,
+        0.28057734171549487,
+        0.010950877488870359
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "1 neely rgrded as ohe of the most powetul:podg"
+    },
+    {
+      "bbox" : [
+        0.57525772717489043,
+        0.15406320533287876,
+        0.28041238051194406,
+        0.0073363431151240999
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "ISSDcuted With Watot Woattet ard viatural forcee、Hid Cuft"
+    },
+    {
+      "bbox" : [
+        0.57731958328430799,
+        0.14389534884791688,
+        0.27628866831461585,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "hH1Deen porieyiuriy:Mirong I CourtE T9OCNR Cf CMEs"
+    },
+    {
+      "bbox" : [
+        0.57505106250637028,
+        0.13430651981737185,
+        0.083043177922566769,
+        0.010072787782139492
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "HOrgEKOrG ME"
+    },
+    {
+      "bbox" : [
+        0.67835051526835488,
+        0.13517441861688251,
+        0.1773195878053323,
+        0.0087307731938415234
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "and ahee aeis, wet fu innuance"
+    },
+    {
+      "bbox" : [
+        0.28247422685176177,
+        0.075581395140142726,
+        0.41030927804800182,
+        0.015988372518569549
+      ],
+      "confidence" : 0.5,
+      "text" : "本校自主研發的 LAC 人工智能教學互動平台"
+    },
+    {
+      "bbox" : [
+        0.06391752539122332,
+        0.025959367912717246,
+        0.02474226859899667,
+        0.013544018058690654
+      ],
+      "confidence" : 0.5,
+      "text" : "20"
+    }
+  ],
+  "ocr_text" : "人工智能教育\n校本LAC 課程\n本校積極將人工智能技術融入日常教與學，運用大型語言模型（LLM）推\n動跨課程語文學習，並以個人、社會及人文教育學習領域（PSHE）為試\n點，促進學生跨學科思維與語言應用能力。本校老師更獲邀到香港大學分\n享是次校本 LAC 課程經驗及成果。\n獲邀到香港大學分享是次校本LAC 課程經驗及成果\n本計劃著重提升學生的英語詞彙量及閱讀與寫作能力，以加強英語科及\nPSHE科的學習成效，並延伸英語學習至課堂以外。策略包括課前預習活\n動，讓學生掌握核心概念與關鍵詞彙；跨科協作，探索共同主題以深化理\n解；以及應用校本人工智能電子平台，設計遊戲化任務結合PSHE內容，提\n升學習動機與投入度。透過這些措施，學生能同時提升語言能力與學科知\n識掌握。\nWhy co peopie worship this spirit？\nPeople Worship\nbecause they beteve ne\nhas the power to control winds and waters.which\nare essential for theirtivelhood.\nespeciailymn\nFShing communities: They seek his protection tor safery.\nprospenity-\nwell-being.\nTndividually\ncommnally. Festvals dedicated to him aiso Serveas\nppportuntties for commurity Donding and shared rituais.\n（einforcing soclal unity and providing psychological comtort.\nWs yourgoedtrgrr\nYouam Weiconed to fry a nev:gane cr ask pre\ntor ibout the read matoriat\nThe History and Fun Facts About Pak Tai\nPak Tor （lt而），aiso xpown as me \"Nortt Emporer\nKa Tnoitt doity who himn pieyed asigrifcant rolew Ghinmee\nmytholoy Sol ciithire, iind felgoin pritices far cnntoner\nWnin fsongnn are shrouded in myotery_mne.myty Pak Tiw\n1 neely rgrded as ohe of the most powetul:podg\nISSDcuted With Watot Woattet ard viatural forcee、Hid Cuft\nhH1Deen porieyiuriy:Mirong I CourtE T9OCNR Cf CMEs\nHOrgEKOrG ME\nand ahee aeis, wet fu innuance\n本校自主研發的 LAC 人工智能教學互動平台\n20",
+  "pdf_page" : 20
+}

@@ -1,0 +1,397 @@
+{
+  "native_text" : "To help students relax and unwind\nafter exams and to encourage them\nto practice English in an authentic\nsetting, the department organizes\na trip to an indoor bouldering gym.\nDuring this visit, students are offered\nthe opportunity to learn the basics\nof bouldering and are motivated to\ninterview English-speaking climbers.\nWith the undeniable success of the recent musical and study tour to Australia, the\nEnglish Department is poised to organize more activities, both local and international.\nThese initiatives aim to foster a love for English, promote community-mindedness,\nempathy, creativity, a willingness to embrace new challenges, and the readiness to become\nindependent lifelong learners.\n￼\n￼\n￼\n￼\n￼\n￼\n￼\nStudents performed in Students performed in\nRomeo and JulietRomeo and Juliet\nStudy Tour - AustraliaStudy Tour - Australia\nMusical TeamMusical Team\nInterviewing an advanced climberInterviewing an advanced climber Chatting with a new climber Chatting with a new climber\nEnglish Meme competition English Meme competition\n- Turning language lessons - Turning language lessons\ninto laugh-out-loud visual artinto laugh-out-loud visual art\nCoach and climberCoach and climber\n133",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.27010309472248822,
+        0.76297968423094131,
+        0.15670102681869119,
+        0.010276129767803122
+      ],
+      "confidence" : 0.5,
+      "text" : "Coach and climber"
+    },
+    {
+      "bbox" : [
+        0.597938138605978,
+        0.90406320538914331,
+        0.28865980490660059,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "To help students relax and unwind"
+    },
+    {
+      "bbox" : [
+        0.56288659475347591,
+        0.88656884901356059,
+        0.32371134635729659,
+        0.013140453441955691
+      ],
+      "confidence" : 0.5,
+      "text" : "after exams and to encourage them"
+    },
+    {
+      "bbox" : [
+        0.5628865947260604,
+        0.86773255825930518,
+        0.3237113463572967,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "to practice English in an authentic"
+    },
+    {
+      "bbox" : [
+        0.56288659471910918,
+        0.84875846508135921,
+        0.32371134635729681,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "setting, the department organizes"
+    },
+    {
+      "bbox" : [
+        0.56072574212897863,
+        0.82958151123466861,
+        0.32601605928861188,
+        0.01630184182195038
+      ],
+      "confidence" : 0.5,
+      "text" : "a trip to an indoor bouldering gym."
+    },
+    {
+      "bbox" : [
+        0.5628865947594961,
+        0.81094808114410522,
+        0.3237113463572967,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "During this visit, students are offered"
+    },
+    {
+      "bbox" : [
+        0.56082474495703316,
+        0.79345372477399456,
+        0.32577319022936702,
+        0.014685810015917289
+      ],
+      "confidence" : 0.5,
+      "text" : "the opportunity to learn the basics"
+    },
+    {
+      "bbox" : [
+        0.56082474498321755,
+        0.77470930211855937,
+        0.32577319022936702,
+        0.01598837251856966
+      ],
+      "confidence" : 0.5,
+      "text" : "of bouldering and are motivated to"
+    },
+    {
+      "bbox" : [
+        0.56064064973157934,
+        0.75572232558795238,
+        0.31379675253843642,
+        0.017946216914777602
+      ],
+      "confidence" : 0.5,
+      "text" : "interview English-speaking climbers."
+    },
+    {
+      "bbox" : [
+        0.23505154750435231,
+        0.56376975179767297,
+        0.28247422438401448,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "Interviewing an advanced climber"
+    },
+    {
+      "bbox" : [
+        0.63092783539413833,
+        0.5564334088095797,
+        0.23092783414400542,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "Chatting with a new climber"
+    },
+    {
+      "bbox" : [
+        0.15257731655450996,
+        0.5332957113009964,
+        0.73402062440529847,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "With the undeniable success of the recent musical and study tour to Australia, the"
+    },
+    {
+      "bbox" : [
+        0.11340207309628389,
+        0.51297968405016314,
+        0.77319585360013521,
+        0.016365688487584573
+      ],
+      "confidence" : 0.5,
+      "text" : "English Department is poised to organize more activities, both local and international."
+    },
+    {
+      "bbox" : [
+        0.11124634765994375,
+        0.49414413629247267,
+        0.77752191592485476,
+        0.019315177108041315
+      ],
+      "confidence" : 0.5,
+      "text" : "These initiatives aim to foster a love for English, promote community-mindedness，"
+    },
+    {
+      "bbox" : [
+        0.11127028567595505,
+        0.47450531442684651,
+        0.77539243453588236,
+        0.019618779219031102
+      ],
+      "confidence" : 0.5,
+      "text" : "empathy, creativity, a willingness to embrace new challenges, and the readiness to become"
+    },
+    {
+      "bbox" : [
+        0.10927834829664991,
+        0.45930232569473739,
+        0.25567010732797479,
+        0.014738306234975407
+      ],
+      "confidence" : 0.5,
+      "text" : "independent lifelong learners."
+    },
+    {
+      "bbox" : [
+        0.16907216518133139,
+        0.41422121908254672,
+        0.055670102437337221,
+        0.0073363431151242109
+      ],
+      "confidence" : 0.5,
+      "text" : "TNE ENGIISN DEPA"
+    },
+    {
+      "bbox" : [
+        0.10891140844055315,
+        0.38084742029642504,
+        0.12479659838554184,
+        0.024164176148700922
+      ],
+      "confidence" : 0.5,
+      "text" : "WHO DID"
+    },
+    {
+      "bbox" : [
+        0.16449585195948449,
+        0.35684143160182114,
+        0.095726202695797652,
+        0.028042771746288886
+      ],
+      "confidence" : 0.5,
+      "text" : "THIS？"
+    },
+    {
+      "bbox" : [
+        0.1405313604085216,
+        0.32566860435833722,
+        0.045329032800136476,
+        0.01712209322651681
+      ],
+      "confidence" : 1,
+      "text" : "MEME"
+    },
+    {
+      "bbox" : [
+        0.13194499954048089,
+        0.30819031102895789,
+        0.080547941036713422,
+        0.021129532807567575
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "CONTEST 2"
+    },
+    {
+      "bbox" : [
+        0.23298969091791918,
+        0.34011627917817278,
+        0.041237112803336889,
+        0.0058205154625611266
+      ],
+      "confidence" : 0.5,
+      "text" : "Themes："
+    },
+    {
+      "bbox" : [
+        0.22024544362668061,
+        0.32913152992884043,
+        0.091573268939287217,
+        0.011391075685384888
+      ],
+      "confidence" : 0.5,
+      "text" : "School Uife memes"
+    },
+    {
+      "bbox" : [
+        0.22229081730168551,
+        0.32058473939722343,
+        0.087462761463263067,
+        0.011391075685384777
+      ],
+      "confidence" : 1,
+      "text" : "English Language・"
+    },
+    {
+      "bbox" : [
+        0.22843310675780926,
+        0.31174583123867106,
+        0.079220154346563876,
+        0.011619680352996764
+      ],
+      "confidence" : 0.5,
+      "text" : "related memes"
+    },
+    {
+      "bbox" : [
+        0.28865979483081661,
+        0.30079006766841132,
+        0.049484534141344905,
+        0.0090293453724604733
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "UPLORD"
+    },
+    {
+      "bbox" : [
+        0.45154639183513268,
+        0.34738372113250837,
+        0.11546391707200265,
+        0.011627906601262228
+      ],
+      "confidence" : 0.5,
+      "text" : "Musical Team"
+    },
+    {
+      "bbox" : [
+        0.66368421661930055,
+        0.34617903231611091,
+        0.1942839744763496,
+        0.016834602399012244
+      ],
+      "confidence" : 0.5,
+      "text" : "Students performed in"
+    },
+    {
+      "bbox" : [
+        0.66391752852800956,
+        0.33284883709836055,
+        0.14845360242403471,
+        0.013087957222897684
+      ],
+      "confidence" : 0.5,
+      "text" : "Romeo and Juliet"
+    },
+    {
+      "bbox" : [
+        0.26391752532193802,
+        0.23401162793305497,
+        0.047422681099329234,
+        0.0087209302200420558
+      ],
+      "confidence" : 0.5,
+      "text" : "DEADLINE："
+    },
+    {
+      "bbox" : [
+        0.26175053776658613,
+        0.21926093522270385,
+        0.04763294488955766,
+        0.012059524958074497
+      ],
+      "confidence" : 0.5,
+      "text" : "28/05"
+    },
+    {
+      "bbox" : [
+        0.29916649870756429,
+        0.20382515580541549,
+        0.047078117346152248,
+        0.016449232941018299
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "CJ0L"
+    },
+    {
+      "bbox" : [
+        0.11340206031229072,
+        0.16252821646917837,
+        0.24742268293331832,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "English Meme competition"
+    },
+    {
+      "bbox" : [
+        0.11134020436578058,
+        0.14825581414831945,
+        0.25154639513064653,
+        0.011627906601262228
+      ],
+      "confidence" : 0.5,
+      "text" : "- Turning language lessons"
+    },
+    {
+      "bbox" : [
+        0.11117498572309269,
+        0.13095067735599164,
+        0.24359316703600759,
+        0.014715918030749564
+      ],
+      "confidence" : 0.5,
+      "text" : "into laugh-out-loud visual art"
+    },
+    {
+      "bbox" : [
+        0.53402061643575371,
+        0.11773255824739481,
+        0.19587629269330931,
+        0.014534883520673114
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "AUsA owdngy Sguger Sedy Tour"
+    },
+    {
+      "bbox" : [
+        0.53402061793045041,
+        0.071106094703556666,
+        0.1814433000026604,
+        0.013196231011074255
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Stuay Tour - Australia"
+    },
+    {
+      "bbox" : [
+        0.90309278281594152,
+        0.027616278988211507,
+        0.035051547563993091,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "133"
+    }
+  ],
+  "ocr_text" : "Coach and climber\nTo help students relax and unwind\nafter exams and to encourage them\nto practice English in an authentic\nsetting, the department organizes\na trip to an indoor bouldering gym.\nDuring this visit, students are offered\nthe opportunity to learn the basics\nof bouldering and are motivated to\ninterview English-speaking climbers.\nInterviewing an advanced climber\nChatting with a new climber\nWith the undeniable success of the recent musical and study tour to Australia, the\nEnglish Department is poised to organize more activities, both local and international.\nThese initiatives aim to foster a love for English, promote community-mindedness，\nempathy, creativity, a willingness to embrace new challenges, and the readiness to become\nindependent lifelong learners.\nTNE ENGIISN DEPA\nWHO DID\nTHIS？\nMEME\nCONTEST 2\nThemes：\nSchool Uife memes\nEnglish Language・\nrelated memes\nUPLORD\nMusical Team\nStudents performed in\nRomeo and Juliet\nDEADLINE：\n28/05\nCJ0L\nEnglish Meme competition\n- Turning language lessons\ninto laugh-out-loud visual art\nAUsA owdngy Sguger Sedy Tour\nStuay Tour - Australia\n133",
+  "pdf_page" : 133
+}

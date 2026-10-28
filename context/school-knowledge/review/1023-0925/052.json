@@ -1,0 +1,607 @@
+{
+  "native_text" : "￼\nEnglish Department - English Department -\nActivities and Development Outside the ClassroomActivities and Development Outside the Classroom\n￼\n￼\n￼\n￼\n￼\nIn addition to these initiatives,\nYYC students have demonstrated\nremarkable performance in various\ncompetitions. Under the guidance\nof dedicated teachers, they\nhave achieved impressive results\nin events such as the Speech\nFestival, Drama Festival, Animal\nPhotopoetry Competition, and the\nInternational Competitions and\nAssessments for Schools (ICAS), to\nname a few.\nYYC students have excelled not only academically but also in extracurricular activities.\nThey actively plan and organize booths and events during Mental Health Week,\nMulticultural Week, and Chinese Culture Week, attracting large audiences, including\nboth junior and senior students.\nMental Health WeekMental Health Week\nChinese Culture WeekChinese Culture Week\nEnglish DramaEnglish Drama\nSpeech Festival winners 2025Speech Festival winners 2025\nAnimal Poetry CompetitionAnimal Poetry Competition\n51\n順\n德\n聯\n誼\n總\n會\n翁\n祐\n中\n學",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.075897586524167338,
+        0.90480130002648251,
+        0.52250412182930184,
+        0.051642953945874592
+      ],
+      "confidence" : 0.5,
+      "text" : "English Department-"
+    },
+    {
+      "bbox" : [
+        0.070103081064207012,
+        0.87641083546957155,
+        0.87628868298652851,
+        0.033472885665721264
+      ],
+      "confidence" : 0.5,
+      "text" : "Activities and Development Outside the Classroom"
+    },
+    {
+      "bbox" : [
+        0.084536069109412013,
+        0.84302325582995796,
+        0.83298971714117587,
+        0.017586224773398329
+      ],
+      "confidence" : 0.5,
+      "text" : "YYC students have excelled not only academically but also in extracurricular activities."
+    },
+    {
+      "bbox" : [
+        0.082474213490492609,
+        0.82392776540173274,
+        0.83298971714117576,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "They actively plan and organize booths and events during Mental Health Week，"
+    },
+    {
+      "bbox" : [
+        0.084536106266812863,
+        0.80361173792573948,
+        0.82886593158428501,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "Multicultural Week, and Chinese Culture Week, attracting large audiences, including"
+    },
+    {
+      "bbox" : [
+        0.082474231648019369,
+        0.78197674389334193,
+        0.30515462924272585,
+        0.018895349437980546
+      ],
+      "confidence" : 0.5,
+      "text" : "both junior and senior students."
+    },
+    {
+      "bbox" : [
+        0.43092783457661393,
+        0.63372093030533305,
+        0.032989691465328874,
+        0.0073625912246533254
+      ],
+      "confidence" : 0.5,
+      "text" : "Group 4"
+    },
+    {
+      "bbox" : [
+        0.30721649504163057,
+        0.62189616250257918,
+        0.041237112803336862,
+        0.0074643025818041941
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Group3"
+    },
+    {
+      "bbox" : [
+        0.088659795337351133,
+        0.60319767438757854,
+        0.16082473901601937,
+        0.01023347706073563
+      ],
+      "confidence" : 0.5,
+      "text" : "Chinese Culture Week"
+    },
+    {
+      "bbox" : [
+        0.52783505435499301,
+        0.60158013542345412,
+        0.14845360242403471,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "Mental Health Week"
+    },
+    {
+      "bbox" : [
+        0.090600053804369557,
+        0.55081786100679109,
+        0.31779311253474307,
+        0.015467585613173185
+      ],
+      "confidence" : 0.5,
+      "text" : "In addition to these initiatives，"
+    },
+    {
+      "bbox" : [
+        0.090721647163009816,
+        0.53197674406521744,
+        0.31546392196264017,
+        0.013169982901545252
+      ],
+      "confidence" : 0.5,
+      "text" : "YYC students have demonstrated"
+    },
+    {
+      "bbox" : [
+        0.088659797259375242,
+        0.51015801327898902,
+        0.31752576583471054,
+        0.016004777654299085
+      ],
+      "confidence" : 0.5,
+      "text" : "remarkable performance in various"
+    },
+    {
+      "bbox" : [
+        0.090721647181654277,
+        0.48982558119108022,
+        0.31546392196264023,
+        0.015988372518569549
+      ],
+      "confidence" : 0.5,
+      "text" : "competitions. Under the guidance"
+    },
+    {
+      "bbox" : [
+        0.090592341893756687,
+        0.46910503035937468,
+        0.31575178488706929,
+        0.017937245810274116
+      ],
+      "confidence" : 0.5,
+      "text" : "of dedicated teachers, they"
+    },
+    {
+      "bbox" : [
+        0.090721647157321922,
+        0.45033860053207686,
+        0.31546392196264017,
+        0.016365688487584684
+      ],
+      "confidence" : 0.5,
+      "text" : "have achieved impressive results"
+    },
+    {
+      "bbox" : [
+        0.088545124877234996,
+        0.43138963294841526,
+        0.31773867973914516,
+        0.0163340869929397
+      ],
+      "confidence" : 0.5,
+      "text" : "in events such as the Speech"
+    },
+    {
+      "bbox" : [
+        0.090570399861978332,
+        0.40870741045213432,
+        0.31777540842692059,
+        0.018677427322008833
+      ],
+      "confidence" : 0.5,
+      "text" : "Festival, Drama Festival, Animal"
+    },
+    {
+      "bbox" : [
+        0.090721647158743909,
+        0.38939051940614655,
+        0.31546392196264023,
+        0.017586224773398329
+      ],
+      "confidence" : 1,
+      "text" : "Photopoetry Competition, and the"
+    },
+    {
+      "bbox" : [
+        0.090721647195282307,
+        0.37354651150843399,
+        0.31546392196264023,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "International Competitions and"
+    },
+    {
+      "bbox" : [
+        0.090461366385697087,
+        0.34989339858502122,
+        0.31601397196451825,
+        0.020978996500742864
+      ],
+      "confidence" : 0.5,
+      "text" : "Assessments for Schools （ICAS）， to"
+    },
+    {
+      "bbox" : [
+        0.092725324238531595,
+        0.33497010503549751,
+        0.10955008482321714,
+        0.014205631230270299
+      ],
+      "confidence" : 0.5,
+      "text" : "name a few."
+    },
+    {
+      "bbox" : [
+        0.20000000019626968,
+        0.12063953495195379,
+        0.041237112803336917,
+        0.0074643025818044162
+      ],
+      "confidence" : 1,
+      "text" : "Animal"
+    },
+    {
+      "bbox" : [
+        0.16632528273581493,
+        0.10562349592289366,
+        0.10919799560155624,
+        0.017762630841532956
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "PHOTO Pocru"
+    },
+    {
+      "bbox" : [
+        0.15238522054150286,
+        0.10139996038152455,
+        0.11582123927581003,
+        0.010067363894012638
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "Creative Challenge•"
+    },
+    {
+      "bbox" : [
+        0.16701031046438169,
+        0.094243792297198037,
+        0.10515463657868218,
+        0.0090293453724604733
+      ],
+      "confidence" : 0.5,
+      "text" : "動物攝影「詩」創意大挑戦"
+    },
+    {
+      "bbox" : [
+        0.084338007822411631,
+        0.050958065631579674,
+        0.19627777735392254,
+        0.015620837093206941
+      ],
+      "confidence" : 0.5,
+      "text" : "Animal Poetry Competition"
+    },
+    {
+      "bbox" : [
+        0.42645973400517162,
+        0.2953623881854841,
+        0.10786826793964094,
+        0.01563322248092891
+      ],
+      "confidence" : 0.5,
+      "text" : "English Drama"
+    },
+    {
+      "bbox" : [
+        0.36494845472612286,
+        0.2804740404963969,
+        0.10515463657868218,
+        0.010223634086936162
+      ],
+      "confidence" : 0.5,
+      "text" : "Class & Name"
+    },
+    {
+      "bbox" : [
+        0.36268859458807806,
+        0.25645767950019249,
+        0.16951999908838516,
+        0.013693956973590438
+      ],
+      "confidence" : 0.5,
+      "text" : "2B Lam Hoi Ching Reina"
+    },
+    {
+      "bbox" : [
+        0.3625458624517921,
+        0.23371186182728443,
+        0.11226109969310272,
+        0.014824573396290952
+      ],
+      "confidence" : 0.5,
+      "text" : "2B Li Sze Ching"
+    },
+    {
+      "bbox" : [
+        0.36464179783123213,
+        0.21205474599065799,
+        0.10992804551735902,
+        0.013142561535803066
+      ],
+      "confidence" : 0.5,
+      "text" : "5B Law Tzu Ling"
+    },
+    {
+      "bbox" : [
+        0.36278992851860792,
+        0.19017355926595825,
+        0.055863441565097927,
+        0.012094742557534288
+      ],
+      "confidence" : 1,
+      "text" : "F3 Girls"
+    },
+    {
+      "bbox" : [
+        0.36468672138461239,
+        0.16894078024157144,
+        0.054114702420356986,
+        0.010691921544128902
+      ],
+      "confidence" : 0.5,
+      "text" : "F3 Boys"
+    },
+    {
+      "bbox" : [
+        0.36494845415663579,
+        0.14672686203691265,
+        0.1113402048746745,
+        0.010249882196465165
+      ],
+      "confidence" : 0.5,
+      "text" : "1B Wong Yan Yu"
+    },
+    {
+      "bbox" : [
+        0.36457001967684804,
+        0.12416887169726665,
+        0.054450438572810234,
+        0.011104918494988736
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "F1 Boys"
+    },
+    {
+      "bbox" : [
+        0.36268751251534381,
+        0.10125330231845109,
+        0.056068273691030623,
+        0.012609674483873956
+      ],
+      "confidence" : 0.5,
+      "text" : "F1 Girls"
+    },
+    {
+      "bbox" : [
+        0.36458197761520256,
+        0.078248552291571905,
+        0.13265196482340497,
+        0.014005936026304067
+      ],
+      "confidence" : 0.5,
+      "text" : "3A Wong Lai Ching"
+    },
+    {
+      "bbox" : [
+        0.3525773212239896,
+        0.053611738329799374,
+        0.21855669755202073,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "Speech Festival winners 2025"
+    },
+    {
+      "bbox" : [
+        0.59513952744055243,
+        0.27645638738216982,
+        0.069499333699544308,
+        0.013730210590577774
+      ],
+      "confidence" : 1,
+      "text" : "Category"
+    },
+    {
+      "bbox" : [
+        0.59793814241066401,
+        0.25564334070208372,
+        0.19381443659464515,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Verse Speaking （Urban）"
+    },
+    {
+      "bbox" : [
+        0.59793814186454863,
+        0.23532731354071745,
+        0.14020619025597203,
+        0.010312221389322751
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Verse Speaking"
+    },
+    {
+      "bbox" : [
+        0.59773209609468603,
+        0.21211283385961988,
+        0.13445389576447309,
+        0.012716913330904744
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Prose Reading"
+    },
+    {
+      "bbox" : [
+        0.59762119044479001,
+        0.18945209806447338,
+        0.11602060611431408,
+        0.012759071440513692
+      ],
+      "confidence" : 0.5,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.59793814465042217,
+        0.16860465113606637,
+        0.1134020609733386,
+        0.010289254091663258
+      ],
+      "confidence" : 1,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.59770546465911822,
+        0.14523202933061996,
+        0.14066725510817313,
+        0.013127513179391537
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Verse Speaking"
+    },
+    {
+      "bbox" : [
+        0.597498420181658,
+        0.12214857029142001,
+        0.11634599245511568,
+        0.014475634620098154
+      ],
+      "confidence" : 1,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.59769103998334527,
+        0.10162795375907241,
+        0.11397211368267357,
+        0.013080233106763761
+      ],
+      "confidence" : 1,
+      "text" : "Choral Speaking"
+    },
+    {
+      "bbox" : [
+        0.59769772375261454,
+        0.078391903459684387,
+        0.13449629759177184,
+        0.013056370797598582
+      ],
+      "confidence" : 0.5,
+      "text" : "Solo Prose Reading"
+    },
+    {
+      "bbox" : [
+        0.83092783561077277,
+        0.28047404072175897,
+        0.037113400606008651,
+        0.0090293453724604733
+      ],
+      "confidence" : 1,
+      "text" : "Prize"
+    },
+    {
+      "bbox" : [
+        0.83084331063582906,
+        0.2569527885472227,
+        0.074395852211194158,
+        0.010803725326572478
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.83088673593502138,
+        0.2353145246246523,
+        0.0743090006021353,
+        0.010475602160727293
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.83068067924101718,
+        0.21214148319316739,
+        0.074627283291939017,
+        0.011232805574989735
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.83063628804724032,
+        0.19057815256656085,
+        0.07476738783029413,
+        0.010626240723827451
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.83092783637484557,
+        0.16860465114341106,
+        0.074226801212017302,
+        0.010289254091663258
+      ],
+      "confidence" : 1,
+      "text" : "Champion"
+    },
+    {
+      "bbox" : [
+        0.83092783699460349,
+        0.14672686244621724,
+        0.06391752071869683,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "2md Place"
+    },
+    {
+      "bbox" : [
+        0.83092783432240536,
+        0.12499999999424694,
+        0.063917526831993698,
+        0.010440180586907433
+      ],
+      "confidence" : 0.5,
+      "text" : "2nd Place"
+    },
+    {
+      "bbox" : [
+        0.83088439935046665,
+        0.10306530535055325,
+        0.061942540682279112,
+        0.010439157485961914
+      ],
+      "confidence" : 0.5,
+      "text" : "3rd Place"
+    },
+    {
+      "bbox" : [
+        0.83092783454398833,
+        0.079941860461482883,
+        0.061855670733329537,
+        0.010351593284520844
+      ],
+      "confidence" : 0.5,
+      "text" : "3rd Place"
+    },
+    {
+      "bbox" : [
+        0.018556701784128406,
+        0.021802325739260331,
+        0.035051544507344559,
+        0.017701060185314033
+      ],
+      "confidence" : 1,
+      "text" : "51"
+    }
+  ],
+  "ocr_text" : "English Department-\nActivities and Development Outside the Classroom\nYYC students have excelled not only academically but also in extracurricular activities.\nThey actively plan and organize booths and events during Mental Health Week，\nMulticultural Week, and Chinese Culture Week, attracting large audiences, including\nboth junior and senior students.\nGroup 4\nGroup3\nChinese Culture Week\nMental Health Week\nIn addition to these initiatives，\nYYC students have demonstrated\nremarkable performance in various\ncompetitions. Under the guidance\nof dedicated teachers, they\nhave achieved impressive results\nin events such as the Speech\nFestival, Drama Festival, Animal\nPhotopoetry Competition, and the\nInternational Competitions and\nAssessments for Schools （ICAS）， to\nname a few.\nAnimal\nPHOTO Pocru\nCreative Challenge•\n動物攝影「詩」創意大挑戦\nAnimal Poetry Competition\nEnglish Drama\nClass & Name\n2B Lam Hoi Ching Reina\n2B Li Sze Ching\n5B Law Tzu Ling\nF3 Girls\nF3 Boys\n1B Wong Yan Yu\nF1 Boys\nF1 Girls\n3A Wong Lai Ching\nSpeech Festival winners 2025\nCategory\nSolo Verse Speaking （Urban）\nSolo Verse Speaking\nSolo Prose Reading\nChoral Speaking\nChoral Speaking\nSolo Verse Speaking\nChoral Speaking\nChoral Speaking\nSolo Prose Reading\nPrize\nChampion\nChampion\nChampion\nChampion\nChampion\n2md Place\n2nd Place\n3rd Place\n3rd Place\n51",
+  "pdf_page" : 52
+}

@@ -1,0 +1,27 @@
+{
+  "native_text" : "￼\n畢業生寄語\nMESSAGES FROM OUR GRADUATES",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.11698011923642408,
+        0.80451128296526442,
+        0.76810161884014438,
+        0.10173324860514699
+      ],
+      "confidence" : 1,
+      "text" : "畢業生寄語"
+    },
+    {
+      "bbox" : [
+        0.08240246484145157,
+        0.75717032644112015,
+        0.83314739129482163,
+        0.030087873575111557
+      ],
+      "confidence" : 0.5,
+      "text" : "MESSAGES FROM OUR GRADUATES"
+    }
+  ],
+  "ocr_text" : "畢業生寄語\nMESSAGES FROM OUR GRADUATES",
+  "pdf_page" : 75
+}

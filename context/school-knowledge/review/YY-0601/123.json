@@ -1,0 +1,427 @@
+{
+  "native_text" : "英文大使代表英文大使代表\nYYEA (Yung Yau English Ambassadors)\nMs. Sania Bano, our NET\nteacher, has inspired and guided\napproximately 30 elite English\nstudents each year to plan and\norganize engaging activities\nfor YYC students, fostering a\nlove for English learning. These\nactivities include Halloween trick-\nor-treating, MBTI personality test\nbooths, and message boards for Valentine’s Day and Thanksgiving.\nAt the end of the 2025-2026 school year, a magazine\nfeaturing topics such as book recommendations, social media\nlingo, teacher interviews, travel tales and recommendations,\nstudy hacks, alumni updates, and unique hobbies and interests\nwill be published for the first time.\nSpeaking of unique hobbies, in\nNovember 2025, YYEA and YYC students interested in exploring\nunconventional sports visited a bouldering gym in Quarry Bay for\nthe first time. During the initial hour, students learned essential\nbouldering skills and safety practices. Following that, they had\nthe opportunity to roam the gym, interviewing English-speaking climbers\nabout their passion for climbing, their jobs, studies, families, and reasons for\nresiding in Hong Kong.\nExciting activities are on the horizon for the next 25 years. To that, we say, \"YYEA!\"\n￼\n￼\n￼\n￼\n￼\n￼\n￼\n田徑隊代表 4A 鄭煒樂\n時間過得飛快，在這短短四年間，我由一個對田徑一竅不通的人，經\n過無數日夜的努力，到今天終於取得了一些成績。透過這幾年的比賽，雖\n然有輸有贏，但我也從中學會了很多。我明白到，一次輸贏並不代表甚麼，\n重要的是一次又一次地超越自己。即使對手比自己強，也只需要與自己比\n較，這正是田徑的魅力所在。\n剛加入學校田徑隊時，教練、老師和師兄們都十分照顧我，就像家人\n一樣。直到現在，我也由一位師弟慢慢成長為一位師兄，開始照顧師弟。\n除此之外，我亦是中國香港壘球代表隊的一員。由小學直到現在，壘球一\n直像我人生中的導師，教會我許多道理。當你真心熱愛一件事情時，它便會成為支持你的力量，\n讓你有勇氣和毅力堅持下去，也在不知不覺間打開你的世界與視野，令人生變得更多姿多彩。\n藉此機會，我也祝願學校 25 周年快樂。\n￼\n各運動領域代表各運動領域代表\n123\nShun Tak Fraternal Association Yung Yau College",
+  "ocr_lines" : [
+    {
+      "bbox" : [
+        0.40206184638243186,
+        0.938953488475892,
+        0.44123713175455731,
+        0.014771116506434478
+      ],
+      "confidence" : 0.5,
+      "text" : "Shun Tak Fraternal Association Yung Yau College"
+    },
+    {
+      "bbox" : [
+        0.88865979443319931,
+        0.94186046502959309,
+        0.037113400606008651,
+        0.013081395599158552
+      ],
+      "confidence" : 1,
+      "text" : "123"
+    },
+    {
+      "bbox" : [
+        0.094845363769695587,
+        0.87499999954154861,
+        0.2061855609600361,
+        0.024709303276802541
+      ],
+      "confidence" : 1,
+      "text" : "英文大使代表"
+    },
+    {
+      "bbox" : [
+        0.12989690940746401,
+        0.82267441862183088,
+        0.38969071706136071,
+        0.01761903504485729
+      ],
+      "confidence" : 0.5,
+      "text" : "YYEA （Yung Yau English Ambassadors）"
+    },
+    {
+      "bbox" : [
+        0.17113402558256774,
+        0.80079006798913921,
+        0.24536081460806036,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "Ms. Sania Bano, our NET"
+    },
+    {
+      "bbox" : [
+        0.12975567327428686,
+        0.78280316342464118,
+        0.28693602635310245,
+        0.016973830238152798
+      ],
+      "confidence" : 0.5,
+      "text" : "teacher, has inspired and guided"
+    },
+    {
+      "bbox" : [
+        0.13195875769271018,
+        0.76744186034601181,
+        0.28453609270927227,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "approximately 30 elite English"
+    },
+    {
+      "bbox" : [
+        0.13195875766910639,
+        0.75145348856423855,
+        0.28453609270927238,
+        0.011627906601262117
+      ],
+      "confidence" : 0.5,
+      "text" : "students each year to plan and"
+    },
+    {
+      "bbox" : [
+        0.13195877040804008,
+        0.73401162853803026,
+        0.2845360682560848,
+        0.013166701013293869
+      ],
+      "confidence" : 1,
+      "text" : "organize engaging activities"
+    },
+    {
+      "bbox" : [
+        0.12989690786347699,
+        0.71656976732292899,
+        0.28659793658134258,
+        0.013114205332426687
+      ],
+      "confidence" : 0.5,
+      "text" : "for YYC students, fostering a"
+    },
+    {
+      "bbox" : [
+        0.12973187051243529,
+        0.69894692980871787,
+        0.28691286918444514,
+        0.01549653544113816
+      ],
+      "confidence" : 0.5,
+      "text" : "love for English learning. These"
+    },
+    {
+      "bbox" : [
+        0.13195876348767924,
+        0.68453724588298637,
+        0.28659793658134269,
+        0.011851015801354392
+      ],
+      "confidence" : 0.5,
+      "text" : "activities include Halloween trick-"
+    },
+    {
+      "bbox" : [
+        0.12989690159239495,
+        0.66422121885552787,
+        0.28865980490660059,
+        0.014672686230248311
+      ],
+      "confidence" : 0.5,
+      "text" : "or-treating, MBTI personality test"
+    },
+    {
+      "bbox" : [
+        0.12989690961028252,
+        0.64672686239576516,
+        0.56494844876802885,
+        0.016063835497096224
+      ],
+      "confidence" : 0.5,
+      "text" : "booths, and message boards for Valentine's Day and Thanksgiving."
+    },
+    {
+      "bbox" : [
+        0.36082474468150866,
+        0.62790697662180861,
+        0.50515463413336348,
+        0.013176545063475209
+      ],
+      "confidence" : 0.5,
+      "text" : "At the end of the 2025-2026 school year, a magazine"
+    },
+    {
+      "bbox" : [
+        0.32364486493907246,
+        0.610123170010205,
+        0.54239106789613389,
+        0.014899607436651641
+      ],
+      "confidence" : 0.5,
+      "text" : "featuring topics such as book recommendations, social media"
+    },
+    {
+      "bbox" : [
+        0.32371133243220113,
+        0.59302325591707272,
+        0.54432991223457527,
+        0.014764554344504521
+      ],
+      "confidence" : 0.5,
+      "text" : "lingo, teacher interviews, travel tales and recommendations，"
+    },
+    {
+      "bbox" : [
+        0.32371133244320049,
+        0.57703488359843913,
+        0.54432991223457527,
+        0.013258570203931841
+      ],
+      "confidence" : 0.5,
+      "text" : "study hacks, alumni updates, and unique hobbies and interests"
+    },
+    {
+      "bbox" : [
+        0.32564061729183014,
+        0.55952394753963119,
+        0.28484236888396441,
+        0.01626467597134762
+      ],
+      "confidence" : 0.5,
+      "text" : "will be published for the first time."
+    },
+    {
+      "bbox" : [
+        0.36494845718223101,
+        0.53924418592580037,
+        0.31752576583471048,
+        0.013238884256332684
+      ],
+      "confidence" : 0.5,
+      "text" : "Speaking of unique hobbies, in"
+    },
+    {
+      "bbox" : [
+        0.13195877281283211,
+        0.5218023256843739,
+        0.55051544385078632,
+        0.014534883520673114
+      ],
+      "confidence" : 0.5,
+      "text" : "November 2025, YYEA and YYC students interested in exploring"
+    },
+    {
+      "bbox" : [
+        0.13195877283140164,
+        0.50564334092334118,
+        0.55051544385078632,
+        0.013252008042001773
+      ],
+      "confidence" : 0.5,
+      "text" : "unconventional sports visited a bouldering gym in Quarry Bay for"
+    },
+    {
+      "bbox" : [
+        0.1319587542623176,
+        0.4881489842386435,
+        0.5525773366292317,
+        0.013544018058690765
+      ],
+      "confidence" : 0.5,
+      "text" : "the first time. During the initial hour, students learned essential"
+    },
+    {
+      "bbox" : [
+        0.13188246021803593,
+        0.47058279843043249,
+        0.55066446157602167,
+        0.016217190847978014
+      ],
+      "confidence" : 0.5,
+      "text" : "bouldering skills and safety practices. Following that, they had"
+    },
+    {
+      "bbox" : [
+        0.13195875750245842,
+        0.45485327304040046,
+        0.63917526831993687,
+        0.013169982901545141
+      ],
+      "confidence" : 0.5,
+      "text" : "the opportunity to roam the gym, interviewing English-speaking climbers"
+    },
+    {
+      "bbox" : [
+        0.13189822987957728,
+        0.43481406702403136,
+        0.64138192396897531,
+        0.017940349019138879
+      ],
+      "confidence" : 0.5,
+      "text" : "about their passion for climbing, their jobs, studies, families, and reasons for"
+    },
+    {
+      "bbox" : [
+        0.13195876108412072,
+        0.4215116278060409,
+        0.19381443659464517,
+        0.013081395599158552
+      ],
+      "confidence" : 0.5,
+      "text" : "residing in Hong Kong."
+    },
+    {
+      "bbox" : [
+        0.16903121617540778,
+        0.39826547066041684,
+        0.69701551779722548,
+        0.016146608184745559
+      ],
+      "confidence" : 0.5,
+      "text" : "Exciting activities are on the horizon for the next 25 years. To that, we say， \"YYEA！\""
+    },
+    {
+      "bbox" : [
+        0.094845360350162972,
+        0.32844243834754905,
+        0.23917525853866187,
+        0.026208724717254328
+      ],
+      "confidence" : 1,
+      "text" : "各運動領域代表"
+    },
+    {
+      "bbox" : [
+        0.13195876035060722,
+        0.28047404074181437,
+        0.20000000489063752,
+        0.016037587387567109
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "田徑隊代表 4A 鄭煒樂"
+    },
+    {
+      "bbox" : [
+        0.32783505053575795,
+        0.25726744196342155,
+        0.53814433171198939,
+        0.014741587585035854
+      ],
+      "confidence" : 1,
+      "text" : "時間過得飛快，在這短短四年間，我由一個對田徑一竅不通的人，經"
+    },
+    {
+      "bbox" : [
+        0.29072165687162144,
+        0.23982558118754105,
+        0.57525771703475559,
+        0.015988372518569549
+      ],
+      "confidence" : 1,
+      "text" : "過無數日夜的努力，到今天終於取得了一些成績。透過這幾年的比賽，雖"
+    },
+    {
+      "bbox" : [
+        0.29278351251355006,
+        0.22383720940546958,
+        0.5752577170347557,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "然有輸有贏，但我也從中學會了很多。我明白到，一次輸贏並不代表甚麼，"
+    },
+    {
+      "bbox" : [
+        0.2927835066149086,
+        0.20639534893998068,
+        0.57319587316268528,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "重要的是一次又一次地超越自己。即使對手比自己強，也只需要與自己比"
+    },
+    {
+      "bbox" : [
+        0.1573890792454741,
+        0.19529128678772512,
+        0.068737464073376775,
+        0.017950951918522362
+      ],
+      "confidence" : 0.30000001192092896,
+      "text" : "HONBKONa"
+    },
+    {
+      "bbox" : [
+        0.29278350549723114,
+        0.18895348847934645,
+        0.23092783414400536,
+        0.014771116506434478
+      ],
+      "confidence" : 1,
+      "text" : "較，這正是田徑的魅力所在。"
+    },
+    {
+      "bbox" : [
+        0.32783505053575795,
+        0.16860465126574697,
+        0.53814433171198939,
+        0.01480392677789355
+      ],
+      "confidence" : 1,
+      "text" : "剛加入學校田徑隊時，教練、老師和師兄們都十分照顧我，就像家人"
+    },
+    {
+      "bbox" : [
+        0.29278350071551729,
+        0.15116279080060901,
+        0.57113402929061496,
+        0.014751430558835432
+      ],
+      "confidence" : 1,
+      "text" : "一樣。直到現在，我也由一位師弟慢慢成長為一位師兄，開始照顧師弟。"
+    },
+    {
+      "bbox" : [
+        0.29278351249802143,
+        0.13517441870782054,
+        0.57525771703475548,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "除此之外，我亦是中國香港壘球代表隊的一員。由小學直到現在，壘球一"
+    },
+    {
+      "bbox" : [
+        0.13195876575613705,
+        0.11773255824176398,
+        0.73608246827736878,
+        0.014534883520673114
+      ],
+      "confidence" : 1,
+      "text" : "直像我人生中的導師，教會我許多道理。當你真心熱愛一件事情時，它便會成為支持你的力量，"
+    },
+    {
+      "bbox" : [
+        0.12989691601951592,
+        0.10029069819969105,
+        0.72989688775478268,
+        0.015988371442187677
+      ],
+      "confidence" : 1,
+      "text" : "讓你有勇氣和毅力堅持下去，也在不知不覺間打開你的世界與視野，令人生變得更多姿多彩。"
+    },
+    {
+      "bbox" : [
+        0.16701031327782126,
+        0.079941860570398982,
+        0.31340205363738227,
+        0.014534883520673225
+      ],
+      "confidence" : 0.5,
+      "text" : "藉此機會，我也祝願學校25周年快樂。"
+    }
+  ],
+  "ocr_text" : "Shun Tak Fraternal Association Yung Yau College\n123\n英文大使代表\nYYEA （Yung Yau English Ambassadors）\nMs. Sania Bano, our NET\nteacher, has inspired and guided\napproximately 30 elite English\nstudents each year to plan and\norganize engaging activities\nfor YYC students, fostering a\nlove for English learning. These\nactivities include Halloween trick-\nor-treating, MBTI personality test\nbooths, and message boards for Valentine's Day and Thanksgiving.\nAt the end of the 2025-2026 school year, a magazine\nfeaturing topics such as book recommendations, social media\nlingo, teacher interviews, travel tales and recommendations，\nstudy hacks, alumni updates, and unique hobbies and interests\nwill be published for the first time.\nSpeaking of unique hobbies, in\nNovember 2025, YYEA and YYC students interested in exploring\nunconventional sports visited a bouldering gym in Quarry Bay for\nthe first time. During the initial hour, students learned essential\nbouldering skills and safety practices. Following that, they had\nthe opportunity to roam the gym, interviewing English-speaking climbers\nabout their passion for climbing, their jobs, studies, families, and reasons for\nresiding in Hong Kong.\nExciting activities are on the horizon for the next 25 years. To that, we say， \"YYEA！\"\n各運動領域代表\n田徑隊代表 4A 鄭煒樂\n時間過得飛快，在這短短四年間，我由一個對田徑一竅不通的人，經\n過無數日夜的努力，到今天終於取得了一些成績。透過這幾年的比賽，雖\n然有輸有贏，但我也從中學會了很多。我明白到，一次輸贏並不代表甚麼，\n重要的是一次又一次地超越自己。即使對手比自己強，也只需要與自己比\nHONBKONa\n較，這正是田徑的魅力所在。\n剛加入學校田徑隊時，教練、老師和師兄們都十分照顧我，就像家人\n一樣。直到現在，我也由一位師弟慢慢成長為一位師兄，開始照顧師弟。\n除此之外，我亦是中國香港壘球代表隊的一員。由小學直到現在，壘球一\n直像我人生中的導師，教會我許多道理。當你真心熱愛一件事情時，它便會成為支持你的力量，\n讓你有勇氣和毅力堅持下去，也在不知不覺間打開你的世界與視野，令人生變得更多姿多彩。\n藉此機會，我也祝願學校25周年快樂。",
+  "pdf_page" : 123
+}
