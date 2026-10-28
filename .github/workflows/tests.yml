@@ -2,6 +2,9 @@ name: Cross-platform web checks
 on: [push, pull_request]
 permissions:
   contents: read
+concurrency:
+  group: web-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   web:
     strategy:
