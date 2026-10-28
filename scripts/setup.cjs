@@ -62,7 +62,7 @@ async function main() {
   if (!works('git', ['--version'])) throw new Error('Install Git, clone the private repository, and run setup again.');
   if (!fs.existsSync(path.join(root, '.git'))) throw new Error('Use a Git clone of this private repository; GitHub ZIP downloads can omit the large model files.');
   const localLfs = await ensureLfs();
-  run('git', ['lfs', 'install', '--local', ...(localLfs ? ['--skip-repo'] : [])]);
+  run('git', ['lfs', 'install', '--local', '--force', ...(localLfs ? ['--skip-repo'] : [])]);
   if (localLfs) {
     // Git invokes filters/hooks later, after this installer's PATH has gone away.
     const quote = value => "'" + value.replace(/\\/g, '/').replace(/'/g, "'\"'\"'") + "'";
