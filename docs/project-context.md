@@ -1,6 +1,6 @@
 # YYC Helper project context
 
-This private repository packages the local Amica customization as of 28 October 2026. Its upstream checkout was based on `semperai/amica` commit `ca2415c77d20ec41dd4fcf917dbb0e97961ddf08`; the snapshot includes the local customized source and assets rather than assuming they were already committed upstream.
+This repository packages the local Amica customization as of 28 October 2026. Its upstream checkout was based on `semperai/amica` commit `ca2415c77d20ec41dd4fcf917dbb0e97961ddf08`; the snapshot includes the local customized source and assets rather than assuming they were already committed upstream.
 
 ## Application and data flow
 
@@ -25,13 +25,17 @@ Relevant implementation is in `src/config/infoDayPrompt.ts`, `src/pages/api/clau
 
 The runtime model is `public/vrm/YYC_InfoDay.vrm`. Editable `.blend` files, GLB exports, source geometry, textures and historical comparisons live in `models/yyc-info-day/`; authoring code is in `tools/avatar/`. Preserve the source license metadata and VRoid Project attribution.
 
-Original YYC clips in `public/animations/yyc/` are bundled. The separately licensed numbered motion pack is read in place by `src/pages/api/localMotions.ts` from `~/Downloads/VRMA_MotionPack`, or `AMICA_MOTION_PACK_DIR`. It is not copied into this repository because its license prohibits extractable redistribution. The app can list whichever of its seven expected files are installed.
+Original YYC clips in `public/animations/yyc/` are bundled. All seven numbered-pack gesture equivalents are also tracked in `public/animations/`: IDs 1–7 map respectively to `showFullBody.vrma`, `greeting.vrma`, `peaceSign.vrma`, `shoot.vrma`, `spin.vrma`, `modelPose.vrma` and `squat.vrma`. These files are byte-identical to `VRMA_01.vrma` through `VRMA_07.vrma` from the locally supplied pack. Existing gesture IDs and saved random selections remain applicable on a fresh macOS or Windows clone without a separate download.
+
+`src/pages/api/localMotions.ts` resolves each ID by trying an explicit `AMICA_MOTION_PACK_DIR/vrma/VRMA_0N.vrma` override, then its bundled file, then the legacy `~/Downloads/VRMA_MotionPack/vrma/VRMA_0N.vrma` location. The environment variable is optional. Animation credits to pixiv Inc.'s VRoid Project; preserve the [original supplied terms](licenses/VRMA_MotionPack_EN.txt). This packaging change does not change clip data or avatar geometry and does not establish physical animation acceptance on a new device.
+
+The unrelated `AvatarSample_A.vrm` and `toma_b.vrm` remain excluded under their model metadata restrictions. Their exclusion does not apply to the seven bundled gesture files.
 
 ## Settings and credentials
 
 `src/features/externalAPI/dataHandlerStorage/config.json` contains a sanitized seed of the current YYC preferences, including exact provider/model identifiers. On first launch, `src/features/externalAPI/dataHelper.ts` seeds `.amica-data/` from these source defaults. Existing `.amica-data/` settings take precedence on subsequent runs.
 
-API keys and runtime conversations are excluded. The Claude key is entered in Settings and stored in the browser tab's session storage. Other provider keys must also be entered on the new machine. `.env.local` is created from `.env.example` only when absent. Keep credentials and local runtime files out of Git even though this repository is private.
+API keys and runtime conversations are excluded. The Claude key is entered in Settings and stored in the browser tab's session storage. Other provider keys must also be entered on the new machine. `.env.local` is created from `.env.example` only when absent. Keep credentials and local runtime files out of Git regardless of repository visibility.
 
 Current saved voice preferences are OpenRouter `minimax/speech-2.8-hd`, voice `Chinese (Mandarin)_Male_Announcer`, and STT candidate `qwen/qwen3-asr-1.7b`. These identifiers are preserved configuration, not a guarantee of provider availability. Authenticated Cantonese transcription from Hong Kong remains to be established. The server's Claude transport supports proxy environment variables for networks that require them.
 

@@ -247,7 +247,7 @@ export class Model {
           vrm.update(0);
 
           let localMotions: number[] = [];
-          try { const response = await fetch('/api/localMotions'); if (response.ok) localMotions = (await response.json()).motions ?? []; } catch { /* Own presenter actions remain available without the optional pack. */ }
+          try { const response = await fetch('/api/localMotions'); if (response.ok) localMotions = (await response.json()).motions ?? []; } catch { /* Presenter actions remain available if bundled clips cannot be listed. */ }
           this.gestures = new GestureScheduler(createGestureCatalog(Object.keys(vrm.expressionManager?.expressionMap ?? {}), localMotions));
           this.gestures.configure(config('random_gestures_enabled') === 'true', parseGestureSelection(config('random_gestures_selected')));
           this.gestureClips = new GestureClipLayer(vrm);
@@ -524,7 +524,7 @@ export class Model {
     const gesture = this.gestures?.frame;
     if (gesture?.action.clipUrl && this.gestureClips && !this.gestureClips.isReady(gesture.action)) {
       const scheduler = this.gestures;
-      void this.gestureClips.load(gesture.action).catch(() => scheduler?.fail(gesture.action.id, 'Could not load the local motion. Check that the downloaded pack is still in Downloads.'));
+      void this.gestureClips.load(gesture.action).catch(() => scheduler?.fail(gesture.action.id, 'Could not load this gesture. Re-run setup and restart the server.'));
     }
     this.proceduralAnimation?.setGesture(gesture);
     this.emoteController?.setGesture(gesture);

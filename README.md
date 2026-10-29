@@ -1,10 +1,10 @@
 # YYC AI Avatar
 
-Private YYC Helper web application based on [Amica](https://github.com/semperai/amica), with a school avatar, Traditional Chinese reception prompt, school knowledge retrieval, voice input/output and gesture controls.
+YYC Helper web application based on [Amica](https://github.com/semperai/amica), with a school avatar, Traditional Chinese reception prompt, school knowledge retrieval, voice input/output and gesture controls.
 
 ## Install and run
 
-Install Git and sign in to a GitHub account with access to this private repository. Clone with Git rather than downloading a ZIP, so the large assets can be fetched with Git LFS:
+Install Git. If GitHub requests authentication, sign in with an account that has access to the repository. Clone with Git rather than downloading a ZIP, so the large assets can be fetched with Git LFS:
 
 ```sh
 git clone https://github.com/GordanY/yyc-ai-avatar.git
@@ -33,7 +33,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\setup-windows.ps1
 
 The scripts reuse Node.js 22 or newer, or download a checksum-verified Node 22 runtime into `.tools/`. They install a project-local Git LFS 3.8.1 if needed, fetch the repository's large files, verify the bundled assets, create `.env.local` from `.env.example` if absent, install the locked npm dependencies with `npm ci` (the included `.npmrc` preserves the established legacy peer-dependency resolution), and automatically start the development web server.
 
-Open **[http://localhost:3000](http://localhost:3000)**. Keep the terminal open; press **Ctrl+C** there to stop the server. Setup needs internet access and GitHub authentication; the initial model/PDF download can take time. The server binds to the local computer (`127.0.0.1`).
+Open **[http://localhost:3000](http://localhost:3000)**. Keep the terminal open; press **Ctrl+C** there to stop the server. Setup needs internet access and, if the repository is access-restricted, GitHub authentication; the initial model/PDF download can take time. The server binds to the local computer (`127.0.0.1`).
 
 To install without starting the server:
 
@@ -80,6 +80,7 @@ Record keeps pauses and submits the complete recording only after you click **St
 | `src/`, `public/`, `__tests__/` | Application, runtime assets and regression tests |
 | `public/vrm/YYC_InfoDay.vrm` | Runtime school avatar |
 | `public/animations/yyc/` | Original YYC idle, nod and wave clips |
+| `public/animations/*.vrma` | Bundled gesture clips, including all seven numbered motion-pack equivalents |
 | `models/yyc-info-day/` | Editable Blender sources, GLB exports, model archive, textures, previews and validation reports |
 | `src/config/infoDayPrompt.ts` | Reception role and answer rules |
 | `src/server/data/` | Runtime school facts and source chunks |
@@ -91,17 +92,34 @@ See [project context](docs/project-context.md), [school knowledge integration](d
 
 Dependency/build caches, credentials, runtime conversations in `.amica-data/`, and raw `working/`/`output/` scratch files are excluded. Selected reusable QA source and design references are retained. Historical validation reports describe their recorded runs; they do not certify this installation or another device.
 
-### Optional licensed motion pack
+### Bundled gestures
 
-The separately downloaded numbered VRMA motion pack is excluded because its license prohibits redistribution in extractable form. Obtain it separately under its license, then place the files at:
+All seven gesture clips are included in GitHub and available from a fresh macOS or Windows clone. No separate motion-pack download is needed. The gesture API preserves IDs 1–7 and maps them to these files in `public/animations/`:
 
-```text
-~/Downloads/VRMA_MotionPack/vrma/VRMA_01.vrma
-...
-~/Downloads/VRMA_MotionPack/vrma/VRMA_07.vrma
+| Gesture ID | Numbered-pack equivalent | Bundled file |
+| --- | --- | --- |
+| 1 | `VRMA_01.vrma` | `showFullBody.vrma` |
+| 2 | `VRMA_02.vrma` | `greeting.vrma` |
+| 3 | `VRMA_03.vrma` | `peaceSign.vrma` |
+| 4 | `VRMA_04.vrma` | `shoot.vrma` |
+| 5 | `VRMA_05.vrma` | `spin.vrma` |
+| 6 | `VRMA_06.vrma` | `modelPose.vrma` |
+| 7 | `VRMA_07.vrma` | `squat.vrma` |
+
+Animation credits to pixiv Inc.'s VRoid Project. See the [original motion-pack terms](docs/licenses/VRMA_MotionPack_EN.txt). The original YYC idle, nod and wave clips remain in `public/animations/yyc/`.
+
+For each ID, the API first tries an explicitly configured `AMICA_MOTION_PACK_DIR/vrma/VRMA_0N.vrma`, then the bundled file above, then the legacy `~/Downloads/VRMA_MotionPack/vrma/VRMA_0N.vrma` location. `AMICA_MOTION_PACK_DIR` is an optional override, not an installation requirement. Set it in `.env.local` to the directory containing `vrma/`; on Windows use forward slashes, for example `C:/Users/YourName/Downloads/VRMA_MotionPack`. Restart the server after changing it.
+
+To update an existing Windows checkout, stop its server with **Ctrl+C**, then run:
+
+```powershell
+git pull
+.\setup-windows.cmd
 ```
 
-On Windows, `~` means your user folder. Alternatively set `AMICA_MOTION_PACK_DIR` in `.env.local` to the directory containing `vrma/`, using forward slashes for Windows paths, for example `C:/Users/YourName/Downloads/VRMA_MotionPack`. Restart the server after changing it. The bundled original YYC animations are separate from this optional pack. The unrelated `AvatarSample_A.vrm` and `toma_b.vrm` are also excluded because their metadata prohibits redistribution; all YYC model sources and exports are included.
+Setup already runs `git lfs pull`. When the server is ready, reload the browser tab. This update preserves the clip data and geometry; fresh-device animation appearance still needs visual checking.
+
+The unrelated `AvatarSample_A.vrm` and `toma_b.vrm` remain excluded because their metadata prohibits redistribution. This exclusion is separate from the bundled gesture clips; all YYC model sources and exports are included. Credentials remain excluded.
 
 ### Optional asset authoring
 
