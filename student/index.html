@@ -37,6 +37,18 @@
 <div class="composer-wrap"><p id="notice" class="notice" role="status">示範模式：回應為本機範例。連接 OpenRouter 後可與 AI 對話。</p><form id="chatForm"><label class="sr-only" for="message">輸入訊息</label><textarea id="message" rows="3" maxlength="4000" placeholder="問一個問題，認識你的 AI 伙伴⋯"></textarea><div class="composer-footer"><span id="wordCounter">0 / 200 字／詞</span><button id="send" type="submit">傳送 <span aria-hidden="true">↑</span></button></div></form><div class="chat-foot"><span id="quotaLabel">本次提問 0 / 50</span><span>AI 回答可能有誤，請查證。</span></div></div>
 </section>
 </main>
+<dialog id="welcomeDialog" aria-labelledby="welcomeTitle" aria-describedby="welcomeIntro">
+<span class="section-label">WELCOME</span>
+<h2 id="welcomeTitle">歡迎來到數字人製作</h2>
+<p id="welcomeIntro">親手設定一位 AI 學習伙伴，看看你的選擇如何改變它的回答。</p>
+<ol class="welcome-steps">
+<li><strong>設定角色</strong><span>填寫名稱與描述，選擇個性和說話語氣。</span></li>
+<li><strong>加入知識</strong><span>貼上背景資料，並選擇角色外觀。</span></li>
+<li><strong>對話與比較</strong><span>輸入 API key 後開始聊天；修改設定，再用相同問題比較回答。</span></li>
+</ol>
+<p class="welcome-reminder">每次修改設定都會清空對話，但不會重設提問次數。你也可以先用示範回應體驗。</p>
+<button id="welcomeStart" type="button" class="primary">開始製作</button>
+</dialog>
 <dialog id="connectDialog"><form id="keyForm"><button type="button" id="closeDialog" class="dialog-close" aria-label="關閉">×</button><span class="section-label">CONNECT</span><h2>連接你的 AI</h2><p>輸入 OpenRouter API key，開始真正的文字對話。</p><label class="field">OpenRouter API key<input id="apiKey" type="password" autocomplete="off" placeholder="sk-or-v1-⋯" spellcheck="false"></label><p class="hint">金鑰只保留在此頁記憶體，重新載入便會清除。訊息與角色設定會直接傳送至 OpenRouter。</p><div class="dialog-actions"><button type="button" id="disconnect" class="quiet">使用示範模式</button><button type="submit" class="primary">連接</button></div><p id="keyNotice" role="status"></p></form></dialog>
 <noscript>請啟用 JavaScript 以使用此學習伙伴。</noscript>
 </body></html>

@@ -1,7 +1,12 @@
 import {test,expect} from '@playwright/test';
 test.beforeEach(async({page})=>{
- await page.route('https://openrouter.ai/api/v1/models',r=>r.fulfill({json:{data:[{id:'openai/gpt-4o-mini',context_length:128000}]}}));
+ await page.route('https://openrouter.ai/api/v1/models',r=>r.fulfill({json:{data:[{id:'tencent/hy4-flash',context_length:1048576}]}}));
  await page.goto('/');
+ await expect(page.locator('#welcomeDialog')).toBeVisible();
+ await expect(page.locator('#welcomeDialog')).toContainText('設定角色');
+ await expect(page.locator('#welcomeDialog')).toContainText('加入知識');
+ await expect(page.locator('#welcomeDialog')).toContainText('對話與比較');
+ await page.getByRole('button',{name:'開始製作',exact:true}).click();
 });
 test('customization clears context, preserves quota, supports radio and multiple checks',async({page})=>{
  await page.locator('#message').fill('請介紹你自己。');await page.locator('#send').click();
@@ -14,18 +19,18 @@ test('customization clears context, preserves quota, supports radio and multiple
  await page.getByLabel('幽默',{exact:true}).check();await page.getByLabel('好奇',{exact:true}).check();
  await expect(page.getByLabel('幽默',{exact:true})).toBeChecked();await expect(page.getByLabel('好奇',{exact:true})).toBeChecked();
  await page.getByLabel('正式有禮',{exact:true}).check();await expect(page.locator('input[name="tone"]:checked')).toHaveCount(1);
- await page.reload();await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');await expect(page.locator('#agentName')).toHaveValue('子曰');
+ await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');await expect(page.locator('#agentName')).toHaveValue('子曰');
 });
 test('50 input limit survives reload and clearing; 201 words cannot submit',async({page})=>{
  await page.locator('#message').fill('word '.repeat(201));await expect(page.locator('#send')).toBeDisabled();
  await page.locator('#message').fill('學'.repeat(201));await expect(page.locator('#send')).toBeDisabled();
- await page.evaluate(()=>sessionStorage.setItem('yyc.student.quota.v1','49'));await page.reload();
+ await page.evaluate(()=>sessionStorage.setItem('yyc.student.quota.v1','49'));await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();
  await page.locator('#message').fill('你好');await page.locator('#send').click();
  await expect(page.locator('.bubble.assistant')).toContainText('示範模式');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
  await page.locator('#clearChat').click();await page.locator('#description').fill('新設定');
  await page.locator('#message').fill('again');await expect(page.locator('#send')).toBeDisabled();
- await page.reload();await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
+ await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
 });
 test('direct OpenRouter request uses profile, no audio, actual usage and memory-only key',async({page})=>{
  let payload,authorization;
@@ -36,11 +41,11 @@ test('direct OpenRouter request uses profile, no audio, actual usage and memory-
  await page.locator('#connection').click();await page.locator('#apiKey').fill('sk-or-v1-test-only');await page.getByRole('button',{name:'連接',exact:true}).click();
  await page.locator('#message').fill('你好');await page.locator('#send').click();
  await expect(page.locator('.bubble.assistant')).toContainText('今天想探討甚麼');
- expect(authorization).toBe('Bearer sk-or-v1-test-only');expect(payload.messages[0].content).toContain('知微');
+ expect(payload.model).toBe('tencent/hy4-flash');expect(payload).not.toHaveProperty('reasoning');expect(payload).not.toHaveProperty('reasoning_effort');expect(authorization).toBe('Bearer sk-or-v1-test-only');expect(payload.messages[0].content).toContain('知微');
  expect(payload.messages.at(-1)).toEqual({role:'user',content:'你好'});expect(payload).not.toHaveProperty('audio');
  await expect(page.locator('#contextValue')).toContainText('1,024 tokens');await expect(page.locator('#tokenLabel')).toHaveText('上次實際');
  const saved=await page.evaluate(()=>JSON.stringify({...localStorage,...sessionStorage}));expect(saved).not.toContain('sk-or');
- await page.reload();await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
+ await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
 });
 test('provider failure is readable and does not lock the composer',async({page})=>{
  await page.route('https://openrouter.ai/api/v1/chat/completions',r=>r.fulfill({status:401,json:{error:{message:'provider internal detail'}}}));

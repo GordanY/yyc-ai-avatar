@@ -19,3 +19,13 @@
  .usage-line{flex-wrap:wrap}
  .dialog-actions{gap:12px;flex-wrap:wrap}
 }
+
+#welcomeDialog{max-width:480px}
+#welcomeDialog h2{font-size:26px;line-height:1.5;margin:12px 0}
+#welcomeDialog p{font-size:15px;color:#63765d}
+.welcome-steps{padding-left:26px;margin:22px 0}
+.welcome-steps li{padding-left:5px;margin:16px 0;line-height:1.7;font-size:16px}
+.welcome-steps strong{display:block;font-weight:600}
+.welcome-steps span{display:block;color:#6f7e67;font-size:15px;margin-top:3px}
+#welcomeDialog .welcome-reminder{font-size:13px;background:#f1f5ec;padding:12px;border-radius:8px}
+#welcomeStart{width:100%;margin-top:10px;font-size:16px}

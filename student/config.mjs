@@ -1,7 +1,7 @@
 // Teacher configuration. No action/model selector is exposed in the student interface.
 export const CONFIG = Object.freeze({
-  model: 'openai/gpt-4o-mini',
-  contextWindow: 128000,
+  model: 'tencent/hy4-flash', // Omit reasoning/effort parameters to use provider defaults.
+  contextWindow: 1048576,
   replyTokens: 800,
   maxMessages: 50,
   maxWords: 200,

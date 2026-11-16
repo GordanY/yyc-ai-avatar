@@ -140,7 +140,11 @@ $('chatForm').addEventListener('submit',async e=>{
     if(requestRevision===revision){busy=false;controller=null;$('send').innerHTML='傳送 <span aria-hidden="true">↑</span>';updateLabels();$('messages').scrollTop=$('messages').scrollHeight;}
   }
 });
+$('welcomeStart').addEventListener('click',()=>{
+  $('welcomeDialog').close();$('agentName').focus();
+});
 updateLabels();avatar.show(profile.avatar);
+$('welcomeDialog').showModal();
 if(!storage)notice('瀏覽器未允許儲存工作階段。請允許儲存後重新整理，才能使用聊天。',true);
 // Public metadata only: never transmit the API key to discover model capacity.
 fetch('https://openrouter.ai/api/v1/models').then(r=>r.ok?r.json():null).then(data=>{
