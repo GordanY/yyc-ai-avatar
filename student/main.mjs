@@ -10,7 +10,7 @@ try { storage=sessionStorage;quota=readQuota(storage); }catch{storage=null;}
 const avatar=new AvatarStage($('avatarMount'),$('avatarStatus'));
 const welcome=$('welcome');
 function notice(text,error=false){$('notice').textContent=text;$('notice').classList.toggle('error',error);}
-function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'示範模式：回應為本機範例。連接 OpenRouter 後可與 AI 對話。');}
+function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'示範模式：回應為本機範例。連接 OpenRouter 後可與數字人對話。');}
 function addMessage(role,text) {
   welcome.remove();const node=document.createElement('div');node.className='bubble '+role;
   if(role==='assistant'){const label=document.createElement('span');label.className='byline';label.textContent=profile.name||'學習伙伴';node.append(label);}
@@ -75,7 +75,7 @@ function setKey(key) {
 }
 $('keyForm').addEventListener('submit',e=>{
   e.preventDefault();const key=$('apiKey').value.trim();
-  if(!/^sk-or-[A-Za-z0-9_-]+$/.test(key)){$('keyNotice').textContent='請輸入有效格式的 OpenRouter API key。';return;}
+  if(!/^sk-or-[A-Za-z0-9_-]+$/.test(key)){$('keyNotice').textContent='請輸入有效格式的 OpenRouter API 金鑰。';return;}
   setKey(key);
 });
 $('disconnect').addEventListener('click',()=>setKey(''));
@@ -100,7 +100,7 @@ $('chatForm').addEventListener('submit',async e=>{
   busy=true;exactTokens=null;const requestRevision=revision;
   const history=[...messages,{role:'user',content:text}];
   messages=history;addMessage('user',text);$('message').value='';$('send').textContent='回覆中⋯';updateLabels();
-  avatar.play(actionFor(text));notice(apiKey?'正在思考⋯':'示範回應 · 不會呼叫 AI');
+  avatar.play(actionFor(text));notice(apiKey?'正在思考⋯':'示範回應 · 不會呼叫人工智能');
   let pending=addMessage('assistant','思考中⋯');
   try {
     let reply,usage;
@@ -119,7 +119,7 @@ $('chatForm').addEventListener('submit',async e=>{
         });
       } finally {clearTimeout(timer);}
       if(!response.ok) {
-        const friendly={401:'API key 無效，請重新輸入。',402:'OpenRouter 餘額不足，請檢查帳戶。',403:'此金鑰未獲准使用，請檢查 OpenRouter 設定。',429:'請求太頻密，請稍後再試。'};
+        const friendly={401:'API 金鑰 無效，請重新輸入。',402:'OpenRouter 餘額不足，請檢查帳戶。',403:'此金鑰未獲准使用，請檢查 OpenRouter 設定。',429:'請求太頻密，請稍後再試。'};
         throw new Error(friendly[response.status]||'暫時未能取得回覆，請稍後再試。');
       }
       const data=await response.json();reply=data.choices?.[0]?.message?.content;usage=data.usage;
@@ -146,7 +146,7 @@ $('welcomeStart').addEventListener('click',()=>{
 updateLabels();avatar.show(profile.avatar);
 $('welcomeDialog').showModal();
 if(!storage)notice('瀏覽器未允許儲存工作階段。請允許儲存後重新整理，才能使用聊天。',true);
-// Public metadata only: never transmit the API key to discover model capacity.
+// Public metadata only: never transmit the API 金鑰 to discover model capacity.
 fetch('https://openrouter.ai/api/v1/models').then(r=>r.ok?r.json():null).then(data=>{
   const capacity=data?.data?.find(m=>m.id===CONFIG.model)?.context_length;
   if(Number.isFinite(capacity)&&capacity>CONFIG.replyTokens){contextWindow=capacity;updateLabels();}
