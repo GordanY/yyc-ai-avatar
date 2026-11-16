@@ -162,7 +162,12 @@ for(const phase of ['fetch','typewriter'])test('admin reset cancels a pending '+
  await page.locator('#message').fill('新問題');await expect(page.locator('#send')).toBeEnabled();
 });
 test('scholar animations and both local backdrops load without an external embed',async({page})=>{
- const failed=[];page.on('requestfailed',request=>{if(/assets\/(backgrounds|scholar)/.test(request.url()))failed.push(request.url());});
+ const failed=[],isAsset=url=>/assets\/(backgrounds|scholar)/.test(url);
+ page.on('requestfailed',request=>{
+  // Changing a gesture/appearance intentionally cancels an image still loading.
+  if(isAsset(request.url())&&request.failure()?.errorText!=='net::ERR_ABORTED')failed.push(request.url());
+ });
+ page.on('response',response=>{if(isAsset(response.url())&&!response.ok())failed.push(response.status()+' '+response.url());});
  const background=()=>page.locator('.stage').evaluate(node=>getComputedStyle(node).backgroundImage);
  expect(await background()).toContain('classroom.webp');
  await page.locator('[data-avatar="scholar"]').click();
