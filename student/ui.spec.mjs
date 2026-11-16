@@ -51,7 +51,7 @@ test('provider failure is readable and does not lock the composer',async({page})
  await page.route('https://openrouter.ai/api/v1/chat/completions',r=>r.fulfill({status:401,json:{error:{message:'provider internal detail'}}}));
  await page.locator('#connection').click();await page.locator('#apiKey').fill('sk-or-v1-test-only');await page.getByRole('button',{name:'連接',exact:true}).click();
  await page.locator('#message').fill('test');await page.locator('#send').click();
- await expect(page.locator('#notice')).toContainText('API key 無效');await expect(page.locator('#send')).toBeEnabled();
+ await expect(page.locator('#notice')).toContainText('API 金鑰 無效');await expect(page.locator('#send')).toBeEnabled();
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
 test('late replies are discarded when the profile changes',async({page})=>{
