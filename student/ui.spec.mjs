@@ -1,11 +1,14 @@
 import {test,expect} from '@playwright/test';
-test.beforeEach(async({page})=>{
+test.beforeEach(async({page},testInfo)=>{
+ // Interaction checks do not need to reload the 78 MB avatar; the dedicated render check uses the real asset.
+ if(!testInfo.title.startsWith('school VRM')) await page.route('**/assets/YYC_InfoDay.vrm',route=>route.abort());
  await page.route('https://openrouter.ai/api/v1/models',r=>r.fulfill({json:{data:[{id:'tencent/hy4-flash',context_length:1048576}]}}));
  await page.goto('/');
  await expect(page.locator('#welcomeDialog')).toBeVisible();
  await expect(page.locator('#welcomeDialog')).toContainText('設定角色');
  await expect(page.locator('#welcomeDialog')).toContainText('加入知識');
  await expect(page.locator('#welcomeDialog')).toContainText('對話與比較');
+ if(testInfo.title.startsWith('school VRM')) await page.screenshot({path:'test-results/welcome-dialog.png'});
  await page.getByRole('button',{name:'開始製作',exact:true}).click();
 });
 test('customization clears context, preserves quota, supports radio and multiple checks',async({page})=>{
