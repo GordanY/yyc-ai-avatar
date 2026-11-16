@@ -93,7 +93,7 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
   const positions=await page.locator('.panel .section-label').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().top));
   expect(Math.max(...positions)-Math.min(...positions)).toBeLessThanOrEqual(1);
  }
- const wideBounds=await page.locator('.workspace').boundingBox();expect(wideBounds.x).toBe(0);expect(wideBounds.width).toBe(2560);
+ const wideBounds=await page.locator('.workspace').boundingBox();expect(wideBounds.x).toBe(0);expect(wideBounds.width).toBe(await page.evaluate(()=>document.documentElement.clientWidth));
  await page.setViewportSize({width:1440,height:1000});
  expect(await page.locator('#message').evaluate(n=>parseFloat(getComputedStyle(n).fontSize))).toBeGreaterThanOrEqual(16);
  await expect(page.locator('#avatarStatus')).toHaveText('',{timeout:60000});
