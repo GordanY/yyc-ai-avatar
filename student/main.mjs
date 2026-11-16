@@ -20,7 +20,6 @@ function addMessage(role,text) {
 function updateLabels(){
   const name=profile.name||'學習伙伴';
   $('characterName').textContent=name;welcome.querySelector('#welcomeName').textContent=name;
-  $('characterSummary').textContent=profile.personalities.join(' · ')||profile.tone;
   $('quotaLabel').textContent='本次提問 '+quota+' / '+CONFIG.maxMessages;
   const value=exactTokens??contextEstimate(profile,messages);
   const percent=Math.min(100,value/contextWindow*100);
