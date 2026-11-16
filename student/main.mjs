@@ -70,7 +70,7 @@ $('connection').addEventListener('click',()=>{$('apiKey').value='';$('keyNotice'
 $('closeDialog').addEventListener('click',()=>$('connectDialog').close());
 function setKey(key) {
   apiKey=key;$('apiKey').value='';$('connection').classList.toggle('connected',!!apiKey);
-  $('connection').querySelector('span').textContent=apiKey?'已連接 OpenRouter':'示範模式';
+  $('connection').querySelector('span').textContent=apiKey?'已連接 OpenRouter':'開始製作你的數字人';
   clearContext();modeNotice();$('connectDialog').close();
 }
 $('keyForm').addEventListener('submit',e=>{

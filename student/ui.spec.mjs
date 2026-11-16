@@ -40,7 +40,7 @@ test('direct OpenRouter request uses profile, no audio, actual usage and memory-
  expect(payload.messages.at(-1)).toEqual({role:'user',content:'你好'});expect(payload).not.toHaveProperty('audio');
  await expect(page.locator('#contextValue')).toContainText('1,024 tokens');await expect(page.locator('#tokenLabel')).toHaveText('上次實際');
  const saved=await page.evaluate(()=>JSON.stringify({...localStorage,...sessionStorage}));expect(saved).not.toContain('sk-or');
- await page.reload();await expect(page.locator('#connection')).toContainText('示範模式');
+ await page.reload();await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
 });
 test('provider failure is readable and does not lock the composer',async({page})=>{
  await page.route('https://openrouter.ai/api/v1/chat/completions',r=>r.fulfill({status:401,json:{error:{message:'provider internal detail'}}}));
@@ -57,6 +57,16 @@ test('late replies are discarded when the profile changes',async({page})=>{
 });
 test('school VRM renders and responsive layouts do not overflow',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await expect(page).toHaveTitle('數字人製作');
+ await expect(page.locator('.brand')).toContainText('數字人製作');
+ await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
+ for(const width of [1440,1600]){
+  await page.setViewportSize({width,height:1000});
+  const positions=await page.locator('.panel .section-label').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().top));
+  expect(Math.max(...positions)-Math.min(...positions)).toBeLessThanOrEqual(1);
+ }
+ await page.setViewportSize({width:1440,height:1000});
+ expect(await page.locator('#message').evaluate(n=>parseFloat(getComputedStyle(n).fontSize))).toBeGreaterThanOrEqual(16);
  await expect(page.locator('#avatarStatus')).toHaveText('',{timeout:60000});
  await expect(page.locator('#avatarMount canvas')).toBeVisible();
  await page.screenshot({path:'test-results/student-desktop.png',fullPage:true});
