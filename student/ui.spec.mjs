@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 test.beforeEach(async({page},testInfo)=>{
  // Interaction checks do not need to reload the 78 MB avatar; the dedicated render check uses the real asset.
  if(!testInfo.title.startsWith('school VRM')) await page.route('**/assets/YYC_InfoDay.vrm',route=>route.abort());
- else await page.emulateMedia({reducedMotion:'no'});
+ else await page.emulateMedia({reducedMotion:'no-preference'});
  await page.route('https://openrouter.ai/api/v1/models',r=>r.fulfill({json:{data:[{id:'tencent/hy4-flash',context_length:1048576}]}}));
  await page.goto('/');
  await expect(page.locator('#welcomeDialog')).toBeVisible();
