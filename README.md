@@ -2,6 +2,12 @@
 
 YYC Helper web application based on [Amica](https://github.com/semperai/amica), with a school avatar, Traditional Chinese reception prompt, school knowledge retrieval, voice input/output and gesture controls.
 
+## Minimal student web version
+
+The new [Student Agent Studio](student/README.md) is a separate static, text-only interface for GitHub Pages. Students can customize a character, enter an OpenRouter key directly in the web UI, and compare responses. Only the chat, character settings and 3D viewport are published.
+
+The [student workflow](.github/workflows/student-pages.yml) builds and tests the interface before deployment. Enable **Settings → Pages → Source → GitHub Actions** once. The ancient scholar option currently embeds an external preview; it is not yet a downloaded, rigged model. See the student README for exact quota/context behavior and remaining model work.
+
 ## Install and run
 
 Install Git. If GitHub requests authentication, sign in with an account that has access to the repository. Clone with Git rather than downloading a ZIP, so the large assets can be fetched with Git LFS:
