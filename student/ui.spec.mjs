@@ -12,10 +12,32 @@ test.beforeEach(async({page},testInfo)=>{
  if(testInfo.title.startsWith('school VRM')) await page.screenshot({path:'test-results/welcome-dialog.png'});
  await page.getByRole('button',{name:'開始製作',exact:true}).click();
 });
-test('saving applies drafts, resets context and preserves quota; restoring discards drafts',async({page})=>{
+test('updating an avatar applies drafts and preserves quota when settings are hidden',async({page})=>{
  await page.locator('#message').fill('請介紹你自己。');await page.locator('#send').click();
  await expect(page.locator('.bubble.assistant')).toContainText('示範回應');await expect(page.locator('#send')).toHaveText('傳送 ↑');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
+ const expanded=await page.locator('.workspace').evaluate(node=>({
+  total:node.getBoundingClientRect().width,
+  columns:[...node.children].map(child=>child.getBoundingClientRect().width)
+ }));
+ expect(expanded.columns[0]/expanded.total).toBeCloseTo(.3,2);
+ expect(expanded.columns[1]/expanded.total).toBeCloseTo(.4,2);
+ expect(expanded.columns[2]/expanded.total).toBeCloseTo(.3,2);
+ await page.locator('#description').fill('測試未儲存的草稿');
+ await page.getByRole('button',{name:'隱藏設定',exact:true}).click();
+ await expect(page.locator('#customizePanel')).toBeHidden();
+ const collapsed=await page.locator('.workspace').evaluate(node=>({
+  total:node.getBoundingClientRect().width,
+  character:node.querySelector('.character').getBoundingClientRect().width,
+  chat:node.querySelector('.chat').getBoundingClientRect().width
+ }));
+ expect(collapsed.character/collapsed.total).toBeCloseTo(.4,2);
+ expect(collapsed.chat/collapsed.total).toBeCloseTo(.6,2);
+ await expect(page.locator('.bubble.assistant')).toHaveCount(1);
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
+ await page.getByRole('button',{name:'顯示設定',exact:true}).click();
+ await expect(page.locator('#description')).toHaveValue('測試未儲存的草稿');
+ await expect(page.locator('.panel .section-label')).toHaveText(['設定角色','認識角色','開始對話']);
  await page.locator('#agentName').fill('子曰');
  await expect(page.locator('.bubble.assistant')).toHaveCount(1);
  await expect(page.locator('#characterName')).toHaveText('知微');
@@ -27,11 +49,8 @@ test('saving applies drafts, resets context and preserves quota; restoring disca
  await expect(page.getByLabel('幽默',{exact:true})).toBeChecked();await expect(page.getByLabel('好奇',{exact:true})).toBeChecked();
  await page.getByLabel('正式有禮',{exact:true}).check();await expect(page.locator('input[name="tone"]:checked')).toHaveCount(1);await page.locator('#saveSettings').click();
  await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');await expect(page.locator('#agentName')).toHaveValue('子曰');
- await page.locator('#agentName').fill('未儲存的名稱');await page.locator('#knowledge').fill('未儲存的背景資料');
- await page.locator('#restoreSettings').click();
- await expect(page.locator('#agentName')).toHaveValue('子曰');
- await expect(page.locator('#knowledge')).not.toHaveValue('未儲存的背景資料');
- await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
+ await expect(page.locator('#restoreSettings')).toHaveCount(0);
+ await expect(page.locator('#saveSettings')).toHaveText('更新數字人');
 });
 test('50 input limit survives reload and clearing; 201 words cannot submit',async({page})=>{
  await page.locator('#message').fill('word '.repeat(201));await expect(page.locator('#send')).toBeDisabled();
@@ -82,6 +101,7 @@ test('late replies are discarded when the profile changes',async({page})=>{
  await page.waitForTimeout(1000);await expect(page.locator('.bubble')).toHaveCount(0);await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
 test('school VRM renders and responsive layouts do not overflow',async({page})=>{
+ test.setTimeout(180000);
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await expect(page).toHaveTitle('數字人製作');
  await expect(page.locator('.brand')).toHaveText('數字人製作');

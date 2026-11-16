@@ -9,6 +9,12 @@ try { const saved=localStorage.getItem('yyc.student.profile.v1');if(saved)profil
 try { storage=sessionStorage;quota=readQuota(storage); }catch{storage=null;}
 const avatar=new AvatarStage($('avatarMount'),$('avatarStatus'));
 const welcome=$('welcome');
+$('toggleSettings').addEventListener('click',()=>{
+  const collapsed=document.querySelector('.workspace').classList.toggle('settings-hidden');
+  $('customizePanel').hidden=collapsed;
+  $('toggleSettings').textContent=collapsed?'顯示設定':'隱藏設定';
+  $('toggleSettings').setAttribute('aria-expanded',String(!collapsed));
+});
 function notice(text,error=false){$('notice').textContent=text;$('notice').classList.toggle('error',error);}
 function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'示範模式：回應為本機範例。連接 OpenRouter 後可與數字人對話。');}
 function addMessage(role,text) {
@@ -39,14 +45,14 @@ function clearContext(text){
 }
 function persistProfile(){try{localStorage.setItem('yyc.student.profile.v1',JSON.stringify(profile));}catch{}}
 function changed(){
-  $('settingsStatus').textContent='有未儲存的修改。按「儲存設定」套用，或按「還原設定」取消。';
+  $('settingsStatus').textContent='有未套用的修改。按「更新數字人」套用設定並重新開始對話。';
   $('settingsStatus').classList.add('unsaved');
 }
 function fillProfileForm(){
   $('agentName').value=profile.name;$('description').value=profile.description;$('knowledge').value=profile.knowledge;
   document.querySelectorAll('input[name="personality"]').forEach(input=>{input.checked=profile.personalities.includes(input.value);});
   document.querySelectorAll('input[name="tone"]').forEach(input=>{input.checked=input.value===profile.tone;});
-  $('settingsStatus').textContent='目前沒有未儲存的修改。';$('settingsStatus').classList.remove('unsaved');
+  $('settingsStatus').textContent='目前沒有未套用的修改。';$('settingsStatus').classList.remove('unsaved');
 }
 function saveSettings(){
   if(!$('profileForm').reportValidity())return;
@@ -56,17 +62,13 @@ function saveSettings(){
   let persisted=true;
   try{localStorage.setItem('yyc.student.profile.v1',JSON.stringify(profile));}catch{persisted=false;}
   fillProfileForm();
-  clearContext('設定已儲存，角色與對話已重新開始。提問次數保留。');
+  clearContext('數字人已更新，對話已重新開始。提問次數保留。');
   if(!persisted){
     $('settingsStatus').textContent='已套用設定，但瀏覽器不允許儲存到此裝置；重新整理後可能遺失。';
     notice('已套用設定，但無法儲存到此裝置。請允許網站儲存資料。',true);
   }
 }
 $('saveSettings').addEventListener('click',saveSettings);
-$('restoreSettings').addEventListener('click',()=>{
-  fillProfileForm();
-  notice('已還原至上次儲存的設定。');
-});
 fillProfileForm();
 function choices(container,values,name,type,selected){
   for(const value of values){
