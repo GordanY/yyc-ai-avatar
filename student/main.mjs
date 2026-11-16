@@ -88,7 +88,25 @@ $('message').addEventListener('input',updateLabels);
 $('message').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();$('chatForm').requestSubmit();}});
 document.querySelectorAll('[data-prompt]').forEach(b=>b.addEventListener('click',()=>{$('message').value=b.dataset.prompt;updateLabels();$('message').focus();}));
 $('clearChat').addEventListener('click',()=>clearContext('已清空對話。提問次數保留。'));
-$('connection').addEventListener('click',()=>{$('apiKey').value='';$('keyNotice').textContent='';$('connectDialog').showModal();});
+function hideKey(){
+  $('apiKey').type='password';
+  $('toggleKeyVisibility').setAttribute('aria-pressed','false');
+  $('toggleKeyVisibility').setAttribute('aria-label','顯示金鑰');
+  $('toggleKeyVisibility').title='顯示金鑰';
+}
+$('connection').addEventListener('click',()=>{
+  $('welcomeDialog').close();
+  hideKey();$('apiKey').value=apiKey;$('keyNotice').textContent='';
+  $('connectDialog').showModal();$('apiKey').focus();
+});
+$('toggleKeyVisibility').addEventListener('click',()=>{
+  const input=$('apiKey'),start=input.selectionStart,end=input.selectionEnd;
+  const visible=input.type==='password';input.type=visible?'text':'password';
+  $('toggleKeyVisibility').setAttribute('aria-pressed',String(visible));
+  $('toggleKeyVisibility').setAttribute('aria-label',visible?'隱藏金鑰':'顯示金鑰');
+  $('toggleKeyVisibility').title=visible?'隱藏金鑰':'顯示金鑰';
+  input.focus();if(start!==null&&end!==null)input.setSelectionRange(start,end);
+});
 $('closeDialog').addEventListener('click',()=>$('connectDialog').close());
 function setKey(key) {
   apiKey=key;$('apiKey').value='';$('connection').classList.toggle('connected',!!apiKey);
@@ -97,11 +115,11 @@ function setKey(key) {
 }
 $('keyForm').addEventListener('submit',e=>{
   e.preventDefault();const key=$('apiKey').value.trim();
-  if(!/^sk-or-[A-Za-z0-9_-]+$/.test(key)){$('keyNotice').textContent='請輸入有效格式的 OpenRouter API 金鑰。';return;}
+  if(!key||/\s/.test(key)){$('keyNotice').textContent='請輸入有效格式的 OpenRouter API 金鑰。';return;}
   setKey(key);
 });
 $('disconnect').addEventListener('click',()=>setKey(''));
-$('connectDialog').addEventListener('close',()=>{$('apiKey').value='';});
+$('connectDialog').addEventListener('close',()=>{$('apiKey').value='';hideKey();});
 window.addEventListener('pagehide',()=>{apiKey='';controller?.abort();});
 function demoReply(text) {
   const p=profile,name=p.name||'學習伙伴';
