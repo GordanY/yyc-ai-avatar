@@ -37,3 +37,9 @@ test('invalid profile values are constrained and action mapping is allowlisted',
  assert.equal(p.avatar,'school');assert.deepEqual(p.personalities,['親切']);assert.equal(p.name.length,40);
  assert.equal(actionFor('你好'),'wave');assert.equal(actionFor('多謝'),'nod');assert.equal(actionFor('arbitrary text'),'idle');
 });
+
+test('teacher motion selections match the chosen idle and text-reply groups',()=>{
+ assert.deepEqual(CONFIG.idleLoop,['nod','wave','greeting','spin']);
+ assert.deepEqual(CONFIG.speakingLoop,['nod','explain','emphasis']);
+ assert.ok(!CONFIG.speakingLoop.some(name=>['spin','greeting','wave'].includes(name)));
+});

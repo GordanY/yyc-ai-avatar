@@ -129,6 +129,18 @@ function demoReply(text) {
   return intro+name+'收到你的問題了。\n\n'+(p.tone==='簡潔直接'?'先把問題分成小步驟，再逐步解決。':p.personalities.includes('幽默')?'學習像練功，先從一個小招式開始！你想先處理哪一部分？':'我們可以把問題分成幾個小步驟。你已經知道甚麼，又有哪些地方想弄清楚？')+
     '\n\n'+(p.knowledge?'已加入 '+p.knowledge.length+' 字元背景資料。示範模式不會分析資料；請連接 OpenRouter 測試知識如何影響回答。':'你可以加入背景資料，讓角色了解你的學習內容。');
 }
+async function revealReply(node,text,requestRevision){
+  const characters=Array.from(text),start=performance.now();
+  node.textContent='';avatar.setSpeaking(true);
+  while(true){
+    if(requestRevision!==revision)return false;
+    const count=Math.min(characters.length,Math.max(1,Math.floor((performance.now()-start)/1000*CONFIG.replyCharactersPerSecond)));
+    node.textContent=characters.slice(0,count).join('');
+    $('messages').scrollTop=$('messages').scrollHeight;
+    if(count===characters.length)return true;
+    await new Promise(resolve=>setTimeout(resolve,30));
+  }
+}
 $('chatForm').addEventListener('submit',async e=>{
   e.preventDefault();if(busy)return;
   const text=$('message').value.trim();let error='';
@@ -166,9 +178,10 @@ $('chatForm').addEventListener('submit',async e=>{
       if(typeof reply!=='string'||!reply.trim())throw new Error('未收到文字回覆，請稍後再試。');
     }
     if(requestRevision!==revision)return;
-    pending.textContent=reply;messages.push({role:'assistant',content:reply});
+    if(!await revealReply(pending,reply,requestRevision))return;
+    messages.push({role:'assistant',content:reply});
     if(Number.isFinite(usage?.total_tokens))exactTokens=usage.total_tokens;
-    avatar.play(actionFor(reply));modeNotice();
+    avatar.setSpeaking(false);modeNotice();
   } catch(error) {
     if(requestRevision!==revision)return;
     pending.closest('.bubble').remove();
@@ -177,7 +190,7 @@ $('chatForm').addEventListener('submit',async e=>{
     notice(error.name==='AbortError'?'回覆已逾時。你可以再次傳送；本次提問已計入次數。':error.message+' 本次提問已計入次數。',true);
     $('message').value=text;
   } finally {
-    if(requestRevision===revision){busy=false;controller=null;$('send').innerHTML='傳送 <span aria-hidden="true">↑</span>';updateLabels();$('messages').scrollTop=$('messages').scrollHeight;}
+    if(requestRevision===revision){avatar.setSpeaking(false);busy=false;controller=null;$('send').innerHTML='傳送 <span aria-hidden="true">↑</span>';updateLabels();$('messages').scrollTop=$('messages').scrollHeight;}
   }
 });
 $('welcomeStart').addEventListener('click',()=>{

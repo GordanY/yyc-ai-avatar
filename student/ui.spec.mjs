@@ -13,7 +13,7 @@ test.beforeEach(async({page},testInfo)=>{
 });
 test('saving applies drafts, resets context and preserves quota; restoring discards drafts',async({page})=>{
  await page.locator('#message').fill('請介紹你自己。');await page.locator('#send').click();
- await expect(page.locator('.bubble.assistant')).toContainText('示範回應');
+ await expect(page.locator('.bubble.assistant')).toContainText('示範回應');await expect(page.locator('#send')).toHaveText('傳送 ↑');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
  await page.locator('#agentName').fill('子曰');
  await expect(page.locator('.bubble.assistant')).toHaveCount(1);
@@ -37,7 +37,7 @@ test('50 input limit survives reload and clearing; 201 words cannot submit',asyn
  await page.locator('#message').fill('學'.repeat(201));await expect(page.locator('#send')).toBeDisabled();
  await page.evaluate(()=>sessionStorage.setItem('yyc.student.quota.v1','49'));await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();
  await page.locator('#message').fill('你好');await page.locator('#send').click();
- await expect(page.locator('.bubble.assistant')).toContainText('示範模式');
+ await expect(page.locator('.bubble.assistant')).toContainText('示範模式');await expect(page.locator('#send')).toHaveText('傳送 ↑');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
  await page.locator('#clearChat').click();await page.locator('#description').fill('新設定');
  await page.locator('#message').fill('again');await expect(page.locator('#send')).toBeDisabled();
@@ -87,11 +87,12 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
  await expect(page.locator('.brand svg[aria-label="人形機械人"]')).toHaveCount(1);
  await expect(page.locator('.character-caption')).toHaveText('知微');
  await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
- for(const width of [1440,1600]){
+ for(const width of [1440,1600,2560]){
   await page.setViewportSize({width,height:1000});
   const positions=await page.locator('.panel .section-label').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().top));
   expect(Math.max(...positions)-Math.min(...positions)).toBeLessThanOrEqual(1);
  }
+ const wideBounds=await page.locator('.workspace').boundingBox();expect(wideBounds.x).toBe(0);expect(wideBounds.width).toBe(2560);
  await page.setViewportSize({width:1440,height:1000});
  expect(await page.locator('#message').evaluate(n=>parseFloat(getComputedStyle(n).fontSize))).toBeGreaterThanOrEqual(16);
  await expect(page.locator('#avatarStatus')).toHaveText('',{timeout:60000});

@@ -6,7 +6,9 @@ export const CONFIG = Object.freeze({
   maxMessages: 50,
   maxWords: 200,
   maxKnowledgeChars: 24000,
-  idleLoop: ['idle', 'nod'],
+  idleLoop: ['nod', 'wave', 'greeting', 'spin'], // 2, 3, 5, 9
+  speakingLoop: ['nod', 'explain', 'emphasis'], // 2, 13, 14
+  replyCharactersPerSecond: 60,
   loopSeconds: 12,
   actions: {
     idle: 'assets/animations/YYC_idle.vrma',

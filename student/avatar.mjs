@@ -4,11 +4,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { VRMLoaderPlugin, VRMUtils } from '@pixiv/three-vrm';
 import { VRMAnimationLoaderPlugin, createVRMAnimationClip } from '@pixiv/three-vrm-animation';
 import { CONFIG } from './config.mjs';
+import { NaturalMotion } from '../src/features/avatarMotion/naturalMotion.ts';
 
 export class AvatarStage {
   constructor(mount, status) {
     this.mount=mount; this.status=status; this.mode=''; this.revision=0; this.clips=new Map();
-    this.frame=0; this.loopIndex=0; this.lastLoop=0; this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.frame=0; this.loopIndex=0; this.speakingIndex=0; this.speaking=false; this.lastLoop=0; this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   }
   async show(mode) {
     if (mode===this.mode) { this.reset(); return; }
@@ -42,6 +43,7 @@ export class AvatarStage {
       const vrm=gltf.userData.vrm;
       if(!vrm)throw new Error('Invalid VRM');
       this.vrm=vrm;VRMUtils.rotateVRM0(vrm);scene.add(vrm.scene);
+      this.natural=new NaturalMotion(vrm,.5);this.rootBase=vrm.scene.quaternion.clone();
       const box=new THREE.Box3().setFromObject(vrm.scene);
       const height=box.max.y-box.min.y;this.targetY=box.min.y+height*.53;
       this.camera.position.set(0,this.targetY,height*2.15);
@@ -56,22 +58,31 @@ export class AvatarStage {
       }));
       if(revision!==this.revision)return;
       this.status.textContent=loaded.some(r=>r.status==='rejected')?'角色已載入 · 部分動作未能載入':'';
-      this.play('idle');this.mixer.update(1/60);vrm.update(1/60);this.lastLoop=performance.now();
+      this.play('idle');this.mixer.update(1/60);vrm.update(1/60);this.lastLoop=performance.now()-CONFIG.loopSeconds*1000;
       const clock=new THREE.Clock();
       const tick=()=>{
         if(revision!==this.revision)return;
         this.frame=requestAnimationFrame(tick);
         const dt=Math.min(clock.getDelta(),.05),time=performance.now()/1000;
         if(!this.reduced) {
-          this.mixer.update(dt);
+          this.natural.prepareFrame();this.mixer.update(dt);
+          this.updateProcedural(performance.now(),dt);
           // Blink uses the VRM expression manager, never speech or audio.
           const blink=Math.max(0,1-Math.abs((time%4.7)-.12)/.1);
           vrm.expressionManager?.setValue('blink',blink);
-          if(performance.now()>this.actionUntil && performance.now()-this.lastLoop>CONFIG.loopSeconds*1000) {
-            this.lastLoop=performance.now();const loop=CONFIG.idleLoop;
-            if(loop.length)this.play(loop[this.loopIndex++%loop.length]);
+          const now=performance.now();
+          if(now>=this.actionUntil) {
+            if(this.speaking) {
+              const loop=CONFIG.speakingLoop;
+              if(loop.length)this.play(loop[this.speakingIndex++%loop.length]);
+            } else {
+              if(this.currentAction!=='idle')this.play('idle');
+              if(now-this.lastLoop>=CONFIG.loopSeconds*1000){
+                this.lastLoop=now;const loop=CONFIG.idleLoop;
+                if(loop.length)this.play(loop[this.loopIndex++%loop.length]);
+              }
+            }
           }
-          if(this.actionUntil && performance.now()>this.actionUntil && this.currentAction!=='idle')this.play('idle');
           vrm.update(dt);
         }
         this.controls.update();renderer.render(scene,this.camera);
@@ -82,19 +93,49 @@ export class AvatarStage {
   }
   play(name) {
     if((this.reduced&&name!=='idle')||!this.mixer||!this.vrm)return;
+    if(this.rootBase)this.vrm.scene.quaternion.copy(this.rootBase);
+    const procedural={greeting:'greeting',explain:'explanation',emphasis:'emphasis'}[name];
     const clip=this.clips.get(name)||this.clips.get('idle'); if(!clip)return;
     const action=this.mixer.clipAction(clip);
     if(this.previous!==action){action.reset().fadeIn(.35).play();this.previous?.fadeOut(.35);this.previous=action;}
     else action.reset().play();
-    this.currentAction=name;this.actionUntil=name==='idle'?0:performance.now()+clip.duration*1000;
+    this.procedural=procedural;this.actionStart=performance.now();
+    const duration=procedural?(name==='emphasis'?2.8:3.8):name==='spin'?4.5:clip.duration;
+    this.currentAction=name;this.actionUntil=name==='idle'?0:this.actionStart+duration*1000;
+    this.mount.dataset.action=name;
+  }
+  updateProcedural(now,dt) {
+    if(!this.vrm)return;
+    if(this.currentAction==='spin'){
+      const t=Math.max(0,Math.min(1,(now-this.actionStart)/4500));
+      const eased=t*t*(3-2*t);
+      this.vrm.scene.quaternion.copy(this.rootBase).multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),Math.PI*2*eased));
+    }
+    if(this.procedural){
+      const duration=(this.actionUntil-this.actionStart)/1000;
+      const time=Math.max(0,(now-this.actionStart)/1000);
+      const weight=Math.min(1,time/.45,Math.max(0,(duration-time)/.55));
+      this.natural.setGesture({action:{body:this.procedural},time,weight});
+      this.natural.update(dt);
+    }
+  }
+  setSpeaking(value) {
+    if(this.speaking===value)return;
+    this.speaking=value;this.mount.dataset.speaking=String(value);
+    if(value){
+      const loop=CONFIG.speakingLoop;
+      if(loop.length)this.play(loop[this.speakingIndex++%loop.length]);
+    }else{this.play('idle');this.lastLoop=performance.now();}
   }
   reset() {
-    this.loopIndex=0;this.lastLoop=performance.now();this.actionUntil=0;
+    this.loopIndex=0;this.speakingIndex=0;this.speaking=false;
+    this.mount.dataset.speaking='false';
+    this.lastLoop=performance.now()-CONFIG.loopSeconds*1000;this.actionUntil=0;
     this.controls?.reset();this.vrm?.expressionManager?.resetValues();this.play('idle');
   }
   disposeScene() {
     cancelAnimationFrame(this.frame);this.observer?.disconnect();this.controls?.dispose();
-    this.mixer?.stopAllAction();if(this.vrm)VRMUtils.deepDispose(this.vrm.scene);
+    this.mixer?.stopAllAction();this.natural=null;this.procedural=null;if(this.vrm)VRMUtils.deepDispose(this.vrm.scene);
     this.renderer?.dispose();this.vrm=null;this.mixer=null;this.renderer=null;this.previous=null;
     this.clips.clear();
   }
