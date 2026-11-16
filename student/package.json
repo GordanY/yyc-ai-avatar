@@ -1,0 +1,18 @@
+{
+  "name": "yyc-student-avatar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test core.test.mjs"
+  },
+  "dependencies": {
+    "@pixiv/three-vrm": "3.1.2",
+    "@pixiv/three-vrm-animation": "3.1.2",
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.2",
+    "@playwright/test": "1.51.1"
+  }
+}
