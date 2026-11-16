@@ -47,7 +47,7 @@
 #toggleKeyVisibility[aria-pressed="true"] .icon-eye-off{display:block}
 
 .header-actions{display:flex;align-items:center;gap:12px}
-#toggleSettings{font-size:14px;white-space:nowrap;min-height:42px}
+#toggleSettings{font-size:14px;white-space:nowrap;min-height:44px}
 .workspace.settings-hidden{grid-template-columns:minmax(0,4fr) minmax(0,6fr)}
 .workspace.settings-hidden .customize{display:none}
 .workspace.settings-hidden .chat{grid-column:auto}
@@ -66,3 +66,18 @@
 .api-actions .primary{font-size:16px}
 .api-settings #keyNotice{font-size:13px;line-height:1.7}
 @media(max-width:650px){.customize{max-height:none;overflow-y:visible}}
+
+/* Each appearance has its own locally bundled backdrop. */
+.character .stage{border-radius:18px;background-color:#e8eadb;background-image:url('./assets/backgrounds/classroom.webp');background-size:cover;background-position:center;box-shadow:inset 0 0 0 1px #435e3b12;margin-top:18px}
+.character[data-avatar="scholar"] .stage{background-image:url('./assets/backgrounds/courtyard.webp')}
+.stage-ring{display:none}
+#avatarStatus:empty{display:none}
+#adminReset{font-size:14px;white-space:nowrap;min-height:44px}
+#adminResetDialog h2{font-size:26px;margin:0 0 12px}
+#adminResetDialog p{color:#63765d}
+#adminResetDialog .reset-notice{min-height:24px;color:#a34d35;font-size:14px}
+#adminResetDialog .dialog-actions{gap:12px}
+#adminResetDialog .dialog-actions button{min-height:44px}
+@media(max-width:650px){.header-actions{flex-direction:row;gap:8px}.header-actions>button{flex:1;width:auto}.brand{font-size:23px}}
+
+#avatarMount .scholar-animation{display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 10px 6px #16291730);user-select:none;pointer-events:none}

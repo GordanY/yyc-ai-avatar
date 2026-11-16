@@ -117,6 +117,36 @@ $('keyForm').addEventListener('submit',e=>{
   setKey(key);
 });
 $('disconnect').addEventListener('click',()=>setKey(''));
+$('adminReset').addEventListener('click',()=>{
+  $('adminPassword').value='';$('adminResetNotice').textContent='';
+  $('adminResetDialog').showModal();$('adminPassword').focus();
+});
+$('cancelAdminReset').addEventListener('click',()=>$('adminResetDialog').close());
+$('adminResetDialog').addEventListener('close',()=>{
+  $('adminPassword').value='';$('adminResetNotice').textContent='';
+});
+$('adminResetForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  if($('adminPassword').value!==CONFIG.adminResetPassword){
+    $('adminResetNotice').textContent='密碼不正確，未有重設任何資料。';
+    $('adminPassword').focus();$('adminPassword').select();return;
+  }
+  // Invalidate pending fetches and typewriter replies before restoring defaults.
+  clearContext();
+  profile=normalizeProfile(DEFAULT_PROFILE);exactTokens=null;
+  let profileCleared=true,quotaCleared=true;
+  try{localStorage.removeItem('yyc.student.profile.v1');}catch{profileCleared=false;}
+  try{storage=sessionStorage;storage.setItem('yyc.student.quota.v1','0');quota=readQuota(storage);}
+  catch{storage=null;quota=CONFIG.maxMessages;quotaCleared=false;}
+  setKey('');$('keyNotice').textContent='';fillProfileForm();
+  document.querySelector('.workspace').classList.remove('settings-hidden');
+  $('customizePanel').hidden=false;$('customizePanel').scrollTop=0;
+  $('toggleSettings').textContent='隱藏設定';$('toggleSettings').setAttribute('aria-expanded','true');
+  avatar.show(profile.avatar);updateLabels();$('adminResetDialog').close();
+  if(profileCleared&&quotaCleared)notice('已重設全部設定、對話、API 金鑰及提問次數。');
+  else notice('已清除頁面資料，但瀏覽器未允許完整重設儲存資料。請允許網站儲存資料後再試。',true);
+  $('agentName').focus();
+});
 window.addEventListener('pagehide',()=>{apiKey='';$('apiKey').value='';hideKey();controller?.abort();});
 function demoReply(text) {
   const p=profile,name=p.name||'學習伙伴';

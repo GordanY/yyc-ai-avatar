@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { VRMLoaderPlugin, VRMUtils } from '@pixiv/three-vrm';
 import { VRMAnimationLoaderPlugin, createVRMAnimationClip } from '@pixiv/three-vrm-animation';
 import { CONFIG } from './config.mjs';
+import { RenderedScholar } from './rendered-scholar.mjs';
 import { NaturalMotion } from '../src/features/avatarMotion/naturalMotion.ts';
 
 export class AvatarStage {
@@ -14,12 +15,12 @@ export class AvatarStage {
   async show(mode) {
     if (mode===this.mode) { this.reset(); return; }
     this.mode=mode; const revision=++this.revision; this.disposeScene();
+    this.mount.closest('.character').dataset.avatar=mode;
+    document.getElementById('appearanceLabel').textContent=mode==='scholar'?'角色動畫':'立體角色';
     this.mount.replaceChildren();
     if (mode==='scholar') {
-      const frame=document.createElement('iframe');
-      frame.src=CONFIG.scholarPreview; frame.title='古代文士 3D 外觀預覽（外部模型，尚未接駁骨架動作）';
-      frame.allow='fullscreen'; frame.referrerPolicy='no-referrer'; this.mount.append(frame);
-      this.status.textContent='外部 3D 預覽 · 尚未下載及接駁角色動作';
+      delete this.mount.dataset.armLowering;
+      this.scholar=new RenderedScholar(this.mount,this.status,this.reduced);
       return;
     }
     this.status.textContent='正在載入校服角色⋯';
@@ -93,6 +94,7 @@ export class AvatarStage {
     }
   }
   play(name) {
+    if(this.scholar){this.scholar.play(name);return;}
     if((this.reduced&&name!=='idle')||!this.mixer||!this.vrm)return;
     if(this.rootBase)this.vrm.scene.quaternion.copy(this.rootBase);
     const procedural={nod:'agreement',wave:'greeting',greeting:'greeting',explain:'explanation',emphasis:'emphasis'}[name];
@@ -121,6 +123,7 @@ export class AvatarStage {
     this.mount.dataset.armLowering=angles.map(value=>value.toFixed(1)).join(',');
   }
   setSpeaking(value) {
+    if(this.scholar){this.scholar.setSpeaking(value);return;}
     if(this.speaking===value)return;
     this.speaking=value;this.mount.dataset.speaking=String(value);
     if(value){
@@ -129,12 +132,14 @@ export class AvatarStage {
     }else{this.play('idle');this.lastLoop=performance.now();}
   }
   reset() {
+    if(this.scholar){this.scholar.reset();return;}
     this.loopIndex=0;this.speakingIndex=0;this.speaking=false;
     this.mount.dataset.speaking='false';
     this.lastLoop=performance.now()-CONFIG.loopSeconds*1000;this.actionUntil=0;
     this.controls?.reset();this.vrm?.expressionManager?.resetValues();this.play('idle');
   }
   disposeScene() {
+    this.scholar?.dispose();this.scholar=null;
     cancelAnimationFrame(this.frame);this.observer?.disconnect();this.controls?.dispose();
     this.mixer?.stopAllAction();this.natural=null;this.procedural=null;if(this.vrm)VRMUtils.deepDispose(this.vrm.scene);
     this.renderer?.dispose();this.vrm=null;this.mixer=null;this.renderer=null;this.previous=null;

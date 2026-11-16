@@ -100,6 +100,92 @@ test('late replies are discarded when the profile changes',async({page})=>{
  await page.locator('#message').fill('test');await page.locator('#send').click();await page.locator('#agentName').fill('新角色');await page.locator('#saveSettings').click();
  await page.waitForTimeout(1000);await expect(page.locator('.bubble')).toHaveCount(0);await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
+test('admin reset requires the password and clears quota, settings, drafts and API state',async({page})=>{
+ await page.evaluate(()=>{
+  sessionStorage.setItem('yyc.student.quota.v1','49');
+  sessionStorage.setItem('other-app-session','keep');localStorage.setItem('other-app-profile','keep');
+ });
+ await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();
+ await page.locator('#agentName').fill('自訂文士');await page.locator('#description').fill('已套用描述');
+ await page.locator('#knowledge').fill('測試知識');await page.getByLabel('正式有禮',{exact:true}).check();
+ await page.getByLabel('幽默',{exact:true}).check();await page.locator('#saveSettings').click();
+ await page.locator('[data-avatar="scholar"]').click();
+ await page.route('https://openrouter.ai/api/v1/chat/completions',route=>route.fulfill({json:{choices:[{message:{content:'測試回覆'}}],usage:{total_tokens:1024}}}));
+ await page.locator('#apiKey').fill('sk-or-test-admin-reset');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await page.locator('#message').fill('測試問題');await page.locator('#send').click();
+ await expect(page.locator('#send')).toHaveText('傳送 ↑');
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
+ await page.locator('#description').fill('尚未套用的草稿');
+ await page.getByRole('button',{name:'隱藏設定',exact:true}).click();
+ await page.getByRole('button',{name:'管理員重設',exact:true}).click();
+ await page.locator('#adminPassword').fill('wrong');await page.getByRole('button',{name:'重設全部',exact:true}).click();
+ await expect(page.locator('#adminResetNotice')).toContainText('密碼不正確');
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
+ await expect(page.locator('.bubble')).toHaveCount(2);await expect(page.locator('#characterName')).toHaveText('自訂文士');
+ await page.getByRole('button',{name:'取消',exact:true}).click();
+ await expect(page.locator('#adminPassword')).toHaveValue('');
+ await page.getByRole('button',{name:'顯示設定',exact:true}).click();
+ await expect(page.locator('#description')).toHaveValue('尚未套用的草稿');
+ await page.getByRole('button',{name:'隱藏設定',exact:true}).click();
+ await page.getByRole('button',{name:'管理員重設',exact:true}).click();
+ await page.locator('#adminPassword').fill('YYC123456');await page.getByRole('button',{name:'重設全部',exact:true}).click();
+ await expect(page.locator('#adminResetDialog')).toBeHidden();
+ await expect(page.locator('#customizePanel')).toBeVisible();await expect(page.locator('#agentName')).toHaveValue('知微');
+ await expect(page.locator('#description')).toHaveValue('一位喜歡以問題引導思考的學習伙伴。');
+ await expect(page.getByLabel('溫和鼓勵',{exact:true})).toBeChecked();await expect(page.getByLabel('幽默',{exact:true})).not.toBeChecked();
+ await expect(page.locator('#knowledge')).toHaveValue('請以繁體中文協助中學生學習。遇到不知道的事情，坦白說明，並鼓勵學生查證。');
+ await expect(page.locator('#settingsStatus')).not.toHaveClass(/unsaved/);
+ await expect(page.locator('.character')).toHaveAttribute('data-avatar','school');
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 0 / 50');
+ await expect(page.locator('.bubble')).toHaveCount(0);await expect(page.locator('#welcome')).toBeVisible();
+ await expect(page.locator('#apiKey')).toHaveValue('');await expect(page.locator('#connectionStatus')).toContainText('未連接');
+ await expect(page.locator('#tokenLabel')).toHaveText('估算');await expect(page.locator('#adminPassword')).toHaveValue('');
+ expect(await page.evaluate(()=>({profile:localStorage.getItem('yyc.student.profile.v1'),quota:sessionStorage.getItem('yyc.student.quota.v1'),otherProfile:localStorage.getItem('other-app-profile'),otherSession:sessionStorage.getItem('other-app-session')}))).toEqual({profile:null,quota:'0',otherProfile:'keep',otherSession:'keep'});
+ await page.locator('#message').fill('重新開始');await expect(page.locator('#send')).toBeEnabled();
+ await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 0 / 50');await expect(page.locator('#agentName')).toHaveValue('知微');
+});
+for(const phase of ['fetch','typewriter'])test('admin reset cancels a pending '+phase+' reply',async({page})=>{
+ let release;
+ const gate=new Promise(resolve=>{release=resolve;});
+ await page.route('https://openrouter.ai/api/v1/chat/completions',async route=>{
+  if(phase==='fetch')await gate;
+  try{await route.fulfill({json:{choices:[{message:{content:'STALE '.repeat(120)}}]}});}catch{}
+ });
+ await page.locator('#apiKey').fill('sk-or-reset-race');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await page.locator('#message').fill('測試');await page.locator('#send').click();
+ if(phase==='typewriter')await expect(page.locator('.bubble.assistant')).toContainText('STALE');
+ await page.getByRole('button',{name:'管理員重設',exact:true}).click();
+ await page.locator('#adminPassword').fill('YYC123456');await page.getByRole('button',{name:'重設全部',exact:true}).click();
+ release();await page.waitForTimeout(900);
+ await expect(page.locator('.bubble')).toHaveCount(0);await expect(page.locator('#quotaLabel')).toHaveText('本次提問 0 / 50');
+ await page.locator('#message').fill('新問題');await expect(page.locator('#send')).toBeEnabled();
+});
+test('scholar animations and both local backdrops load without an external embed',async({page})=>{
+ const failed=[];page.on('requestfailed',request=>{if(/assets\/(backgrounds|scholar)/.test(request.url()))failed.push(request.url());});
+ const background=()=>page.locator('.stage').evaluate(node=>getComputedStyle(node).backgroundImage);
+ expect(await background()).toContain('classroom.webp');
+ await page.locator('[data-avatar="scholar"]').click();
+ await expect(page.locator('#avatarMount iframe')).toHaveCount(0);
+ await expect(page.locator('#avatarMount .scholar-animation')).toHaveAttribute('src','assets/scholar/still.webp');
+ await expect(page.locator('#avatarStatus')).toHaveText('');
+ expect(await page.locator('.scholar-animation').evaluate(image=>image.complete&&image.naturalWidth===480)).toBe(true);
+ expect(await background()).toContain('courtyard.webp');
+ await page.screenshot({path:'test-results/student-scholar-desktop.png'});
+ await page.emulateMedia({reducedMotion:'no-preference'});await page.reload();
+ await page.getByRole('button',{name:'開始製作',exact:true}).click();
+ await expect(page.locator('.scholar-animation')).toHaveAttribute('src',/scholar\/nod.webp/);
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-action','nod');
+ await page.route('https://openrouter.ai/api/v1/chat/completions',route=>route.fulfill({json:{choices:[{message:{content:'這是一段動作測試回覆。'.repeat(90)}}]}}));
+ await page.locator('#apiKey').fill('sk-or-scholar-test');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await page.locator('#message').fill('請解釋');await page.locator('#send').click();
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-speaking','true');
+ for(const action of ['nod','explain','emphasis'])await expect(page.locator('#avatarMount')).toHaveAttribute('data-action',action,{timeout:10000});
+ await page.locator('#clearChat').click();await expect(page.locator('#avatarMount')).toHaveAttribute('data-speaking','false');
+ await page.locator('[data-avatar="school"]').click();
+ await expect(page.locator('.scholar-animation')).toHaveCount(0);expect(await background()).toContain('classroom.webp');
+ expect(failed).toEqual([]);
+});
 test('school VRM renders and responsive layouts do not overflow',async({page})=>{
  test.setTimeout(180000);
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -107,7 +193,6 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
  await expect(page.locator('.brand')).toHaveText('數字人製作');
  await expect(page.locator('.brand svg[aria-label="人形機械人"]')).toHaveCount(1);
  await expect(page.locator('.character-caption')).toHaveText('知微');
- await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
  for(const width of [1440,1600,2560]){
   await page.setViewportSize({width,height:1000});
   const positions=await page.locator('.panel .section-label').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().top));
@@ -141,6 +226,9 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:'test-results/student-mobile.png',fullPage:true});
  expect(errors).toEqual([]);
- await page.locator('[data-avatar="scholar"]').click();await expect(page.locator('#avatarMount iframe')).toHaveAttribute('src',/sketchfab/);
- await expect(page.locator('#avatarStatus')).toContainText('尚未下載');
+ await page.locator('[data-avatar="scholar"]').click();
+ await expect(page.locator('#avatarMount .scholar-animation')).toBeVisible();
+ await expect(page.locator('#avatarStatus')).toHaveText('');
+ await expect(page.locator('.character')).toHaveAttribute('data-avatar','scholar');
+ await page.screenshot({path:'test-results/student-scholar-mobile.png',fullPage:true});
 });
