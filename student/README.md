@@ -23,7 +23,11 @@ In repository **Settings → Pages → Build and deployment → Source**, select
 
 Expected address after successful deployment: https://gordany.github.io/yyc-ai-avatar/
 
-No API-key secret is needed for Pages or CI. The user enters their own OpenRouter key in **連接你的數字人**, at the bottom of the **設定角色** panel. The eye button shows or hides the entered key; **連接** applies it and **使用示範模式** clears it. The key stays in page memory, is never written to either browser storage, and is cleared on reload. Calls go directly to https://openrouter.ai/api/v1/chat/completions. Provider/model availability and account balance still apply.
+No API-key secret is needed for Pages or CI. The user enters their own OpenRouter key in **連接你的數字人**, at the bottom of the **設定角色** panel. The eye button shows or hides the entered key. Common copied forms such as `Bearer …`, `Authorization: Bearer …` and `OPENROUTER_API_KEY="…"` are normalized, including whitespace and invisible copy characters; the app does not guess a required key prefix or length.
+
+**連接** validates the normalized key directly with OpenRouter's [`GET /api/v1/key`](https://openrouter.ai/docs/api/api-reference/api-keys/get-current-api-key) before showing **已驗證 · OpenRouter**. Validation does not submit a chat message or consume the classroom quota. Rejected credentials, permission problems and network failures show separate messages. Editing the key field, using **使用示範模式**, resetting or leaving the page cancels any outstanding key check, so its late result cannot reconnect the page.
+
+**使用示範模式** clears the active key. The key stays in page memory, is never written to either browser storage, and is cleared on reload. Chat calls go directly to https://openrouter.ai/api/v1/chat/completions. Successful key validation does not guarantee model availability or sufficient account balance.
 
 ## Teaching configuration
 
@@ -36,10 +40,10 @@ Edit config.mjs:
 - replyCharactersPerSecond: text reveal speed.
 - loopSeconds: delay before the next idle gesture.
 - actions: original YYC idle/nod/wave clips; other school gestures use procedural motion.
-- scholarStill and scholarActions: locally bundled static and animated WebP files.
+- scholarModel: the bundled application resource containing the scholar mesh, texture and baked animation clips.
 - adminResetPassword: the classroom reset password.
 
-Greeting input maps to wave; acknowledgements map to nod; other input maps to idle. While a reply appears, the selected speaking gestures cycle. Turn/spin is excluded. Reduced-motion users see a stationary school model or the scholar's still image.
+Greeting input maps to wave; acknowledgements map to nod; other input maps to idle. While a reply appears, the selected speaking gestures cycle. Turn/spin is excluded. Reduced-motion users see either model without automatic animation; orbit and zoom remain available.
 
 ## Sessions and context
 
@@ -54,24 +58,24 @@ The token meter includes system settings, background knowledge and both sides of
 ## Character status and licensing
 
 - School: actual bundled YYC VRM, including original YYC idle/nod/wave animation. Source/credits remain in ../models/yyc-info-day/source-license.json.
-- Ancient scholar: fixed-view, transparent WebP animations rendered locally from **Scholar Rigged** by **CG-Moon**, with a traditional courtyard backdrop. The original Blender model and texture are not included in the repository or Pages build. Source: [Scholar Rigged on CGTrader](https://www.cgtrader.com/free-3d-models/character/man/scholar-rigged).
+- Ancient scholar: an interactive 3D character based on **Scholar Rigged** by **CG-Moon**, with baked idle, nod, wave/greeting, explanation and emphasis clips. Source: [Scholar Rigged on CGTrader](https://www.cgtrader.com/free-3d-models/character/man/scholar-rigged).
 
-The scholar uses rendered idle, nod, wave/greeting, explanation and emphasis animations; it cannot be rotated like the school VRM. Both appearances follow the configured idle/reply gesture groups. The school character uses a classroom backdrop. Backgrounds and scholar renders are served locally; no external model iframe is used.
+Both appearances use the same Three.js `AvatarStage`, `OrbitControls` and `AnimationMixer`: drag to orbit, scroll/pinch to zoom, and reset to restore the initial camera. Both follow the configured idle/reply gesture groups. The school character uses a classroom backdrop; the scholar uses a traditional courtyard. Models and backgrounds load from the site without an external model iframe.
 
-The scholar source is listed under **Royalty Free License (no AI)**. [CGTrader's terms](https://www.cgtrader.com/pages/terms-and-conditions), sections 21A.2–3 and 21B.1, distinguish permitted incorporated rendered output from redistribution of extractable models and restrict machine-learning use. The source files stay local, and the model is not used for training or sent to an image-generation service. The site's MIT code license does not replace the model's asset terms.
+The scholar source is listed under **Royalty Free License (no AI)**. [CGTrader's terms](https://www.cgtrader.com/pages/terms-and-conditions), section 21A.2, cover incorporated applications as well as rendered output; section 21A.3 lists proprietary resources and encryption among possible safeguards for software use. This application packages the converted model as an AES-256-GCM `character.yyc3d` resource. The original Blender files, raw GLB and standalone texture intermediates stay under ignored `output/`, rather than being published as source assets.
 
-The seven pixiv motion-pack files are not copied into this Pages build; only the project's original YYC clips and procedural school gestures are used. `render-scholar.py` generates PNG animation frames from the separately acquired rig using Blender; the normal website build copies the prepared WebP files and does not require Blender.
+The viewer and decoder material in `scholar-asset-key.mjs` are public. This packaging deters direct reuse of a standalone model file; it does not make the model unextractable or provide server-side security or a DRM guarantee. The site's MIT code license does not replace the model's asset terms. Section 21B.1 restricts machine-learning use; the avatar geometry and textures are not sent to OpenRouter or used for model training.
 
-To regenerate the scholar renders, extract your separately licensed download into `output/scholar-review/source/`, keeping `textures/` beside `model-rig.blend`. From the repository root, with Blender and FFmpeg (including the `libwebp_anim` encoder) on `PATH`:
+The seven pixiv motion-pack files are not copied into this Pages build; school gestures use the project's original YYC clips and procedural motion. Scholar gestures are baked from its separately acquired rig by `export-scholar.py`. The normal website build copies the prepared application resource and does not require Blender.
+
+To regenerate the scholar resource, extract your separately licensed download into `output/scholar-review/source/`, keeping `textures/` beside `model-rig.blend`. From the repository root, with Blender on `PATH`:
 
 ```sh
-blender --background --factory-startup --disable-autoexec output/scholar-review/source/model-rig.blend --python student/render-scholar.py -- output/scholar-review/frames
-python3 -m venv output/scholar-tools
-output/scholar-tools/bin/python -m pip install Pillow
-output/scholar-tools/bin/python student/assemble-scholar.py output/scholar-review/frames student/assets/scholar
+blender --background --factory-startup --disable-autoexec output/scholar-review/source/model-rig.blend --python student/export-scholar.py -- output/scholar-review/scholar.glb
+node student/pack-scholar.mjs output/scholar-review/scholar.glb
 ```
 
-On macOS, the Blender executable can instead be `/Applications/Blender.app/Contents/MacOS/Blender`. On Windows, use `output/scholar-tools/Scripts/python.exe` for the virtual-environment commands. The output is 480 × 720 transparent WebP at 15 fps, plus a still image for reduced motion. Keep the source files and PNG intermediates under ignored `output/`; only the rendered WebP files belong in `student/assets/scholar/`.
+On macOS, the Blender executable can instead be `/Applications/Blender.app/Contents/MacOS/Blender`. The export bakes the rig's clips into the local GLB; packaging writes `student/assets/scholar/character.yyc3d` and matching public decoder material in `student/scholar-asset-key.mjs`. Keep those two generated files together when updating the resource. The source, GLB and texture intermediates remain under ignored `output/`.
 
 ## Verification
 
@@ -82,4 +86,4 @@ npx playwright install chromium
 npx playwright test
 ```
 
-The browser suite mocks OpenRouter requests with a dummy test key; it does not incur paid requests. These tests do not certify real OpenRouter account connectivity or access to the original scholar model.
+The browser suite mocks OpenRouter requests with a dummy test key; it does not incur paid requests. These tests do not certify a real user's OpenRouter credentials, account balance or provider availability.

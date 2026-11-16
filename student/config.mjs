@@ -18,13 +18,5 @@ export const CONFIG = Object.freeze({
     wave: 'assets/animations/YYC_wave.vrma'
   },
   schoolModel: 'assets/YYC_InfoDay.vrm',
-  scholarStill: 'assets/scholar/still.webp',
-  scholarActions: {
-    idle: {file:'assets/scholar/idle.webp',seconds:4},
-    nod: {file:'assets/scholar/nod.webp',seconds:2.4},
-    wave: {file:'assets/scholar/wave.webp',seconds:3.8},
-    greeting: {file:'assets/scholar/wave.webp',seconds:3.8},
-    explain: {file:'assets/scholar/explain.webp',seconds:3.6},
-    emphasis: {file:'assets/scholar/emphasis.webp',seconds:2.8},
-  },
+  scholarModel: 'assets/scholar/character.yyc3d',
 });

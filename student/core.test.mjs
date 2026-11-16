@@ -1,6 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {CONFIG} from './config.mjs';
+import {normalizeApiKey} from './openrouter.mjs';
+import {readFile} from 'node:fs/promises';
+import {webcrypto} from 'node:crypto';
+import {decodeScholarAsset} from './scholar-asset.mjs';
 import {wordCount,readQuota,consumeQuota,validateMessage,contextEstimate,systemPrompt,normalizeProfile,DEFAULT_PROFILE,actionFor} from './core.mjs';
 function storage(){const values=new Map();return {getItem:k=>values.get(k)??null,setItem:(k,v)=>values.set(k,v)};}
 test('200 English words accepted; 201 rejected; Han chars cannot bypass the limit',()=>{
@@ -12,6 +16,27 @@ test('200 English words accepted; 201 rejected; Han chars cannot bypass the limi
  assert.equal(wordCount('Hello 世界！'),3);
  assert.ok(validateMessage(' '.repeat(100),0,0));
  assert.ok(validateMessage('!'.repeat(4001),0,0));
+});
+test('API paste accepts a raw key, header, env assignment and copy-paste whitespace',()=>{
+ const key='sk-or-v1-'+ 'a'.repeat(64);
+ for(const input of [key,'  '+key+'  ','Authorization: Bearer "'+key+'"',"export OPENROUTER_API_KEY='"+key+"'",key.slice(0,25)+' \n\u200b'+key.slice(25)])assert.equal(normalizeApiKey(input),key);
+ assert.equal(normalizeApiKey('opaque-token'),'opaque-token');
+ assert.throws(()=>normalizeApiKey(' \n\u200b'));
+ assert.throws(()=>normalizeApiKey('無效'));
+});
+test('packaged scholar decodes into a rigged animated model and rejects corruption',async()=>{
+ globalThis.crypto??=webcrypto;
+ const packed=await readFile(new URL('./assets/scholar/character.yyc3d',import.meta.url));
+ assert.equal(packed.subarray(0,8).toString(),'YYC3D001');
+ const bytes=Buffer.from(await decodeScholarAsset(packed));
+ assert.equal(bytes.subarray(0,4).toString(),'glTF');
+ const gltf=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)).toString());
+ assert.ok(gltf.skins?.[0].joints.length>10);
+ assert.deepEqual(gltf.animations.map(clip=>clip.name).sort(),['emphasis','explain','idle','nod','wave']);
+ assert.ok(gltf.images.every(image=>image.bufferView!==undefined&&!image.uri));
+ const corrupt=Buffer.from(packed);corrupt[corrupt.length-1]^=1;
+ await assert.rejects(()=>decodeScholarAsset(corrupt));
+ await assert.rejects(()=>decodeScholarAsset(new ArrayBuffer(36)));
 });
 test('quota is input-only and survives new reads/profile edits/context resets',()=>{
  const s=storage();assert.equal(readQuota(s),0);

@@ -2,9 +2,11 @@ import './core.mjs';
 import { CONFIG } from './config.mjs';
 import { DEFAULT_PROFILE, PERSONALITIES, TONES, normalizeProfile, wordCount, systemPrompt, contextEstimate, actionFor, readQuota, consumeQuota, validateMessage } from './core.mjs';
 import { AvatarStage } from './avatar.mjs';
+import { normalizeApiKey, validateApiKey } from './openrouter.mjs';
 const $=id=>document.getElementById(id);
 let profile=normalizeProfile(DEFAULT_PROFILE),messages=[],apiKey='',revision=0,controller=null,busy=false,storage=null,quota=50;
 let exactTokens=null,contextWindow=CONFIG.contextWindow;
+let keyRevision=0,keyController=null;
 try { const saved=localStorage.getItem('yyc.student.profile.v1');if(saved)profile=normalizeProfile(JSON.parse(saved)); }catch{}
 try { storage=sessionStorage;quota=readQuota(storage); }catch{storage=null;}
 const avatar=new AvatarStage($('avatarMount'),$('avatarStatus'));
@@ -35,7 +37,7 @@ function updateLabels(){
   const words=wordCount($('message').value);
   $('wordCounter').textContent=words+' / 200 字／詞';
   $('wordCounter').classList.toggle('over-limit',words>CONFIG.maxWords);
-  $('send').disabled=busy||!storage||quota>=CONFIG.maxMessages||words>CONFIG.maxWords||!$('message').value.trim();
+  $('send').disabled=busy||!!keyController||!storage||quota>=CONFIG.maxMessages||words>CONFIG.maxWords||!$('message').value.trim();
   document.querySelectorAll('[data-avatar]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.avatar===profile.avatar)));
 }
 function clearContext(text){
@@ -104,17 +106,40 @@ $('toggleKeyVisibility').addEventListener('click',()=>{
   $('toggleKeyVisibility').title=visible?'隱藏金鑰':'顯示金鑰';
   input.focus();if(start!==null&&end!==null)input.setSelectionRange(start,end);
 });
+function cancelKeyCheck(){
+  keyRevision++;keyController?.abort();keyController=null;
+  const button=$('keyForm').querySelector('[type="submit"]');button.disabled=false;button.textContent='連接';
+  updateLabels();
+}
+$('apiKey').addEventListener('input',()=>{cancelKeyCheck();$('keyNotice').textContent='';});
 function setKey(key) {
+  cancelKeyCheck();
   apiKey=key;$('apiKey').value=key;hideKey();
   $('connectionStatus').classList.toggle('connected',!!apiKey);
-  $('connectionStatus').textContent=apiKey?'金鑰已套用 · OpenRouter':'未連接 · 示範回應';
-  $('keyNotice').textContent=apiKey?'可在對話欄輸入問題，開始文字對話。':'已切換至示範回應。';
-  clearContext();modeNotice();
+  $('connectionStatus').textContent=apiKey?'已驗證 · OpenRouter':'未連接 · 示範回應';
+  $('keyNotice').textContent=apiKey?'金鑰驗證成功，可開始文字對話。':'已切換至示範回應。';
+  const draft=$('message').value;clearContext();$('message').value=draft;updateLabels();modeNotice();
 }
-$('keyForm').addEventListener('submit',e=>{
-  e.preventDefault();const key=$('apiKey').value.trim();
-  if(!key||/\s/.test(key)){$('keyNotice').textContent='請輸入有效格式的 OpenRouter API 金鑰。';return;}
-  setKey(key);
+$('keyForm').addEventListener('submit',async e=>{
+  e.preventDefault();cancelKeyCheck();
+  let key;
+  try{key=normalizeApiKey($('apiKey').value);}catch(error){$('keyNotice').textContent=error.message;return;}
+  const requestRevision=keyRevision,check=new AbortController();keyController=check;
+  updateLabels();
+  const button=$('keyForm').querySelector('[type="submit"]');button.disabled=true;button.textContent='驗證中⋯';
+  $('keyNotice').textContent='正在向 OpenRouter 驗證金鑰⋯';
+  const timer=setTimeout(()=>check.abort(),15000);
+  try{
+    await validateApiKey(key,check.signal);
+    if(requestRevision!==keyRevision)return;
+    setKey(key);
+  }catch(error){
+    if(requestRevision!==keyRevision)return;
+    $('keyNotice').textContent=error.name==='AbortError'?'驗證已逾時，請重試。':error.message;
+  }finally{
+    clearTimeout(timer);
+    if(requestRevision===keyRevision){keyController=null;button.disabled=false;button.textContent='連接';updateLabels();}
+  }
 });
 $('disconnect').addEventListener('click',()=>setKey(''));
 $('adminReset').addEventListener('click',()=>{
@@ -147,7 +172,7 @@ $('adminResetForm').addEventListener('submit',e=>{
   else notice('已清除頁面資料，但瀏覽器未允許完整重設儲存資料。請允許網站儲存資料後再試。',true);
   $('agentName').focus();
 });
-window.addEventListener('pagehide',()=>{apiKey='';$('apiKey').value='';hideKey();controller?.abort();});
+window.addEventListener('pagehide',()=>{cancelKeyCheck();apiKey='';$('apiKey').value='';hideKey();controller?.abort();});
 function demoReply(text) {
   const p=profile,name=p.name||'學習伙伴';
   const intro=p.tone==='正式有禮'?'您好。':p.tone==='輕鬆活潑'?'嗨！':p.tone==='簡潔直接'?'你好。':'你好呀。';
@@ -169,7 +194,7 @@ async function revealReply(node,text,requestRevision){
   }
 }
 $('chatForm').addEventListener('submit',async e=>{
-  e.preventDefault();if(busy)return;
+  e.preventDefault();if(busy||keyController)return;
   const text=$('message').value.trim();let error='';
   try{quota=readQuota(storage);}catch{notice('瀏覽器無法儲存提問次數。請允許此網站使用工作階段儲存，再重新整理。',true);return;}
   const estimated=contextEstimate(profile,messages);

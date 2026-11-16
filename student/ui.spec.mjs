@@ -4,6 +4,7 @@ test.beforeEach(async({page},testInfo)=>{
  if(!testInfo.title.startsWith('school VRM')) await page.route('**/assets/YYC_InfoDay.vrm',route=>route.abort());
  else await page.emulateMedia({reducedMotion:'no-preference'});
  await page.route('https://openrouter.ai/api/v1/models',r=>r.fulfill({json:{data:[{id:'tencent/hy4-flash',context_length:1048576}]}}));
+ await page.route('https://openrouter.ai/api/v1/key',r=>r.fulfill({json:{data:{is_management_key:false}}}));
  await page.goto('/');
  await expect(page.locator('#welcomeDialog')).toBeVisible();
  await expect(page.locator('#welcomeDialog')).toContainText('設定角色');
@@ -86,6 +87,49 @@ test('direct OpenRouter request uses profile, no audio, actual usage and memory-
  await expect(page.locator('#apiKey')).toHaveAttribute('type','password');
  const saved=await page.evaluate(()=>JSON.stringify({...localStorage,...sessionStorage}));expect(saved).not.toContain('sk-or');
  await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#connectionStatus')).toContainText('未連接');await expect(page.locator('#apiKey')).toHaveValue('');
+});
+test('pasted Authorization header is accepted without exposing or altering the key',async({page})=>{
+ let authorization;
+ await page.route('https://openrouter.ai/api/v1/chat/completions',route=>{
+  authorization=route.request().headers().authorization;
+  return route.fulfill({json:{choices:[{message:{content:'已連接'}}]}});
+ });
+ await page.locator('#apiKey').fill('  Authorization: Bearer "sk-or-v1-paste-test"  ');
+ await page.getByRole('button',{name:'連接',exact:true}).click();
+ await expect(page.locator('#keyNotice')).not.toContainText('請輸入有效格式');
+ await expect(page.locator('#connectionStatus')).toContainText('OpenRouter');
+ await page.locator('#message').fill('test');await page.locator('#send').click();
+ await expect(page.locator('.bubble.assistant')).toContainText('已連接');
+ expect(authorization).toBe('Bearer sk-or-v1-paste-test');
+});
+test('OpenRouter validates keys without spending quota and explains rejected credentials',async({page})=>{
+ await page.route('https://openrouter.ai/api/v1/key',route=>route.fulfill({status:401,json:{error:{message:'Invalid API key'}}}));
+ await page.locator('#apiKey').fill('sk-or-invalid-test');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await expect(page.locator('#keyNotice')).toContainText('OpenRouter 不接受此金鑰');
+ await expect(page.locator('#connectionStatus')).toContainText('未連接');
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 0 / 50');
+ await expect(page.getByRole('button',{name:'連接',exact:true})).toBeEnabled();
+});
+test('API validation preserves a typed draft and cannot reconnect after admin reset',async({page})=>{
+ let release;
+ const gate=new Promise(resolve=>{release=resolve;});
+ await page.route('https://openrouter.ai/api/v1/key',async route=>{
+  await gate;try{await route.fulfill({json:{data:{is_management_key:false}}});}catch{}
+ });
+ await page.locator('#apiKey').fill('sk-or-pending-test');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await page.locator('#message').fill('保留我的問題');await expect(page.locator('#send')).toBeDisabled();
+ await page.locator('#message').press('Enter');await expect(page.locator('.bubble')).toHaveCount(0);
+ await page.getByRole('button',{name:'管理員重設',exact:true}).click();
+ await page.locator('#adminPassword').fill('YYC123456');await page.getByRole('button',{name:'重設全部',exact:true}).click();
+ release();await page.waitForTimeout(300);
+ await expect(page.locator('#connectionStatus')).toContainText('未連接');await expect(page.locator('#apiKey')).toHaveValue('');
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 0 / 50');
+});
+test('API validation failure reports network problems instead of key format',async({page})=>{
+ await page.route('https://openrouter.ai/api/v1/key',route=>route.abort('internetdisconnected'));
+ await page.locator('#apiKey').fill('sk-or-network-test');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await expect(page.locator('#keyNotice')).toContainText('檢查網絡');
+ await expect(page.locator('#connectionStatus')).toContainText('未連接');
 });
 test('provider failure is readable and does not lock the composer',async({page})=>{
  await page.route('https://openrouter.ai/api/v1/chat/completions',r=>r.fulfill({status:401,json:{error:{message:'provider internal detail'}}}));
@@ -172,14 +216,23 @@ test('scholar animations and both local backdrops load without an external embed
  expect(await background()).toContain('classroom.webp');
  await page.locator('[data-avatar="scholar"]').click();
  await expect(page.locator('#avatarMount iframe')).toHaveCount(0);
- await expect(page.locator('#avatarMount .scholar-animation')).toHaveAttribute('src','assets/scholar/still.webp');
+ await expect(page.locator('#avatarMount canvas')).toBeVisible();
  await expect(page.locator('#avatarStatus')).toHaveText('');
- expect(await page.locator('.scholar-animation').evaluate(image=>image.complete&&image.naturalWidth===480)).toBe(true);
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-model','scholar');
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-action','idle');
+ const canvas=page.locator('#avatarMount canvas'),bounds=await canvas.boundingBox();
+ const initialCamera=await page.locator('#avatarMount').getAttribute('data-camera');
+ await page.mouse.move(bounds.x+bounds.width*.5,bounds.y+bounds.height*.5);await page.mouse.down();
+ await page.mouse.move(bounds.x+bounds.width*.72,bounds.y+bounds.height*.48,{steps:8});await page.mouse.up();
+ await expect(page.locator('#avatarMount')).not.toHaveAttribute('data-camera',initialCamera);
+ const rotatedCamera=await page.locator('#avatarMount').getAttribute('data-camera');
+ await page.mouse.wheel(0,-350);
+ await expect(page.locator('#avatarMount')).not.toHaveAttribute('data-camera',rotatedCamera);
  expect(await background()).toContain('courtyard.webp');
  await page.screenshot({path:'test-results/student-scholar-desktop.png'});
  await page.emulateMedia({reducedMotion:'no-preference'});await page.reload();
  await page.getByRole('button',{name:'開始製作',exact:true}).click();
- await expect(page.locator('.scholar-animation')).toHaveAttribute('src',/scholar\/nod.webp/);
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-model','scholar');
  await expect(page.locator('#avatarMount')).toHaveAttribute('data-action','nod');
  await page.route('https://openrouter.ai/api/v1/chat/completions',route=>route.fulfill({json:{choices:[{message:{content:'這是一段動作測試回覆。'.repeat(90)}}]}}));
  await page.locator('#apiKey').fill('sk-or-scholar-test');await page.getByRole('button',{name:'連接',exact:true}).click();
@@ -188,7 +241,7 @@ test('scholar animations and both local backdrops load without an external embed
  for(const action of ['nod','explain','emphasis'])await expect(page.locator('#avatarMount')).toHaveAttribute('data-action',action,{timeout:10000});
  await page.locator('#clearChat').click();await expect(page.locator('#avatarMount')).toHaveAttribute('data-speaking','false');
  await page.locator('[data-avatar="school"]').click();
- await expect(page.locator('.scholar-animation')).toHaveCount(0);expect(await background()).toContain('classroom.webp');
+ await expect(page.locator('.character')).toHaveAttribute('data-avatar','school');expect(await background()).toContain('classroom.webp');
  expect(failed).toEqual([]);
 });
 test('school VRM renders and responsive layouts do not overflow',async({page})=>{
@@ -232,8 +285,9 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
  await page.screenshot({path:'test-results/student-mobile.png',fullPage:true});
  expect(errors).toEqual([]);
  await page.locator('[data-avatar="scholar"]').click();
- await expect(page.locator('#avatarMount .scholar-animation')).toBeVisible();
+ await expect(page.locator('#avatarMount canvas')).toBeVisible();
  await expect(page.locator('#avatarStatus')).toHaveText('');
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-model','scholar');
  await expect(page.locator('.character')).toHaveAttribute('data-avatar','scholar');
  await page.screenshot({path:'test-results/student-scholar-mobile.png',fullPage:true});
 });
