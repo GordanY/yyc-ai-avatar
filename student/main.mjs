@@ -39,12 +39,35 @@ function clearContext(text){
 }
 function persistProfile(){try{localStorage.setItem('yyc.student.profile.v1',JSON.stringify(profile));}catch{}}
 function changed(){
+  $('settingsStatus').textContent='有未儲存的修改。按「儲存設定」套用，或按「還原設定」取消。';
+  $('settingsStatus').classList.add('unsaved');
+}
+function fillProfileForm(){
+  $('agentName').value=profile.name;$('description').value=profile.description;$('knowledge').value=profile.knowledge;
+  document.querySelectorAll('input[name="personality"]').forEach(input=>{input.checked=profile.personalities.includes(input.value);});
+  document.querySelectorAll('input[name="tone"]').forEach(input=>{input.checked=input.value===profile.tone;});
+  $('settingsStatus').textContent='目前沒有未儲存的修改。';$('settingsStatus').classList.remove('unsaved');
+}
+function saveSettings(){
+  if(!$('profileForm').reportValidity())return;
   profile=normalizeProfile({...profile,name:$('agentName').value,description:$('description').value,knowledge:$('knowledge').value,
     personalities:[...document.querySelectorAll('input[name="personality"]:checked')].map(x=>x.value),
     tone:document.querySelector('input[name="tone"]:checked')?.value});
-  persistProfile();clearContext('設定已更新，角色與對話已重新開始。提問次數保留。');
+  let persisted=true;
+  try{localStorage.setItem('yyc.student.profile.v1',JSON.stringify(profile));}catch{persisted=false;}
+  fillProfileForm();
+  clearContext('設定已儲存，角色與對話已重新開始。提問次數保留。');
+  if(!persisted){
+    $('settingsStatus').textContent='已套用設定，但瀏覽器不允許儲存到此裝置；重新整理後可能遺失。';
+    notice('已套用設定，但無法儲存到此裝置。請允許網站儲存資料。',true);
+  }
 }
-$('agentName').value=profile.name;$('description').value=profile.description;$('knowledge').value=profile.knowledge;
+$('saveSettings').addEventListener('click',saveSettings);
+$('restoreSettings').addEventListener('click',()=>{
+  fillProfileForm();
+  notice('已還原至上次儲存的設定。');
+});
+fillProfileForm();
 function choices(container,values,name,type,selected){
   for(const value of values){
     const label=document.createElement('label');label.className='choice';
@@ -55,7 +78,7 @@ function choices(container,values,name,type,selected){
 choices('personalities',PERSONALITIES,'personality','checkbox',profile.personalities);
 choices('tones',TONES,'tone','radio',[profile.tone]);
 $('profileForm').addEventListener('input',changed);
-$('profileForm').addEventListener('submit',e=>e.preventDefault());
+$('profileForm').addEventListener('submit',e=>{e.preventDefault();saveSettings();});
 document.querySelectorAll('[data-avatar]').forEach(button=>button.addEventListener('click',()=>{
   if(profile.avatar===button.dataset.avatar)return;
   profile.avatar=button.dataset.avatar;persistProfile();clearContext('外觀已切換，對話已重新開始。提問次數保留。');

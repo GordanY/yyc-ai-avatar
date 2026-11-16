@@ -29,3 +29,10 @@
 .welcome-steps span{display:block;color:#6f7e67;font-size:15px;margin-top:3px}
 #welcomeDialog .welcome-reminder{font-size:13px;background:#f1f5ec;padding:12px;border-radius:8px}
 #welcomeStart{width:100%;margin-top:10px;font-size:16px}
+
+.brand-icon svg{display:block;flex-shrink:0}
+.settings-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.settings-actions button{flex:1;font-size:16px;min-height:44px}
+.secondary{border:1px solid #becfba;border-radius:8px;background:#f7f9f3;color:#48673e;padding:10px 14px}
+.settings-status{font-size:13px;color:#6f7e67;line-height:1.7;margin:10px 0 0}
+.settings-status.unsaved{color:#8a6b32}

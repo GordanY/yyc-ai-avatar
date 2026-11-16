@@ -11,18 +11,26 @@ test.beforeEach(async({page},testInfo)=>{
  if(testInfo.title.startsWith('school VRM')) await page.screenshot({path:'test-results/welcome-dialog.png'});
  await page.getByRole('button',{name:'開始製作',exact:true}).click();
 });
-test('customization clears context, preserves quota, supports radio and multiple checks',async({page})=>{
+test('saving applies drafts, resets context and preserves quota; restoring discards drafts',async({page})=>{
  await page.locator('#message').fill('請介紹你自己。');await page.locator('#send').click();
  await expect(page.locator('.bubble.assistant')).toContainText('示範回應');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
  await page.locator('#agentName').fill('子曰');
+ await expect(page.locator('.bubble.assistant')).toHaveCount(1);
+ await expect(page.locator('#characterName')).toHaveText('知微');
+ await page.locator('#saveSettings').click();
  await expect(page.locator('.bubble')).toHaveCount(0);
  await expect(page.locator('#characterName')).toHaveText('子曰');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
  await page.getByLabel('幽默',{exact:true}).check();await page.getByLabel('好奇',{exact:true}).check();
  await expect(page.getByLabel('幽默',{exact:true})).toBeChecked();await expect(page.getByLabel('好奇',{exact:true})).toBeChecked();
- await page.getByLabel('正式有禮',{exact:true}).check();await expect(page.locator('input[name="tone"]:checked')).toHaveCount(1);
+ await page.getByLabel('正式有禮',{exact:true}).check();await expect(page.locator('input[name="tone"]:checked')).toHaveCount(1);await page.locator('#saveSettings').click();
  await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');await expect(page.locator('#agentName')).toHaveValue('子曰');
+ await page.locator('#agentName').fill('未儲存的名稱');await page.locator('#knowledge').fill('未儲存的背景資料');
+ await page.locator('#restoreSettings').click();
+ await expect(page.locator('#agentName')).toHaveValue('子曰');
+ await expect(page.locator('#knowledge')).not.toHaveValue('未儲存的背景資料');
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
 test('50 input limit survives reload and clearing; 201 words cannot submit',async({page})=>{
  await page.locator('#message').fill('word '.repeat(201));await expect(page.locator('#send')).toBeDisabled();
@@ -60,13 +68,15 @@ test('provider failure is readable and does not lock the composer',async({page})
 test('late replies are discarded when the profile changes',async({page})=>{
  await page.route('https://openrouter.ai/api/v1/chat/completions',async r=>{await new Promise(resolve=>setTimeout(resolve,800));try{await r.fulfill({json:{choices:[{message:{content:'STALE'}}]}});}catch{}});
  await page.locator('#connection').click();await page.locator('#apiKey').fill('sk-or-v1-test-only');await page.getByRole('button',{name:'連接',exact:true}).click();
- await page.locator('#message').fill('test');await page.locator('#send').click();await page.locator('#agentName').fill('新角色');
+ await page.locator('#message').fill('test');await page.locator('#send').click();await page.locator('#agentName').fill('新角色');await page.locator('#saveSettings').click();
  await page.waitForTimeout(1000);await expect(page.locator('.bubble')).toHaveCount(0);await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
 test('school VRM renders and responsive layouts do not overflow',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await expect(page).toHaveTitle('數字人製作');
- await expect(page.locator('.brand')).toContainText('數字人製作');
+ await expect(page.locator('.brand')).toHaveText('數字人製作');
+ await expect(page.locator('.brand svg[aria-label="人形機械人"]')).toHaveCount(1);
+ await expect(page.locator('.character-caption')).toHaveText('知微');
  await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
  for(const width of [1440,1600]){
   await page.setViewportSize({width,height:1000});
