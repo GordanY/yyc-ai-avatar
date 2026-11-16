@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {CONFIG} from './config.mjs';
+import {CONFIG,MOVEMENTS} from './config.mjs';
+import {TEMPLATES} from './templates.mjs';
 import {normalizeApiKey} from './openrouter.mjs';
 import {readFile} from 'node:fs/promises';
 import {webcrypto} from 'node:crypto';
@@ -67,4 +68,17 @@ test('teacher motion selections match the chosen idle and text-reply groups',()=
  assert.deepEqual(CONFIG.idleLoop,['nod','wave','greeting']);
  assert.deepEqual(CONFIG.speakingLoop,['nod','explain','emphasis']);
  assert.ok(!CONFIG.speakingLoop.some(name=>['spin','greeting','wave'].includes(name)));
+});
+test('movement preview numbers are stable and do not change the automatic groups',()=>{
+ assert.deepEqual(MOVEMENTS.map(movement=>movement.number),[1,2,3,5,13,14]);
+ assert.equal(new Set(MOVEMENTS.map(movement=>movement.id)).size,MOVEMENTS.length);
+ for(const action of [...CONFIG.idleLoop,...CONFIG.speakingLoop])assert.ok(MOVEMENTS.some(movement=>movement.id===action));
+});
+test('Yue Fei template supplies a complete editable profile with source-backed knowledge',()=>{
+ const template=TEMPLATES['yue-fei'],profile=normalizeProfile(template.profile);
+ assert.equal(profile.name,'岳飛');assert.equal(profile.avatar,'scholar');assert.equal(profile.tone,'正式有禮');
+ assert.deepEqual(profile.personalities,['忠誠','勇敢','嚴謹','耐心']);
+ assert.match(profile.knowledge,/1103–1142/);assert.match(profile.knowledge,/字鵬舉/);assert.match(profile.knowledge,/小說/);
+ assert.equal(template.sources.length,3);assert.ok(profile.knowledge.length<CONFIG.maxKnowledgeChars);
+ profile.personalities.pop();assert.equal(template.profile.personalities.length,4);
 });

@@ -1,5 +1,5 @@
 import { CONFIG } from './config.mjs';
-export const PERSONALITIES = ['親切', '耐心', '好奇', '嚴謹', '幽默', '富創意'];
+export const PERSONALITIES = ['親切', '耐心', '好奇', '嚴謹', '幽默', '富創意', '忠誠', '勇敢'];
 export const TONES = ['溫和鼓勵', '正式有禮', '輕鬆活潑', '簡潔直接'];
 export const DEFAULT_PROFILE = Object.freeze({
   name: '知微', description: '一位喜歡以問題引導思考的學習伙伴。',

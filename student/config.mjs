@@ -1,4 +1,12 @@
-// Teacher configuration. No action/model selector is exposed in the student interface.
+// Teacher configuration. Model selection stays hidden; numbered actions can be previewed.
+export const MOVEMENTS = Object.freeze([
+  {number:1,id:'idle',label:'自然站立'},
+  {number:2,id:'nod',label:'點頭'},
+  {number:3,id:'wave',label:'揮手'},
+  {number:5,id:'greeting',label:'打招呼（揮手）'},
+  {number:13,id:'explain',label:'解說'},
+  {number:14,id:'emphasis',label:'強調'},
+]);
 export const CONFIG = Object.freeze({
   model: 'tencent/hy4-flash', // Omit reasoning/effort parameters to use provider defaults.
   contextWindow: 1048576,

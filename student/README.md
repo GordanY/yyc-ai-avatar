@@ -1,6 +1,6 @@
 # Student Agent Studio
 
-A standalone static student interface in Traditional Chinese. It builds independently of the legacy Amica/Next.js app. GitHub Pages publishes only this interface; speech input/output, uploads, provider/model selectors and gesture selectors are not included in its bundle.
+A standalone static student interface in Traditional Chinese. It builds independently of the legacy Amica/Next.js app. GitHub Pages publishes only this interface; speech input/output, uploads and provider/model selectors are not included in its bundle. Students can preview the numbered movements in the character viewport.
 
 ## Preview and build
 
@@ -25,9 +25,9 @@ Expected address after successful deployment: https://gordany.github.io/yyc-ai-a
 
 No API-key secret is needed for Pages or CI. The user enters their own OpenRouter key in **連接你的數字人**, at the bottom of the **設定角色** panel. The eye button shows or hides the entered key. Common copied forms such as `Bearer …`, `Authorization: Bearer …` and `OPENROUTER_API_KEY="…"` are normalized, including whitespace and invisible copy characters; the app does not guess a required key prefix or length.
 
-**連接** validates the normalized key directly with OpenRouter's [`GET /api/v1/key`](https://openrouter.ai/docs/api/api-reference/api-keys/get-current-api-key) before showing **已驗證 · OpenRouter**. Validation does not submit a chat message or consume the classroom quota. Rejected credentials, permission problems and network failures show separate messages. Editing the key field, using **使用示範模式**, resetting or leaving the page cancels any outstanding key check, so its late result cannot reconnect the page.
+**連接** validates the normalized key directly with OpenRouter's [`GET /api/v1/key`](https://openrouter.ai/docs/api/api-reference/api-keys/get-current-api-key) before showing **已驗證 · OpenRouter**. Validation does not submit a chat message or consume the classroom quota. Rejected credentials, permission problems and network failures show separate messages. Editing the key field, confirming an admin reset or leaving the page cancels any outstanding key check, so its late result cannot reconnect the page.
 
-**使用示範模式** clears the active key. The key stays in page memory, is never written to either browser storage, and is cleared on reload. Chat calls go directly to https://openrouter.ai/api/v1/chat/completions. Successful key validation does not guarantee model availability or sufficient account balance.
+Chat requires a successfully validated OpenRouter connection. Without one, **傳送** is disabled and Enter/programmatic submission is blocked before a message is added or quota is consumed. There are no local sample answers or demo-mode replies. The key stays in page memory, is never written to either browser storage, and is cleared on reload or admin reset. Chat calls go directly to https://openrouter.ai/api/v1/chat/completions. Successful key validation does not guarantee model availability or sufficient account balance.
 
 ## Teaching configuration
 
@@ -41,17 +41,27 @@ Edit config.mjs:
 - loopSeconds: delay before the next idle gesture.
 - actions: original YYC idle/nod/wave clips; other school gestures use procedural motion.
 - scholarModel: the bundled application resource containing the scholar mesh, texture and baked animation clips.
-- adminResetPassword: the classroom reset password.
+- adminResetPassword: the password used to enter classroom admin mode.
 
 Greeting input maps to wave; acknowledgements map to nod; other input maps to idle. While a reply appears, the selected speaking gestures cycle. Turn/spin is excluded. Reduced-motion users see either model without automatic animation; orbit and zoom remain available.
 
+The **動作預覽** selector sits inside the upper-right corner of the character viewport. It offers **1 自然站立**, **2 點頭**, **3 揮手**, **5 打招呼（揮手）**, **13 解說** and **14 強調**; the adjacent **↻** button replays the selected movement. These are temporary previews for either character: they do not change saved settings or the automatic `idleLoop`/`speakingLoop` groups. Explicit previews also play with reduced motion enabled, then return to stationary idle.
+
 ## Sessions and context
 
-The tab's sessionStorage stores only the submitted-input count (maximum 50); it survives reload, agent edits and conversation clearing. A newly opened tab is another session; browsers can clone sessionStorage when duplicating tabs. Clearing site storage bypasses this classroom/demo limit. This is not server-enforced abuse protection. The top-right **管理員重設** button opens a password dialog. The configured password is **YYC123456**; submitting it resets the quota to zero, clears the conversation and API key, removes saved profile settings and drafts, restores the default school character, and shows the settings panel. Pending requests and reply reveals are cancelled. Only this app's profile/quota storage keys are changed; unrelated browser storage is preserved. The password is included in the static JavaScript bundle, so this is a classroom convenience, not server-side access control.
+The tab's sessionStorage stores only the submitted-input count (maximum 50); it survives reload, agent edits and conversation clearing. A newly opened tab is another session; browsers can clone sessionStorage when duplicating tabs. Clearing site storage bypasses this classroom/demo limit. This is not server-enforced abuse protection.
+
+The top-right **進入管理員模式** button opens a password dialog. Entering the configured password **YYC123456** reveals **重設全部** and **離開管理員模式**; entering admin mode does not reset any data. **重設全部** opens a separate confirmation dialog. Confirming resets the quota to zero, clears the conversation and API key, removes saved profile settings and drafts, clears the template selection, restores the default school character, and shows the settings panel. Pending chat requests, reply reveals and key checks are cancelled. Only this app's profile/quota storage keys are changed; unrelated browser storage is preserved.
+
+Admin mode is held only in page memory: reload or **離開管理員模式** leaves it, while completing a reset keeps it active. Exiting admin mode does not reset the current work. The password is included in the static JavaScript bundle, so this is a classroom convenience, not server-side access control.
 
 Each submitted input counts once, including a provider failure; assistant replies do not count. Validation prevents over-limit inputs from being counted or sent. Limits: 200 English words / Han characters (each Han ideograph counts as one 字), plus a 4,000-character hard cap. Background knowledge accepts text only, up to 24,000 characters.
 
 Name, description, personality, tone and background-knowledge edits remain drafts until **更新數字人** is pressed. Updating applies and stores those settings, aborts pending requests, drops late replies, clears conversation and token usage, and resets the avatar. Appearance changes apply immediately with the same conversation reset. These operations preserve the tab quota; hiding settings also preserves drafts and the conversation. Profile text is stored locally on the device; conversation history is held in memory. A profile submitted to live chat is sent to OpenRouter.
+
+The **角色範本** chooser includes **岳飛**. Selecting it alone does not change the active character or form. Press **刷新 ↻** to apply and save the template's name, description, personalities, tone, background knowledge and ancient-scholar appearance. Refreshing replaces any drafts, cancels pending chat/reply display and clears the conversation; it preserves the active OpenRouter connection and submitted-input count. No additional **更新數字人** click is needed to apply a refreshed template.
+
+`templates.mjs` contains the template's historical background, an original classroom persona and links to the National Museum of China and National Palace Museum collections. **背景資料來源** below the chooser exposes those links after loading the template. Its loyalty, bravery, patience and teaching voice are classroom role-play choices, not claims to reproduce Yue Fei's historical psychology; the background explicitly separates historical evidence from later stories and fictional dialogue.
 
 The token meter includes system settings, background knowledge and both sides of conversation. Before a reply it is labelled **估算**, using a language-aware approximate character count; after a reply **上次實際** uses provider-reported total_tokens. Percentage uses the selected model's context capacity. Estimates are not an exact tokenizer and may differ from provider usage.
 

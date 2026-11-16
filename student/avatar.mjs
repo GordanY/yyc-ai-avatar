@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { VRMLoaderPlugin, VRMUtils } from '@pixiv/three-vrm';
 import { VRMAnimationLoaderPlugin, createVRMAnimationClip } from '@pixiv/three-vrm-animation';
-import { CONFIG } from './config.mjs';
+import { CONFIG, MOVEMENTS } from './config.mjs';
 import { loadScholarAsset } from './scholar-asset.mjs';
 import { NaturalMotion } from '../src/features/avatarMotion/naturalMotion.ts';
 
@@ -11,6 +11,7 @@ export class AvatarStage {
   constructor(mount,status) {
     this.mount=mount;this.status=status;this.mode='';this.revision=0;this.clips=new Map();
     this.frame=0;this.loopIndex=0;this.speakingIndex=0;this.speaking=false;this.lastLoop=0;
+    this.previewUntil=0;
     this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   }
   async show(mode) {
@@ -74,22 +75,28 @@ export class AvatarStage {
       this.targetY=box.min.y+height*.53;
       this.camera.position.set(0,this.targetY,height*2.15);
       this.controls.target.set(0,this.targetY,0);this.controls.update();this.controls.saveState();
-      this.mixer=new THREE.AnimationMixer(model);this.play('idle');
-      this.previous?.setEffectiveWeight(1);this.mixer.update(0);
-      if(this.natural){this.natural.setGesture(undefined);this.natural.update(0);this.recordArmPose();this.vrm.update(0);}
+      this.mixer=new THREE.AnimationMixer(model);this.settleIdlePose();
       model.visible=true;this.status.textContent=warning;this.mount.dataset.model=mode;
       this.lastLoop=performance.now()-CONFIG.loopSeconds*1000;
       const clock=new THREE.Clock();
       const tick=()=>{
         if(revision!==this.revision)return;this.frame=requestAnimationFrame(tick);
         const dt=Math.min(clock.getDelta(),.05),now=performance.now();
-        if(!this.reduced){
+        if(!this.reduced||this.previewUntil){
+          if(this.previewUntil&&now>=this.previewUntil){
+            this.previewUntil=0;delete this.mount.dataset.preview;
+            this.play('idle',true);this.lastLoop=now;
+            if(this.reduced){
+              this.settleIdlePose();
+              this.controls.update();renderer.render(scene,this.camera);return;
+            }else if(this.speaking){const loop=CONFIG.speakingLoop;if(loop.length)this.play(loop[this.speakingIndex++%loop.length]);}
+          }
           this.natural?.prepareFrame();this.mixer.update(dt);
           if(this.natural){
             this.updateProcedural(now,dt);
             this.vrm.expressionManager?.setValue('blink',Math.max(0,1-Math.abs(((now/1000)%4.7)-.12)/.1));
           }
-          if(now>=this.actionUntil){
+          if(!this.reduced&&!this.previewUntil&&now>=this.actionUntil){
             if(this.speaking){const loop=CONFIG.speakingLoop;if(loop.length)this.play(loop[this.speakingIndex++%loop.length]);}
             else{
               if(this.currentAction!=='idle')this.play('idle');
@@ -106,8 +113,21 @@ export class AvatarStage {
       if(revision===this.revision)this.status.textContent='3D 載入失敗。請重新整理，或檢查瀏覽器是否支援 WebGL。文字對話仍可使用。';
     }
   }
-  play(name) {
-    if((this.reduced&&name!=='idle')||!this.mixer||!this.model)return;
+  preview(name){
+    if(!this.mixer||!this.model||!MOVEMENTS.some(movement=>movement.id===name))return false;
+    this.previewUntil=0;this.play(name,true);
+    this.previewUntil=name==='idle'?performance.now()+4000:this.actionUntil;
+    this.mount.dataset.preview=name;return true;
+  }
+  settleIdlePose(){
+    if(!this.mixer)return;
+    this.natural?.prepareFrame();this.mixer.stopAllAction();this.previous=null;
+    this.play('idle',true);this.previous?.stopFading().setEffectiveWeight(1);this.mixer.update(0);
+    if(this.natural){this.natural.setGesture(undefined);this.natural.update(0);this.recordArmPose();}
+    this.vrm?.expressionManager?.resetValues();this.vrm?.update(0);
+  }
+  play(name,manual=false) {
+    if((!manual&&(this.previewUntil>performance.now()||(this.reduced&&name!=='idle')))||!this.mixer||!this.model)return;
     this.model.quaternion.copy(this.rootBase);
     const procedural=this.vrm?{nod:'agreement',wave:'greeting',greeting:'greeting',explain:'explanation',emphasis:'emphasis'}[name]:undefined;
     const clip=this.clips.get(procedural?'idle':name==='greeting'?'wave':name)||this.clips.get('idle');if(!clip)return;
@@ -132,15 +152,19 @@ export class AvatarStage {
   }
   setSpeaking(value) {
     if(this.speaking===value)return;this.speaking=value;this.mount.dataset.speaking=String(value);
+    if(this.previewUntil>performance.now())return;
     if(value){const loop=CONFIG.speakingLoop;if(loop.length)this.play(loop[this.speakingIndex++%loop.length]);}
     else{this.play('idle');this.lastLoop=performance.now();}
   }
   reset() {
+    this.previewUntil=0;delete this.mount.dataset.preview;
     this.loopIndex=0;this.speakingIndex=0;this.speaking=false;this.mount.dataset.speaking='false';
     this.lastLoop=performance.now()-CONFIG.loopSeconds*1000;this.actionUntil=0;
     this.controls?.reset();this.vrm?.expressionManager?.resetValues();this.play('idle');
+    if(this.reduced)this.settleIdlePose();
   }
   disposeScene() {
+    this.previewUntil=0;delete this.mount.dataset.preview;
     cancelAnimationFrame(this.frame);this.assetController?.abort();this.assetController=null;
     this.observer?.disconnect();this.controls?.dispose();this.mixer?.stopAllAction();
     if(this.model)VRMUtils.deepDispose(this.model);

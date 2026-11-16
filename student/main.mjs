@@ -1,12 +1,14 @@
 import './core.mjs';
-import { CONFIG } from './config.mjs';
+import { CONFIG, MOVEMENTS } from './config.mjs';
 import { DEFAULT_PROFILE, PERSONALITIES, TONES, normalizeProfile, wordCount, systemPrompt, contextEstimate, actionFor, readQuota, consumeQuota, validateMessage } from './core.mjs';
 import { AvatarStage } from './avatar.mjs';
 import { normalizeApiKey, validateApiKey } from './openrouter.mjs';
+import { TEMPLATES } from './templates.mjs';
 const $=id=>document.getElementById(id);
 let profile=normalizeProfile(DEFAULT_PROFILE),messages=[],apiKey='',revision=0,controller=null,busy=false,storage=null,quota=50;
 let exactTokens=null,contextWindow=CONFIG.contextWindow;
 let keyRevision=0,keyController=null;
+let adminMode=false;
 try { const saved=localStorage.getItem('yyc.student.profile.v1');if(saved)profile=normalizeProfile(JSON.parse(saved)); }catch{}
 try { storage=sessionStorage;quota=readQuota(storage); }catch{storage=null;}
 const avatar=new AvatarStage($('avatarMount'),$('avatarStatus'));
@@ -18,7 +20,7 @@ $('toggleSettings').addEventListener('click',()=>{
   $('toggleSettings').setAttribute('aria-expanded',String(!collapsed));
 });
 function notice(text,error=false){$('notice').textContent=text;$('notice').classList.toggle('error',error);}
-function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'示範模式：回應為本機範例。連接 OpenRouter 後可與數字人對話。');}
+function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'請先在設定欄底部連接 OpenRouter，再開始對話。');}
 function addMessage(role,text) {
   welcome.remove();const node=document.createElement('div');node.className='bubble '+role;
   if(role==='assistant'){const label=document.createElement('span');label.className='byline';label.textContent=profile.name||'學習伙伴';node.append(label);}
@@ -37,13 +39,14 @@ function updateLabels(){
   const words=wordCount($('message').value);
   $('wordCounter').textContent=words+' / 200 字／詞';
   $('wordCounter').classList.toggle('over-limit',words>CONFIG.maxWords);
-  $('send').disabled=busy||!!keyController||!storage||quota>=CONFIG.maxMessages||words>CONFIG.maxWords||!$('message').value.trim();
+  $('send').disabled=busy||!!keyController||!apiKey||!storage||quota>=CONFIG.maxMessages||words>CONFIG.maxWords||!$('message').value.trim();
   document.querySelectorAll('[data-avatar]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.avatar===profile.avatar)));
 }
 function clearContext(text){
   revision++;controller?.abort();controller=null;busy=false;messages=[];exactTokens=null;
   $('messages').replaceChildren(welcome);$('message').value='';$('send').innerHTML='傳送 <span aria-hidden="true">↑</span>';
   avatar.reset();updateLabels();if(text)notice(text);
+  $('movementSelect').value='';$('replayMovement').disabled=true;
 }
 function persistProfile(){try{localStorage.setItem('yyc.student.profile.v1',JSON.stringify(profile));}catch{}}
 function changed(){
@@ -55,6 +58,7 @@ function fillProfileForm(){
   document.querySelectorAll('input[name="personality"]').forEach(input=>{input.checked=profile.personalities.includes(input.value);});
   document.querySelectorAll('input[name="tone"]').forEach(input=>{input.checked=input.value===profile.tone;});
   $('settingsStatus').textContent='目前沒有未套用的修改。';$('settingsStatus').classList.remove('unsaved');
+  showTemplateSources(Object.values(TEMPLATES).find(template=>template.profile.knowledge===profile.knowledge));
 }
 function saveSettings(){
   if(!$('profileForm').reportValidity())return;
@@ -71,6 +75,33 @@ function saveSettings(){
   }
 }
 $('saveSettings').addEventListener('click',saveSettings);
+function showTemplateSources(template){
+  $('templateSourceList').replaceChildren();$('templateSources').hidden=!template;
+  for(const source of template?.sources||[]){
+    const item=document.createElement('li'),link=document.createElement('a');link.href=source.url;
+    link.textContent=source.title;link.target='_blank';link.rel='noopener noreferrer';item.append(link);$('templateSourceList').append(item);
+  }
+}
+$('profileTemplate').addEventListener('change',()=>{$('refreshTemplate').disabled=!TEMPLATES[$('profileTemplate').value];});
+$('refreshTemplate').addEventListener('click',()=>{
+  const template=TEMPLATES[$('profileTemplate').value];if(!template)return;
+  profile=normalizeProfile(template.profile);persistProfile();fillProfileForm();showTemplateSources(template);
+  clearContext('已載入「'+template.label+'」範本，對話已重新開始。提問次數與連接保留。');
+  avatar.show(profile.avatar);$('agentName').focus();
+});
+for(const movement of MOVEMENTS){
+  const option=document.createElement('option');option.value=movement.id;option.textContent=movement.number+'. '+movement.label;$('movementSelect').append(option);
+}
+function syncMovementControls(){
+  $('movementSelect').disabled=!$('avatarMount').dataset.model;
+  $('replayMovement').disabled=$('movementSelect').disabled||!$('movementSelect').value;
+}
+new MutationObserver(syncMovementControls).observe($('avatarMount'),{attributes:true,attributeFilter:['data-model']});
+function previewMovement(){
+  const action=$('movementSelect').value;if(action)avatar.preview(action);syncMovementControls();
+}
+$('movementSelect').addEventListener('change',previewMovement);
+$('replayMovement').addEventListener('click',previewMovement);
 fillProfileForm();
 function choices(container,values,name,type,selected){
   for(const value of values){
@@ -116,8 +147,8 @@ function setKey(key) {
   cancelKeyCheck();
   apiKey=key;$('apiKey').value=key;hideKey();
   $('connectionStatus').classList.toggle('connected',!!apiKey);
-  $('connectionStatus').textContent=apiKey?'已驗證 · OpenRouter':'未連接 · 示範回應';
-  $('keyNotice').textContent=apiKey?'金鑰驗證成功，可開始文字對話。':'已切換至示範回應。';
+  $('connectionStatus').textContent=apiKey?'已驗證 · OpenRouter':'未連接 OpenRouter';
+  $('keyNotice').textContent=apiKey?'金鑰驗證成功，可開始文字對話。':'連接已清除。';
   const draft=$('message').value;clearContext();$('message').value=draft;updateLabels();modeNotice();
 }
 $('keyForm').addEventListener('submit',async e=>{
@@ -141,21 +172,28 @@ $('keyForm').addEventListener('submit',async e=>{
     if(requestRevision===keyRevision){keyController=null;button.disabled=false;button.textContent='連接';updateLabels();}
   }
 });
-$('disconnect').addEventListener('click',()=>setKey(''));
-$('adminReset').addEventListener('click',()=>{
-  $('adminPassword').value='';$('adminResetNotice').textContent='';
-  $('adminResetDialog').showModal();$('adminPassword').focus();
+function setAdminMode(value){
+  adminMode=value;$('enterAdminMode').hidden=value;$('adminReset').hidden=!value;$('exitAdminMode').hidden=!value;
+}
+$('enterAdminMode').addEventListener('click',()=>{
+  $('adminPassword').value='';$('adminLoginNotice').textContent='';
+  $('adminLoginDialog').showModal();$('adminPassword').focus();
 });
-$('cancelAdminReset').addEventListener('click',()=>$('adminResetDialog').close());
-$('adminResetDialog').addEventListener('close',()=>{
-  $('adminPassword').value='';$('adminResetNotice').textContent='';
-});
-$('adminResetForm').addEventListener('submit',e=>{
+$('cancelAdminLogin').addEventListener('click',()=>$('adminLoginDialog').close());
+$('adminLoginDialog').addEventListener('close',()=>{$('adminPassword').value='';$('adminLoginNotice').textContent='';});
+$('adminLoginForm').addEventListener('submit',e=>{
   e.preventDefault();
   if($('adminPassword').value!==CONFIG.adminResetPassword){
-    $('adminResetNotice').textContent='密碼不正確，未有重設任何資料。';
-    $('adminPassword').focus();$('adminPassword').select();return;
+    $('adminLoginNotice').textContent='密碼不正確，未有重設任何資料。';$('adminPassword').focus();$('adminPassword').select();return;
   }
+  setAdminMode(true);$('adminLoginDialog').close();$('adminReset').focus();
+});
+$('exitAdminMode').addEventListener('click',()=>{setAdminMode(false);$('adminResetDialog').close();$('enterAdminMode').focus();});
+$('adminReset').addEventListener('click',()=>{if(adminMode)$('adminResetDialog').showModal();});
+$('cancelAdminReset').addEventListener('click',()=>$('adminResetDialog').close());
+$('adminResetForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  if(!adminMode)return;
   // Invalidate pending fetches and typewriter replies before restoring defaults.
   clearContext();
   profile=normalizeProfile(DEFAULT_PROFILE);exactTokens=null;
@@ -164,6 +202,7 @@ $('adminResetForm').addEventListener('submit',e=>{
   try{storage=sessionStorage;storage.setItem('yyc.student.quota.v1','0');quota=readQuota(storage);}
   catch{storage=null;quota=CONFIG.maxMessages;quotaCleared=false;}
   setKey('');$('keyNotice').textContent='';fillProfileForm();
+  $('profileTemplate').value='';$('refreshTemplate').disabled=true;showTemplateSources(null);
   document.querySelector('.workspace').classList.remove('settings-hidden');
   $('customizePanel').hidden=false;$('customizePanel').scrollTop=0;
   $('toggleSettings').textContent='隱藏設定';$('toggleSettings').setAttribute('aria-expanded','true');
@@ -173,14 +212,6 @@ $('adminResetForm').addEventListener('submit',e=>{
   $('agentName').focus();
 });
 window.addEventListener('pagehide',()=>{cancelKeyCheck();apiKey='';$('apiKey').value='';hideKey();controller?.abort();});
-function demoReply(text) {
-  const p=profile,name=p.name||'學習伙伴';
-  const intro=p.tone==='正式有禮'?'您好。':p.tone==='輕鬆活潑'?'嗨！':p.tone==='簡潔直接'?'你好。':'你好呀。';
-  const personality=p.personalities.length?'我的個性設定是「'+p.personalities.join('、')+'」。':'';
-  if(/介紹|你是誰/.test(text))return intro+'我是'+name+'。'+p.description+'\n\n'+personality+'我的語氣是「'+p.tone+'」。\n\n這是示範回應；連接 OpenRouter 後，我會依照你的設定與背景資料回答。';
-  return intro+name+'收到你的問題了。\n\n'+(p.tone==='簡潔直接'?'先把問題分成小步驟，再逐步解決。':p.personalities.includes('幽默')?'學習像練功，先從一個小招式開始！你想先處理哪一部分？':'我們可以把問題分成幾個小步驟。你已經知道甚麼，又有哪些地方想弄清楚？')+
-    '\n\n'+(p.knowledge?'已加入 '+p.knowledge.length+' 字元背景資料。示範模式不會分析資料；請連接 OpenRouter 測試知識如何影響回答。':'你可以加入背景資料，讓角色了解你的學習內容。');
-}
 async function revealReply(node,text,requestRevision){
   const characters=Array.from(text),start=performance.now();
   node.textContent='';avatar.setSpeaking(true);
@@ -195,6 +226,7 @@ async function revealReply(node,text,requestRevision){
 }
 $('chatForm').addEventListener('submit',async e=>{
   e.preventDefault();if(busy||keyController)return;
+  if(!apiKey){notice('請先連接 OpenRouter，再傳送問題。',true);return;}
   const text=$('message').value.trim();let error='';
   try{quota=readQuota(storage);}catch{notice('瀏覽器無法儲存提問次數。請允許此網站使用工作階段儲存，再重新整理。',true);return;}
   const estimated=contextEstimate(profile,messages);
@@ -204,14 +236,10 @@ $('chatForm').addEventListener('submit',async e=>{
   busy=true;exactTokens=null;const requestRevision=revision;
   const history=[...messages,{role:'user',content:text}];
   messages=history;addMessage('user',text);$('message').value='';$('send').textContent='回覆中⋯';updateLabels();
-  avatar.play(actionFor(text));notice(apiKey?'正在思考⋯':'示範回應 · 不會呼叫人工智能');
+  avatar.play(actionFor(text));notice('正在思考⋯');
   let pending=addMessage('assistant','思考中⋯');
   try {
     let reply,usage;
-    if(!apiKey) {
-      await new Promise(resolve=>setTimeout(resolve,500));
-      reply=demoReply(text);
-    } else {
       controller=new AbortController();
       const timer=setTimeout(()=>controller?.abort(),60000);
       let response;
@@ -228,7 +256,6 @@ $('chatForm').addEventListener('submit',async e=>{
       }
       const data=await response.json();reply=data.choices?.[0]?.message?.content;usage=data.usage;
       if(typeof reply!=='string'||!reply.trim())throw new Error('未收到文字回覆，請稍後再試。');
-    }
     if(requestRevision!==revision)return;
     if(!await revealReply(pending,reply,requestRevision))return;
     messages.push({role:'assistant',content:reply});
@@ -248,7 +275,7 @@ $('chatForm').addEventListener('submit',async e=>{
 $('welcomeStart').addEventListener('click',()=>{
   $('welcomeDialog').close();$('agentName').focus();
 });
-updateLabels();avatar.show(profile.avatar);
+updateLabels();modeNotice();avatar.show(profile.avatar);
 $('welcomeDialog').showModal();
 if(!storage)notice('瀏覽器未允許儲存工作階段。請允許儲存後重新整理，才能使用聊天。',true);
 // Public metadata only: never transmit the API 金鑰 to discover model capacity.
