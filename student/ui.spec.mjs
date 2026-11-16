@@ -2,6 +2,7 @@ import {test,expect} from '@playwright/test';
 test.beforeEach(async({page},testInfo)=>{
  // Interaction checks do not need to reload the 78 MB avatar; the dedicated render check uses the real asset.
  if(!testInfo.title.startsWith('school VRM')) await page.route('**/assets/YYC_InfoDay.vrm',route=>route.abort());
+ else await page.emulateMedia({reducedMotion:'no'});
  await page.route('https://openrouter.ai/api/v1/models',r=>r.fulfill({json:{data:[{id:'tencent/hy4-flash',context_length:1048576}]}}));
  await page.goto('/');
  await expect(page.locator('#welcomeDialog')).toBeVisible();
@@ -97,6 +98,16 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
  expect(await page.locator('#message').evaluate(n=>parseFloat(getComputedStyle(n).fontSize))).toBeGreaterThanOrEqual(16);
  await expect(page.locator('#avatarStatus')).toHaveText('',{timeout:60000});
  await expect(page.locator('#avatarMount canvas')).toBeVisible();
+ await page.route('https://openrouter.ai/api/v1/chat/completions',route=>route.fulfill({json:{choices:[{message:{content:'這是一段動作測試回覆。'.repeat(100)}}]}}));
+ await page.locator('#connection').click();await page.locator('#apiKey').fill('sk-or-v1-test-only');
+ await page.getByRole('button',{name:'連接',exact:true}).click();
+ await page.locator('#message').fill('請解釋這個題目');await page.locator('#send').click();
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-speaking','true');
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-action','nod');
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-action','explain',{timeout:15000});
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-action','emphasis',{timeout:15000});
+ await expect(page.locator('#avatarMount')).toHaveAttribute('data-speaking','false',{timeout:25000});
+ await page.locator('#clearChat').click();
  await page.screenshot({path:'test-results/student-desktop.png',fullPage:true});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.setViewportSize({width:390,height:844});
