@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f6f2">
+<title>知微 · 我的 AI 學習伙伴</title>
+<meta name="description" content="自訂角色、個性與知識，探索你的 AI 學習伙伴。">
+<link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon">知</span><span>知微 <small>AGENT STUDIO</small></span></a><span class="lesson">創造角色，探索不同的回答。</span><button id="connection" class="connection"><i></i><span>示範模式</span><span aria-hidden="true">↗</span></button></header>
+<main class="workspace">
+<section class="customize panel" aria-labelledby="customTitle">
+<div class="section-label">01 / CREATE</div><h1 id="customTitle">你的角色，你來定義。</h1><p class="intro">改變設定，觀察 AI 如何改變回應。</p>
+<form id="profileForm">
+<label class="field">角色名稱<input id="agentName" name="name" maxlength="40" required autocomplete="off"></label>
+<label class="field">角色描述<textarea id="description" name="description" maxlength="600" rows="3" placeholder="例如：喜歡用生活例子解釋數學的導師"></textarea></label>
+<fieldset><legend>個性 <span>可選多項</span></legend><div id="personalities" class="choices"></div></fieldset>
+<fieldset><legend>說話語氣 <span>選一項</span></legend><div id="tones" class="choices tones"></div></fieldset>
+<label class="field">背景知識 <span class="field-note">只接受文字</span><textarea id="knowledge" name="knowledge" maxlength="24000" rows="5" placeholder="貼上角色應該知道的資料、史實或課堂筆記⋯"></textarea></label>
+<p class="hint">設定會即時生效；每次修改都會清空對話。提問次數不會重設。</p>
+</form>
+<div class="learn-note"><span>✦</span><p><strong>試試看</strong>先問同一個問題，再改變個性或語氣，比較回答有何不同。</p></div>
+</section>
+<section class="character panel" aria-label="3D 角色">
+<div class="character-top"><span class="section-label">02 / MEET</span><span class="live-badge"><i></i>3D 角色</span></div>
+<div class="avatar-tabs" role="group" aria-label="切換角色外觀"><button data-avatar="school" aria-pressed="true">校服伙伴</button><button data-avatar="scholar" aria-pressed="false">古代文士 <small>預覽</small></button></div>
+<div id="stage" class="stage"><div class="stage-ring"></div><div id="avatarMount"></div><p id="avatarStatus" role="status">正在準備 3D 角色⋯</p></div>
+<div class="character-caption"><span class="eyebrow">YOUR LEARNING COMPANION</span><h2 id="characterName">知微</h2><p id="characterSummary">親切 · 耐心</p><span class="drag-hint">拖曳旋轉 · 滾輪縮放</span></div>
+</section>
+<section class="chat panel" aria-labelledby="chatTitle">
+<div class="chat-heading"><div><span class="section-label">03 / EXPLORE</span><h2 id="chatTitle">開始一場對話</h2></div><button id="clearChat" class="quiet" title="清空對話，不重設提問次數">清空對話 ↻</button></div>
+<div class="usage"><div class="usage-line"><span>上下文 <span id="tokenLabel">估算</span></span><span id="contextValue">0 tokens · 0%</span></div><progress id="contextProgress" max="100" value="0" aria-label="上下文使用百分比"></progress></div>
+<div id="messages" class="messages" role="log" aria-live="polite" aria-relevant="additions text">
+<div id="welcome" class="welcome"><div class="welcome-icon">✦</div><h3>你好，我是<span id="welcomeName">知微</span>。</h3><p>從一個好奇的問題開始，<br>一起看看你的設定如何影響對話。</p><div class="suggestions"><button data-prompt="請介紹你自己。">介紹一下你自己 ↗</button><button data-prompt="學習遇到困難時，我可以怎樣做？">給我一點學習建議 ↗</button></div></div>
+</div>
+<div class="composer-wrap"><p id="notice" class="notice" role="status">示範模式：回應為本機範例。連接 OpenRouter 後可與 AI 對話。</p><form id="chatForm"><label class="sr-only" for="message">輸入訊息</label><textarea id="message" rows="3" maxlength="4000" placeholder="問一個問題，認識你的 AI 伙伴⋯"></textarea><div class="composer-footer"><span id="wordCounter">0 / 200 字／詞</span><button id="send" type="submit">傳送 <span aria-hidden="true">↑</span></button></div></form><div class="chat-foot"><span id="quotaLabel">本次提問 0 / 50</span><span>AI 回答可能有誤，請查證。</span></div></div>
+</section>
+</main>
+<dialog id="connectDialog"><form id="keyForm"><button type="button" id="closeDialog" class="dialog-close" aria-label="關閉">×</button><span class="section-label">CONNECT</span><h2>連接你的 AI</h2><p>輸入 OpenRouter API key，開始真正的文字對話。</p><label class="field">OpenRouter API key<input id="apiKey" type="password" autocomplete="off" placeholder="sk-or-v1-⋯" spellcheck="false"></label><p class="hint">金鑰只保留在此頁記憶體，重新載入便會清除。訊息與角色設定會直接傳送至 OpenRouter。</p><div class="dialog-actions"><button type="button" id="disconnect" class="quiet">使用示範模式</button><button type="submit" class="primary">連接</button></div><p id="keyNotice" role="status"></p></form></dialog>
+<noscript>請啟用 JavaScript 以使用此學習伙伴。</noscript>
+</body></html>
