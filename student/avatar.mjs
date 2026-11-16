@@ -56,7 +56,7 @@ export class AvatarStage {
       }));
       if(revision!==this.revision)return;
       this.status.textContent=loaded.some(r=>r.status==='rejected')?'角色已載入 · 部分動作未能載入':'';
-      this.play('idle');this.lastLoop=performance.now();
+      this.play('idle');this.mixer.update(1/60);vrm.update(1/60);this.lastLoop=performance.now();
       const clock=new THREE.Clock();
       const tick=()=>{
         if(revision!==this.revision)return;
@@ -81,7 +81,7 @@ export class AvatarStage {
     }
   }
   play(name) {
-    if(this.reduced||!this.mixer||!this.vrm)return;
+    if((this.reduced&&name!=='idle')||!this.mixer||!this.vrm)return;
     const clip=this.clips.get(name)||this.clips.get('idle'); if(!clip)return;
     const action=this.mixer.clipAction(clip);
     if(this.previous!==action){action.reset().fadeIn(.35).play();this.previous?.fadeOut(.35);this.previous=action;}
