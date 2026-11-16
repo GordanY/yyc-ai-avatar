@@ -42,8 +42,9 @@ export class AvatarStage {
       if(revision!==this.revision){VRMUtils.deepDispose(gltf.scene);return;}
       const vrm=gltf.userData.vrm;
       if(!vrm)throw new Error('Invalid VRM');
-      this.vrm=vrm;VRMUtils.rotateVRM0(vrm);scene.add(vrm.scene);
+      this.vrm=vrm;VRMUtils.rotateVRM0(vrm);scene.add(vrm.scene);vrm.scene.visible=false;
       this.natural=new NaturalMotion(vrm,.5);this.rootBase=vrm.scene.quaternion.clone();
+      this.armReferences=['leftUpperArm','rightUpperArm'].map(name=>({node:vrm.humanoid.getNormalizedBoneNode(name),rest:vrm.humanoid.getNormalizedBoneNode(name)?.quaternion.clone()}));
       const box=new THREE.Box3().setFromObject(vrm.scene);
       const height=box.max.y-box.min.y;this.targetY=box.min.y+height*.53;
       this.camera.position.set(0,this.targetY,height*2.15);
@@ -58,7 +59,7 @@ export class AvatarStage {
       }));
       if(revision!==this.revision)return;
       this.status.textContent=loaded.some(r=>r.status==='rejected')?'角色已載入 · 部分動作未能載入':'';
-      this.play('idle');this.mixer.update(1/60);vrm.update(1/60);this.lastLoop=performance.now()-CONFIG.loopSeconds*1000;
+      this.play('idle');this.mixer.update(1/60);this.natural.setGesture(undefined);this.natural.update(0);this.recordArmPose();vrm.update(0);vrm.scene.visible=true;this.lastLoop=performance.now()-CONFIG.loopSeconds*1000;
       const clock=new THREE.Clock();
       const tick=()=>{
         if(revision!==this.revision)return;
@@ -94,30 +95,30 @@ export class AvatarStage {
   play(name) {
     if((this.reduced&&name!=='idle')||!this.mixer||!this.vrm)return;
     if(this.rootBase)this.vrm.scene.quaternion.copy(this.rootBase);
-    const procedural={greeting:'greeting',explain:'explanation',emphasis:'emphasis'}[name];
-    const clip=this.clips.get(name)||this.clips.get('idle'); if(!clip)return;
+    const procedural={nod:'agreement',wave:'greeting',greeting:'greeting',explain:'explanation',emphasis:'emphasis'}[name];
+    const clip=procedural?this.clips.get('idle'):(this.clips.get(name)||this.clips.get('idle')); if(!clip)return;
     const action=this.mixer.clipAction(clip);
     if(this.previous!==action){action.reset().fadeIn(.35).play();this.previous?.fadeOut(.35);this.previous=action;}
     else action.reset().play();
     this.procedural=procedural;this.actionStart=performance.now();
-    const duration=procedural?(name==='emphasis'?2.8:3.8):name==='spin'?4.5:clip.duration;
+    const duration={nod:2.4,wave:3.8,greeting:3.8,explain:3.6,emphasis:2.8}[name]??clip.duration;
     this.currentAction=name;this.actionUntil=name==='idle'?0:this.actionStart+duration*1000;
     this.mount.dataset.action=name;
   }
   updateProcedural(now,dt) {
-    if(!this.vrm)return;
-    if(this.currentAction==='spin'){
-      const t=Math.max(0,Math.min(1,(now-this.actionStart)/4500));
-      const eased=t*t*(3-2*t);
-      this.vrm.scene.quaternion.copy(this.rootBase).multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),Math.PI*2*eased));
-    }
+    if(!this.vrm||!this.natural)return;
     if(this.procedural){
       const duration=(this.actionUntil-this.actionStart)/1000;
       const time=Math.max(0,(now-this.actionStart)/1000);
       const weight=Math.min(1,time/.45,Math.max(0,(duration-time)/.55));
       this.natural.setGesture({action:{body:this.procedural},time,weight});
-      this.natural.update(dt);
-    }
+    }else this.natural.setGesture(undefined);
+    // Apply the standing arm pose on every frame, including idle and transitions.
+    this.natural.update(dt);this.recordArmPose();
+  }
+  recordArmPose(){
+    const angles=this.armReferences?.map(({node,rest})=>node&&rest?THREE.MathUtils.radToDeg(node.quaternion.angleTo(rest)):0)||[];
+    this.mount.dataset.armLowering=angles.map(value=>value.toFixed(1)).join(',');
   }
   setSpeaking(value) {
     if(this.speaking===value)return;

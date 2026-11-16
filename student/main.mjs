@@ -96,11 +96,6 @@ function hideKey(){
   $('toggleKeyVisibility').setAttribute('aria-label','顯示金鑰');
   $('toggleKeyVisibility').title='顯示金鑰';
 }
-$('connection').addEventListener('click',()=>{
-  $('welcomeDialog').close();
-  hideKey();$('apiKey').value=apiKey;$('keyNotice').textContent='';
-  $('connectDialog').showModal();$('apiKey').focus();
-});
 $('toggleKeyVisibility').addEventListener('click',()=>{
   const input=$('apiKey'),start=input.selectionStart,end=input.selectionEnd;
   const visible=input.type==='password';input.type=visible?'text':'password';
@@ -109,11 +104,12 @@ $('toggleKeyVisibility').addEventListener('click',()=>{
   $('toggleKeyVisibility').title=visible?'隱藏金鑰':'顯示金鑰';
   input.focus();if(start!==null&&end!==null)input.setSelectionRange(start,end);
 });
-$('closeDialog').addEventListener('click',()=>$('connectDialog').close());
 function setKey(key) {
-  apiKey=key;$('apiKey').value='';$('connection').classList.toggle('connected',!!apiKey);
-  $('connection').querySelector('span').textContent=apiKey?'已連接 OpenRouter':'開始製作你的數字人';
-  clearContext();modeNotice();$('connectDialog').close();
+  apiKey=key;$('apiKey').value=key;hideKey();
+  $('connectionStatus').classList.toggle('connected',!!apiKey);
+  $('connectionStatus').textContent=apiKey?'金鑰已套用 · OpenRouter':'未連接 · 示範回應';
+  $('keyNotice').textContent=apiKey?'可在對話欄輸入問題，開始文字對話。':'已切換至示範回應。';
+  clearContext();modeNotice();
 }
 $('keyForm').addEventListener('submit',e=>{
   e.preventDefault();const key=$('apiKey').value.trim();
@@ -121,8 +117,7 @@ $('keyForm').addEventListener('submit',e=>{
   setKey(key);
 });
 $('disconnect').addEventListener('click',()=>setKey(''));
-$('connectDialog').addEventListener('close',()=>{$('apiKey').value='';hideKey();});
-window.addEventListener('pagehide',()=>{apiKey='';controller?.abort();});
+window.addEventListener('pagehide',()=>{apiKey='';$('apiKey').value='';hideKey();controller?.abort();});
 function demoReply(text) {
   const p=profile,name=p.name||'學習伙伴';
   const intro=p.tone==='正式有禮'?'您好。':p.tone==='輕鬆活潑'?'嗨！':p.tone==='簡潔直接'?'你好。':'你好呀。';

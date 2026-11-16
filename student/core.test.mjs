@@ -39,7 +39,7 @@ test('invalid profile values are constrained and action mapping is allowlisted',
 });
 
 test('teacher motion selections match the chosen idle and text-reply groups',()=>{
- assert.deepEqual(CONFIG.idleLoop,['nod','wave','greeting','spin']);
+ assert.deepEqual(CONFIG.idleLoop,['nod','wave','greeting']);
  assert.deepEqual(CONFIG.speakingLoop,['nod','explain','emphasis']);
  assert.ok(!CONFIG.speakingLoop.some(name=>['spin','greeting','wave'].includes(name)));
 });

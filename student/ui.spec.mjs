@@ -69,7 +69,7 @@ test('direct OpenRouter request uses profile, no audio, actual usage and memory-
    payload=r.request().postDataJSON();authorization=r.request().headers().authorization;
    await r.fulfill({json:{choices:[{message:{content:'你好，今天想探討甚麼？'}}],usage:{total_tokens:1024}}});
  });
- await page.locator('#connection').click();
+ await page.locator('#apiKey').focus();
  await expect(page.locator('#apiKey')).toBeEditable();await expect(page.locator('#apiKey')).toBeFocused();
  await page.locator('#apiKey').fill('sk-or-v1-test-only');
  await page.getByRole('button',{name:'顯示金鑰',exact:true}).click();
@@ -82,21 +82,21 @@ test('direct OpenRouter request uses profile, no audio, actual usage and memory-
  expect(payload.model).toBe('tencent/hy4-flash');expect(payload).not.toHaveProperty('reasoning');expect(payload).not.toHaveProperty('reasoning_effort');expect(authorization).toBe('Bearer sk-or-v1-test-only');expect(payload.messages[0].content).toContain('知微');
  expect(payload.messages.at(-1)).toEqual({role:'user',content:'你好'});expect(payload).not.toHaveProperty('audio');
  await expect(page.locator('#contextValue')).toContainText('1,024 tokens');await expect(page.locator('#tokenLabel')).toHaveText('上次實際');
- await page.locator('#connection').click();await expect(page.locator('#apiKey')).toHaveValue('sk-or-v1-test-only');
- await expect(page.locator('#apiKey')).toHaveAttribute('type','password');await page.locator('#closeDialog').click();
+ await page.locator('#apiKey').focus();await expect(page.locator('#apiKey')).toHaveValue('sk-or-v1-test-only');
+ await expect(page.locator('#apiKey')).toHaveAttribute('type','password');
  const saved=await page.evaluate(()=>JSON.stringify({...localStorage,...sessionStorage}));expect(saved).not.toContain('sk-or');
- await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#connection')).toContainText('開始製作你的數字人');
+ await page.reload();await page.getByRole('button',{name:'開始製作',exact:true}).click();await expect(page.locator('#connectionStatus')).toContainText('未連接');await expect(page.locator('#apiKey')).toHaveValue('');
 });
 test('provider failure is readable and does not lock the composer',async({page})=>{
  await page.route('https://openrouter.ai/api/v1/chat/completions',r=>r.fulfill({status:401,json:{error:{message:'provider internal detail'}}}));
- await page.locator('#connection').click();await page.locator('#apiKey').fill('sk-or-v1-test-only');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await page.locator('#apiKey').focus();await page.locator('#apiKey').fill('sk-or-v1-test-only');await page.getByRole('button',{name:'連接',exact:true}).click();
  await page.locator('#message').fill('test');await page.locator('#send').click();
  await expect(page.locator('#notice')).toContainText('API 金鑰 無效');await expect(page.locator('#send')).toBeEnabled();
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
 test('late replies are discarded when the profile changes',async({page})=>{
  await page.route('https://openrouter.ai/api/v1/chat/completions',async r=>{await new Promise(resolve=>setTimeout(resolve,800));try{await r.fulfill({json:{choices:[{message:{content:'STALE'}}]}});}catch{}});
- await page.locator('#connection').click();await page.locator('#apiKey').fill('sk-or-v1-test-only');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await page.locator('#apiKey').focus();await page.locator('#apiKey').fill('sk-or-v1-test-only');await page.getByRole('button',{name:'連接',exact:true}).click();
  await page.locator('#message').fill('test');await page.locator('#send').click();await page.locator('#agentName').fill('新角色');await page.locator('#saveSettings').click();
  await page.waitForTimeout(1000);await expect(page.locator('.bubble')).toHaveCount(0);await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
@@ -118,8 +118,14 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
  expect(await page.locator('#message').evaluate(n=>parseFloat(getComputedStyle(n).fontSize))).toBeGreaterThanOrEqual(16);
  await expect(page.locator('#avatarStatus')).toHaveText('',{timeout:60000});
  await expect(page.locator('#avatarMount canvas')).toBeVisible();
+ await expect.poll(async()=>{const value=await page.locator('#avatarMount').getAttribute('data-arm-lowering');return value?value.split(',').map(Number).filter(Number.isFinite).length:0;}).toBe(2);
+ const armAngles=(await page.locator('#avatarMount').getAttribute('data-arm-lowering')).split(',').map(Number);
+ expect(Math.min(...armAngles)).toBeGreaterThan(50);
+ await expect(page.locator('#connection')).toHaveCount(0);
+ await expect(page.locator('#connectDialog')).toHaveCount(0);
+ await expect(page.locator('#customizePanel .api-settings')).toHaveCount(1);
  await page.route('https://openrouter.ai/api/v1/chat/completions',route=>route.fulfill({json:{choices:[{message:{content:'這是一段動作測試回覆。'.repeat(100)}}]}}));
- await page.locator('#connection').click();await page.locator('#apiKey').fill('sk-or-v1-test-only');
+ await page.locator('#apiKey').focus();await page.locator('#apiKey').fill('sk-or-v1-test-only');
  await page.getByRole('button',{name:'連接',exact:true}).click();
  await page.locator('#message').fill('請解釋這個題目');await page.locator('#send').click();
  await expect(page.locator('#avatarMount')).toHaveAttribute('data-speaking','true');
@@ -128,6 +134,7 @@ test('school VRM renders and responsive layouts do not overflow',async({page})=>
  await expect(page.locator('#avatarMount')).toHaveAttribute('data-action','emphasis',{timeout:15000});
  await expect(page.locator('#avatarMount')).toHaveAttribute('data-speaking','false',{timeout:25000});
  await page.locator('#clearChat').click();
+ await page.locator('#customizePanel').evaluate(node=>{node.scrollTop=0;});
  await page.screenshot({path:'test-results/student-desktop.png',fullPage:true});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.setViewportSize({width:390,height:844});
