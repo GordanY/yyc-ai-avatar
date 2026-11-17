@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {CONFIG,MOVEMENTS} from './config.mjs';
 import {TEMPLATES} from './templates.mjs';
+import {starterQuestions,parseChatReply,FOLLOWUP_MARKER} from './followups.mjs';
 import {normalizeApiKey} from './openrouter.mjs';
 import {readFile} from 'node:fs/promises';
 import {webcrypto} from 'node:crypto';
@@ -81,4 +82,33 @@ test('Yue Fei template supplies a complete editable profile with source-backed k
  assert.match(profile.knowledge,/1103–1142/);assert.match(profile.knowledge,/字鵬舉/);assert.match(profile.knowledge,/小說/);
  assert.equal(template.sources.length,3);assert.ok(profile.knowledge.length<CONFIG.maxKnowledgeChars);
  profile.personalities.pop();assert.equal(template.profile.personalities.length,4);
+});
+test('initial questions follow the applied character and are independent copies',()=>{
+ assert.deepEqual(starterQuestions(DEFAULT_PROFILE),['你可以怎樣幫助我？','你最擅長甚麼？']);
+ const questions=starterQuestions(TEMPLATES['yue-fei'].profile);
+ assert.deepEqual(questions,['岳家軍有甚麼特色？','你重視哪些品格？']);
+ questions.pop();assert.equal(starterQuestions(TEMPLATES['yue-fei'].profile).length,2);
+});
+test('reply parser separates contextual questions and always returns two short choices',()=>{
+ const parsed=parseChatReply('每天練習能培養毅力。\n'+FOLLOWUP_MARKER+'\n["可以怎樣訂目標？","如何保持動力？"]');
+ assert.equal(parsed.reply,'每天練習能培養毅力。');assert.deepEqual(parsed.questions,['可以怎樣訂目標？','如何保持動力？']);
+ const invalid=parseChatReply('回答。\n'+FOLLOWUP_MARKER+'\n'+JSON.stringify([null,'？','同一題？','同一題?','長'.repeat(50)]));
+ assert.equal(invalid.questions.length,2);assert.equal(invalid.questions[0],'同一題？');assert.ok(invalid.questions.every(q=>q.length<=64));
+ assert.deepEqual(parseChatReply('簡單回答。').questions,['可以再解釋一下嗎？','你能舉個例子嗎？']);
+ assert.equal(parseChatReply('完整回答。\n'+FOLLOWUP_MARKER+'\n["未完成').reply,'完整回答。');
+ assert.equal(parseChatReply('完整回答。\n[[FOLLOW_UP_QUEST').reply,'完整回答。');
+ assert.equal(parseChatReply('完整回答。\n[[FOLLOW_UP_QUESTIONS]').reply,'完整回答。');
+ assert.deepEqual(parseChatReply('4','二加二是多少？').questions,['可以再解釋一下嗎？','你能舉個例子嗎？']);
+ assert.deepEqual(parseChatReply('4','What is two plus two?').questions,['Can you explain that more?','Can you give an example?']);
+ assert.throws(()=>parseChatReply(FOLLOWUP_MARKER+'\n["只剩問題？","沒有答案？"]'));
+});
+test('literal marker mentions remain in the answer and only the final standalone block is metadata',()=>{
+ const body='這是格式標記 '+FOLLOWUP_MARKER+' 的文字解釋。\n正文仍有內容。';
+ const parsed=parseChatReply(body+'\n'+FOLLOWUP_MARKER+'\n["你能舉例嗎？","如何使用？"]');
+ assert.equal(parsed.reply,body);assert.deepEqual(parsed.questions,['你能舉例嗎？','如何使用？']);
+ assert.equal(parseChatReply(body).reply,body);
+ const example='範例：\n'+FOLLOWUP_MARKER+'\n["例子？"]\n這些仍是答案正文。';
+ assert.equal(parseChatReply(example+'\n'+FOLLOWUP_MARKER+'\n["你能舉例嗎？","如何使用？"]').reply,example);
+ const lower=parseChatReply('正常回答。\n'+FOLLOWUP_MARKER.toLowerCase()+'\n["還有甚麼？","可以解釋嗎？"]');
+ assert.equal(lower.reply,'正常回答。');assert.deepEqual(lower.questions,['還有甚麼？','可以解釋嗎？']);
 });

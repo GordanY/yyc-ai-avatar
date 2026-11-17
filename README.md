@@ -4,7 +4,7 @@ YYC Helper web application based on [Amica](https://github.com/semperai/amica), 
 
 ## Minimal student web version
 
-The new [Student Agent Studio](student/README.md) is a separate static, text-only interface for GitHub Pages. Students can customize a character or apply the 岳飛 template, validate an OpenRouter key directly in the web UI, and compare live responses. Chat requires the validated connection. The published interface includes chat, character settings, interactive school and scholar 3D avatars with matching backgrounds.
+The new [Student Agent Studio](student/README.md) is a separate static, text-only interface for GitHub Pages. Students can customize a character or apply the 岳飛 template, validate an OpenRouter key through the header **連接AI model** dialog, and compare live responses with two suggested follow-up questions. Chat requires the validated connection. The published interface includes chat, character settings, interactive school and scholar 3D avatars with matching backgrounds.
 
 The [student workflow](.github/workflows/student-pages.yml) builds and tests the interface before deployment. Enable **Settings → Pages → Source → GitHub Actions** once. The ancient scholar uses the same orbit, zoom and animation controls as the school avatar; its separately licensed model is packaged as an encrypted viewer resource with public decoder material. See the student README for API setup, movement previews, template behavior, quota/context rules and the classroom admin mode/reset.
 

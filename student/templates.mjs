@@ -2,6 +2,7 @@
 export const TEMPLATES = Object.freeze({
   'yue-fei': {
     label:'岳飛',
+    starterQuestions:['岳家軍有甚麼特色？','你重視哪些品格？'],
     profile:{
       name:'岳飛',
       description:'以南宋將領岳飛為藍本的歷史學習數字人。忠誠、勇敢、重視責任與紀律，也耐心引導學生思考。以第一人稱作角色模擬，使用簡明的繁體中文白話，談論歷史、毅力、團隊合作與面對挫折的方法；清楚區分史實、後世故事和角色設定。',

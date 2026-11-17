@@ -4,6 +4,7 @@ import { DEFAULT_PROFILE, PERSONALITIES, TONES, normalizeProfile, wordCount, sys
 import { AvatarStage } from './avatar.mjs';
 import { normalizeApiKey, validateApiKey } from './openrouter.mjs';
 import { TEMPLATES } from './templates.mjs';
+import { starterQuestions, parseChatReply } from './followups.mjs';
 const $=id=>document.getElementById(id);
 let profile=normalizeProfile(DEFAULT_PROFILE),messages=[],apiKey='',revision=0,controller=null,busy=false,storage=null,quota=50;
 let exactTokens=null,contextWindow=CONFIG.contextWindow;
@@ -16,11 +17,17 @@ const welcome=$('welcome');
 $('toggleSettings').addEventListener('click',()=>{
   const collapsed=document.querySelector('.workspace').classList.toggle('settings-hidden');
   $('customizePanel').hidden=collapsed;
-  $('toggleSettings').textContent=collapsed?'顯示設定':'隱藏設定';
+  $('toggleSettings').textContent=collapsed?'show avatar setting':'hide avatar setting';
   $('toggleSettings').setAttribute('aria-expanded',String(!collapsed));
 });
 function notice(text,error=false){$('notice').textContent=text;$('notice').classList.toggle('error',error);}
-function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'請先在設定欄底部連接 OpenRouter，再開始對話。');}
+function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'請先按右上角「連接AI model」，連接後開始對話。');}
+function showQuestions(questions){
+  const row=$('followupQuestions');row.replaceChildren();
+  for(const question of questions){
+    const button=document.createElement('button');button.type='button';button.dataset.prompt=question;button.textContent=question;row.append(button);
+  }
+}
 function addMessage(role,text) {
   welcome.remove();const node=document.createElement('div');node.className='bubble '+role;
   if(role==='assistant'){const label=document.createElement('span');label.className='byline';label.textContent=profile.name||'學習伙伴';node.append(label);}
@@ -40,11 +47,13 @@ function updateLabels(){
   $('wordCounter').textContent=words+' / 200 字／詞';
   $('wordCounter').classList.toggle('over-limit',words>CONFIG.maxWords);
   $('send').disabled=busy||!!keyController||!apiKey||!storage||quota>=CONFIG.maxMessages||words>CONFIG.maxWords||!$('message').value.trim();
+  $('followupQuestions').hidden=busy;
   document.querySelectorAll('[data-avatar]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.avatar===profile.avatar)));
 }
 function clearContext(text){
   revision++;controller?.abort();controller=null;busy=false;messages=[];exactTokens=null;
   $('messages').replaceChildren(welcome);$('message').value='';$('send').innerHTML='傳送 <span aria-hidden="true">↑</span>';
+  showQuestions(starterQuestions(profile));
   avatar.reset();updateLabels();if(text)notice(text);
   $('movementSelect').value='';$('replayMovement').disabled=true;
 }
@@ -121,7 +130,10 @@ document.querySelectorAll('[data-avatar]').forEach(button=>button.addEventListen
 }));
 $('message').addEventListener('input',updateLabels);
 $('message').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();$('chatForm').requestSubmit();}});
-document.querySelectorAll('[data-prompt]').forEach(b=>b.addEventListener('click',()=>{$('message').value=b.dataset.prompt;updateLabels();$('message').focus();}));
+$('followupQuestions').addEventListener('click',event=>{
+  const button=event.target.closest('button[data-prompt]');if(!button)return;
+  $('message').value=button.dataset.prompt;updateLabels();$('message').focus();
+});
 $('clearChat').addEventListener('click',()=>clearContext('已清空對話。提問次數保留。'));
 function hideKey(){
   $('apiKey').type='password';
@@ -137,6 +149,14 @@ $('toggleKeyVisibility').addEventListener('click',()=>{
   $('toggleKeyVisibility').title=visible?'隱藏金鑰':'顯示金鑰';
   input.focus();if(start!==null&&end!==null)input.setSelectionRange(start,end);
 });
+$('connectAI').addEventListener('click',()=>{hideKey();$('connectDialog').showModal();$('apiKey').focus();});
+function cancelConnectionCheck(){
+  const wasChecking=!!keyController;cancelKeyCheck();hideKey();
+  if(wasChecking)$('keyNotice').textContent='驗證已取消。';
+}
+$('closeConnectDialog').addEventListener('click',()=>{cancelConnectionCheck();$('connectDialog').close();});
+$('connectDialog').addEventListener('cancel',cancelConnectionCheck);
+$('connectDialog').addEventListener('close',cancelConnectionCheck);
 function cancelKeyCheck(){
   keyRevision++;keyController?.abort();keyController=null;
   const button=$('keyForm').querySelector('[type="submit"]');button.disabled=false;button.textContent='連接';
@@ -147,6 +167,7 @@ function setKey(key) {
   cancelKeyCheck();
   apiKey=key;$('apiKey').value=key;hideKey();
   $('connectionStatus').classList.toggle('connected',!!apiKey);
+  $('connectAI').classList.toggle('connected',!!apiKey);$('connectAI').title=apiKey?'已驗證 · OpenRouter':'連接AI model';
   $('connectionStatus').textContent=apiKey?'已驗證 · OpenRouter':'未連接 OpenRouter';
   $('keyNotice').textContent=apiKey?'金鑰驗證成功，可開始文字對話。':'連接已清除。';
   const draft=$('message').value;clearContext();$('message').value=draft;updateLabels();modeNotice();
@@ -162,8 +183,9 @@ $('keyForm').addEventListener('submit',async e=>{
   const timer=setTimeout(()=>check.abort(),15000);
   try{
     await validateApiKey(key,check.signal);
-    if(requestRevision!==keyRevision)return;
+    if(requestRevision!==keyRevision||!$('connectDialog').open)return;
     setKey(key);
+    $('connectDialog').close();$('message').focus();
   }catch(error){
     if(requestRevision!==keyRevision)return;
     $('keyNotice').textContent=error.name==='AbortError'?'驗證已逾時，請重試。':error.message;
@@ -201,11 +223,11 @@ $('adminResetForm').addEventListener('submit',e=>{
   try{localStorage.removeItem('yyc.student.profile.v1');}catch{profileCleared=false;}
   try{storage=sessionStorage;storage.setItem('yyc.student.quota.v1','0');quota=readQuota(storage);}
   catch{storage=null;quota=CONFIG.maxMessages;quotaCleared=false;}
-  setKey('');$('keyNotice').textContent='';fillProfileForm();
+  setKey('');$('connectDialog').close();$('keyNotice').textContent='';fillProfileForm();
   $('profileTemplate').value='';$('refreshTemplate').disabled=true;showTemplateSources(null);
   document.querySelector('.workspace').classList.remove('settings-hidden');
   $('customizePanel').hidden=false;$('customizePanel').scrollTop=0;
-  $('toggleSettings').textContent='隱藏設定';$('toggleSettings').setAttribute('aria-expanded','true');
+  $('toggleSettings').textContent='hide avatar setting';$('toggleSettings').setAttribute('aria-expanded','true');
   avatar.show(profile.avatar);updateLabels();$('adminResetDialog').close();
   if(profileCleared&&quotaCleared)notice('已重設全部設定、對話、API 金鑰及提問次數。');
   else notice('已清除頁面資料，但瀏覽器未允許完整重設儲存資料。請允許網站儲存資料後再試。',true);
@@ -257,8 +279,9 @@ $('chatForm').addEventListener('submit',async e=>{
       const data=await response.json();reply=data.choices?.[0]?.message?.content;usage=data.usage;
       if(typeof reply!=='string'||!reply.trim())throw new Error('未收到文字回覆，請稍後再試。');
     if(requestRevision!==revision)return;
-    if(!await revealReply(pending,reply,requestRevision))return;
-    messages.push({role:'assistant',content:reply});
+    const parsed=parseChatReply(reply,text);
+    if(!await revealReply(pending,parsed.reply,requestRevision))return;
+    messages.push({role:'assistant',content:parsed.reply});showQuestions(parsed.questions);
     if(Number.isFinite(usage?.total_tokens))exactTokens=usage.total_tokens;
     avatar.setSpeaking(false);modeNotice();
   } catch(error) {
@@ -275,7 +298,7 @@ $('chatForm').addEventListener('submit',async e=>{
 $('welcomeStart').addEventListener('click',()=>{
   $('welcomeDialog').close();$('agentName').focus();
 });
-updateLabels();modeNotice();avatar.show(profile.avatar);
+showQuestions(starterQuestions(profile));updateLabels();modeNotice();avatar.show(profile.avatar);
 $('welcomeDialog').showModal();
 if(!storage)notice('瀏覽器未允許儲存工作階段。請允許儲存後重新整理，才能使用聊天。',true);
 // Public metadata only: never transmit the API 金鑰 to discover model capacity.
