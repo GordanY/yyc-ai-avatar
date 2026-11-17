@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#f5f6f2">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='.9em' font-size='56'%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E">
 <title>數字人製作</title>
-<meta name="description" content="自訂角色、個性與知識，探索你的 人工智能學習伙伴。">
+<meta name="description" content="自訂角色、個性與知識，探索你的人工智能學習伙伴。">
 <link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
 <label class="field">角色描述<textarea id="description" name="description" maxlength="600" rows="3" placeholder="例如：喜歡用生活例子解釋數學的導師"></textarea></label>
 <fieldset><legend>個性 <span>可選多項</span></legend><div id="personalities" class="choices"></div></fieldset>
 <fieldset><legend>說話語氣 <span>選一項</span></legend><div id="tones" class="choices tones"></div></fieldset>
-<label class="field">背景知識 <span class="field-note">只接受文字</span><textarea id="knowledge" name="knowledge" maxlength="24000" rows="5" placeholder="貼上角色應該知道的資料、史實或課堂筆記⋯"></textarea></label>
+<label class="field">背景知識 <span class="field-note">只接受文字 · 最多 24,000 字元</span><textarea id="knowledge" name="knowledge" maxlength="24000" rows="5" placeholder="貼上角色應該知道的資料、史實或課堂筆記⋯"></textarea></label>
 <p class="hint">按「更新數字人」才會套用修改並清空對話。提問次數不會重設。</p>
 <div class="settings-actions"><button id="saveSettings" type="button" class="primary">更新數字人</button></div><p id="settingsStatus" class="settings-status" role="status">目前沒有未套用的修改。</p>
 </form>
@@ -29,7 +29,7 @@
 <section class="character panel" aria-label="角色展示">
 <div class="character-top"><span class="section-label">認識角色</span><span class="live-badge"><i></i><span id="appearanceLabel">立體角色</span></span></div>
 <div class="avatar-tabs" role="group" aria-label="切換角色外觀"><button data-avatar="school" aria-pressed="true">校服伙伴</button><button data-avatar="scholar" aria-pressed="false">古代文士</button></div>
-<div id="stage" class="stage"><div class="movement-controls" aria-label="角色動作預覽"><label for="movementSelect" class="sr-only">動作預覽</label><div class="movement-row"><select id="movementSelect" disabled><option value="">選擇動作</option></select><button id="replayMovement" type="button" aria-label="再次播放所選動作" title="再次播放" disabled>↻</button></div></div><div class="stage-ring"></div><div id="avatarMount"></div><p id="avatarStatus" role="status">正在準備 立體角色⋯</p></div>
+<div id="stage" class="stage"><div class="movement-controls" aria-label="角色動作預覽"><label for="movementSelect" class="sr-only">動作預覽</label><div class="movement-row"><select id="movementSelect" disabled><option value="">選擇動作</option></select><button id="replayMovement" type="button" aria-label="再次播放所選動作" title="再次播放" disabled>↻</button></div></div><div class="stage-ring"></div><div id="avatarMount"></div><p id="avatarStatus" role="status">正在準備立體角色⋯</p></div>
 <div class="character-caption"><h2 id="characterName">知微</h2></div>
 </section>
 <section class="chat panel" aria-labelledby="chatTitle">
@@ -46,7 +46,7 @@
 <dialog id="welcomeDialog" aria-labelledby="welcomeTitle" aria-describedby="welcomeIntro">
 <span class="section-label">歡迎</span>
 <h2 id="welcomeTitle">歡迎來到數字人製作</h2>
-<p id="welcomeIntro">親手設定一位 人工智能學習伙伴，看看你的選擇如何改變它的回答。</p>
+<p id="welcomeIntro">親手設定一位人工智能學習伙伴，看看你的選擇如何改變它的回答。</p>
 <ol class="welcome-steps">
 <li><strong>設定角色</strong><span>填寫名稱與描述，選擇個性和說話語氣，再按「更新數字人」。</span></li>
 <li><strong>加入知識</strong><span>貼上背景資料，並選擇角色外觀。</span></li>

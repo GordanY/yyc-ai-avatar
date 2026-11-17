@@ -1,6 +1,6 @@
 # Student Agent Studio
 
-A standalone static student interface in Traditional Chinese. It builds independently of the legacy Amica/Next.js app. GitHub Pages publishes only this interface; speech input/output, uploads and provider/model selectors are not included in its bundle. Students can preview the numbered movements in the character viewport.
+A standalone static student interface in Traditional Chinese. It builds independently of the legacy Amica/Next.js app. GitHub Pages publishes this interface and its classroom event introduction at `/event/`; speech input/output, uploads and provider/model selectors are not included in its bundle. Students can preview the numbered movements in the character viewport.
 
 ## Preview and build
 
@@ -15,7 +15,13 @@ npm run build
 node serve.mjs
 ```
 
-Open http://127.0.0.1:4173. Build output is ../_site.
+Open http://127.0.0.1:4173 for the studio or http://127.0.0.1:4173/event/ for the classroom introduction. The local server also resolves `/event` to its directory index. Build output is ../_site.
+
+## Classroom event introduction
+
+`event/index.html` is a standalone 14-slide Traditional Chinese activity introduction, copied by the build to `/event/`. It includes presentation/reading modes, a chapter overview, keyboard navigation, personality/token/context demonstrations, a research prompt, a prompt workshop and links to the studio, classroom API document and Perplexity. Reading mode tracks the visible slide; returning to presentation mode keeps that location. The skip link focuses the current slide heading. Its text interactions are scripted teaching examples: they do not call OpenRouter or read/store API keys, and student progress is not persisted.
+
+The research prompt requires a single 200–300-character Traditional Chinese background-summary paragraph, with 2–3 sources listed separately; its counting rules exclude punctuation and whitespace. The prompt workshop copies the selected tone and Yue Fei role identity in both knowledge modes. Removing the prepared historical background retains instructions to admit uncertainty and avoid invented history. Its example answer is labelled as a preset illustration. Follow the classroom API document to obtain a key, then enter it in the studio's **連接AI model** dialog.
 
 ## GitHub Pages
 
@@ -110,4 +116,4 @@ npx playwright install chromium
 npx playwright test
 ```
 
-The browser suite mocks OpenRouter requests with a dummy test key; it does not incur paid requests. These tests do not certify a real user's OpenRouter credentials, account balance or provider availability.
+`npx playwright test` runs both `ui.spec.mjs` (studio interactions, model loading and responsive layouts) and `event.spec.mjs` (event routes, reading/navigation/focus behavior, activities, copy flows and mobile layout). The browser suite mocks OpenRouter requests with a dummy test key; it does not incur paid requests. These tests do not certify a real user's OpenRouter credentials, account balance or provider availability.
