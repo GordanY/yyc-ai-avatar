@@ -116,3 +116,9 @@ select:focus-visible{outline:3px solid #99baa3;outline-offset:3px}
 .suggestions.followups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:none;width:100%;margin:12px 0;flex-shrink:0}
 .suggestions.followups button{min-width:0;min-height:48px;margin:0;padding:10px 12px;border:1px solid #d9e3d4;background:#f6f9f2;color:#355c40;border-radius:9px;font-size:14px;line-height:1.6;text-align:left;white-space:normal;overflow-wrap:anywhere}
 .suggestions.followups button:hover{background:#edf4e7;border-color:#acc7a6}
+
+#connectAI[data-connection-state="error"] i{background:#bf493d}
+#connectAI[data-connection-state="connected"] i{background:#3b8050}
+#responseDiagnostics{font-size:12px;line-height:1.7;color:#725d4a;margin:0 0 10px;overflow-wrap:anywhere}
+#responseDiagnostics summary{cursor:pointer}
+#responseDetails{margin:6px 0}

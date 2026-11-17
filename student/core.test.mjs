@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {CONFIG,MOVEMENTS} from './config.mjs';
 import {TEMPLATES} from './templates.mjs';
 import {starterQuestions,parseChatReply,FOLLOWUP_MARKER} from './followups.mjs';
+import {readChatCompletion,completionDiagnostics,requestChatCompletion} from './chat-completion.mjs';
 import {normalizeApiKey} from './openrouter.mjs';
 import {readFile} from 'node:fs/promises';
 import {webcrypto} from 'node:crypto';
@@ -111,4 +112,22 @@ test('literal marker mentions remain in the answer and only the final standalone
  assert.equal(parseChatReply(example+'\n'+FOLLOWUP_MARKER+'\n["你能舉例嗎？","如何使用？"]').reply,example);
  const lower=parseChatReply('正常回答。\n'+FOLLOWUP_MARKER.toLowerCase()+'\n["還有甚麼？","可以解釋嗎？"]');
  assert.equal(lower.reply,'正常回答。');assert.deepEqual(lower.questions,['還有甚麼？','可以解釋嗎？']);
+});
+test('chat completion reads text parts and never presents private reasoning as an answer',()=>{
+ assert.equal(readChatCompletion({choices:[{message:{content:[{type:'text',text:'答案一。'},{type:'image_url',image_url:{url:'private'}},{type:'output_text',text:'答案二。'}]}}]}).reply,'答案一。\n答案二。');
+ assert.equal(readChatCompletion({choices:[{message:{content:null,refusal:'無法協助這個要求。'}}]}).reply,'無法協助這個要求。');
+ const data={choices:[{finish_reason:'length',message:{content:null,reasoning:'PRIVATE',reasoning_details:[{text:'PRIVATE'}]}}],usage:{completion_tokens:800,completion_tokens_details:{reasoning_tokens:800}}};
+ assert.throws(()=>readChatCompletion(data),error=>/思考/.test(error.message)&&error.completionDiagnostics.reasoningTokens===800);
+ assert.ok(!JSON.stringify(completionDiagnostics(data)).includes('PRIVATE'));
+ assert.throws(()=>readChatCompletion({error:{code:500,message:'private provider internals'}}),/供應商未能/);
+ assert.throws(()=>readChatCompletion({choices:[{finish_reason:'stop',message:{content:''}}]}),/沒有回傳文字/);
+ assert.equal(CONFIG.replyTokens,8192);assert.equal(CONFIG.responseTimeoutMs,120000);
+});
+test('chat deadline covers body reading and is cleared before reply presentation',async()=>{
+ const controller=new AbortController();
+ const fetcher=async(url,options)=>({ok:true,json:()=>new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(new DOMException('aborted','AbortError')),{once:true}))});
+ await assert.rejects(()=>requestChatCompletion({model:CONFIG.model},'dummy-test-key',{controller,timeoutMs:10,fetcher}),{name:'AbortError'});
+ const successful=new AbortController();
+ await requestChatCompletion({},'dummy-test-key',{controller:successful,timeoutMs:10,fetcher:async()=>({ok:true,json:async()=>({choices:[{message:{content:'正常答案'}}]})})});
+ await new Promise(resolve=>setTimeout(resolve,20));assert.equal(successful.signal.aborted,false);
 });

@@ -45,7 +45,7 @@ test('updating an avatar applies drafts and preserves quota when settings are hi
  expect(expanded.columns[1]/expanded.total).toBeCloseTo(.4,2);
  expect(expanded.columns[2]/expanded.total).toBeCloseTo(.3,2);
  await page.locator('#description').fill('測試未儲存的草稿');
- await page.getByRole('button',{name:'hide avatar setting',exact:true}).click();
+ await page.getByRole('button',{name:'隱藏角色設定',exact:true}).click();
  await expect(page.locator('#customizePanel')).toBeHidden();
  const collapsed=await page.locator('.workspace').evaluate(node=>({
   total:node.getBoundingClientRect().width,
@@ -56,7 +56,7 @@ test('updating an avatar applies drafts and preserves quota when settings are hi
  expect(collapsed.chat/collapsed.total).toBeCloseTo(.6,2);
  await expect(page.locator('.bubble.assistant')).toHaveCount(1);
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
- await page.getByRole('button',{name:'show avatar setting',exact:true}).click();
+ await page.getByRole('button',{name:'顯示角色設定',exact:true}).click();
  await expect(page.locator('#description')).toHaveValue('測試未儲存的草稿');
  await expect(page.locator('.panel .section-label')).toHaveText(['設定角色','認識角色','開始對話']);
  await page.locator('#agentName').fill('子曰');
@@ -122,8 +122,8 @@ test('starter questions track the applied template and malformed metadata stays 
  await expect(questions).toHaveText(['可以再解釋一下嗎？','你能舉個例子嗎？']);
 });
 test('AI connection popup opens from header and closing preserves key and draft',async({page})=>{
- await expect(page.locator('#toggleSettings')).toHaveText('hide avatar setting');await page.locator('#toggleSettings').click();
- await expect(page.locator('#toggleSettings')).toHaveText('show avatar setting');await expect(page.locator('#customizePanel')).toBeHidden();
+ await expect(page.locator('#toggleSettings')).toHaveText('隱藏角色設定');await page.locator('#toggleSettings').click();
+ await expect(page.locator('#toggleSettings')).toHaveText('顯示角色設定');await expect(page.locator('#customizePanel')).toBeHidden();
  await page.locator('#message').fill('保留這個草稿');await openConnection(page);
  await expect(page.locator('#apiKey')).toBeFocused();await expect(page.locator('#connectDialog .api-settings')).toHaveCount(1);await expect(page.locator('#customizePanel .api-settings')).toHaveCount(0);
  await page.locator('#apiKey').fill('sk-or-popup-test');await page.locator('#apiKey').press('Escape');
@@ -252,6 +252,52 @@ test('provider failure is readable and does not lock the composer',async({page})
  await expect(page.locator('#notice')).toContainText('API 金鑰 無效');await expect(page.locator('#send')).toBeEnabled();
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
 });
+test('reasoning-only token exhaustion is explained without leaking reasoning or retrying',async({page})=>{
+ let calls=0;
+ await page.route('https://openrouter.ai/api/v1/chat/completions',route=>{
+  calls++;return route.fulfill({json:{choices:[{finish_reason:'length',message:{content:null,reasoning:'PRIVATE_REASONING_MUST_NOT_APPEAR'}}],usage:{total_tokens:2086,completion_tokens:800,completion_tokens_details:{reasoning_tokens:800}}}});
+ });
+ await connectKey(page);await page.locator('#message').fill('岳家軍有甚麼特色？');await page.locator('#send').click();
+ await expect(page.locator('#notice')).toContainText('思考');
+ await expect(page.locator('#connectAI')).toHaveAttribute('data-connection-state','error');
+ await expect(page.locator('#responseDiagnostics')).toBeVisible();await page.locator('#responseDiagnostics summary').click();
+ await expect(page.locator('#responseDetails')).toContainText('length');await expect(page.locator('#responseDetails')).toContainText('800');
+ await expect(page.locator('body')).not.toContainText('PRIVATE_REASONING_MUST_NOT_APPEAR');
+ await expect(page.locator('#message')).toHaveValue('岳家軍有甚麼特色？');await expect(page.locator('#send')).toBeEnabled();
+ await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');expect(calls).toBe(1);
+});
+test('text-part responses render their answer instead of the empty-reply error',async({page})=>{
+ let payload;
+ await page.route('https://openrouter.ai/api/v1/chat/completions',route=>{
+  payload=route.request().postDataJSON();return route.fulfill({json:{choices:[{finish_reason:'stop',message:{content:[{type:'text',text:'岳家軍重視紀律。'},{type:'text',text:'將士也需要合作。'}]}}]}});
+ });
+ await connectKey(page);await page.locator('#message').fill('介紹岳家軍');await page.locator('#send').click();
+ await expect(page.locator('.bubble.assistant')).toContainText('岳家軍重視紀律。');await expect(page.locator('.bubble.assistant')).toContainText('將士也需要合作。');
+ expect(payload.max_tokens).toBeGreaterThanOrEqual(8192);expect(payload).not.toHaveProperty('reasoning');expect(payload).not.toHaveProperty('reasoning_effort');
+ await expect(page.locator('#connectAI')).toHaveAttribute('data-connection-state','connected');
+});
+test('Chinese settings labels and rightmost AI button reflect connection failures and recovery',async({page})=>{
+ await expect(page.locator('#toggleSettings')).toHaveText('隱藏角色設定');await page.locator('#toggleSettings').click();
+ await expect(page.locator('#toggleSettings')).toHaveText('顯示角色設定');
+ const lastButton=()=>page.locator('.header-actions button').evaluateAll(nodes=>nodes.filter(node=>!node.hidden).at(-1).id);
+ expect(await lastButton()).toBe('connectAI');
+ await page.route('https://openrouter.ai/api/v1/key',route=>route.fulfill({status:401,json:{error:{message:'invalid'}}}));
+ await openConnection(page);await page.locator('#apiKey').fill('sk-or-failed-status-test');await page.getByRole('button',{name:'連接',exact:true}).click();
+ await expect(page.locator('#connectAI')).toHaveAttribute('data-connection-state','error');
+ expect(await page.locator('#connectAI i').evaluate(node=>getComputedStyle(node).backgroundColor)).toBe('rgb(191, 73, 61)');
+ await page.locator('#closeConnectDialog').click();
+ await page.route('https://openrouter.ai/api/v1/key',route=>route.fulfill({json:{data:{is_management_key:false}}}));
+ await connectKey(page);await expect(page.locator('#connectAI')).toHaveAttribute('data-connection-state','connected');
+ expect(await page.locator('#connectAI i').evaluate(node=>getComputedStyle(node).backgroundColor)).toBe('rgb(59, 128, 80)');
+ await loginAdmin(page);expect(await lastButton()).toBe('connectAI');
+});
+test('a metadata-only completion gives a distinct error without fabricating an answer',async({page})=>{
+ await page.route('https://openrouter.ai/api/v1/chat/completions',route=>route.fulfill({json:{choices:[{finish_reason:'stop',message:{content:FOLLOWUP_MARKER+'\n["問題一？","問題二？"]'}}]}}));
+ await connectKey(page);await page.locator('#message').fill('原本的問題');await page.locator('#send').click();
+ await expect(page.locator('#notice')).toContainText('沒有回答正文');await expect(page.locator('.bubble.assistant')).toHaveCount(0);
+ await expect(page.locator('#connectAI')).toHaveAttribute('data-connection-state','error');
+ await expect(page.locator('#message')).toHaveValue('原本的問題');await expect(page.locator('#quotaLabel')).toHaveText('本次提問 1 / 50');
+});
 test('late replies are discarded when the profile changes',async({page})=>{
  await page.route('https://openrouter.ai/api/v1/chat/completions',async r=>{await new Promise(resolve=>setTimeout(resolve,800));try{await r.fulfill({json:{choices:[{message:{content:'STALE\n'+FOLLOWUP_MARKER+'\n["舊問題一？","舊問題二？"]'}}]}});}catch{}});
  await openConnection(page);
@@ -270,7 +316,7 @@ test('admin mode unlocks reset without changing data and reset clears the whole 
  await page.locator('[data-avatar="scholar"]').click();await connectKey(page);
  await page.locator('#message').fill('測試問題');await page.locator('#send').click();await expect(page.locator('#send')).toHaveText('傳送 ↑');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
- await page.locator('#description').fill('尚未套用的草稿');await page.getByRole('button',{name:'hide avatar setting',exact:true}).click();
+ await page.locator('#description').fill('尚未套用的草稿');await page.getByRole('button',{name:'隱藏角色設定',exact:true}).click();
  await expect(page.locator('#adminReset')).toBeHidden();
  await page.evaluate(()=>document.getElementById('adminResetForm').requestSubmit());
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
@@ -282,7 +328,7 @@ test('admin mode unlocks reset without changing data and reset clears the whole 
  await expect(page.locator('.bubble')).toHaveCount(2);await expect(page.locator('#characterName')).toHaveText('自訂文士');
  await expect(page.locator('#quotaLabel')).toHaveText('本次提問 50 / 50');
  await page.locator('#adminReset').click();await page.locator('#cancelAdminReset').click();
- await page.getByRole('button',{name:'show avatar setting',exact:true}).click();await expect(page.locator('#description')).toHaveValue('尚未套用的草稿');
+ await page.getByRole('button',{name:'顯示角色設定',exact:true}).click();await expect(page.locator('#description')).toHaveValue('尚未套用的草稿');
  await resetAll(page);
  await expect(page.locator('#adminResetDialog')).toBeHidden();await expect(page.locator('#adminReset')).toBeVisible();
  await expect(page.locator('#customizePanel')).toBeVisible();await expect(page.locator('#agentName')).toHaveValue('知微');

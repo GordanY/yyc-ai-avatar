@@ -10,7 +10,9 @@ export const MOVEMENTS = Object.freeze([
 export const CONFIG = Object.freeze({
   model: 'tencent/hy4-flash', // Omit reasoning/effort parameters to use provider defaults.
   contextWindow: 1048576,
-  replyTokens: 800,
+  // Reasoning and visible text share this cap. Leave room for the provider's default thinking.
+  replyTokens: 8192,
+  responseTimeoutMs: 120000,
   maxMessages: 50,
   maxWords: 200,
   maxKnowledgeChars: 24000,

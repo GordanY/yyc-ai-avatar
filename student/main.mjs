@@ -5,6 +5,7 @@ import { AvatarStage } from './avatar.mjs';
 import { normalizeApiKey, validateApiKey } from './openrouter.mjs';
 import { TEMPLATES } from './templates.mjs';
 import { starterQuestions, parseChatReply } from './followups.mjs';
+import { requestChatCompletion, formatCompletionDiagnostics } from './chat-completion.mjs';
 const $=id=>document.getElementById(id);
 let profile=normalizeProfile(DEFAULT_PROFILE),messages=[],apiKey='',revision=0,controller=null,busy=false,storage=null,quota=50;
 let exactTokens=null,contextWindow=CONFIG.contextWindow;
@@ -17,10 +18,20 @@ const welcome=$('welcome');
 $('toggleSettings').addEventListener('click',()=>{
   const collapsed=document.querySelector('.workspace').classList.toggle('settings-hidden');
   $('customizePanel').hidden=collapsed;
-  $('toggleSettings').textContent=collapsed?'show avatar setting':'hide avatar setting';
+  $('toggleSettings').textContent=collapsed?'顯示角色設定':'隱藏角色設定';
   $('toggleSettings').setAttribute('aria-expanded',String(!collapsed));
 });
 function notice(text,error=false){$('notice').textContent=text;$('notice').classList.toggle('error',error);}
+function setConnectionState(state){
+  $('connectAI').dataset.connectionState=state;$('connectAI').classList.toggle('connected',state==='connected');
+  $('connectAI').title=state==='error'?'最近的 API 請求失敗':state==='connected'?'已連接 · OpenRouter':'連接AI model';
+  $('connectionStatus').classList.toggle('connected',state==='connected');
+  $('connectionStatus').textContent=state==='error'?(apiKey?'最近請求失敗 · 請重試或重新連接':'未連接 · 請檢查金鑰與網絡'):state==='connected'?'已驗證 · OpenRouter':'未連接 OpenRouter';
+}
+function showResponseDiagnostics(info){
+  $('responseDiagnostics').hidden=!info;$('responseDiagnostics').open=false;
+  $('responseDetails').textContent=info?formatCompletionDiagnostics(info):'';
+}
 function modeNotice(){notice(apiKey?'已連接 · 文字與角色設定會直接傳送至 OpenRouter。':'請先按右上角「連接AI model」，連接後開始對話。');}
 function showQuestions(questions){
   const row=$('followupQuestions');row.replaceChildren();
@@ -54,6 +65,7 @@ function clearContext(text){
   revision++;controller?.abort();controller=null;busy=false;messages=[];exactTokens=null;
   $('messages').replaceChildren(welcome);$('message').value='';$('send').innerHTML='傳送 <span aria-hidden="true">↑</span>';
   showQuestions(starterQuestions(profile));
+  showResponseDiagnostics(null);
   avatar.reset();updateLabels();if(text)notice(text);
   $('movementSelect').value='';$('replayMovement').disabled=true;
 }
@@ -166,16 +178,14 @@ $('apiKey').addEventListener('input',()=>{cancelKeyCheck();$('keyNotice').textCo
 function setKey(key) {
   cancelKeyCheck();
   apiKey=key;$('apiKey').value=key;hideKey();
-  $('connectionStatus').classList.toggle('connected',!!apiKey);
-  $('connectAI').classList.toggle('connected',!!apiKey);$('connectAI').title=apiKey?'已驗證 · OpenRouter':'連接AI model';
-  $('connectionStatus').textContent=apiKey?'已驗證 · OpenRouter':'未連接 OpenRouter';
+  setConnectionState(apiKey?'connected':'disconnected');
   $('keyNotice').textContent=apiKey?'金鑰驗證成功，可開始文字對話。':'連接已清除。';
   const draft=$('message').value;clearContext();$('message').value=draft;updateLabels();modeNotice();
 }
 $('keyForm').addEventListener('submit',async e=>{
   e.preventDefault();cancelKeyCheck();
   let key;
-  try{key=normalizeApiKey($('apiKey').value);}catch(error){$('keyNotice').textContent=error.message;return;}
+  try{key=normalizeApiKey($('apiKey').value);}catch(error){setConnectionState('error');$('keyNotice').textContent=error.message;return;}
   const requestRevision=keyRevision,check=new AbortController();keyController=check;
   updateLabels();
   const button=$('keyForm').querySelector('[type="submit"]');button.disabled=true;button.textContent='驗證中⋯';
@@ -188,6 +198,7 @@ $('keyForm').addEventListener('submit',async e=>{
     $('connectDialog').close();$('message').focus();
   }catch(error){
     if(requestRevision!==keyRevision)return;
+    setConnectionState('error');
     $('keyNotice').textContent=error.name==='AbortError'?'驗證已逾時，請重試。':error.message;
   }finally{
     clearTimeout(timer);
@@ -227,13 +238,13 @@ $('adminResetForm').addEventListener('submit',e=>{
   $('profileTemplate').value='';$('refreshTemplate').disabled=true;showTemplateSources(null);
   document.querySelector('.workspace').classList.remove('settings-hidden');
   $('customizePanel').hidden=false;$('customizePanel').scrollTop=0;
-  $('toggleSettings').textContent='hide avatar setting';$('toggleSettings').setAttribute('aria-expanded','true');
+  $('toggleSettings').textContent='隱藏角色設定';$('toggleSettings').setAttribute('aria-expanded','true');
   avatar.show(profile.avatar);updateLabels();$('adminResetDialog').close();
   if(profileCleared&&quotaCleared)notice('已重設全部設定、對話、API 金鑰及提問次數。');
   else notice('已清除頁面資料，但瀏覽器未允許完整重設儲存資料。請允許網站儲存資料後再試。',true);
   $('agentName').focus();
 });
-window.addEventListener('pagehide',()=>{cancelKeyCheck();apiKey='';$('apiKey').value='';hideKey();controller?.abort();});
+window.addEventListener('pagehide',()=>{revision++;cancelKeyCheck();apiKey='';$('apiKey').value='';hideKey();controller?.abort();controller=null;busy=false;setConnectionState('disconnected');updateLabels();});
 async function revealReply(node,text,requestRevision){
   const characters=Array.from(text),start=performance.now();
   node.textContent='';avatar.setSpeaking(true);
@@ -255,37 +266,29 @@ $('chatForm').addEventListener('submit',async e=>{
   error=validateMessage(text,quota,Math.max(estimated,exactTokens??0),contextWindow);
   if(error){notice(error,true);updateLabels();return;}
   try { quota=consumeQuota(storage); }catch{notice('無法儲存提問次數，訊息未傳送。',true);return;}
+  showResponseDiagnostics(null);
   busy=true;exactTokens=null;const requestRevision=revision;
   const history=[...messages,{role:'user',content:text}];
   messages=history;addMessage('user',text);$('message').value='';$('send').textContent='回覆中⋯';updateLabels();
   avatar.play(actionFor(text));notice('正在思考⋯');
   let pending=addMessage('assistant','思考中⋯');
+  let responseInfo=null;
   try {
-    let reply,usage;
-      controller=new AbortController();
-      const timer=setTimeout(()=>controller?.abort(),60000);
-      let response;
-      try {
-        response=await fetch('https://openrouter.ai/api/v1/chat/completions',{
-          method:'POST',signal:controller.signal,
-          headers:{'Content-Type':'application/json','Authorization':'Bearer '+apiKey},
-          body:JSON.stringify({model:CONFIG.model,messages:[{role:'system',content:systemPrompt(profile)},...history],max_tokens:CONFIG.replyTokens,temperature:.7,stream:false})
-        });
-      } finally {clearTimeout(timer);}
-      if(!response.ok) {
-        const friendly={401:'API 金鑰 無效，請重新輸入。',402:'OpenRouter 餘額不足，請檢查帳戶。',403:'此金鑰未獲准使用，請檢查 OpenRouter 設定。',429:'請求太頻密，請稍後再試。'};
-        throw new Error(friendly[response.status]||'暫時未能取得回覆，請稍後再試。');
-      }
-      const data=await response.json();reply=data.choices?.[0]?.message?.content;usage=data.usage;
-      if(typeof reply!=='string'||!reply.trim())throw new Error('未收到文字回覆，請稍後再試。');
+    const requestController=new AbortController();controller=requestController;
+    const completion=await requestChatCompletion({model:CONFIG.model,messages:[{role:'system',content:systemPrompt(profile)},...history],max_tokens:CONFIG.replyTokens,temperature:.7,stream:false},
+      apiKey,{controller:requestController,timeoutMs:CONFIG.responseTimeoutMs});
+    const {reply,usage}=completion;responseInfo=completion.diagnostics;
     if(requestRevision!==revision)return;
-    const parsed=parseChatReply(reply,text);
+    let parsed;
+    try{parsed=parseChatReply(reply,text);}catch{throw new Error('服務只回傳建議問題，沒有回答正文。請重新傳送。');}
+    setConnectionState('connected');
     if(!await revealReply(pending,parsed.reply,requestRevision))return;
     messages.push({role:'assistant',content:parsed.reply});showQuestions(parsed.questions);
     if(Number.isFinite(usage?.total_tokens))exactTokens=usage.total_tokens;
     avatar.setSpeaking(false);modeNotice();
   } catch(error) {
     if(requestRevision!==revision)return;
+    setConnectionState('error');showResponseDiagnostics(error.completionDiagnostics||responseInfo);
     pending.closest('.bubble').remove();
     // Failed requests count as submitted inputs, but do not pollute the next request's context.
     messages=messages.slice(0,-1);
