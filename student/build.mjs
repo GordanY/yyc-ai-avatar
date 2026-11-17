@@ -14,6 +14,9 @@ for(const name of ['classroom.webp','courtyard.webp']){
 await copyFile(path.join(here,'assets','scholar','character.yyc3d'),path.join(out,'assets','scholar','character.yyc3d'));
 await build({entryPoints:[path.join(here,'main.mjs')],outfile:path.join(out,'app.js'),bundle:true,nodePaths:[path.join(here,'node_modules')],format:'esm',target:['es2022'],minify:true});
 for(const name of ['index.html','style.css'])await copyFile(path.join(here,name),path.join(out,name));
+// Keep the standalone event introduction at /event/ on GitHub Pages.
+await mkdir(path.join(out,'event'),{recursive:true});
+await copyFile(path.join(here,'event','index.html'),path.join(out,'event','index.html'));
 // Version asset URLs so an updated page cannot keep an older cached interface.
 const version=createHash('sha256').update(await readFile(path.join(out,'app.js'))).update(await readFile(path.join(out,'style.css'))).digest('hex').slice(0,12);
 const html=await readFile(path.join(out,'index.html'),'utf8');
