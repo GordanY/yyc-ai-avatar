@@ -78,13 +78,26 @@
  </section>
 
  <section class="slide" id="slide-10" data-title="用 Perplexity 調查岳飛" aria-labelledby="title-10" hidden>
-  <p class="eyebrow">09 / Research with Perplexity</p><div class="two research-layout"><div><span class="tag lime">資料蒐集工具</span><h2 id="title-10" style="margin-top:20px">先調查岳飛，<br>再建立他的世界。</h2><p class="lead">Perplexity 是結合搜尋與 AI 回答的研究工具。從一個清楚的問題開始，追查回答中的來源，再整理成你的人物資料。</p><ol class="research-steps"><li><b>複製右方提示</b><span>交代人物、需要的資料與輸出格式。</span></li><li><b>在 Perplexity 貼上並搜尋</b><span>開啟回答附上的來源，閱讀原文。</span></li><li><b>整理人物背景</b><span>把有根據的內容寫成報告及數字人的背景知識。</span></li></ol><a class="button" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">開啟 Perplexity ↗</a></div><div class="panel research-prompt"><div class="research-prompt-head"><span class="demo-label">岳飛 · 調查提示</span><span class="tag">繁體中文</span></div><div id="research-prompt" class="research-prompt-text" tabindex="0">我是一名中學生，正在製作以「岳飛」為藍本的歷史學習數字人。請以繁體中文，幫我整理一份簡明的人物調查：
+  <p class="eyebrow">09 / Research with Perplexity</p><div class="two research-layout"><div><span class="tag lime">資料蒐集工具</span><h2 id="title-10" style="margin-top:20px">先調查岳飛，<br>再建立他的世界。</h2><p class="lead">Perplexity 是結合搜尋與 AI 回答的研究工具。從一個清楚的問題開始，追查回答中的來源，再整理成你的人物資料。</p><ol class="research-steps"><li><b>複製右方提示</b><span>指定人物、200–300 字上限與輸出格式。</span></li><li><b>在 Perplexity 貼上並搜尋</b><span>開啟回答附上的來源，閱讀原文。</span></li><li><b>整理人物背景</b><span>取得一段 200–300 字摘要，閱讀來源後整理成背景知識。</span></li></ol><a class="button" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">開啟 Perplexity ↗</a></div><div class="panel research-prompt"><div class="research-prompt-head"><span class="demo-label">岳飛 · 200–300 字背景摘要</span><span class="tag">繁體中文</span></div><div id="research-prompt" class="research-prompt-text" tabindex="0">我是一名中學生，正在製作以「岳飛」為藍本的歷史學習數字人。請搜尋可靠資料後，只交付一段可直接貼入平台的精簡背景摘要。
 
-1. 基本資料：生卒年份、所處朝代、身分。
-2. 時代背景，以及三項重要事蹟。
-3. 清楚區分有資料支持的史實、後世傳說與文學演繹；無法確認的地方請註明。
-4. 附上可開啟的來源連結，優先使用博物館、學術或其他可靠機構的資料，讓我能閱讀原文。
-5. 最後整理一段約 300 字的「背景知識」，適合貼進數字人製作平台；先整理資料，不要以岳飛的口吻回答。</div><div class="actions"><button class="button" id="copy-research">複製調查提示 ⧉</button><span class="micro" id="research-copy-status" role="status"></span></div></div></div>
+【必須遵守】
+1. 摘要正文必須是 200–300 字的繁體中文，以 230–260 字為目標。少於 200 字或超過 300 字都不合格，必須修改後才輸出。
+2. 正文只能有一個段落。不要分項、列表、表格、前言、結語、完整人物報告、額外分析或建議追問。
+3. 精簡涵蓋岳飛的生卒年份、南宋將領身分、宋金交戰背景、主要事蹟及歷史地位。只保留最重要的資訊；不能把後世傳說或文學情節當作已確認史實。
+4. 使用第三人稱客觀敘述，不要扮演岳飛。無法確認的細節請刪除或簡短註明。
+5. 優先查閱博物館、學術或其他可靠機構的資料。資料來源另列於摘要之後，只提供 2–3 個「機構名稱＋來源連結」，不要逐條介紹來源。
+
+【輸出前自行檢查，不要顯示檢查過程】
+計算摘要正文的字數：漢字、英文字母及數字各算一字；不計標點、空白、標題、引用標記及資料來源。若不在 200–300 字內，先自行增刪至合格，再輸出。不要另外顯示字數或解釋。
+
+【只准使用以下輸出格式】
+背景摘要
+（一個 200–300 字的繁體中文段落）
+
+資料來源
+1. 機構名稱：來源連結
+2. 機構名稱：來源連結
+（如有必要，最多增加第 3 個來源；不要輸出此括號內的提示。）</div><div class="actions"><button class="button" id="copy-research">複製調查提示 ⧉</button><span class="micro" id="research-copy-status" role="status"></span></div></div></div>
  </section>
  <section class="slide" id="slide-11" data-title="提示工程小工坊" aria-labelledby="title-11" hidden>
   <p class="eyebrow">10 / Prompt playground</p><div class="two prompt-layout"><div><h2 id="title-11">你怎樣設定，<br>他就怎樣嘗試回答。</h2><p class="lead">提示工程，就是清楚說明角色、任務、語氣與回答界線。切換語氣觀察示例回應，或勾選背景知識，比較提供給數字人的角色資料。</p><label class="field" for="prompt-tone">說話語氣<select id="prompt-tone"><option value="formal">正式有禮</option><option value="warm">溫和鼓勵</option></select></label><label class="check"><input id="prompt-grounded" type="checkbox" checked><span>加入背景知識與查證界線：以已整理的史料回答，不知道時坦白說明。</span></label></div><div class="panel dark"><span class="demo-label" style="color:#d4e0d7">岳飛背景知識與角色設定</span><div class="prompt-output" id="prompt-output"></div><div class="actions"><button class="button light" style="color:white;border-color:#91a695;padding:8px 15px;font-size:12px" id="copy-prompt">複製提示</button><span class="micro" id="copy-status" role="status"></span></div><div class="example-answer" id="prompt-answer" style="margin-top:23px"></div><p class="micro" style="margin:12px 0 0">上方回應是配合語氣切換的預設例句，並非平台實際生成的結果。</p></div></div>
